@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WoW AH Merchant Dashboard</title>
+  <style>
+    :root { --bg:#0b1220; --panel:#111a2d; --text:#e7edf8; --muted:#8fa0bd; --line:#20304f; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: Segoe UI, Arial, sans-serif;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(41,182,246,.2), transparent 35%),
+        radial-gradient(circle at 80% 0%, rgba(255,209,102,.15), transparent 28%),
+        var(--bg);
+    }
+    .layout { display:grid; grid-template-columns:280px 1fr; min-height:100vh; }
+    .sidebar {
+      position: sticky; top: 0; height: 100vh; overflow: auto;
+      border-right: 1px solid var(--line); background:#0d1526; padding:12px;
+    }
+    .sidebar h2 { margin:0 0 8px; font-size:16px; }
+    .small { color:var(--muted); font-size:12px; margin-bottom:10px; }
+    .group-title { margin:10px 0 4px; color:#9fc6ff; font-size:12px; font-weight:700; }
+    .nav a { display:block; text-decoration:none; color:var(--text); padding:6px 8px; border-radius:8px; font-size:13px; }
+    .nav a:hover { background: rgba(255,255,255,.06); }
+    .main { padding:14px; }
+    .panel {
+      border:1px solid var(--line); border-radius:12px; padding:10px;
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.005));
+      margin-bottom:10px;
+    }
+    .meta { color:var(--muted); font-size:12px; }
+    .controls { display:flex; gap:10px; align-items:center; margin-top:8px; }
+    select { border-radius:8px; border:1px solid var(--line); background:#0e1728; color:var(--text); padding:6px 8px; }
+    .cards { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:8px; }
+    .card { border:1px solid var(--line); border-radius:10px; background:#0e1728; padding:8px; }
+    .card .k { color:var(--muted); font-size:12px; }
+    .card .v { font-size:14px; font-weight:700; margin-top:4px; }
+    .chart { height:280px; border:1px solid var(--line); border-radius:10px; background:#111a2d; margin-top:8px; }
+    .pair-block { margin-top: 22px; }
+    .pair-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .item-head { display:flex; justify-content:space-between; align-items:baseline; gap:8px; flex-wrap:wrap; }
+    .badge { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:2px 8px; font-size:11px; color:#b6cff3; background:#0e1728; }
+    pre { margin:0; white-space:pre-wrap; font-size:13px; line-height:1.45; }
+    @media (max-width:980px) {
+      .layout { grid-template-columns:1fr; }
+      .sidebar { position:static; height:auto; border-right:0; border-bottom:1px solid var(--line); }
+      .cards { grid-template-columns:repeat(2,1fr); }
+      .pair-row { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Catalog</h2>
+      <div class="small" id="sideMeta">Loading...</div>
+      <div class="nav" id="itemNav"></div>
+    </aside>
+    <main class="main">
+      <section class="panel">
+        <h2 style="margin:0 0 8px;">Merchant Overview</h2>
+        <div class="meta" id="metaLine">-</div>
+        <div class="controls">
+          <label for="lookbackSel">Lookback points:</label>
+          <select id="lookbackSel">
+            <option value="0">All</option>
+            <option value="20">Last 20</option>
+            <option value="50">Last 50</option>
+            <option value="100">Last 100</option>
+          </select>
+        </div>
+        <pre id="analysisText">No analysis</pre>
+        <div class="cards" id="overviewCards"></div>
+      </section>
+
+      <section class="panel">
+        <h3 style="margin:0;">Upstream/Downstream Side-by-Side</h3>
+        <div id="pairSections"></div>
+      </section>
+
+      <section class="panel">
+        <h3 style="margin:0;">Global</h3>
+        <div id="globalPrice" class="chart"></div>
+        <div id="globalMovers" class="chart"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./vendor/echarts.min.js"></script>
+  <script src="./dashboard_data.js"></script>
+  <script>
+    (function () {
+      const data = window.WOW_AH_DATA || { generated_at: "-", snapshots: [], analysis: {} };
+      const rowsAll = (data.snapshots || []).map(r => ({
+        ...r,
+        rank: Number(r.rank),
+        price: Number(r.unit_price_gold),
+        qty: Number(r.available_quantity),
+        ts: String(r.observed_at)
+      })).filter(r => r.item_name && Number.isFinite(r.price) && Number.isFinite(r.qty))
+        .sort((a, b) => new Date(a.ts) - new Date(b.ts));
+      if (!rowsAll.length) return;
+
+      const PAIRS = [
+        { group: "INSCRIPTION", left: "白银叶", right: "白银叶颜料" },
+        { group: "INSCRIPTION", left: "宁心花", right: "粉末颜料" },
+        { group: "INSCRIPTION", left: "艾泽之根", right: "编码艾泽之根" },
+        { group: "TAILORING", left: "光明亚麻布", right: "注能光明亚麻布" },
+        { group: "TAILORING", left: "注能光明亚麻布", right: "光明亚麻布卷" },
+        { group: "TAILORING", left: "奥纹布", right: "奥纹布卷" },
+        { group: "TAILORING", left: "奥文布", right: "奥文布卷" }
+      ];
+
+      function latestAndPrev(rows) {
+        const ts = [...new Set(rows.map(r => r.ts))].sort((a, b) => new Date(a) - new Date(b));
+        return { latest: ts[ts.length - 1] || null, prev: ts[ts.length - 2] || null };
+      }
+
+      function seriesForItem(rows, item) {
+        const d = rows.filter(r => r.item_name === item);
+        return { rows: d, r1: d.filter(r => r.rank === 1), r2: d.filter(r => r.rank === 2) };
+      }
+
+      const lookbackSel = document.getElementById("lookbackSel");
+      const metaLine = document.getElementById("metaLine");
+      const analysisText = document.getElementById("analysisText");
+      const cardsEl = document.getElementById("overviewCards");
+      const pairSections = document.getElementById("pairSections");
+      const itemNav = document.getElementById("itemNav");
+      const sideMeta = document.getElementById("sideMeta");
+      const globalPrice = echarts.init(document.getElementById("globalPrice"));
+      const globalMovers = echarts.init(document.getElementById("globalMovers"));
+      const pairCharts = [];
+
+      function itemExists(rows, name) {
+        return rows.some(r => r.item_name === name);
+      }
+
+      function chartOption(series, title) {
+        return {
+          title: { text: title, textStyle: { color: "#d8e3f4", fontSize: 12 } },
+          tooltip: { trigger: "axis" },
+          legend: { textStyle: { color: "#d8e3f4" } },
+          grid: { left: 55, right: 55, top: 36, bottom: 40 },
+          xAxis: { type: "category", axisLabel: { color: "#9fb1cf", hideOverlap: true } },
+          yAxis: [
+            { type: "value", axisLabel: { color: "#9fb1cf" }, name: "Price" },
+            { type: "value", axisLabel: { color: "#9fb1cf" }, name: "Qty", splitLine: { show: false } }
+          ],
+          series: [
+            { name: "R1 Price", type: "line", smooth: true, showSymbol: false, yAxisIndex: 0, data: series.r1.map(r => [r.ts, r.price]) },
+            { name: "R2 Price", type: "line", smooth: true, showSymbol: false, yAxisIndex: 0, data: series.r2.map(r => [r.ts, r.price]) },
+            { name: "R1 Qty", type: "bar", barMaxWidth: 10, yAxisIndex: 1, itemStyle: { opacity: 0.35 }, data: series.r1.map(r => [r.ts, r.qty]) },
+            { name: "R2 Qty", type: "bar", barMaxWidth: 10, yAxisIndex: 1, itemStyle: { opacity: 0.35 }, data: series.r2.map(r => [r.ts, r.qty]) }
+          ]
+        };
+      }
+
+      function renderSummary(rows) {
+        const a = data.analysis || {};
+        const sig = Array.isArray(a.signals) ? a.signals : [];
+        const restock = sig.filter(s => s.tag === "restock_buy").slice(0, 5);
+        const sell = sig.filter(s => s.tag === "sell_now").slice(0, 5);
+        const avoid = sig.filter(s => s.tag === "avoid_trap").slice(0, 5);
+        analysisText.textContent = [
+          `Range: ${a.prev_ts || "-"} -> ${a.latest_ts || "-"}`,
+          "Restock:", ...(restock.length ? restock.map(s => `- ${s.item} R${s.rank}`) : ["- none"]),
+          "Sell:", ...(sell.length ? sell.map(s => `- ${s.item} R${s.rank}`) : ["- none"]),
+          "Avoid:", ...(avoid.length ? avoid.map(s => `- ${s.item} R${s.rank}`) : ["- none"])
+        ].join("\n");
+
+        const lp = latestAndPrev(rows);
+        const latestRows = rows.filter(r => r.ts === lp.latest);
+        const avg = latestRows.length ? latestRows.reduce((s, r) => s + r.price, 0) / latestRows.length : 0;
+        const cards = [
+          ["Points", rows.length], ["Latest rows", latestRows.length],
+          ["Latest total qty", latestRows.reduce((s, r) => s + r.qty, 0).toLocaleString("en-US")],
+          ["Latest avg price", avg.toFixed(2)], ["Generated", data.generated_at || "-"],
+          ["Confidence", (data.analysis && data.analysis.confidence) || "low"],
+          ["Latest ts", lp.latest || "-"], ["Items", new Set(rows.map(r => r.item_name)).size]
+        ];
+        cardsEl.innerHTML = cards.map(([k, v]) => `<div class="card"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+        metaLine.textContent = `Range: ${rows[0]?.ts || "-"} -> ${rows[rows.length - 1]?.ts || "-"} | Latest: ${lp.latest || "-"} | Generated: ${data.generated_at || "-"}`;
+      }
+
+      function renderGlobal(rows) {
+        const byKey = new Map();
+        rows.forEach(r => { const k = `${r.item_name}|R${r.rank}`; if (!byKey.has(k)) byKey.set(k, []); byKey.get(k).push(r); });
+        const topKeys = [...byKey.entries()].map(([k, arr]) => ({ k, qty: arr[arr.length - 1]?.qty || 0, arr }))
+          .sort((a, b) => b.qty - a.qty).slice(0, 10);
+        globalPrice.setOption({
+          title: { text: "Global Price Trend Top10 (by latest qty)", textStyle: { color: "#d8e3f4", fontSize: 13 } },
+          tooltip: { trigger: "axis" }, legend: { textStyle: { color: "#d8e3f4" }, top: 24 },
+          grid: { left: 55, right: 24, top: 58, bottom: 45 },
+          xAxis: { type: "category", axisLabel: { color: "#9fb1cf", hideOverlap: true } },
+          yAxis: { type: "value", axisLabel: { color: "#9fb1cf" }, name: "Price" },
+          series: topKeys.map(v => ({ name: v.k, type: "line", smooth: true, showSymbol: false, data: v.arr.map(r => [r.ts, r.price]) }))
+        }, true);
+
+        const lp = latestAndPrev(rows);
+        const latestRows = rows.filter(r => r.ts === lp.latest);
+        const prevMap = new Map(rows.filter(r => r.ts === lp.prev).map(r => [`${r.item_name}|${r.rank}`, r]));
+        const movers = latestRows.map(r => {
+          const p = prevMap.get(`${r.item_name}|${r.rank}`);
+          const pct = p && p.price !== 0 ? ((r.price - p.price) / p.price) * 100 : 0;
+          return { name: `${r.item_name} R${r.rank}`, pct: +pct.toFixed(2) };
+        }).sort((a, b) => b.pct - a.pct);
+        const show = [...movers.slice(0, 8), ...movers.slice(-8)];
+        globalMovers.setOption({
+          title: { text: "Latest movers (%)", textStyle: { color: "#d8e3f4", fontSize: 13 } },
+          tooltip: { trigger: "axis" }, grid: { left: 55, right: 24, top: 36, bottom: 85 },
+          xAxis: { type: "category", data: show.map(v => v.name), axisLabel: { color: "#9fb1cf", rotate: 28 } },
+          yAxis: { type: "value", axisLabel: { color: "#9fb1cf" }, name: "%" },
+          series: [{ type: "bar", data: show.map(v => ({ value: v.pct, itemStyle: { color: v.pct >= 0 ? "#40c057" : "#fa5252" } })) }]
+        }, true);
+      }
+
+      function renderPairs(rows) {
+        pairSections.innerHTML = "";
+        itemNav.innerHTML = "";
+        pairCharts.splice(0, pairCharts.length);
+
+        const allItems = [...new Set(rows.map(r => r.item_name))];
+        const pairSet = new Set(PAIRS.flatMap(p => [p.left, p.right]));
+        const others = allItems.filter(i => !pairSet.has(i)).sort((a, b) => a.localeCompare(b, "zh-CN"));
+        sideMeta.textContent = `Pairs: ${PAIRS.length} | Others: ${others.length}`;
+
+        let cur = "";
+        PAIRS.forEach((p, idx) => {
+          if (!itemExists(rows, p.left) && !itemExists(rows, p.right)) return;
+          if (p.group !== cur) {
+            cur = p.group;
+            const t = document.createElement("div");
+            t.className = "group-title";
+            t.textContent = p.group;
+            itemNav.appendChild(t);
+          }
+          const nav = document.createElement("a");
+          nav.href = `#pair-${idx}`;
+          nav.textContent = `${p.left} -> ${p.right}`;
+          itemNav.appendChild(nav);
+
+          const block = document.createElement("section");
+          block.className = "panel pair-block";
+          block.id = `pair-${idx}`;
+          block.innerHTML = `
+            <div class="item-head">
+              <h3 style="margin:0;">${p.left} -> ${p.right}</h3>
+              <span class="badge">${p.group}</span>
+            </div>
+            <div class="pair-row">
+              <div><div class="meta">${p.left}</div><div class="chart" id="pair-${idx}-l"></div></div>
+              <div><div class="meta">${p.right}</div><div class="chart" id="pair-${idx}-r"></div></div>
+            </div>`;
+          pairSections.appendChild(block);
+
+          const ls = seriesForItem(rows, p.left);
+          const rs = seriesForItem(rows, p.right);
+          const lc = echarts.init(document.getElementById(`pair-${idx}-l`));
+          const rc = echarts.init(document.getElementById(`pair-${idx}-r`));
+          lc.setOption(chartOption(ls, "Price + Qty"), true);
+          rc.setOption(chartOption(rs, "Price + Qty"), true);
+          pairCharts.push(lc, rc);
+        });
+
+        if (others.length) {
+          const t = document.createElement("div");
+          t.className = "group-title";
+          t.textContent = "OTHER";
+          itemNav.appendChild(t);
+          others.forEach((item, i) => {
+            const id = `other-${i}`;
+            const nav = document.createElement("a");
+            nav.href = `#${id}`;
+            nav.textContent = item;
+            itemNav.appendChild(nav);
+
+            const block = document.createElement("section");
+            block.className = "panel pair-block";
+            block.id = id;
+            block.innerHTML = `
+              <div class="item-head">
+                <h3 style="margin:0;">${item}</h3>
+                <span class="badge">OTHER</span>
+              </div>
+              <div class="chart" id="${id}-c"></div>`;
+            pairSections.appendChild(block);
+
+            const s = seriesForItem(rows, item);
+            const c = echarts.init(document.getElementById(`${id}-c`));
+            c.setOption(chartOption(s, "Price + Qty"), true);
+            pairCharts.push(c);
+          });
+        }
+      }
+
+      function render() {
+        const lookback = Number(lookbackSel.value || 0);
+        const rows = lookback > 0 && rowsAll.length > lookback ? rowsAll.slice(-lookback) : rowsAll;
+        renderSummary(rowsAll);
+        renderGlobal(rows);
+        renderPairs(rows);
+      }
+
+      lookbackSel.addEventListener("change", render);
+      window.addEventListener("resize", () => {
+        globalPrice.resize();
+        globalMovers.resize();
+        pairCharts.forEach(c => c.resize());
+      });
+      render();
+    })();
+  </script>
+</body>
+</html>
