@@ -27,6 +27,9 @@
     .nav a { display:block; text-decoration:none; color:var(--text); padding:6px 8px; border-radius:8px; font-size:13px; }
     .nav a:hover { background: rgba(255,255,255,.06); }
     .main { padding:14px; }
+    .tabbar { display:flex; gap:8px; margin-bottom:10px; }
+    .tab { border:1px solid var(--line); background:#0e1728; color:var(--text); border-radius:999px; padding:6px 14px; cursor:pointer; }
+    .tab.active { background:#1a2a45; border-color:#3b5d8f; }
     .panel {
       border:1px solid var(--line); border-radius:12px; padding:10px;
       background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.005));
@@ -34,12 +37,41 @@
     }
     .meta { color:var(--muted); font-size:12px; }
     .controls { display:flex; gap:10px; align-items:center; margin-top:8px; }
-    select { border-radius:8px; border:1px solid var(--line); background:#0e1728; color:var(--text); padding:6px 8px; }
+    select, input {
+      border-radius:8px; border:1px solid var(--line); background:#0e1728; color:var(--text); padding:6px 8px;
+    }
     .cards { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:8px; }
     .card { border:1px solid var(--line); border-radius:10px; background:#0e1728; padding:8px; }
     .card .k { color:var(--muted); font-size:12px; }
     .card .v { font-size:14px; font-weight:700; margin-top:4px; }
     .chart { height:280px; border:1px solid var(--line); border-radius:10px; background:#111a2d; margin-top:8px; }
+    .calc-grid { display:grid; grid-template-columns:repeat(5,minmax(140px,1fr)); gap:8px; margin-top:8px; }
+    .calc-grid .field { display:flex; flex-direction:column; gap:4px; }
+    .calc-grid label { color:var(--muted); font-size:12px; }
+    .calc-result {
+      margin-top:10px; border:1px solid var(--line); border-radius:10px; background:#0e1728; padding:10px;
+      line-height:1.5; font-size:13px;
+    }
+    .import-box { margin-top:8px; }
+    .import-box textarea {
+      width:100%; min-height:110px; resize:vertical; border-radius:8px;
+      border:1px solid var(--line); background:#0e1728; color:var(--text); padding:8px;
+      font-family: Consolas, monospace; font-size:12px;
+    }
+    .focus-grid { display:grid; grid-template-columns:repeat(5,minmax(120px,1fr)); gap:8px; margin-top:8px; }
+    .focus-grid .field { display:flex; flex-direction:column; gap:4px; }
+    .focus-grid label { color:var(--muted); font-size:12px; }
+    .pager { display:flex; align-items:center; gap:8px; margin-top:8px; }
+    .sidebar-block {
+      margin-top:10px; border:1px solid var(--line); border-radius:10px; padding:8px; background:#0e1728;
+    }
+    .hidden { display:none !important; }
+    .btn {
+      border:1px solid var(--line); background:#0e1728; color:var(--text); border-radius:8px; padding:6px 10px; cursor:pointer;
+    }
+    .btn:disabled { opacity:.45; cursor:not-allowed; }
+    .good { color:#66d9a8; font-weight:700; }
+    .warn { color:#ffd166; font-weight:700; }
     .pair-block { margin-top: 22px; }
     .pair-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
     .item-head { display:flex; justify-content:space-between; align-items:baseline; gap:8px; flex-wrap:wrap; }
@@ -49,6 +81,8 @@
       .layout { grid-template-columns:1fr; }
       .sidebar { position:static; height:auto; border-right:0; border-bottom:1px solid var(--line); }
       .cards { grid-template-columns:repeat(2,1fr); }
+      .calc-grid { grid-template-columns:repeat(2,minmax(120px,1fr)); }
+      .focus-grid { grid-template-columns:repeat(2,minmax(120px,1fr)); }
       .pair-row { grid-template-columns:1fr; }
     }
   </style>
@@ -59,8 +93,48 @@
       <h2>Catalog</h2>
       <div class="small" id="sideMeta">Loading...</div>
       <div class="nav" id="itemNav"></div>
+      <div id="customSidebarControls" class="sidebar-block hidden">
+        <div class="field">
+          <label for="presetSel" class="meta">自定义分类</label>
+          <select id="presetSel"></select>
+        </div>
+        <div class="field" style="margin-top:8px;">
+          <label for="presetNameInput" class="meta">分类名称</label>
+          <input id="presetNameInput" type="text" placeholder="例如：铭文冲刺盘" />
+        </div>
+        <div class="pager">
+          <button id="presetSaveBtn" class="btn" type="button">保存/覆盖</button>
+          <button id="presetDeleteBtn" class="btn" type="button">删除分类</button>
+        </div>
+        <div class="field">
+          <label for="focusItemsSel" class="meta">关注物品（可多选）</label>
+          <select id="focusItemsSel" multiple size="8"></select>
+        </div>
+        <div class="field" style="margin-top:8px;">
+          <label for="focusPageSizeSel" class="meta">每页显示</label>
+          <select id="focusPageSizeSel">
+            <option value="3">3</option>
+            <option value="6" selected>6</option>
+            <option value="9">9</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+        <div class="pager">
+          <button id="focusPrevBtn" class="btn" type="button">上一页</button>
+          <button id="focusNextBtn" class="btn" type="button">下一页</button>
+        </div>
+        <div id="focusPageMeta" class="meta" style="margin-top:6px;">第 1 / 1 页</div>
+        <div id="focusCount" class="meta">未筛选</div>
+        <div style="margin-top:8px;">
+          <button id="focusClearBtn" class="btn" type="button">清空筛选</button>
+        </div>
+      </div>
     </aside>
     <main class="main">
+      <div class="tabbar">
+        <button id="modeAllTab" class="tab active" type="button">全部</button>
+        <button id="modeCustomTab" class="tab" type="button">自定义</button>
+      </div>
       <section class="panel">
         <h2 style="margin:0 0 8px;">Merchant Overview</h2>
         <div class="meta" id="metaLine">-</div>
@@ -78,8 +152,55 @@
       </section>
 
       <section class="panel">
+        <h3 style="margin:0;">本地快速导入（AHMerchant 文本）</h3>
+        <div class="meta">在游戏内点击 Select All 后 Ctrl+C，把文本粘贴到下面，点“导入到本地”。导入数据仅保存在当前浏览器本地。</div>
+        <div class="import-box">
+          <textarea id="importText" placeholder="粘贴 AHMercant Replicate Export 文本..."></textarea>
+        </div>
+        <div class="controls">
+          <button id="importBtn" class="btn" type="button">导入到本地</button>
+          <button id="clearLocalBtn" class="btn" type="button">清空本地导入</button>
+          <div id="importMeta" class="meta">本地导入记录：0 条</div>
+        </div>
+      </section>
+
+      <section class="panel">
         <h3 style="margin:0;">Upstream/Downstream Side-by-Side</h3>
         <div id="pairSections"></div>
+      </section>
+
+      <section class="panel">
+        <h3 style="margin:0;">加工对比计算器（原料零成本）</h3>
+        <div class="meta">选择你的原料和数量，比较“直接卖原料”与“加工成下游后卖”。默认其他辅料按R1市场价采购，税率默认5%。</div>
+        <div class="calc-grid">
+          <div class="field">
+            <label for="calcItemSel">原料</label>
+            <select id="calcItemSel"></select>
+          </div>
+          <div class="field">
+            <label for="calcInputRank">原料品级</label>
+            <select id="calcInputRank">
+              <option value="1">R1</option>
+              <option value="2">R2</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="calcInputQty">原料数量</label>
+            <input id="calcInputQty" type="number" min="1" step="1" value="100" />
+          </div>
+          <div class="field">
+            <label for="calcOutputRank">成品品级</label>
+            <select id="calcOutputRank">
+              <option value="1">R1</option>
+              <option value="2">R2</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="calcFeePct">税率(%)</label>
+            <input id="calcFeePct" type="number" min="0" max="20" step="0.1" value="5" />
+          </div>
+        </div>
+        <div id="calcResult" class="calc-result">等待计算...</div>
       </section>
 
       <section class="panel">
@@ -127,18 +248,225 @@
       }
 
       const lookbackSel = document.getElementById("lookbackSel");
+      const modeAllTab = document.getElementById("modeAllTab");
+      const modeCustomTab = document.getElementById("modeCustomTab");
+      const customSidebarControls = document.getElementById("customSidebarControls");
+      const presetSel = document.getElementById("presetSel");
+      const presetNameInput = document.getElementById("presetNameInput");
+      const presetSaveBtn = document.getElementById("presetSaveBtn");
+      const presetDeleteBtn = document.getElementById("presetDeleteBtn");
+      const importText = document.getElementById("importText");
+      const importBtn = document.getElementById("importBtn");
+      const clearLocalBtn = document.getElementById("clearLocalBtn");
+      const importMeta = document.getElementById("importMeta");
       const metaLine = document.getElementById("metaLine");
       const analysisText = document.getElementById("analysisText");
       const cardsEl = document.getElementById("overviewCards");
       const pairSections = document.getElementById("pairSections");
+      const focusItemsSel = document.getElementById("focusItemsSel");
+      const focusPageSizeSel = document.getElementById("focusPageSizeSel");
+      const focusClearBtn = document.getElementById("focusClearBtn");
+      const focusCount = document.getElementById("focusCount");
+      const focusPrevBtn = document.getElementById("focusPrevBtn");
+      const focusNextBtn = document.getElementById("focusNextBtn");
+      const focusPageMeta = document.getElementById("focusPageMeta");
+      const calcItemSel = document.getElementById("calcItemSel");
+      const calcInputRank = document.getElementById("calcInputRank");
+      const calcInputQty = document.getElementById("calcInputQty");
+      const calcOutputRank = document.getElementById("calcOutputRank");
+      const calcFeePct = document.getElementById("calcFeePct");
+      const calcResult = document.getElementById("calcResult");
       const itemNav = document.getElementById("itemNav");
       const sideMeta = document.getElementById("sideMeta");
       const globalPrice = echarts.init(document.getElementById("globalPrice"));
       const globalMovers = echarts.init(document.getElementById("globalMovers"));
       const pairCharts = [];
+      let focusPage = 1;
+      let viewMode = "all";
+      const LOCAL_ROWS_KEY = "wow_ah_local_rows_v1";
+      const PRESETS_KEY = "wow_ah_focus_presets_v1";
+      const ACTIVE_PRESET_KEY = "wow_ah_active_preset_v1";
+      const VIEW_MODE_KEY = "wow_ah_view_mode_v1";
+      let presets = {};
+      let activePreset = "";
+      const RECIPES = [
+        {
+          name: "猪黄墨水（白银叶路线）",
+          output: "猪黄墨水",
+          outputMin: 2,
+          mats: [
+            { item: "粉末颜料", qty: 20 },
+            { item: "白银叶颜料", qty: 10 },
+            { item: "法力百合颜料", qty: 5 }
+          ]
+        },
+        {
+          name: "标色墨水（血艳蓟路线）",
+          output: "标色墨水",
+          outputMin: 2,
+          mats: [
+            { item: "粉末颜料", qty: 20 },
+            { item: "血艳蓟颜料", qty: 10 },
+            { item: "法力百合颜料", qty: 5 }
+          ]
+        }
+      ];
 
       function itemExists(rows, name) {
         return rows.some(r => r.item_name === name);
+      }
+
+      function loadLocalRows() {
+        try {
+          const raw = localStorage.getItem(LOCAL_ROWS_KEY);
+          if (!raw) return [];
+          const arr = JSON.parse(raw);
+          if (!Array.isArray(arr)) return [];
+          return arr.map(r => ({
+            ...r,
+            rank: Number(r.rank),
+            price: Number(r.price),
+            qty: Number(r.qty),
+            ts: String(r.ts)
+          })).filter(r => r.item_name && Number.isFinite(r.price) && Number.isFinite(r.qty));
+        } catch (_) {
+          return [];
+        }
+      }
+
+      function loadPresets() {
+        try {
+          const raw = localStorage.getItem(PRESETS_KEY);
+          const map = raw ? JSON.parse(raw) : {};
+          return (map && typeof map === "object") ? map : {};
+        } catch (_) {
+          return {};
+        }
+      }
+
+      function savePresets() {
+        localStorage.setItem(PRESETS_KEY, JSON.stringify(presets));
+      }
+
+      function refreshPresetSelect() {
+        const names = Object.keys(presets).sort((a, b) => a.localeCompare(b, "zh-CN"));
+        const options = ['<option value="">未选择</option>'].concat(
+          names.map(n => `<option value="${n}">${n}</option>`)
+        );
+        presetSel.innerHTML = options.join("");
+        if (activePreset && presets[activePreset]) {
+          presetSel.value = activePreset;
+          presetNameInput.value = activePreset;
+        } else {
+          presetSel.value = "";
+        }
+      }
+
+      function applyPreset(name) {
+        activePreset = name || "";
+        localStorage.setItem(ACTIVE_PRESET_KEY, activePreset);
+        const items = presets[activePreset] || [];
+        const set = new Set(items);
+        [...focusItemsSel.options].forEach(o => { o.selected = set.has(o.value); });
+      }
+
+      function ensureFocusOptions(rows) {
+        const allItems = [...new Set(rows.map(r => r.item_name))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+        const current = new Set([...focusItemsSel.options].map(o => o.value));
+        if (allItems.length === current.size && allItems.every(v => current.has(v))) return;
+        focusItemsSel.innerHTML = allItems.map(i => `<option value="${i}">${i}</option>`).join("");
+        if (activePreset && presets[activePreset]) applyPreset(activePreset);
+      }
+
+      function saveLocalRows(rows) {
+        localStorage.setItem(LOCAL_ROWS_KEY, JSON.stringify(rows));
+      }
+
+      function getAllRows() {
+        return [...rowsAll, ...localRows].sort((a, b) => new Date(a.ts) - new Date(b.ts));
+      }
+
+      function updateImportMeta() {
+        importMeta.textContent = `本地导入记录：${localRows.length} 条`;
+      }
+
+      function parsePriceFromText(text) {
+        if (!text) return NaN;
+        const t = String(text).trim();
+        const g = (t.match(/(\d+(?:\.\d+)?)\s*金/) || [])[1];
+        const s = (t.match(/(\d+(?:\.\d+)?)\s*银/) || [])[1];
+        const c = (t.match(/(\d+(?:\.\d+)?)\s*铜/) || [])[1];
+        if (g || s || c) {
+          return (Number(g || 0)) + (Number(s || 0) / 100) + (Number(c || 0) / 10000);
+        }
+        const n = Number(t);
+        return Number.isFinite(n) ? n : NaN;
+      }
+
+      function parseMinUnitPrice(raw, text) {
+        const fromText = parsePriceFromText(text);
+        if (Number.isFinite(fromText)) return fromText;
+        const n = Number(raw);
+        if (!Number.isFinite(n)) return NaN;
+        if (Number.isInteger(n) && n >= 10000) return n / 10000;
+        return n;
+      }
+
+      function normalizeNameRank(name) {
+        const n = String(name || "").trim();
+        const m = n.match(/^(.*?)(?:\s*[Rr]ank\s*(\d)|\((\d)\)|（(\d)）|\[(\d)\])$/);
+        if (m) {
+          const rank = Number(m[2] || m[3] || m[4] || m[5] || 1);
+          return { name: m[1].trim(), rank: Number.isFinite(rank) ? rank : 1 };
+        }
+        return { name: n, rank: 1 };
+      }
+
+      function parseReplicateText(rawText) {
+        const text = String(rawText || "").replace(/\r/g, "").trim();
+        if (!text) return { rows: [], ts: null, error: "没有粘贴内容" };
+        const lines = text.split("\n").map(v => v.trim()).filter(Boolean);
+        let ts = null;
+        const tsLine = lines.find(v => /ScanTime/i.test(v));
+        if (tsLine) {
+          const m = tsLine.match(/(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2})/);
+          if (m) ts = m[1];
+        }
+        if (!ts) {
+          const d = new Date();
+          const pad = n => String(n).padStart(2, "0");
+          ts = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+        }
+
+        const headerIdx = lines.findIndex(v => /itemID/i.test(v) && /name/i.test(v) && /listingCount/i.test(v));
+        if (headerIdx < 0) return { rows: [], ts, error: "未识别到导出表头（itemID/name/minUnitPrice/listingCount）" };
+        const sep = lines[headerIdx].includes("\t") ? "\t" : (lines[headerIdx].includes("|") ? "|" : ",");
+        const cols = lines[headerIdx].split(sep).map(v => v.trim());
+        const idxName = cols.findIndex(v => /name/i.test(v));
+        const idxPrice = cols.findIndex(v => /minUnitPrice$/i.test(v));
+        const idxPriceText = cols.findIndex(v => /minUnitPriceText/i.test(v));
+        const idxCount = cols.findIndex(v => /listingCount/i.test(v));
+        if (idxName < 0 || idxPrice < 0 || idxCount < 0) return { rows: [], ts, error: "表头列不足，缺少 name/minUnitPrice/listingCount" };
+
+        const parsed = [];
+        for (let i = headerIdx + 1; i < lines.length; i++) {
+          const parts = lines[i].split(sep).map(v => v.trim());
+          if (parts.length < cols.length) continue;
+          const rawName = parts[idxName];
+          const qty = Number(parts[idxCount]);
+          const p = parseMinUnitPrice(parts[idxPrice], idxPriceText >= 0 ? parts[idxPriceText] : "");
+          if (!rawName || !Number.isFinite(qty) || !Number.isFinite(p)) continue;
+          const nr = normalizeNameRank(rawName);
+          parsed.push({
+            item_name: nr.name,
+            rank: nr.rank,
+            price: p,
+            qty: qty,
+            ts
+          });
+        }
+        if (!parsed.length) return { rows: [], ts, error: "没有解析到有效数据行" };
+        return { rows: parsed, ts, error: null };
       }
 
       function chartOption(series, title) {
@@ -226,13 +554,79 @@
         pairCharts.splice(0, pairCharts.length);
 
         const allItems = [...new Set(rows.map(r => r.item_name))];
+        ensureFocusOptions(rows);
+        const selectedItems = [...focusItemsSel.selectedOptions].map(o => o.value);
+        const isCustom = viewMode === "custom";
+        const pageSize = Math.max(1, Number(focusPageSizeSel.value || 6));
+
+        let visibleItems;
+        if (isCustom) {
+          visibleItems = selectedItems.filter(i => itemExists(rows, i));
+        } else {
+          visibleItems = allItems.slice().sort((a, b) => a.localeCompare(b, "zh-CN"));
+        }
+
+        let totalPages = 1;
+        let pageItems = visibleItems;
+        if (isCustom) {
+          totalPages = Math.max(1, Math.ceil(visibleItems.length / pageSize));
+          if (focusPage > totalPages) focusPage = totalPages;
+          const start = (focusPage - 1) * pageSize;
+          pageItems = visibleItems.slice(start, start + pageSize);
+        } else {
+          focusPage = 1;
+        }
+        const pageSet = new Set(pageItems);
+        focusCount.textContent = isCustom
+          ? `已选 ${selectedItems.length} 项，展示 ${pageItems.length} 项`
+          : `全部模式：${visibleItems.length} 项`;
+        focusPageMeta.textContent = `第 ${focusPage} / ${totalPages} 页`;
+        focusPrevBtn.disabled = !isCustom || focusPage <= 1;
+        focusNextBtn.disabled = !isCustom || focusPage >= totalPages;
+
         const pairSet = new Set(PAIRS.flatMap(p => [p.left, p.right]));
         const others = allItems.filter(i => !pairSet.has(i)).sort((a, b) => a.localeCompare(b, "zh-CN"));
-        sideMeta.textContent = `Pairs: ${PAIRS.length} | Others: ${others.length}`;
+        sideMeta.textContent = `Pairs: ${PAIRS.length} | Others: ${others.length} | Mode: ${isCustom ? "CUSTOM" : "ALL"}`;
+
+        if (isCustom) {
+          if (!selectedItems.length) {
+            pairSections.innerHTML = `<div class="meta">自定义模式下请先在左侧多选关注物品。</div>`;
+            return;
+          }
+          const t = document.createElement("div");
+          t.className = "group-title";
+          t.textContent = "FOCUS";
+          itemNav.appendChild(t);
+          pageItems.forEach((item, i) => {
+            const id = `focus-${i}`;
+            const nav = document.createElement("a");
+            nav.href = `#${id}`;
+            nav.textContent = item;
+            itemNav.appendChild(nav);
+
+            const block = document.createElement("section");
+            block.className = "panel pair-block";
+            block.id = id;
+            block.innerHTML = `
+              <div class="item-head">
+                <h3 style="margin:0;">${item}</h3>
+                <span class="badge">FOCUS</span>
+              </div>
+              <div class="chart" id="${id}-c"></div>`;
+            pairSections.appendChild(block);
+
+            const s = seriesForItem(rows, item);
+            const c = echarts.init(document.getElementById(`${id}-c`));
+            c.setOption(chartOption(s, "Price + Qty"), true);
+            pairCharts.push(c);
+          });
+          return;
+        }
 
         let cur = "";
         PAIRS.forEach((p, idx) => {
           if (!itemExists(rows, p.left) && !itemExists(rows, p.right)) return;
+          if (!pageSet.has(p.left) && !pageSet.has(p.right)) return;
           if (p.group !== cur) {
             cur = p.group;
             const t = document.createElement("div");
@@ -273,7 +667,7 @@
           t.className = "group-title";
           t.textContent = "OTHER";
           itemNav.appendChild(t);
-          others.forEach((item, i) => {
+          others.filter(item => pageSet.has(item)).forEach((item, i) => {
             const id = `other-${i}`;
             const nav = document.createElement("a");
             nav.href = `#${id}`;
@@ -299,20 +693,185 @@
         }
       }
 
+      function buildLastQuoteMap(rows) {
+        const m = new Map();
+        rows.forEach(r => m.set(`${r.item_name}|${r.rank}`, r.price));
+        return m;
+      }
+
+      function renderProcessCalc(rows) {
+        const quoteMap = buildLastQuoteMap(rows);
+        const allItems = [...new Set(rows.map(r => r.item_name))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+        if (!calcItemSel.options.length) {
+          calcItemSel.innerHTML = allItems.map(i => `<option value="${i}">${i}</option>`).join("");
+          if (allItems.includes("白银叶颜料")) calcItemSel.value = "白银叶颜料";
+        }
+
+        const item = calcItemSel.value;
+        const inputRank = Number(calcInputRank.value || 1);
+        const outputRank = Number(calcOutputRank.value || 1);
+        const ownQty = Math.max(0, Number(calcInputQty.value || 0));
+        const feeRatio = Math.max(0, Math.min(20, Number(calcFeePct.value || 5))) / 100;
+        const rawPrice = quoteMap.get(`${item}|${inputRank}`);
+
+        if (!item || !rawPrice || ownQty <= 0) {
+          calcResult.innerHTML = "请先选择有价格的原料并输入数量。";
+          return;
+        }
+
+        const rawNet = ownQty * rawPrice * (1 - feeRatio);
+        const related = RECIPES.filter(r => r.mats.some(m => m.item === item));
+        if (!related.length) {
+          calcResult.innerHTML = `当前未配置 <b>${item}</b> 的下游配方。<br/>直接卖原料净收入约：<b>${rawNet.toFixed(2)}g</b>`;
+          return;
+        }
+
+        const lines = [
+          `直接卖原料净收入：<b>${rawNet.toFixed(2)}g</b>（${ownQty} * ${rawPrice.toFixed(2)} * ${(1 - feeRatio).toFixed(2)}）`
+        ];
+
+        related.forEach(recipe => {
+          const ownMat = recipe.mats.find(m => m.item === item);
+          const crafts = ownQty / ownMat.qty;
+          const outputQty = crafts * recipe.outputMin;
+          const outPrice = quoteMap.get(`${recipe.output}|${outputRank}`);
+
+          if (!outPrice) {
+            lines.push(`<span class="warn">${recipe.name}</span>：缺少 ${recipe.output} R${outputRank} 最新价格，无法计算。`);
+            return;
+          }
+
+          let otherCost = 0;
+          let missingPrice = false;
+          recipe.mats.forEach(m => {
+            if (m.item === item) return;
+            const p = quoteMap.get(`${m.item}|1`);
+            if (!p) missingPrice = true;
+            else otherCost += crafts * m.qty * p;
+          });
+          if (missingPrice) {
+            lines.push(`<span class="warn">${recipe.name}</span>：缺少辅料R1价格，无法完整计算。`);
+            return;
+          }
+
+          const outputNet = outputQty * outPrice * (1 - feeRatio);
+          const processNet = outputNet - otherCost;
+          const diff = processNet - rawNet;
+          const verdict = diff >= 0 ? "建议加工" : "建议直卖";
+          const cls = diff >= 0 ? "good" : "warn";
+          lines.push(
+            [
+              `<span class="${cls}">${recipe.name}</span>（成品按R${outputRank}）`,
+              `- 预计最少产出：${outputQty.toFixed(2)} 个`,
+              `- 成品净收入：${outputNet.toFixed(2)}g`,
+              `- 需买辅料成本：${otherCost.toFixed(2)}g`,
+              `- 加工净收益：${processNet.toFixed(2)}g`,
+              `- 对比直卖差额：${diff >= 0 ? "+" : ""}${diff.toFixed(2)}g`,
+              `- 结论：<b>${verdict}</b>`
+            ].join("<br/>")
+          );
+        });
+
+        calcResult.innerHTML = lines.join("<hr style='border-color:#20304f;border-style:solid;border-width:1px 0 0 0;'/>");
+      }
+
+      let localRows = loadLocalRows();
+      presets = loadPresets();
+      activePreset = localStorage.getItem(ACTIVE_PRESET_KEY) || "";
+      viewMode = localStorage.getItem(VIEW_MODE_KEY) || "all";
+      if (viewMode !== "all" && viewMode !== "custom") viewMode = "all";
+      refreshPresetSelect();
+
       function render() {
+        const all = getAllRows();
         const lookback = Number(lookbackSel.value || 0);
-        const rows = lookback > 0 && rowsAll.length > lookback ? rowsAll.slice(-lookback) : rowsAll;
-        renderSummary(rowsAll);
+        const rows = lookback > 0 && all.length > lookback ? all.slice(-lookback) : all;
+        modeAllTab.classList.toggle("active", viewMode === "all");
+        modeCustomTab.classList.toggle("active", viewMode === "custom");
+        customSidebarControls.classList.toggle("hidden", viewMode !== "custom");
+        renderSummary(all);
         renderGlobal(rows);
         renderPairs(rows);
+        renderProcessCalc(all);
+        updateImportMeta();
       }
 
       lookbackSel.addEventListener("change", render);
+      modeAllTab.addEventListener("click", () => { viewMode = "all"; localStorage.setItem(VIEW_MODE_KEY, viewMode); render(); });
+      modeCustomTab.addEventListener("click", () => { viewMode = "custom"; localStorage.setItem(VIEW_MODE_KEY, viewMode); focusPage = 1; render(); });
+      presetSel.addEventListener("change", () => {
+        applyPreset(presetSel.value);
+        focusPage = 1;
+        render();
+      });
+      presetSaveBtn.addEventListener("click", () => {
+        const name = (presetNameInput.value || "").trim();
+        const items = [...focusItemsSel.selectedOptions].map(o => o.value);
+        if (!name) { focusCount.textContent = "请先输入分类名称"; return; }
+        if (!items.length) { focusCount.textContent = "请先选择至少1个物品"; return; }
+        presets[name] = items;
+        activePreset = name;
+        savePresets();
+        refreshPresetSelect();
+        applyPreset(name);
+        focusCount.textContent = `分类已保存：${name}（${items.length}项）`;
+      });
+      presetDeleteBtn.addEventListener("click", () => {
+        const name = presetSel.value || (presetNameInput.value || "").trim();
+        if (!name || !presets[name]) { focusCount.textContent = "没有可删除的分类"; return; }
+        delete presets[name];
+        if (activePreset === name) activePreset = "";
+        savePresets();
+        localStorage.setItem(ACTIVE_PRESET_KEY, activePreset);
+        refreshPresetSelect();
+        focusCount.textContent = `分类已删除：${name}`;
+      });
+      importBtn.addEventListener("click", () => {
+        const parsed = parseReplicateText(importText.value);
+        if (parsed.error) {
+          importMeta.textContent = `导入失败：${parsed.error}`;
+          return;
+        }
+        const key = r => `${r.ts}|${r.item_name}|${r.rank}|${r.price}|${r.qty}`;
+        const seen = new Set(localRows.map(key));
+        let added = 0;
+        parsed.rows.forEach(r => {
+          const k = key(r);
+          if (!seen.has(k)) {
+            localRows.push(r);
+            seen.add(k);
+            added++;
+          }
+        });
+        saveLocalRows(localRows);
+        importMeta.textContent = `导入成功：${added} 条（时间 ${parsed.ts}）`;
+        render();
+      });
+      clearLocalBtn.addEventListener("click", () => {
+        localRows = [];
+        saveLocalRows(localRows);
+        importMeta.textContent = "本地导入已清空";
+        render();
+      });
+      focusItemsSel.addEventListener("change", () => { focusPage = 1; render(); });
+      focusPageSizeSel.addEventListener("change", () => { focusPage = 1; render(); });
+      focusClearBtn.addEventListener("click", () => {
+        [...focusItemsSel.options].forEach(o => { o.selected = false; });
+        focusPage = 1;
+        render();
+      });
+      focusPrevBtn.addEventListener("click", () => { if (focusPage > 1) { focusPage -= 1; render(); } });
+      focusNextBtn.addEventListener("click", () => { focusPage += 1; render(); });
+      [calcItemSel, calcInputRank, calcInputQty, calcOutputRank, calcFeePct].forEach(el => {
+        el.addEventListener("input", () => renderProcessCalc(getAllRows()));
+        el.addEventListener("change", () => renderProcessCalc(getAllRows()));
+      });
       window.addEventListener("resize", () => {
         globalPrice.resize();
         globalMovers.resize();
         pairCharts.forEach(c => c.resize());
       });
+      updateImportMeta();
       render();
     })();
   </script>
