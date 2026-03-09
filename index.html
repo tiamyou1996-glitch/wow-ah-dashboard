@@ -1,282 +1,585 @@
 ﻿<!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WoW AH Merchant Dashboard</title>
+  <title>WoW AH Dashboard</title>
   <style>
-    :root { --bg:#0a0d12; --panel:#10141b; --text:#d9dee8; --muted:#9aa3b2; --line:#2a3140; --accent:#73b7ff; }
+    :root {
+      --bg-0: #05070f;
+      --bg-1: #080b17;
+      --bg-2: #0d1123;
+      --panel: #0e1226;
+      --panel-soft: #141a33;
+      --line: #232842;
+      --line-soft: #31385e;
+      --text: #f3f4fb;
+      --muted: #9ea6c5;
+      --accent: #a893ff;
+      --accent-2: #7a6bff;
+      --chip: #191e37;
+      --chip-active: #2a3056;
+      --chart-bg: #0c1123;
+      --ok: #7ddfa2;
+      --warn: #ffd38d;
+      --shadow: 0 22px 56px rgba(1, 2, 8, 0.62);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 20px;
+      --radius-pill: 999px;
+      --border-default: 1px solid var(--line);
+      --border-strong: 1px solid var(--line-soft);
+      --surface-0: #0f142b;
+      --surface-1: #151b36;
+      --surface-2: #1b2242;
+      --state-hover: #20274c;
+      --state-active-a: #6862ad;
+      --state-active-b: #4a4f84;
+    }
     * { box-sizing: border-box; }
     body {
       margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 78% -20%, rgba(168, 137, 255, 0.22), transparent 42%),
+        radial-gradient(circle at 12% 110%, rgba(119, 96, 255, 0.14), transparent 44%),
+        linear-gradient(160deg, var(--bg-0), var(--bg-1));
       color: var(--text);
-      font-family: Segoe UI, Arial, sans-serif;
-      background: var(--bg);
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
     }
-    .layout { display:grid; grid-template-columns:300px 1fr; min-height:100vh; }
+    .wrap {
+      width: min(1680px, calc(100vw - 24px));
+      margin: 12px auto;
+      min-height: calc(100vh - 24px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(10, 12, 24, 0.96), rgba(7, 9, 18, 0.97));
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 280px 1fr;
+    }
     .sidebar {
-      position: sticky; top: 0; height: 100vh; overflow: auto;
-      border-right: 1px solid var(--line); background:#0c1016; padding:12px;
+      border-right: var(--border-default);
+      background: linear-gradient(180deg, #0b0f20, #080b17);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
     }
-    .sidebar h2 { margin:0 0 8px; font-size:16px; }
-    .small { color:var(--muted); font-size:12px; margin-bottom:10px; }
-    .group-title { margin:10px 0 4px; color:#9fc6ff; font-size:12px; font-weight:700; }
-    .nav a { display:block; text-decoration:none; color:var(--text); padding:6px 8px; border-radius:8px; font-size:13px; }
-    .nav a:hover { background: rgba(255,255,255,.06); }
-    .main { padding:10px 12px; }
-    .main-grid { display:grid; grid-template-columns:360px 1fr; gap:10px; align-items:start; }
-    .left-pane, .right-pane { min-width:0; }
-    .tabbar { display:flex; gap:20px; margin-bottom:0; padding:10px 14px; border:1px solid var(--line); border-bottom:0; background:#0c1016; }
-    .tab {
-      border:0; background:transparent; color:var(--muted); border-radius:0; padding:4px 0; cursor:pointer;
-      border-bottom:2px solid transparent; font-weight:600;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: var(--border-default);
+      background: linear-gradient(180deg, #10152d, #0c1125);
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
     }
-    .tab.active { color:#fff; border-bottom-color:var(--accent); }
-    .wcl-filters {
-      border:1px solid var(--line); border-top:1px solid #1b2230; background:#0f141d; padding:10px 14px; margin-bottom:10px;
+    .brand-badge {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #b4a2ff, #7261ff);
+      box-shadow: 0 0 0 3px rgba(168, 147, 255, 0.14);
     }
-    .wcl-row { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
-    .wcl-row + .wcl-row { margin-top:8px; }
-    .wcl-chip {
-      border:1px solid #313a4b; background:#0a0f17; color:#c8d2e3; border-radius:4px; padding:5px 10px; font-size:12px;
+    .brand h1 {
+      font-size: 16px;
+      margin: 0;
+      letter-spacing: .3px;
     }
-    .wcl-spacer { flex:1; }
+    .brand .meta {
+      margin-top: 2px;
+      font-size: 11px;
+    }
+    .top-tabs {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .top-tab {
+      border: var(--border-default);
+      border-radius: var(--radius-md);
+      background: var(--surface-0);
+      color: #c4cced;
+      font-size: 16px;
+      text-align: left;
+      letter-spacing: 0.2px;
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: all .18s ease;
+    }
+    .top-tab:hover {
+      color: #eff2ff;
+      border-color: var(--line-soft);
+      background: var(--state-hover);
+    }
+    .top-tab.active {
+      color: #f6f4ff;
+      border-color: #5d62a0;
+      background: linear-gradient(140deg, var(--state-active-a), var(--state-active-b));
+      box-shadow: inset 0 1px 0 rgba(196, 180, 255, 0.34), 0 0 0 1px rgba(140, 130, 220, 0.2);
+    }
+    .side-foot {
+      margin-top: auto;
+      border: 1px solid #323961;
+      border-radius: var(--radius-md);
+      padding: 10px;
+      background: linear-gradient(180deg, rgba(93, 77, 173, 0.28), rgba(45, 50, 96, 0.2));
+    }
+    .side-foot .meta { font-size: 11px; }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      background: linear-gradient(180deg, rgba(11, 14, 30, .78), rgba(8, 10, 20, .82));
+    }
+    .header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(8, 10, 20, .74);
+      backdrop-filter: blur(4px);
+    }
+    .header-left h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: .2px;
+    }
+    .header-right {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .header-pill {
+      border: 1px solid #363d65;
+      background: #131935;
+      color: #cfd7f5;
+      border-radius: var(--radius-pill);
+      padding: 8px 14px;
+      font-size: 13px;
+    }
+    .sub-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      align-items: center;
+      background: rgba(15, 20, 40, .8);
+      color: #c7d8ef;
+      font-size: 16px;
+      padding: 12px 14px 14px;
+      border-bottom: var(--border-default);
+    }
+    .product-strip-wrap {
+      border-bottom: var(--border-default);
+      background: rgba(12, 17, 36, 0.9);
+      padding: 8px 14px 10px;
+    }
+    .product-strip {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: thin;
+      scrollbar-color: #555f93 #121833;
+      padding-bottom: 4px;
+    }
+    .product-chip {
+      border: 1px solid #3d456f;
+      border-radius: 10px;
+      background: #171d3a;
+      color: #cfd6f4;
+      height: 30px;
+      line-height: 28px;
+      padding: 0 12px;
+      font-size: 13px;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all .16s ease;
+      user-select: none;
+    }
+    .product-chip:hover {
+      border-color: #646eaa;
+      color: #eef2ff;
+      background: #1e2548;
+    }
+    .product-chip.active {
+      border-color: #7a7fc5;
+      color: #f7f8ff;
+      background: linear-gradient(180deg, #6a63ad, #4b4f84);
+      box-shadow: inset 0 1px 0 rgba(234, 229, 255, 0.2);
+    }
+    .sub-tab {
+      border: 1px solid transparent;
+      background: transparent;
+      font-size: 16px;
+      font-weight: 600;
+      color: #d3d9f4;
+      padding: 8px 18px;
+      min-height: 38px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all .18s ease;
+    }
+    .sub-tab:hover {
+      color: #f0f3ff;
+      border-color: #4f5885;
+      background: rgba(90, 99, 152, .16);
+    }
+    .sub-tab.active {
+      color: #f7fbff;
+      border-color: #8683b6;
+      background: linear-gradient(180deg, #6d68a5, #555180);
+      box-shadow:
+        inset 0 1px 0 rgba(231, 225, 255, 0.2),
+        0 3px 10px rgba(118, 105, 188, 0.24);
+    }
+
+    .page {
+      padding: 16px;
+      animation: pageFade .22s ease;
+    }
+    @keyframes pageFade {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      align-items: center;
+      background: linear-gradient(180deg, #171c36, #11152b);
+      color: var(--text);
+      padding: 12px 14px;
+      border: var(--border-strong);
+      border-bottom: 0;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+    .left-tools { display: flex; gap: 16px; align-items: center; }
+    .right-tools { display: flex; justify-content: flex-end; gap: 10px; align-items: center; }
+    .tool-select {
+      min-width: 220px;
+      border: 1px solid #3a4267;
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
+      font-size: 15px;
+      background: var(--surface-1);
+      color: #e9f2ff;
+      outline: none;
+      transition: border-color .18s ease, box-shadow .18s ease;
+    }
+    .tool-select:focus {
+      border-color: #7078b6;
+      box-shadow: 0 0 0 3px rgba(122, 112, 197, 0.2);
+    }
+    .tool-toggle {
+      border: 1px solid #3f466d;
+      border-radius: 10px;
+      background: var(--chip);
+      color: #d6dcf7;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      min-height: 34px;
+      padding: 0 12px;
+      opacity: .92;
+      transition: all .18s ease;
+      box-shadow: inset 0 1px 0 rgba(220, 225, 255, 0.06);
+    }
+    .tool-toggle:hover { border-color: #6b74ad; color: #f3f6ff; }
+    .tool-toggle.active {
+      border-color: #7a7fc5;
+      background: linear-gradient(180deg, var(--state-active-a), var(--state-active-b));
+      color: #f5faff;
+      opacity: 1;
+      box-shadow:
+        inset 0 1px 0 rgba(234, 229, 255, 0.2),
+        0 3px 9px rgba(113, 98, 188, 0.22);
+    }
+
+    .chart-box {
+      background:
+        radial-gradient(circle at 82% -38%, rgba(163, 138, 255, 0.2), transparent 55%),
+        linear-gradient(180deg, #11162d, var(--chart-bg));
+      border: var(--border-strong);
+      border-top: 0;
+      padding: 0;
+      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+    }
+    .chart-box::before {
+      content: "";
+      position: absolute;
+      left: 56px;
+      right: 58px;
+      top: 50px;
+      bottom: 70px;
+      background-image: radial-gradient(rgba(201, 190, 255, .34) 1.1px, transparent 1.1px);
+      background-size: 9px 9px;
+      opacity: .62;
+      pointer-events: none;
+    }
+    .hover-mini {
+      position: absolute;
+      right: 12px;
+      bottom: 40px;
+      z-index: 12;
+      min-width: 138px;
+      border: 1px solid #464f79;
+      border-radius: 10px;
+      background: rgba(16, 22, 45, 0.9);
+      box-shadow: 0 8px 24px rgba(5, 8, 20, .45);
+      padding: 8px 10px;
+      font-size: 12px;
+      color: #d8def6;
+      pointer-events: none;
+    }
+    .hover-mini .t { color: #aeb7db; margin-bottom: 4px; font-size: 11px; }
+    .hover-mini .r { display: flex; justify-content: space-between; gap: 10px; line-height: 1.5; }
+    .hover-mini .k { color: #aeb7db; }
+    .hover-mini .v { color: #f3f6ff; font-weight: 600; }
+    #mainChart { height: 740px; }
+
     .panel {
-      border:1px solid var(--line); border-radius:6px; padding:10px;
-      background:#0d131c;
-      margin-bottom:10px;
+      margin-top: 14px;
+      background:
+        radial-gradient(circle at 95% -35%, rgba(151, 117, 255, 0.1), transparent 45%),
+        linear-gradient(180deg, #141a34, #10142a);
+      border: var(--border-strong);
+      border-radius: var(--radius-md);
+      padding: 14px 14px 16px;
+      box-shadow: inset 0 1px 0 rgba(188, 198, 255, 0.08);
     }
-    .meta { color:var(--muted); font-size:12px; }
-    .controls { display:flex; gap:10px; align-items:center; margin-top:8px; }
-    select, input {
-      border-radius:4px; border:1px solid #313a4b; background:#0a0f17; color:var(--text); padding:6px 8px;
+    .panel h3 {
+      margin: 0 0 10px;
+      font-size: 17px;
+      letter-spacing: 0.3px;
+      color: #f0f7ff;
     }
-    .cards { display:grid; grid-template-columns:repeat(2,1fr); gap:8px; margin-top:8px; }
-    .card { border:1px solid var(--line); border-radius:10px; background:#0e1728; padding:8px; }
-    .card .k { color:var(--muted); font-size:12px; }
-    .card .v { font-size:14px; font-weight:700; margin-top:4px; }
-    .chart { height:280px; border:1px solid var(--line); border-radius:4px; background:#0a0f17; margin-top:8px; }
-    .chart.tall { height:340px; }
-    .chart-tools { display:flex; gap:6px; align-items:center; margin-top:6px; flex-wrap:wrap; }
-    .mini-btn {
-      border:1px solid #313a4b; background:#0a0f17; color:#c8d2e3;
-      border-radius:4px; padding:2px 8px; font-size:11px; cursor:pointer;
+    .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .meta {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.2px;
     }
-    .mini-btn.active { background:#1a2230; border-color:#56759a; color:#e7f1ff; }
-    .calc-grid { display:grid; grid-template-columns:repeat(5,minmax(140px,1fr)); gap:8px; margin-top:8px; }
-    .calc-grid .field { display:flex; flex-direction:column; gap:4px; }
-    .calc-grid label { color:var(--muted); font-size:12px; }
-    .calc-result {
-      margin-top:10px; border:1px solid var(--line); border-radius:10px; background:#0e1728; padding:10px;
-      line-height:1.5; font-size:13px;
-    }
-    .import-box { margin-top:8px; }
-    .import-box textarea {
-      width:100%; min-height:110px; resize:vertical; border-radius:8px;
-      border:1px solid var(--line); background:#0e1728; color:var(--text); padding:8px;
-      font-family: Consolas, monospace; font-size:12px;
-    }
-    .focus-grid { display:grid; grid-template-columns:repeat(5,minmax(120px,1fr)); gap:8px; margin-top:8px; }
-    .focus-grid .field { display:flex; flex-direction:column; gap:4px; }
-    .focus-grid label { color:var(--muted); font-size:12px; }
-    .pager { display:flex; align-items:center; gap:8px; margin-top:8px; }
-    .sidebar-block {
-      margin-top:10px; border:1px solid var(--line); border-radius:10px; padding:8px; background:#0e1728;
-    }
-    .hidden { display:none !important; }
     .btn {
-      border:1px solid #313a4b; background:#0a0f17; color:var(--text); border-radius:4px; padding:6px 10px; cursor:pointer;
+      border: 1px solid #4c537f;
+      background: var(--surface-2);
+      color: #e5f0ff;
+      border-radius: var(--radius-sm);
+      padding: 7px 12px;
+      cursor: pointer;
+      transition: all .18s ease;
     }
-    .btn:disabled { opacity:.45; cursor:not-allowed; }
-    .good { color:#66d9a8; font-weight:700; }
-    .warn { color:#ffd166; font-weight:700; }
-    .pair-block { margin-top: 22px; }
-    .pair-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-    .item-head { display:flex; justify-content:space-between; align-items:baseline; gap:8px; flex-wrap:wrap; }
-    .badge { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:2px 8px; font-size:11px; color:#b6cff3; background:#0e1728; }
-    pre { margin:0; white-space:pre-wrap; font-size:13px; line-height:1.45; }
-    @media (max-width:980px) {
-      .layout { grid-template-columns:1fr; }
-      .sidebar { position:static; height:auto; border-right:0; border-bottom:1px solid var(--line); }
-      .main-grid { grid-template-columns:1fr; }
-      .cards { grid-template-columns:repeat(2,1fr); }
-      .calc-grid { grid-template-columns:repeat(2,minmax(120px,1fr)); }
-      .focus-grid { grid-template-columns:repeat(2,minmax(120px,1fr)); }
-      .pair-row { grid-template-columns:1fr; }
+    .btn:hover {
+      border-color: #737bb8;
+      background: #2a2f56;
+    }
+    .btn:disabled { opacity: .5; cursor: not-allowed; }
+    input, select, textarea {
+      border: 1px solid #434a73;
+      background: var(--surface-1);
+      color: #e8f2ff;
+      border-radius: var(--radius-sm);
+      padding: 7px 9px;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #7a82bf;
+      box-shadow: 0 0 0 3px rgba(127, 121, 189, 0.22);
+    }
+    textarea { width: 100%; min-height: 96px; resize: vertical; font-family: Consolas, monospace; }
+    .hidden { display: none !important; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(260px, 1fr)); gap: 10px; }
+    .calc-result {
+      margin-top: 8px;
+      border: 1px solid #465080;
+      padding: 10px;
+      border-radius: var(--radius-sm);
+      background: #13172e;
+      line-height: 1.5;
+    }
+    .good { color: var(--ok); font-weight: 700; }
+    .warn { color: var(--warn); font-weight: 700; }
+
+    @media (max-width: 980px) {
+      .wrap {
+        margin: 0;
+        width: 100vw;
+        border-radius: 0;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+      }
+      .sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
+      .top-tabs { flex-direction: row; flex-wrap: wrap; }
+      .top-tab, .sub-tab { font-size: 14px; padding: 8px 12px; }
+      .tool-toggle { font-size: 13px; }
+      .product-chip { font-size: 12px; height: 28px; line-height: 26px; padding: 0 10px; }
+      .tool-select { font-size: 14px; min-width: 130px; }
+      .page { padding: 12px; }
+      #mainChart { height: 460px; }
+      .toolbar { grid-template-columns: 1fr; }
+      .right-tools { justify-content: flex-start; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .header-bar { padding: 10px 12px; }
+      .header-right { gap: 6px; }
+      .header-pill { padding: 7px 11px; font-size: 12px; }
     }
   </style>
 </head>
 <body>
-  <div class="layout">
+  <div class="wrap">
     <aside class="sidebar">
-      <h2>Catalog</h2>
-      <div class="small" id="sideMeta">Loading...</div>
-      <div class="nav" id="itemNav"></div>
-      <div id="customSidebarControls" class="sidebar-block hidden">
-        <div class="field">
-          <label for="presetSel" class="meta">自定义分类</label>
-          <select id="presetSel"></select>
+      <div class="brand">
+        <div class="brand-badge"></div>
+        <div>
+          <h1>AH Merchant</h1>
+          <div class="meta">WoW 12.0 交易面板</div>
         </div>
-        <div class="field" style="margin-top:8px;">
-          <label for="presetNameInput" class="meta">分类名称</label>
-          <input id="presetNameInput" type="text" placeholder="例如：铭文冲刺盘" />
-        </div>
-        <div class="pager">
-          <button id="presetSaveBtn" class="btn" type="button">保存/覆盖</button>
-          <button id="presetDeleteBtn" class="btn" type="button">删除分类</button>
-        </div>
-        <div class="field">
-          <label for="focusItemsSel" class="meta">关注物品（可多选）</label>
-          <select id="focusItemsSel" multiple size="8"></select>
-        </div>
-        <div class="field" style="margin-top:8px;">
-          <label for="focusPageSizeSel" class="meta">每页显示</label>
-          <select id="focusPageSizeSel">
-            <option value="3">3</option>
-            <option value="6" selected>6</option>
-            <option value="9">9</option>
-            <option value="12">12</option>
-          </select>
-        </div>
-        <div class="pager">
-          <button id="focusPrevBtn" class="btn" type="button">上一页</button>
-          <button id="focusNextBtn" class="btn" type="button">下一页</button>
-        </div>
-        <div id="focusPageMeta" class="meta" style="margin-top:6px;">第 1 / 1 页</div>
-        <div id="focusCount" class="meta">未筛选</div>
-        <div style="margin-top:8px;">
-          <button id="focusClearBtn" class="btn" type="button">清空筛选</button>
-        </div>
-        <hr style="border-color:#20304f;border-style:solid;border-width:1px 0 0 0; margin:10px 0;" />
-        <div class="field">
-          <label for="eventItemSel" class="meta">事件作用物品</label>
-          <select id="eventItemSel"></select>
-        </div>
-        <div class="field" style="margin-top:8px;">
-          <label for="eventTimeInput" class="meta">事件时间</label>
-          <input id="eventTimeInput" type="datetime-local" />
-        </div>
-        <div class="field" style="margin-top:8px;">
-          <label for="eventTitleInput" class="meta">事件标题</label>
-          <input id="eventTitleInput" type="text" placeholder="例如：版本更新/团本开放" />
-        </div>
-        <div class="field" style="margin-top:8px;">
-          <label for="eventNoteInput" class="meta">事件备注</label>
-          <input id="eventNoteInput" type="text" placeholder="可选" />
-        </div>
-        <div class="pager">
-          <button id="eventAddBtn" class="btn" type="button">新增事件</button>
-          <button id="eventDeleteBtn" class="btn" type="button">删除选中</button>
-        </div>
-        <div class="pager">
-          <button id="eventExportBtn" class="btn" type="button">导出events.json</button>
-          <button id="eventImportBtn" class="btn" type="button">导入events.json</button>
-          <input id="eventImportFile" type="file" accept="application/json" class="hidden" />
-        </div>
-        <div class="field" style="margin-top:8px;">
-          <label for="eventListSel" class="meta">已标记事件</label>
-          <select id="eventListSel" size="5"></select>
-        </div>
-        <div id="eventMeta" class="meta" style="margin-top:6px;">事件数：0</div>
+      </div>
+      <div class="top-tabs">
+        <button id="tabAnalysis" class="top-tab active" type="button">行情分析</button>
+        <button id="tabToolkit" class="top-tab" type="button">工具包</button>
+        <button id="tabOther" class="top-tab" type="button">其他功能</button>
+      </div>
+      <div class="side-foot">
+        <div style="font-size:13px;font-weight:600;">交易提示</div>
+        <div class="meta">先看价量，再看链路，再定“卖原料/做加工”。</div>
       </div>
     </aside>
+
     <main class="main">
-      <div class="tabbar">
-        <button id="modeAllTab" class="tab active" type="button">全部</button>
-        <button id="modeCustomTab" class="tab" type="button">自定义</button>
-      </div>
-      <div class="wcl-filters">
-        <div class="wcl-row">
-          <span class="wcl-chip">All Enemies</span>
-          <span class="wcl-chip">All Abilities</span>
-          <span class="wcl-spacer"></span>
-          <span class="wcl-chip">Price</span>
-          <span class="wcl-chip">Qty</span>
-          <span class="wcl-chip">Events</span>
+      <div class="header-bar">
+        <div class="header-left">
+          <h2>拍卖行经营看板</h2>
         </div>
-        <div class="wcl-row">
-          <span class="wcl-chip">Filter Expression</span>
-          <input id="quickFilterInput" type="text" placeholder="输入关键字筛选物品..." style="min-width:280px;" />
+        <div class="header-right">
+          <span class="header-pill">CN / 单服</span>
+          <span class="header-pill">实时追踪</span>
         </div>
       </div>
 
-      <div class="main-grid">
-        <div class="left-pane">
-          <section class="panel">
-            <h2 style="margin:0 0 8px;">Merchant Overview</h2>
-            <div class="meta" id="metaLine">-</div>
-            <div class="controls">
-              <label for="lookbackSel">Lookback points:</label>
-              <select id="lookbackSel">
-                <option value="0">All</option>
-                <option value="20">Last 20</option>
-                <option value="50">Last 50</option>
-                <option value="100">Last 100</option>
+      <div id="analysisPage">
+        <div class="sub-tabs">
+          <button id="catFocus" class="sub-tab">关注</button>
+          <button id="catHerb" class="sub-tab active">草药学</button>
+          <button id="catIns" class="sub-tab">铭文</button>
+          <button id="catOther" class="sub-tab">其他</button>
+        </div>
+        <div class="product-strip-wrap">
+          <div id="productStrip" class="product-strip"></div>
+        </div>
+
+        <div class="page">
+          <div class="toolbar">
+            <div class="left-tools">
+              <select id="productSel" class="tool-select"></select>
+              <select id="rankSel" class="tool-select">
+                <option value="all">星级选择: 全部</option>
+                <option value="r1">星级选择: R1</option>
+                <option value="r2">星级选择: R2</option>
               </select>
             </div>
-            <pre id="analysisText">No analysis</pre>
-            <div class="cards" id="overviewCards"></div>
-          </section>
-
-          <section class="panel">
-            <h3 style="margin:0;">本地快速导入（AHMerchant 文本）</h3>
-            <div class="meta">在游戏内点击 Select All 后 Ctrl+C，把文本粘贴到下面，点“导入到本地”。导入数据仅保存在当前浏览器本地。</div>
-            <div class="import-box">
-              <textarea id="importText" placeholder="粘贴 AHMercant Replicate Export 文本..."></textarea>
+            <div class="meta" id="analysisMeta">-</div>
+            <div class="right-tools">
+              <button id="toggleZone" class="tool-toggle active" type="button">高亮区间</button>
+              <button id="toggleMA" class="tool-toggle active" type="button">平均线</button>
+              <button id="toggleTrend" class="tool-toggle" type="button">趋势线</button>
             </div>
-            <div class="controls">
-              <button id="importBtn" class="btn" type="button">导入到本地</button>
-              <button id="clearLocalBtn" class="btn" type="button">清空本地导入</button>
-              <div id="importMeta" class="meta">本地导入记录：0 条</div>
+          </div>
+          <div class="chart-box">
+            <div id="mainChart"></div>
+            <div id="hoverMini" class="hover-mini">
+              <div class="t">库存</div>
+              <div class="r"><span class="k">R1 Qty</span><span id="miniR1Qty" class="v">-</span></div>
+              <div class="r"><span class="k">R2 Qty</span><span id="miniR2Qty" class="v">-</span></div>
             </div>
-          </section>
-
-          <section class="panel">
-            <h3 style="margin:0;">加工对比计算器（原料零成本）</h3>
-            <div class="meta">选择你的原料和数量，比较“直接卖原料”与“加工成下游后卖”。默认其他辅料按R1市场价采购，税率默认5%。</div>
-            <div class="calc-grid">
-              <div class="field">
-                <label for="calcItemSel">原料</label>
-                <select id="calcItemSel"></select>
-              </div>
-              <div class="field">
-                <label for="calcInputRank">原料品级</label>
-                <select id="calcInputRank">
-                  <option value="1">R1</option>
-                  <option value="2">R2</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="calcInputQty">原料数量</label>
-                <input id="calcInputQty" type="number" min="1" step="1" value="100" />
-              </div>
-              <div class="field">
-                <label for="calcOutputRank">成品品级</label>
-                <select id="calcOutputRank">
-                  <option value="1">R1</option>
-                  <option value="2">R2</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="calcFeePct">税率(%)</label>
-                <input id="calcFeePct" type="number" min="0" max="20" step="0.1" value="5" />
-              </div>
-            </div>
-            <div id="calcResult" class="calc-result">等待计算...</div>
-          </section>
+          </div>
         </div>
+      </div>
 
-        <div class="right-pane">
-          <section class="panel">
-            <h3 style="margin:0;">Upstream/Downstream Side-by-Side</h3>
-            <div id="pairSections"></div>
-          </section>
-          <section class="panel">
-            <h3 style="margin:0;">Global</h3>
-            <div id="globalPrice" class="chart tall"></div>
-            <div id="globalMovers" class="chart"></div>
-          </section>
-        </div>
+      <div id="toolkitPage" class="hidden page">
+        <section class="panel">
+          <h3>加工对比计算器（原料零成本）</h3>
+          <div class="meta">比较“直接卖原料”与“加工成下游后卖”。默认辅料按R1市场价采购，税率默认5%。</div>
+          <div class="grid-2">
+            <div>
+              <div class="meta">原料</div>
+              <select id="calcItemSel"></select>
+            </div>
+            <div>
+              <div class="meta">原料品级</div>
+              <select id="calcInputRank"><option value="1">R1</option><option value="2">R2</option></select>
+            </div>
+            <div>
+              <div class="meta">原料数量</div>
+              <input id="calcInputQty" type="number" min="1" step="1" value="100" />
+            </div>
+            <div>
+              <div class="meta">成品品级</div>
+              <select id="calcOutputRank"><option value="1">R1</option><option value="2">R2</option></select>
+            </div>
+            <div>
+              <div class="meta">税率(%)</div>
+              <input id="calcFeePct" type="number" min="0" max="20" step="0.1" value="5" />
+            </div>
+          </div>
+          <div id="calcResult" class="calc-result">等待计算...</div>
+        </section>
+      </div>
+
+      <div id="otherPage" class="hidden page">
+        <section class="panel">
+          <h3>本地快速导入（AHMerchant 文本）</h3>
+          <div class="meta">导入数据保存在当前浏览器本地，刷新不丢。</div>
+          <textarea id="importText" placeholder="粘贴 AHMercant Replicate Export 文本..."></textarea>
+          <div class="row" style="margin-top:8px;">
+            <button id="importBtn" class="btn" type="button">导入到本地</button>
+            <button id="clearLocalBtn" class="btn" type="button">清空本地导入</button>
+            <span id="importMeta" class="meta">本地导入记录：0 条</span>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h3>事件标记</h3>
+          <div class="grid-2">
+            <div>
+              <div class="meta">事件作用物品</div>
+              <select id="eventItemSel"></select>
+            </div>
+            <div>
+              <div class="meta">事件时间</div>
+              <input id="eventTimeInput" type="datetime-local" />
+            </div>
+            <div>
+              <div class="meta">事件标题</div>
+              <input id="eventTitleInput" type="text" />
+            </div>
+            <div>
+              <div class="meta">事件备注</div>
+              <input id="eventNoteInput" type="text" />
+            </div>
+          </div>
+          <div class="row" style="margin-top:8px;">
+            <button id="eventAddBtn" class="btn" type="button">新增事件</button>
+            <button id="eventDeleteBtn" class="btn" type="button">删除选中</button>
+            <button id="eventExportBtn" class="btn" type="button">导出events.json</button>
+            <button id="eventImportBtn" class="btn" type="button">导入events.json</button>
+            <input id="eventImportFile" type="file" accept="application/json" class="hidden" />
+          </div>
+          <div style="margin-top:8px;">
+            <div class="meta">已标记事件</div>
+            <select id="eventListSel" size="6" style="width:100%;"></select>
+            <div id="eventMeta" class="meta" style="margin-top:6px;">事件数：0</div>
+          </div>
+        </section>
       </div>
     </main>
   </div>
@@ -284,871 +587,605 @@
   <script src="./vendor/echarts.min.js"></script>
   <script src="./dashboard_data.js"></script>
   <script>
-    (function () {
-      const data = window.WOW_AH_DATA || { generated_at: "-", snapshots: [], analysis: {} };
-      const rowsAll = (data.snapshots || []).map(r => ({
-        ...r,
+    (() => {
+      const BASE_ROWS = (window.WOW_AH_DATA?.snapshots || []).map(r => ({
+        item_name: String(r.item_name || ""),
         rank: Number(r.rank),
         price: Number(r.unit_price_gold),
         qty: Number(r.available_quantity),
-        ts: String(r.observed_at)
-      })).filter(r => r.item_name && Number.isFinite(r.price) && Number.isFinite(r.qty))
+        ts: String(r.observed_at || "")
+      })).filter(r => r.item_name && Number.isFinite(r.rank) && Number.isFinite(r.price) && Number.isFinite(r.qty) && r.ts)
         .sort((a, b) => new Date(a.ts) - new Date(b.ts));
-      if (!rowsAll.length) return;
 
-      const PAIRS = [
-        { group: "铭文", left: "白银叶", right: "白银叶颜料" },
-        { group: "铭文", left: "宁心花", right: "粉末颜料" },
-        { group: "铭文", left: "艾泽之根", right: "编码艾泽之根" },
-        { group: "铭文", left: "法力百合", right: "法力百合颜料" },
-        { group: "铭文", left: "血艳蓟", right: "血艳蓟颜料" },
-        { group: "裁缝", left: "光明亚麻布", right: "注能光明亚麻布卷" },
-        { group: "裁缝", left: "光明亚麻布", right: "光明亚麻布卷" },
-        { group: "裁缝", left: "奥纹布", right: "奥纹布卷" }
-      ];
-
-      function latestAndPrev(rows) {
-        const ts = [...new Set(rows.map(r => r.ts))].sort((a, b) => new Date(a) - new Date(b));
-        return { latest: ts[ts.length - 1] || null, prev: ts[ts.length - 2] || null };
-      }
-
-      function seriesForItem(rows, item) {
-        const d = rows.filter(r => r.item_name === item);
-        return { rows: d, r1: d.filter(r => r.rank === 1), r2: d.filter(r => r.rank === 2) };
-      }
-
-      const lookbackSel = document.getElementById("lookbackSel");
-      const modeAllTab = document.getElementById("modeAllTab");
-      const modeCustomTab = document.getElementById("modeCustomTab");
-      const quickFilterInput = document.getElementById("quickFilterInput");
-      const customSidebarControls = document.getElementById("customSidebarControls");
-      const presetSel = document.getElementById("presetSel");
-      const presetNameInput = document.getElementById("presetNameInput");
-      const presetSaveBtn = document.getElementById("presetSaveBtn");
-      const presetDeleteBtn = document.getElementById("presetDeleteBtn");
-      const importText = document.getElementById("importText");
-      const importBtn = document.getElementById("importBtn");
-      const clearLocalBtn = document.getElementById("clearLocalBtn");
-      const importMeta = document.getElementById("importMeta");
-      const metaLine = document.getElementById("metaLine");
-      const analysisText = document.getElementById("analysisText");
-      const cardsEl = document.getElementById("overviewCards");
-      const pairSections = document.getElementById("pairSections");
-      const focusItemsSel = document.getElementById("focusItemsSel");
-      const focusPageSizeSel = document.getElementById("focusPageSizeSel");
-      const focusClearBtn = document.getElementById("focusClearBtn");
-      const focusCount = document.getElementById("focusCount");
-      const focusPrevBtn = document.getElementById("focusPrevBtn");
-      const focusNextBtn = document.getElementById("focusNextBtn");
-      const focusPageMeta = document.getElementById("focusPageMeta");
-      const eventItemSel = document.getElementById("eventItemSel");
-      const eventTimeInput = document.getElementById("eventTimeInput");
-      const eventTitleInput = document.getElementById("eventTitleInput");
-      const eventNoteInput = document.getElementById("eventNoteInput");
-      const eventAddBtn = document.getElementById("eventAddBtn");
-      const eventDeleteBtn = document.getElementById("eventDeleteBtn");
-      const eventExportBtn = document.getElementById("eventExportBtn");
-      const eventImportBtn = document.getElementById("eventImportBtn");
-      const eventImportFile = document.getElementById("eventImportFile");
-      const eventListSel = document.getElementById("eventListSel");
-      const eventMeta = document.getElementById("eventMeta");
-      const calcItemSel = document.getElementById("calcItemSel");
-      const calcInputRank = document.getElementById("calcInputRank");
-      const calcInputQty = document.getElementById("calcInputQty");
-      const calcOutputRank = document.getElementById("calcOutputRank");
-      const calcFeePct = document.getElementById("calcFeePct");
-      const calcResult = document.getElementById("calcResult");
-      const itemNav = document.getElementById("itemNav");
-      const sideMeta = document.getElementById("sideMeta");
-      const globalPrice = echarts.init(document.getElementById("globalPrice"));
-      const globalMovers = echarts.init(document.getElementById("globalMovers"));
-      const pairCharts = [];
-      let focusPage = 1;
-      let viewMode = "all";
       const LOCAL_ROWS_KEY = "wow_ah_local_rows_v1";
-      const PRESETS_KEY = "wow_ah_focus_presets_v1";
-      const ACTIVE_PRESET_KEY = "wow_ah_active_preset_v1";
-      const VIEW_MODE_KEY = "wow_ah_view_mode_v1";
       const EVENTS_KEY = "wow_ah_events_v1";
-      let presets = {};
-      let activePreset = "";
-      let events = [];
-      const RECIPES = [
-        {
-          name: "猪黄墨水（白银叶路线）",
-          output: "猪黄墨水",
-          outputMin: 2,
-          mats: [
-            { item: "粉末颜料", qty: 20 },
-            { item: "白银叶颜料", qty: 10 },
-            { item: "法力百合颜料", qty: 5 }
-          ]
-        },
-        {
-          name: "标色墨水（血艳蓟路线）",
-          output: "标色墨水",
-          outputMin: 2,
-          mats: [
-            { item: "粉末颜料", qty: 20 },
-            { item: "血艳蓟颜料", qty: 10 },
-            { item: "法力百合颜料", qty: 5 }
-          ]
-        }
+      const VIEW_TAB_KEY = "wow_ah_top_tab_v1";
+      const CAT_KEY = "wow_ah_category_v1";
+
+      const RECIPE = [
+        { name: "猪黄墨水（白银叶路线）", output: "猪黄墨水", outMin: 2, mats: [{ item: "粉末颜料", q: 20 }, { item: "白银叶颜料", q: 10 }, { item: "法力百合颜料", q: 5 }] },
+        { name: "标色墨水（血艳蓟路线）", output: "标色墨水", outMin: 2, mats: [{ item: "粉末颜料", q: 20 }, { item: "血艳蓟颜料", q: 10 }, { item: "法力百合颜料", q: 5 }] }
       ];
 
-      function itemExists(rows, name) {
-        return rows.some(r => r.item_name === name);
+      const CAT_MAP = {
+        focus: ["白银叶", "宁心花", "法力百合", "血艳蓟", "粉末颜料", "白银叶颜料", "法力百合颜料", "血艳蓟颜料", "猪黄墨水", "标色墨水"],
+        herb: ["白银叶", "宁心花", "法力百合", "血艳蓟", "艾泽之根", "圣光微粒", "原始能量微粒"],
+        ins: ["粉末颜料", "白银叶颜料", "法力百合颜料", "血艳蓟颜料", "编码艾泽之根", "猪黄墨水", "标色墨水", "灵魂密文"],
+        other: []
+      };
+
+      const el = (id) => document.getElementById(id);
+      const tabAnalysis = el("tabAnalysis");
+      const tabToolkit = el("tabToolkit");
+      const tabOther = el("tabOther");
+      const analysisPage = el("analysisPage");
+      const toolkitPage = el("toolkitPage");
+      const otherPage = el("otherPage");
+      const catFocus = el("catFocus");
+      const catHerb = el("catHerb");
+      const catIns = el("catIns");
+      const catOther = el("catOther");
+      const productSel = el("productSel");
+      const productStrip = el("productStrip");
+      const rankSel = el("rankSel");
+      const toggleZone = el("toggleZone");
+      const toggleMA = el("toggleMA");
+      const toggleTrend = el("toggleTrend");
+      const analysisMeta = el("analysisMeta");
+      const mainChart = echarts.init(el("mainChart"));
+      const miniR1Qty = el("miniR1Qty");
+      const miniR2Qty = el("miniR2Qty");
+
+      const calcItemSel = el("calcItemSel");
+      const calcInputRank = el("calcInputRank");
+      const calcInputQty = el("calcInputQty");
+      const calcOutputRank = el("calcOutputRank");
+      const calcFeePct = el("calcFeePct");
+      const calcResult = el("calcResult");
+
+      const importText = el("importText");
+      const importBtn = el("importBtn");
+      const clearLocalBtn = el("clearLocalBtn");
+      const importMeta = el("importMeta");
+
+      const eventItemSel = el("eventItemSel");
+      const eventTimeInput = el("eventTimeInput");
+      const eventTitleInput = el("eventTitleInput");
+      const eventNoteInput = el("eventNoteInput");
+      const eventAddBtn = el("eventAddBtn");
+      const eventDeleteBtn = el("eventDeleteBtn");
+      const eventExportBtn = el("eventExportBtn");
+      const eventImportBtn = el("eventImportBtn");
+      const eventImportFile = el("eventImportFile");
+      const eventListSel = el("eventListSel");
+      const eventMeta = el("eventMeta");
+
+      const state = {
+        top: localStorage.getItem(VIEW_TAB_KEY) || "analysis",
+        cat: localStorage.getItem(CAT_KEY) || "herb",
+        product: "",
+        rankMode: "all",
+        showZone: true,
+        showMA: true,
+        showTrend: false,
+        localRows: [],
+        events: []
+      };
+
+      function fmtNum(v, digits = 4) {
+        return Number(v).toLocaleString(undefined, { maximumFractionDigits: digits });
+      }
+      function setMiniQty(r1, r2) {
+        miniR1Qty.textContent = r1 == null ? "-" : fmtNum(r1, 0);
+        miniR2Qty.textContent = r2 == null ? "-" : fmtNum(r2, 0);
       }
 
       function loadLocalRows() {
         try {
           const raw = localStorage.getItem(LOCAL_ROWS_KEY);
-          if (!raw) return [];
-          const arr = JSON.parse(raw);
-          if (!Array.isArray(arr)) return [];
-          return arr.map(r => ({
-            ...r,
-            rank: Number(r.rank),
-            price: Number(r.price),
-            qty: Number(r.qty),
-            ts: String(r.ts)
-          })).filter(r => r.item_name && Number.isFinite(r.price) && Number.isFinite(r.qty));
-        } catch (_) {
-          return [];
-        }
+          const arr = raw ? JSON.parse(raw) : [];
+          return Array.isArray(arr) ? arr : [];
+        } catch (_) { return []; }
       }
-
-      function loadPresets() {
-        try {
-          const raw = localStorage.getItem(PRESETS_KEY);
-          const map = raw ? JSON.parse(raw) : {};
-          return (map && typeof map === "object") ? map : {};
-        } catch (_) {
-          return {};
-        }
-      }
-
-      function savePresets() {
-        localStorage.setItem(PRESETS_KEY, JSON.stringify(presets));
-      }
-
+      function saveLocalRows() { localStorage.setItem(LOCAL_ROWS_KEY, JSON.stringify(state.localRows)); }
       function loadEvents() {
         try {
           const raw = localStorage.getItem(EVENTS_KEY);
           const arr = raw ? JSON.parse(raw) : [];
-          if (!Array.isArray(arr)) return [];
-          return arr.filter(e => e && e.id && e.ts && e.title).map(e => ({
-            id: String(e.id),
-            ts: String(e.ts),
-            item: String(e.item || "*"),
-            title: String(e.title),
-            note: String(e.note || "")
-          }));
-        } catch (_) {
-          return [];
+          return Array.isArray(arr) ? arr : [];
+        } catch (_) { return []; }
+      }
+      function saveEvents() { localStorage.setItem(EVENTS_KEY, JSON.stringify(state.events)); }
+
+      function rowsAll() {
+        return [...BASE_ROWS, ...state.localRows].sort((a, b) => new Date(a.ts) - new Date(b.ts));
+      }
+      function latestPriceMap() {
+        const m = new Map();
+        rowsAll().forEach(r => m.set(`${r.item_name}|${r.rank}`, r.price));
+        return m;
+      }
+      function uniqItems() {
+        return [...new Set(rowsAll().map(r => r.item_name))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+      }
+
+      function toIndexed(rows, item) {
+        const s = rows.filter(r => r.item_name === item);
+        const ts = [...new Set(s.map(r => r.ts))].sort((a, b) => new Date(a) - new Date(b));
+        const r1p = new Map(s.filter(r => r.rank === 1).map(r => [r.ts, r.price]));
+        const r2p = new Map(s.filter(r => r.rank === 2).map(r => [r.ts, r.price]));
+        const r1q = new Map(s.filter(r => r.rank === 1).map(r => [r.ts, r.qty]));
+        const r2q = new Map(s.filter(r => r.rank === 2).map(r => [r.ts, r.qty]));
+        return {
+          ts,
+          r1p: ts.map(t => r1p.has(t) ? r1p.get(t) : null),
+          r2p: ts.map(t => r2p.has(t) ? r2p.get(t) : null),
+          r1q: ts.map(t => r1q.has(t) ? r1q.get(t) : null),
+          r2q: ts.map(t => r2q.has(t) ? r2q.get(t) : null)
+        };
+      }
+      function ma(arr, n) {
+        return arr.map((v, i) => {
+          if (v == null) return null;
+          let sum = 0, cnt = 0;
+          for (let j = Math.max(0, i - n + 1); j <= i; j++) { if (arr[j] != null) { sum += arr[j]; cnt++; } }
+          return cnt ? +(sum / cnt).toFixed(4) : null;
+        });
+      }
+      function ema(arr, a) {
+        let p = null;
+        return arr.map(v => {
+          if (v == null) return null;
+          if (p == null) { p = v; return +v.toFixed(4); }
+          p = a * v + (1 - a) * p;
+          return +p.toFixed(4);
+        });
+      }
+      function toMin(ts) {
+        const t = String(ts).split(" ")[1] || "00:00:00";
+        const [h, m] = t.split(":").map(Number);
+        return (h || 0) * 60 + (m || 0);
+      }
+      function ranges(ts, pred) {
+        const out = [];
+        let st = null;
+        for (let i = 0; i < ts.length; i++) {
+          const ok = pred(ts[i], i);
+          if (ok && st == null) st = ts[i];
+          if ((!ok || i === ts.length - 1) && st != null) {
+            out.push([st, ok && i === ts.length - 1 ? ts[i] : ts[Math.max(0, i - 1)]]);
+            st = null;
+          }
         }
+        return out;
       }
 
-      function saveEvents() {
-        localStorage.setItem(EVENTS_KEY, JSON.stringify(events));
+      function eventsFor(item) {
+        return state.events.filter(e => e.item === "*" || e.item === item);
       }
 
-      function toDateTimeLocal(ts) {
-        if (!ts) return "";
-        const d = new Date(ts.replace(" ", "T"));
-        if (Number.isNaN(d.getTime())) return "";
-        const pad = n => String(n).padStart(2, "0");
-        return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+      function drawMainChart() {
+        const all = rowsAll();
+        if (!state.product) return;
+        const idx = toIndexed(all, state.product);
+        const r1ma = ma(idx.r1p, 5), r2ma = ma(idx.r2p, 5);
+        const r1tr = ema(idx.r1p, 0.35), r2tr = ema(idx.r2p, 0.35);
+        const lineEmphasis = { focus: "none", lineStyle: { width: 3.6 } };
+
+        const showR1 = state.rankMode === "all" || state.rankMode === "r1";
+        const showR2 = state.rankMode === "all" || state.rankMode === "r2";
+        const lineSeries = [];
+        const barSeries = [];
+        if (showR1) lineSeries.push({
+          name: "R1 Price",
+          type: "line",
+          smooth: true,
+          smoothMonotone: "x",
+          symbol: "circle",
+          symbolSize: 6,
+          showSymbol: false,
+          data: idx.r1p,
+          yAxisIndex: 0,
+          z: 5,
+          lineStyle: { width: 2.8, color: "#8fbcff", shadowBlur: 12, shadowColor: "rgba(143,188,255,.45)" },
+          emphasis: lineEmphasis
+        });
+        if (showR2) lineSeries.push({
+          name: "R2 Price",
+          type: "line",
+          smooth: true,
+          smoothMonotone: "x",
+          symbol: "circle",
+          symbolSize: 6,
+          showSymbol: false,
+          data: idx.r2p,
+          yAxisIndex: 0,
+          z: 5,
+          lineStyle: { width: 2.8, color: "#c3a8ff", shadowBlur: 12, shadowColor: "rgba(195,168,255,.45)" },
+          emphasis: lineEmphasis
+        });
+        if (state.showTrend) {
+          if (showR1) lineSeries.push({
+            name: "R1 Trend",
+            type: "line",
+            smooth: true,
+            smoothMonotone: "x",
+            symbol: "none",
+            showSymbol: false,
+            data: r1tr,
+            yAxisIndex: 0,
+            z: 4,
+            lineStyle: { type: "dashed", color: "#77a5ef", opacity: 0.65, width: 1.6 },
+            emphasis: lineEmphasis
+          });
+          if (showR2) lineSeries.push({
+            name: "R2 Trend",
+            type: "line",
+            smooth: true,
+            smoothMonotone: "x",
+            symbol: "none",
+            showSymbol: false,
+            data: r2tr,
+            yAxisIndex: 0,
+            z: 4,
+            lineStyle: { type: "dashed", color: "#ab91ea", opacity: 0.65, width: 1.6 },
+            emphasis: lineEmphasis
+          });
+        }
+        if (state.showMA) {
+          lineSeries.push({
+            name: "R1 MA5",
+            type: "line",
+            smooth: true,
+            smoothMonotone: "x",
+            symbol: "none",
+            showSymbol: false,
+            data: r1ma,
+            yAxisIndex: 0,
+            z: 4,
+            lineStyle: { type: "dotted", color: "#b8d5ff", opacity: 0.56, width: 1.4 },
+            emphasis: lineEmphasis
+          });
+          lineSeries.push({
+            name: "R2 MA5",
+            type: "line",
+            smooth: true,
+            smoothMonotone: "x",
+            symbol: "none",
+            showSymbol: false,
+            data: r2ma,
+            yAxisIndex: 0,
+            z: 4,
+            lineStyle: { type: "dotted", color: "#d8c7ff", opacity: 0.56, width: 1.4 },
+            emphasis: lineEmphasis
+          });
+        }
+        barSeries.push({ name: "R1 Qty", type: "bar", data: idx.r1q, yAxisIndex: 1, z: 1, barMaxWidth: 9, itemStyle: { opacity: .12, color: "#f0d27c" } });
+        barSeries.push({ name: "R2 Qty", type: "bar", data: idx.r2q, yAxisIndex: 1, z: 1, barMaxWidth: 9, itemStyle: { opacity: .1, color: "#b39dff" } });
+        const series = [...barSeries, ...lineSeries];
+
+        const markLineData = eventsFor(state.product).filter(e => idx.ts.includes(e.ts)).map(e => ({ xAxis: e.ts, name: e.title, label: { formatter: e.title, color: "#ffd166" }, lineStyle: { color: "#ffd166", type: "dashed" } }));
+        const firstLine = series.find(s => s.type === "line");
+        if (markLineData.length && firstLine) firstLine.markLine = { symbol: ["none", "none"], data: markLineData, animation: false };
+
+        if (state.showZone) {
+          const fixed = [
+            ...ranges(idx.ts, t => { const m = toMin(t); return m >= 19 * 60 && m <= 23 * 60; }).map(([s, e]) => [{ xAxis: s }, { xAxis: e, itemStyle: { color: "rgba(255,120,120,0.13)" } }]),
+            ...ranges(idx.ts, t => { const m = toMin(t); return m >= 10 * 60 && m <= 16 * 60; }).map(([s, e]) => [{ xAxis: s }, { xAxis: e, itemStyle: { color: "rgba(106,151,255,0.10)" } }])
+          ];
+          const abnormal = ranges(idx.ts, (_, i) => {
+            const d1 = idx.r1p[i] != null && r1ma[i] != null ? Math.abs(idx.r1p[i] - r1ma[i]) / (r1ma[i] || 1) : 0;
+            const d2 = idx.r2p[i] != null && r2ma[i] != null ? Math.abs(idx.r2p[i] - r2ma[i]) / (r2ma[i] || 1) : 0;
+            return Math.max(d1, d2) >= 0.18;
+          }).map(([s, e]) => [{ xAxis: s }, { xAxis: e, itemStyle: { color: "rgba(255,206,120,0.12)" } }]);
+          const area = [...fixed, ...abnormal];
+          if (area.length && series.length) series[0].markArea = { silent: true, data: area };
+        }
+
+        mainChart.setOption({
+          backgroundColor: "#0c1123",
+          tooltip: {
+            trigger: "axis",
+            triggerOn: "mousemove|click",
+            axisPointer: {
+              type: "cross",
+              snap: false,
+              lineStyle: { color: "rgba(226, 221, 255, .45)", width: 1, type: "solid" },
+              crossStyle: { color: "rgba(226, 221, 255, .45)", width: 1, type: "solid" },
+              label: {
+                show: true,
+                backgroundColor: "rgba(245,244,255,.95)",
+                color: "#11162a",
+                borderColor: "#8d85c6",
+                borderWidth: 1
+              }
+            },
+            backgroundColor: "rgba(245, 244, 255, .96)",
+            borderColor: "#8d85c6",
+            borderWidth: 1,
+            textStyle: { color: "#11162a" },
+            formatter: (params) => {
+              if (!params || !params.length) return "";
+              const ts = params[0].axisValue || "-";
+              const pR1 = params.find(p => p.seriesName === "R1 Price" && p.data != null);
+              const pR2 = params.find(p => p.seriesName === "R2 Price" && p.data != null);
+              const q1 = params.find(p => p.seriesName === "R1 Qty")?.data;
+              const q2 = params.find(p => p.seriesName === "R2 Qty")?.data;
+              setMiniQty(q1, q2);
+
+              const priceRows = [pR1, pR2].filter(Boolean).sort((a, b) => Number(b.data) - Number(a.data));
+              const lines = priceRows.map(p =>
+                `<div style="margin-top:3px;"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${p.color};margin-right:6px;"></span>${p.seriesName}: <b>${fmtNum(p.data, 4)}g</b></div>`
+              ).join("");
+              return `<div style="min-width:170px;"><div style="font-weight:700;margin-bottom:4px;">${ts}</div>${lines || "<div>-</div>"}</div>`;
+            }
+          },
+          legend: { top: 8, textStyle: { color: "#eae7ff" } },
+          grid: { left: 56, right: 58, top: 52, bottom: 72 },
+          xAxis: {
+            type: "category",
+            data: idx.ts,
+            axisLabel: { color: "#b9c0dd", hideOverlap: true },
+            axisLine: { lineStyle: { color: "#3e4668" } }
+          },
+          yAxis: [
+            {
+              type: "value",
+              name: "Price",
+              axisLabel: { color: "#b9c0dd" },
+              splitLine: { lineStyle: { color: "rgba(122,132,170,.22)" } },
+              axisPointer: {
+                show: true,
+                label: {
+                  show: true,
+                  formatter: (p) => `${Number(p.value).toFixed(2)}g`
+                }
+              }
+            },
+            {
+              type: "value",
+              name: "Qty",
+              axisLabel: { color: "#b9c0dd" },
+              splitLine: { show: false },
+              axisPointer: { show: false }
+            }
+          ],
+          dataZoom: [{
+            type: "slider",
+            height: 24,
+            bottom: 16,
+            borderColor: "#3c4568",
+            backgroundColor: "#11172f",
+            fillerColor: "rgba(149, 133, 255, .30)",
+            handleStyle: { color: "#9587ff", borderColor: "#d7d0ff" },
+            textStyle: { color: "#b5bbd8" }
+          }, { type: "inside" }],
+          series
+        }, true);
+
+        const lastTs = idx.ts[idx.ts.length - 1] || "-";
+        analysisMeta.textContent = `${state.product} | 最新: ${lastTs} | 数据点: ${idx.ts.length}`;
       }
 
-      function fromDateTimeLocal(v) {
-        if (!v) return "";
-        return v.replace("T", " ") + ":00";
+      function refreshProductOptions() {
+        const all = uniqItems();
+        let list = all;
+        if (state.cat === "focus") list = CAT_MAP.focus.filter(i => all.includes(i));
+        if (state.cat === "herb") list = CAT_MAP.herb.filter(i => all.includes(i));
+        if (state.cat === "ins") list = CAT_MAP.ins.filter(i => all.includes(i));
+        if (state.cat === "other") {
+          const taken = new Set([...CAT_MAP.focus, ...CAT_MAP.herb, ...CAT_MAP.ins]);
+          list = all.filter(i => !taken.has(i));
+        }
+        if (!list.length) list = all;
+        productSel.innerHTML = list.map(i => `<option value="${i}">${i}</option>`).join("");
+        if (!state.product || !list.includes(state.product)) state.product = list[0] || "";
+        productSel.value = state.product;
+        productStrip.innerHTML = list.map(i => `<button type="button" class="product-chip${state.product === i ? " active" : ""}" data-item="${i}">${i}</button>`).join("");
+        productStrip.querySelectorAll(".product-chip").forEach(btn => {
+          btn.addEventListener("click", () => {
+            state.product = btn.dataset.item || "";
+            render();
+          });
+        });
       }
 
-      function refreshEventList() {
-        const sorted = events.slice().sort((a, b) => new Date(a.ts) - new Date(b.ts));
-        eventListSel.innerHTML = sorted.map(e => `<option value="${e.id}">[${e.ts}] ${e.item === "*" ? "全局" : e.item} | ${e.title}</option>`).join("");
-        eventMeta.textContent = `事件数：${events.length}`;
-      }
-
-      function refreshEventItemOptions(allItems) {
+      function refreshEventItemOptions() {
+        const all = uniqItems();
         const cur = eventItemSel.value;
-        const opts = ['<option value="*">全局事件（全部物品）</option>']
-          .concat(allItems.map(i => `<option value="${i}">${i}</option>`));
-        eventItemSel.innerHTML = opts.join("");
+        eventItemSel.innerHTML = ['<option value="*">全局事件（全部物品）</option>']
+          .concat(all.map(i => `<option value="${i}">${i}</option>`)).join("");
         if (cur && [...eventItemSel.options].some(o => o.value === cur)) eventItemSel.value = cur;
       }
 
-      function getEventsForItem(itemName) {
-        return events.filter(e => e.item === "*" || e.item === itemName);
+      function refreshEventList() {
+        const sorted = state.events.slice().sort((a, b) => new Date(a.ts) - new Date(b.ts));
+        eventListSel.innerHTML = sorted.map(e => `<option value="${e.id}">[${e.ts}] ${e.item === "*" ? "全局" : e.item} | ${e.title}</option>`).join("");
+        eventMeta.textContent = `事件数：${state.events.length}`;
       }
 
-      function refreshPresetSelect() {
-        const names = Object.keys(presets).sort((a, b) => a.localeCompare(b, "zh-CN"));
-        const options = ['<option value="">未选择</option>'].concat(
-          names.map(n => `<option value="${n}">${n}</option>`)
-        );
-        presetSel.innerHTML = options.join("");
-        if (activePreset && presets[activePreset]) {
-          presetSel.value = activePreset;
-          presetNameInput.value = activePreset;
-        } else {
-          presetSel.value = "";
-        }
+      function renderTabs() {
+        tabAnalysis.classList.toggle("active", state.top === "analysis");
+        tabToolkit.classList.toggle("active", state.top === "toolkit");
+        tabOther.classList.toggle("active", state.top === "other");
+        analysisPage.classList.toggle("hidden", state.top !== "analysis");
+        toolkitPage.classList.toggle("hidden", state.top !== "toolkit");
+        otherPage.classList.toggle("hidden", state.top !== "other");
+
+        const cats = { focus: catFocus, herb: catHerb, ins: catIns, other: catOther };
+        Object.entries(cats).forEach(([k, v]) => v.classList.toggle("active", state.cat === k));
+        localStorage.setItem(VIEW_TAB_KEY, state.top);
+        localStorage.setItem(CAT_KEY, state.cat);
       }
 
-      function applyPreset(name) {
-        activePreset = name || "";
-        localStorage.setItem(ACTIVE_PRESET_KEY, activePreset);
-        const items = presets[activePreset] || [];
-        const set = new Set(items);
-        [...focusItemsSel.options].forEach(o => { o.selected = set.has(o.value); });
-      }
-
-      function ensureFocusOptions(rows) {
-        const allItems = [...new Set(rows.map(r => r.item_name))].sort((a, b) => a.localeCompare(b, "zh-CN"));
-        refreshEventItemOptions(allItems);
-        const current = new Set([...focusItemsSel.options].map(o => o.value));
-        if (allItems.length === current.size && allItems.every(v => current.has(v))) return;
-        focusItemsSel.innerHTML = allItems.map(i => `<option value="${i}">${i}</option>`).join("");
-        if (activePreset && presets[activePreset]) applyPreset(activePreset);
-      }
-
-      function saveLocalRows(rows) {
-        localStorage.setItem(LOCAL_ROWS_KEY, JSON.stringify(rows));
-      }
-
-      function getAllRows() {
-        return [...rowsAll, ...localRows].sort((a, b) => new Date(a.ts) - new Date(b.ts));
-      }
-
-      function updateImportMeta() {
-        importMeta.textContent = `本地导入记录：${localRows.length} 条`;
-      }
-
-      function parsePriceFromText(text) {
-        if (!text) return NaN;
-        const t = String(text).trim();
+      function parsePrice(raw, txt) {
+        const t = String(txt || "");
         const g = (t.match(/(\d+(?:\.\d+)?)\s*金/) || [])[1];
         const s = (t.match(/(\d+(?:\.\d+)?)\s*银/) || [])[1];
-        const c = (t.match(/(\d+(?:\.\d+)?)\s*铜/) || [])[1];
-        if (g || s || c) {
-          return (Number(g || 0)) + (Number(s || 0) / 100) + (Number(c || 0) / 10000);
-        }
-        const n = Number(t);
-        return Number.isFinite(n) ? n : NaN;
-      }
-
-      function parseMinUnitPrice(raw, text) {
-        const fromText = parsePriceFromText(text);
-        if (Number.isFinite(fromText)) return fromText;
+        if (g || s) return Number(g || 0) + Number(s || 0) / 100;
         const n = Number(raw);
         if (!Number.isFinite(n)) return NaN;
         if (Number.isInteger(n) && n >= 10000) return n / 10000;
         return n;
       }
-
-      function normalizeNameRank(name) {
+      function parseNameRank(name) {
         const n = String(name || "").trim();
         const m = n.match(/^(.*?)(?:\s*[Rr]ank\s*(\d)|\((\d)\)|（(\d)）|\[(\d)\])$/);
-        if (m) {
-          const rank = Number(m[2] || m[3] || m[4] || m[5] || 1);
-          return { name: m[1].trim(), rank: Number.isFinite(rank) ? rank : 1 };
-        }
-        return { name: n, rank: 1 };
+        if (!m) return { item: n, rank: 1 };
+        return { item: m[1].trim(), rank: Number(m[2] || m[3] || m[4] || m[5] || 1) };
       }
-
-      function parseReplicateText(rawText) {
-        const text = String(rawText || "").replace(/\r/g, "").trim();
-        if (!text) return { rows: [], ts: null, error: "没有粘贴内容" };
-        const lines = text.split("\n").map(v => v.trim()).filter(Boolean);
-        let ts = null;
-        const tsLine = lines.find(v => /ScanTime/i.test(v));
-        if (tsLine) {
-          const m = tsLine.match(/(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2})/);
-          if (m) ts = m[1];
-        }
-        if (!ts) {
-          const d = new Date();
-          const pad = n => String(n).padStart(2, "0");
-          ts = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
-        }
-
+      function parseReplicateText(raw) {
+        const lines = String(raw || "").replace(/\r/g, "").split("\n").map(v => v.trim()).filter(Boolean);
         const headerIdx = lines.findIndex(v => /itemID/i.test(v) && /name/i.test(v) && /listingCount/i.test(v));
-        if (headerIdx < 0) return { rows: [], ts, error: "未识别到导出表头（itemID/name/minUnitPrice/listingCount）" };
+        if (headerIdx < 0) return { rows: [], error: "未识别到导出表头" };
         const sep = lines[headerIdx].includes("\t") ? "\t" : (lines[headerIdx].includes("|") ? "|" : ",");
         const cols = lines[headerIdx].split(sep).map(v => v.trim());
         const idxName = cols.findIndex(v => /name/i.test(v));
         const idxPrice = cols.findIndex(v => /minUnitPrice$/i.test(v));
-        const idxPriceText = cols.findIndex(v => /minUnitPriceText/i.test(v));
+        const idxText = cols.findIndex(v => /minUnitPriceText/i.test(v));
         const idxCount = cols.findIndex(v => /listingCount/i.test(v));
-        if (idxName < 0 || idxPrice < 0 || idxCount < 0) return { rows: [], ts, error: "表头列不足，缺少 name/minUnitPrice/listingCount" };
+        const tsLine = lines.find(v => /ScanTime/i.test(v));
+        const mt = tsLine && tsLine.match(/(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2})/);
+        const ts = mt ? mt[1] : new Date().toISOString().slice(0, 19).replace("T", " ");
 
-        const parsed = [];
-        for (let i = headerIdx + 1; i < lines.length; i++) {
-          const parts = lines[i].split(sep).map(v => v.trim());
-          if (parts.length < cols.length) continue;
-          const rawName = parts[idxName];
-          const qty = Number(parts[idxCount]);
-          const p = parseMinUnitPrice(parts[idxPrice], idxPriceText >= 0 ? parts[idxPriceText] : "");
-          if (!rawName || !Number.isFinite(qty) || !Number.isFinite(p)) continue;
-          const nr = normalizeNameRank(rawName);
-          parsed.push({
-            item_name: nr.name,
-            rank: nr.rank,
-            price: p,
-            qty: qty,
-            ts
-          });
-        }
-        if (!parsed.length) return { rows: [], ts, error: "没有解析到有效数据行" };
-        return { rows: parsed, ts, error: null };
-      }
-
-      function movingAvg(arr, windowSize) {
         const out = [];
-        for (let i = 0; i < arr.length; i++) {
-          const v = arr[i];
-          if (v == null) { out.push(null); continue; }
-          let sum = 0;
-          let cnt = 0;
-          for (let j = Math.max(0, i - windowSize + 1); j <= i; j++) {
-            if (arr[j] != null) { sum += arr[j]; cnt++; }
-          }
-          out.push(cnt ? +(sum / cnt).toFixed(4) : null);
+        for (let i = headerIdx + 1; i < lines.length; i++) {
+          const p = lines[i].split(sep).map(v => v.trim());
+          if (p.length < cols.length) continue;
+          const n = parseNameRank(p[idxName]);
+          const qty = Number(p[idxCount]);
+          const price = parsePrice(p[idxPrice], idxText >= 0 ? p[idxText] : "");
+          if (!n.item || !Number.isFinite(qty) || !Number.isFinite(price)) continue;
+          out.push({ item_name: n.item, rank: n.rank, price, qty, ts });
         }
-        return out;
+        if (!out.length) return { rows: [], error: "没有解析到有效行" };
+        return { rows: out, error: null };
       }
 
-      function ema(arr, alpha) {
-        let prev = null;
-        return arr.map(v => {
-          if (v == null) return null;
-          if (prev == null) { prev = v; return +v.toFixed(4); }
-          prev = alpha * v + (1 - alpha) * prev;
-          return +prev.toFixed(4);
-        });
-      }
-
-      function toIndexedSeries(series) {
-        const ts = [...new Set(series.rows.map(r => r.ts))].sort((a, b) => new Date(a) - new Date(b));
-        const r1p = new Map(series.r1.map(r => [r.ts, r.price]));
-        const r2p = new Map(series.r2.map(r => [r.ts, r.price]));
-        const r1q = new Map(series.r1.map(r => [r.ts, r.qty]));
-        const r2q = new Map(series.r2.map(r => [r.ts, r.qty]));
-        return {
-          ts,
-          r1Price: ts.map(t => r1p.has(t) ? r1p.get(t) : null),
-          r2Price: ts.map(t => r2p.has(t) ? r2p.get(t) : null),
-          r1Qty: ts.map(t => r1q.has(t) ? r1q.get(t) : null),
-          r2Qty: ts.map(t => r2q.has(t) ? r2q.get(t) : null)
-        };
-      }
-
-      function chartOption(series, title, state, itemName) {
-        const idx = toIndexedSeries(series);
-        const r1Trend = ema(idx.r1Price, 0.35);
-        const r2Trend = ema(idx.r2Price, 0.35);
-        const r1Ma = movingAvg(idx.r1Price, 5);
-        const r2Ma = movingAvg(idx.r2Price, 5);
-        const showR1 = !!state.showR1;
-        const showR2 = !!state.showR2;
-
-        const lines = [];
-        if (showR1) {
-          lines.push({ name: "R1 Price", type: "line", smooth: false, showSymbol: false, yAxisIndex: 0, data: idx.r1Price, lineStyle: { width: 2 } });
-          if (state.showTrend) lines.push({ name: "R1 Trend", type: "line", smooth: true, showSymbol: false, yAxisIndex: 0, data: r1Trend, lineStyle: { type: "dashed", width: 2 } });
-        }
-        if (showR2) {
-          lines.push({ name: "R2 Price", type: "line", smooth: false, showSymbol: false, yAxisIndex: 0, data: idx.r2Price, lineStyle: { width: 2 } });
-          if (state.showTrend) lines.push({ name: "R2 Trend", type: "line", smooth: true, showSymbol: false, yAxisIndex: 0, data: r2Trend, lineStyle: { type: "dashed", width: 2 } });
-        }
-        if (state.showMa) {
-          lines.push({ name: "R1 MA5", type: "line", smooth: true, showSymbol: false, yAxisIndex: 0, data: r1Ma, lineStyle: { type: "dotted", width: 2 } });
-          lines.push({ name: "R2 MA5", type: "line", smooth: true, showSymbol: false, yAxisIndex: 0, data: r2Ma, lineStyle: { type: "dotted", width: 2 } });
-        }
-
-        const bars = [
-          { name: "R1 Qty", type: "bar", barMaxWidth: 10, yAxisIndex: 1, itemStyle: { opacity: 0.28 }, data: idx.r1Qty },
-          { name: "R2 Qty", type: "bar", barMaxWidth: 10, yAxisIndex: 1, itemStyle: { opacity: 0.28 }, data: idx.r2Qty }
-        ];
-
-        const eventMarks = getEventsForItem(itemName)
-          .filter(e => idx.ts.includes(e.ts))
-          .map(e => ({
-            xAxis: e.ts,
-            name: e.title,
-            label: { formatter: e.title, color: "#ffd166", fontSize: 10 },
-            lineStyle: { color: "#ffd166", type: "dashed", width: 1.2 }
-          }));
-        const allSeries = [...lines, ...bars];
-        if (eventMarks.length && allSeries.length) {
-          allSeries[0].markLine = { symbol: ["none", "none"], data: eventMarks, animation: false };
-        }
-
-        return {
-          title: { text: title, textStyle: { color: "#d8e3f4", fontSize: 12 } },
-          tooltip: { trigger: "axis" },
-          legend: { textStyle: { color: "#d8e3f4" } },
-          grid: { left: 55, right: 55, top: 36, bottom: 40 },
-          xAxis: { type: "category", data: idx.ts, axisLabel: { color: "#9fb1cf", hideOverlap: true } },
-          yAxis: [
-            { type: "value", axisLabel: { color: "#9fb1cf" }, name: "Price" },
-            { type: "value", axisLabel: { color: "#9fb1cf" }, name: "Qty", splitLine: { show: false } }
-          ],
-          series: allSeries
-        };
-      }
-
-      function bindChartTools(blockEl, chartInstance, series, itemName) {
-        const state = { showR1: false, showR2: false, showTrend: false, showMa: true };
-        const getBtn = sel => blockEl.querySelector(sel);
-        const btnAll = getBtn('[data-mode="all"]');
-        const btnR1 = getBtn('[data-mode="r1"]');
-        const btnR2 = getBtn('[data-mode="r2"]');
-        const btnTrend = getBtn('[data-toggle="trend"]');
-        const btnMa = getBtn('[data-toggle="ma"]');
-
-        const apply = () => {
-          chartInstance.setOption(chartOption(series, "Price + Trend + MA + Qty", state, itemName), true);
-          btnAll.classList.toggle("active", state.showR1 && state.showR2);
-          btnR1.classList.toggle("active", state.showR1);
-          btnR2.classList.toggle("active", state.showR2);
-          btnTrend.classList.toggle("active", state.showTrend);
-          btnMa.classList.toggle("active", state.showMa);
-        };
-
-        btnAll.addEventListener("click", () => {
-          const next = !(state.showR1 && state.showR2);
-          state.showR1 = next;
-          state.showR2 = next;
-          apply();
-        });
-        btnR1.addEventListener("click", () => { state.showR1 = !state.showR1; apply(); });
-        btnR2.addEventListener("click", () => { state.showR2 = !state.showR2; apply(); });
-        btnTrend.addEventListener("click", () => { state.showTrend = !state.showTrend; apply(); });
-        btnMa.addEventListener("click", () => { state.showMa = !state.showMa; apply(); });
-        apply();
-      }
-
-      function renderSummary(rows) {
-        const a = data.analysis || {};
-        const sig = Array.isArray(a.signals) ? a.signals : [];
-        const restock = sig.filter(s => s.tag === "restock_buy").slice(0, 5);
-        const sell = sig.filter(s => s.tag === "sell_now").slice(0, 5);
-        const avoid = sig.filter(s => s.tag === "avoid_trap").slice(0, 5);
-        analysisText.textContent = [
-          `Range: ${a.prev_ts || "-"} -> ${a.latest_ts || "-"}`,
-          "Restock:", ...(restock.length ? restock.map(s => `- ${s.item} R${s.rank}`) : ["- none"]),
-          "Sell:", ...(sell.length ? sell.map(s => `- ${s.item} R${s.rank}`) : ["- none"]),
-          "Avoid:", ...(avoid.length ? avoid.map(s => `- ${s.item} R${s.rank}`) : ["- none"])
-        ].join("\n");
-
-        const lp = latestAndPrev(rows);
-        const latestRows = rows.filter(r => r.ts === lp.latest);
-        const avg = latestRows.length ? latestRows.reduce((s, r) => s + r.price, 0) / latestRows.length : 0;
-        const cards = [
-          ["Points", rows.length], ["Latest rows", latestRows.length],
-          ["Latest total qty", latestRows.reduce((s, r) => s + r.qty, 0).toLocaleString("en-US")],
-          ["Latest avg price", avg.toFixed(2)], ["Generated", data.generated_at || "-"],
-          ["Confidence", (data.analysis && data.analysis.confidence) || "low"],
-          ["Latest ts", lp.latest || "-"], ["Items", new Set(rows.map(r => r.item_name)).size]
-        ];
-        cardsEl.innerHTML = cards.map(([k, v]) => `<div class="card"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
-        metaLine.textContent = `Range: ${rows[0]?.ts || "-"} -> ${rows[rows.length - 1]?.ts || "-"} | Latest: ${lp.latest || "-"} | Generated: ${data.generated_at || "-"}`;
-      }
-
-      function renderGlobal(rows) {
-        const byKey = new Map();
-        rows.forEach(r => { const k = `${r.item_name}|R${r.rank}`; if (!byKey.has(k)) byKey.set(k, []); byKey.get(k).push(r); });
-        const topKeys = [...byKey.entries()].map(([k, arr]) => ({ k, qty: arr[arr.length - 1]?.qty || 0, arr }))
-          .sort((a, b) => b.qty - a.qty).slice(0, 10);
-        globalPrice.setOption({
-          title: { text: "Global Price Trend Top10 (by latest qty)", textStyle: { color: "#d8e3f4", fontSize: 13 } },
-          tooltip: { trigger: "axis" }, legend: { textStyle: { color: "#d8e3f4" }, top: 24 },
-          grid: { left: 55, right: 24, top: 58, bottom: 45 },
-          xAxis: { type: "category", axisLabel: { color: "#9fb1cf", hideOverlap: true } },
-          yAxis: { type: "value", axisLabel: { color: "#9fb1cf" }, name: "Price" },
-          series: topKeys.map(v => ({ name: v.k, type: "line", smooth: true, showSymbol: false, data: v.arr.map(r => [r.ts, r.price]) }))
-        }, true);
-
-        const lp = latestAndPrev(rows);
-        const latestRows = rows.filter(r => r.ts === lp.latest);
-        const prevMap = new Map(rows.filter(r => r.ts === lp.prev).map(r => [`${r.item_name}|${r.rank}`, r]));
-        const movers = latestRows.map(r => {
-          const p = prevMap.get(`${r.item_name}|${r.rank}`);
-          const pct = p && p.price !== 0 ? ((r.price - p.price) / p.price) * 100 : 0;
-          return { name: `${r.item_name} R${r.rank}`, pct: +pct.toFixed(2) };
-        }).sort((a, b) => b.pct - a.pct);
-        const show = [...movers.slice(0, 8), ...movers.slice(-8)];
-        globalMovers.setOption({
-          title: { text: "Latest movers (%)", textStyle: { color: "#d8e3f4", fontSize: 13 } },
-          tooltip: { trigger: "axis" }, grid: { left: 55, right: 24, top: 36, bottom: 85 },
-          xAxis: { type: "category", data: show.map(v => v.name), axisLabel: { color: "#9fb1cf", rotate: 28 } },
-          yAxis: { type: "value", axisLabel: { color: "#9fb1cf" }, name: "%" },
-          series: [{ type: "bar", data: show.map(v => ({ value: v.pct, itemStyle: { color: v.pct >= 0 ? "#40c057" : "#fa5252" } })) }]
-        }, true);
-      }
-
-      function renderPairs(rows) {
-        pairSections.innerHTML = "";
-        itemNav.innerHTML = "";
-        pairCharts.splice(0, pairCharts.length);
-
-        const allItems = [...new Set(rows.map(r => r.item_name))];
-        ensureFocusOptions(rows);
-        const selectedItems = [...focusItemsSel.selectedOptions].map(o => o.value);
-        const isCustom = viewMode === "custom";
-        const pageSize = Math.max(1, Number(focusPageSizeSel.value || 6));
-
-        let visibleItems;
-        if (isCustom) {
-          visibleItems = selectedItems.filter(i => itemExists(rows, i));
-        } else {
-          visibleItems = allItems.slice().sort((a, b) => a.localeCompare(b, "zh-CN"));
-        }
-        const quickKw = (quickFilterInput.value || "").trim().toLowerCase();
-        if (quickKw) {
-          visibleItems = visibleItems.filter(v => String(v).toLowerCase().includes(quickKw));
-        }
-
-        let totalPages = 1;
-        let pageItems = visibleItems;
-        if (isCustom) {
-          totalPages = Math.max(1, Math.ceil(visibleItems.length / pageSize));
-          if (focusPage > totalPages) focusPage = totalPages;
-          const start = (focusPage - 1) * pageSize;
-          pageItems = visibleItems.slice(start, start + pageSize);
-        } else {
-          focusPage = 1;
-        }
-        const pageSet = new Set(pageItems);
-        focusCount.textContent = isCustom
-          ? `已选 ${selectedItems.length} 项，展示 ${pageItems.length} 项`
-          : `全部模式：${visibleItems.length} 项`;
-        focusPageMeta.textContent = `第 ${focusPage} / ${totalPages} 页`;
-        focusPrevBtn.disabled = !isCustom || focusPage <= 1;
-        focusNextBtn.disabled = !isCustom || focusPage >= totalPages;
-
-        const pairSet = new Set(PAIRS.flatMap(p => [p.left, p.right]));
-        const others = allItems.filter(i => !pairSet.has(i)).sort((a, b) => a.localeCompare(b, "zh-CN"));
-        sideMeta.textContent = `Pairs: ${PAIRS.length} | Others: ${others.length} | Mode: ${isCustom ? "CUSTOM" : "ALL"}`;
-
-        if (isCustom) {
-          if (!selectedItems.length) {
-            pairSections.innerHTML = `<div class="meta">自定义模式下请先在左侧多选关注物品。</div>`;
-            return;
-          }
-          const t = document.createElement("div");
-          t.className = "group-title";
-          t.textContent = "FOCUS";
-          itemNav.appendChild(t);
-          pageItems.forEach((item, i) => {
-            const id = `focus-${i}`;
-            const nav = document.createElement("a");
-            nav.href = `#${id}`;
-            nav.textContent = item;
-            itemNav.appendChild(nav);
-
-            const block = document.createElement("section");
-            block.className = "panel pair-block";
-            block.id = id;
-            block.innerHTML = `
-              <div class="item-head">
-                <h3 style="margin:0;">${item}</h3>
-                <span class="badge">FOCUS</span>
-              </div>
-              <div class="chart-tools">
-                <button class="mini-btn active" type="button" data-mode="all">全部</button>
-                <button class="mini-btn" type="button" data-mode="r1">R1</button>
-                <button class="mini-btn" type="button" data-mode="r2">R2</button>
-                <button class="mini-btn active" type="button" data-toggle="trend">趋势</button>
-                <button class="mini-btn active" type="button" data-toggle="ma">均线</button>
-              </div>
-              <div class="chart" id="${id}-c"></div>`;
-            pairSections.appendChild(block);
-
-            const s = seriesForItem(rows, item);
-            const c = echarts.init(document.getElementById(`${id}-c`));
-            bindChartTools(block, c, s, item);
-            pairCharts.push(c);
-          });
+      function updateCalc() {
+        const map = latestPriceMap();
+        const item = calcItemSel.value;
+        const inputRank = Number(calcInputRank.value || 1);
+        const outRank = Number(calcOutputRank.value || 1);
+        const own = Math.max(0, Number(calcInputQty.value || 0));
+        const fee = Math.max(0, Math.min(20, Number(calcFeePct.value || 5))) / 100;
+        const rawPrice = map.get(`${item}|${inputRank}`);
+        if (!item || !rawPrice || own <= 0) {
+          calcResult.textContent = "请先选择有价格的原料并输入数量";
           return;
         }
-
-        let cur = "";
-        PAIRS.forEach((p, idx) => {
-          if (!itemExists(rows, p.left) && !itemExists(rows, p.right)) return;
-          if (!pageSet.has(p.left) && !pageSet.has(p.right)) return;
-          if (p.group !== cur) {
-            cur = p.group;
-            const t = document.createElement("div");
-            t.className = "group-title";
-            t.textContent = p.group;
-            itemNav.appendChild(t);
-          }
-          const nav = document.createElement("a");
-          nav.href = `#pair-${idx}`;
-          nav.textContent = `${p.left} -> ${p.right}`;
-          itemNav.appendChild(nav);
-
-          const block = document.createElement("section");
-          block.className = "panel pair-block";
-          block.id = `pair-${idx}`;
-          block.innerHTML = `
-            <div class="item-head">
-              <h3 style="margin:0;">${p.left} -> ${p.right}</h3>
-              <span class="badge">${p.group}</span>
-            </div>
-            <div class="pair-row">
-              <div>
-                <div class="meta">${p.left}</div>
-                <div class="chart-tools">
-                  <button class="mini-btn active" type="button" data-side="l" data-mode="all">全部</button>
-                  <button class="mini-btn" type="button" data-side="l" data-mode="r1">R1</button>
-                  <button class="mini-btn" type="button" data-side="l" data-mode="r2">R2</button>
-                  <button class="mini-btn active" type="button" data-side="l" data-toggle="trend">趋势</button>
-                  <button class="mini-btn active" type="button" data-side="l" data-toggle="ma">均线</button>
-                </div>
-                <div class="chart" id="pair-${idx}-l"></div>
-              </div>
-              <div>
-                <div class="meta">${p.right}</div>
-                <div class="chart-tools">
-                  <button class="mini-btn active" type="button" data-side="r" data-mode="all">全部</button>
-                  <button class="mini-btn" type="button" data-side="r" data-mode="r1">R1</button>
-                  <button class="mini-btn" type="button" data-side="r" data-mode="r2">R2</button>
-                  <button class="mini-btn active" type="button" data-side="r" data-toggle="trend">趋势</button>
-                  <button class="mini-btn active" type="button" data-side="r" data-toggle="ma">均线</button>
-                </div>
-                <div class="chart" id="pair-${idx}-r"></div>
-              </div>
-            </div>`;
-          pairSections.appendChild(block);
-
-          const ls = seriesForItem(rows, p.left);
-          const rs = seriesForItem(rows, p.right);
-          const lc = echarts.init(document.getElementById(`pair-${idx}-l`));
-          const rc = echarts.init(document.getElementById(`pair-${idx}-r`));
-          const leftHost = block.querySelector('[id="pair-' + idx + '-l"]').parentElement;
-          const rightHost = block.querySelector('[id="pair-' + idx + '-r"]').parentElement;
-          bindChartTools(leftHost, lc, ls, p.left);
-          bindChartTools(rightHost, rc, rs, p.right);
-          pairCharts.push(lc, rc);
-        });
-
-        if (others.length) {
-          const t = document.createElement("div");
-          t.className = "group-title";
-          t.textContent = "OTHER";
-          itemNav.appendChild(t);
-          others.filter(item => pageSet.has(item)).forEach((item, i) => {
-            const id = `other-${i}`;
-            const nav = document.createElement("a");
-            nav.href = `#${id}`;
-            nav.textContent = item;
-            itemNav.appendChild(nav);
-
-            const block = document.createElement("section");
-            block.className = "panel pair-block";
-            block.id = id;
-            block.innerHTML = `
-              <div class="item-head">
-                <h3 style="margin:0;">${item}</h3>
-                <span class="badge">OTHER</span>
-              </div>
-              <div class="chart-tools">
-                <button class="mini-btn active" type="button" data-mode="all">全部</button>
-                <button class="mini-btn" type="button" data-mode="r1">R1</button>
-                <button class="mini-btn" type="button" data-mode="r2">R2</button>
-                <button class="mini-btn active" type="button" data-toggle="trend">趋势</button>
-                <button class="mini-btn active" type="button" data-toggle="ma">均线</button>
-              </div>
-              <div class="chart" id="${id}-c"></div>`;
-            pairSections.appendChild(block);
-
-            const s = seriesForItem(rows, item);
-            const c = echarts.init(document.getElementById(`${id}-c`));
-            bindChartTools(block, c, s, item);
-            pairCharts.push(c);
-          });
+        const rawNet = own * rawPrice * (1 - fee);
+        const rel = RECIPE.filter(r => r.mats.some(m => m.item === item));
+        if (!rel.length) {
+          calcResult.innerHTML = `当前未配置 <b>${item}</b> 的下游配方。<br/>直接卖原料净收入约：<b>${rawNet.toFixed(2)}g</b>`;
+          return;
         }
+        const lines = [`直接卖原料净收入：<b>${rawNet.toFixed(2)}g</b>`];
+        rel.forEach(r => {
+          const ownMat = r.mats.find(m => m.item === item);
+          const crafts = own / ownMat.q;
+          const outQty = crafts * r.outMin;
+          const outPrice = map.get(`${r.output}|${outRank}`);
+          if (!outPrice) {
+            lines.push(`<span class="warn">${r.name}</span>：缺少成品 R${outRank} 价格`);
+            return;
+          }
+          let otherCost = 0;
+          let ok = true;
+          for (const m of r.mats) {
+            if (m.item === item) continue;
+            const p = map.get(`${m.item}|1`);
+            if (!p) { ok = false; break; }
+            otherCost += crafts * m.q * p;
+          }
+          if (!ok) { lines.push(`<span class="warn">${r.name}</span>：缺少辅料R1价格`); return; }
+          const processNet = outQty * outPrice * (1 - fee) - otherCost;
+          const diff = processNet - rawNet;
+          lines.push(`<span class="${diff >= 0 ? "good" : "warn"}">${r.name}</span>：加工净收益 <b>${processNet.toFixed(2)}g</b>，差额 ${diff >= 0 ? "+" : ""}${diff.toFixed(2)}g`);
+        });
+        calcResult.innerHTML = lines.join("<br/>");
       }
 
-      function buildLastQuoteMap(rows) {
-        const m = new Map();
-        rows.forEach(r => m.set(`${r.item_name}|${r.rank}`, r.price));
-        return m;
-      }
-
-      function renderProcessCalc(rows) {
-        const quoteMap = buildLastQuoteMap(rows);
-        const allItems = [...new Set(rows.map(r => r.item_name))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+      function render() {
+        renderTabs();
+        refreshProductOptions();
+        refreshEventItemOptions();
+        drawMainChart();
+        const allItems = uniqItems();
         if (!calcItemSel.options.length) {
           calcItemSel.innerHTML = allItems.map(i => `<option value="${i}">${i}</option>`).join("");
           if (allItems.includes("白银叶颜料")) calcItemSel.value = "白银叶颜料";
         }
-
-        const item = calcItemSel.value;
-        const inputRank = Number(calcInputRank.value || 1);
-        const outputRank = Number(calcOutputRank.value || 1);
-        const ownQty = Math.max(0, Number(calcInputQty.value || 0));
-        const feeRatio = Math.max(0, Math.min(20, Number(calcFeePct.value || 5))) / 100;
-        const rawPrice = quoteMap.get(`${item}|${inputRank}`);
-
-        if (!item || !rawPrice || ownQty <= 0) {
-          calcResult.innerHTML = "请先选择有价格的原料并输入数量。";
-          return;
-        }
-
-        const rawNet = ownQty * rawPrice * (1 - feeRatio);
-        const related = RECIPES.filter(r => r.mats.some(m => m.item === item));
-        if (!related.length) {
-          calcResult.innerHTML = `当前未配置 <b>${item}</b> 的下游配方。<br/>直接卖原料净收入约：<b>${rawNet.toFixed(2)}g</b>`;
-          return;
-        }
-
-        const lines = [
-          `直接卖原料净收入：<b>${rawNet.toFixed(2)}g</b>（${ownQty} * ${rawPrice.toFixed(2)} * ${(1 - feeRatio).toFixed(2)}）`
-        ];
-
-        related.forEach(recipe => {
-          const ownMat = recipe.mats.find(m => m.item === item);
-          const crafts = ownQty / ownMat.qty;
-          const outputQty = crafts * recipe.outputMin;
-          const outPrice = quoteMap.get(`${recipe.output}|${outputRank}`);
-
-          if (!outPrice) {
-            lines.push(`<span class="warn">${recipe.name}</span>：缺少 ${recipe.output} R${outputRank} 最新价格，无法计算。`);
-            return;
-          }
-
-          let otherCost = 0;
-          let missingPrice = false;
-          recipe.mats.forEach(m => {
-            if (m.item === item) return;
-            const p = quoteMap.get(`${m.item}|1`);
-            if (!p) missingPrice = true;
-            else otherCost += crafts * m.qty * p;
-          });
-          if (missingPrice) {
-            lines.push(`<span class="warn">${recipe.name}</span>：缺少辅料R1价格，无法完整计算。`);
-            return;
-          }
-
-          const outputNet = outputQty * outPrice * (1 - feeRatio);
-          const processNet = outputNet - otherCost;
-          const diff = processNet - rawNet;
-          const verdict = diff >= 0 ? "建议加工" : "建议直卖";
-          const cls = diff >= 0 ? "good" : "warn";
-          lines.push(
-            [
-              `<span class="${cls}">${recipe.name}</span>（成品按R${outputRank}）`,
-              `- 预计最少产出：${outputQty.toFixed(2)} 个`,
-              `- 成品净收入：${outputNet.toFixed(2)}g`,
-              `- 需买辅料成本：${otherCost.toFixed(2)}g`,
-              `- 加工净收益：${processNet.toFixed(2)}g`,
-              `- 对比直卖差额：${diff >= 0 ? "+" : ""}${diff.toFixed(2)}g`,
-              `- 结论：<b>${verdict}</b>`
-            ].join("<br/>")
-          );
-        });
-
-        calcResult.innerHTML = lines.join("<hr style='border-color:#20304f;border-style:solid;border-width:1px 0 0 0;'/>");
+        importMeta.textContent = `本地导入记录：${state.localRows.length} 条`;
+        updateCalc();
       }
 
-      let localRows = loadLocalRows();
-      events = loadEvents();
-      presets = loadPresets();
-      activePreset = localStorage.getItem(ACTIVE_PRESET_KEY) || "";
-      viewMode = localStorage.getItem(VIEW_MODE_KEY) || "all";
-      if (viewMode !== "all" && viewMode !== "custom") viewMode = "all";
-      refreshPresetSelect();
+      state.localRows = loadLocalRows();
+      state.events = loadEvents();
       refreshEventList();
-      eventTimeInput.value = toDateTimeLocal(new Date().toISOString().slice(0, 19).replace("T", " "));
+      const now = new Date();
+      const pad = n => String(n).padStart(2, "0");
+      eventTimeInput.value = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}T${pad(now.getHours())}:${pad(now.getMinutes())}`;
 
-      function render() {
-        const all = getAllRows();
-        const lookback = Number(lookbackSel.value || 0);
-        const rows = lookback > 0 && all.length > lookback ? all.slice(-lookback) : all;
-        modeAllTab.classList.toggle("active", viewMode === "all");
-        modeCustomTab.classList.toggle("active", viewMode === "custom");
-        customSidebarControls.classList.toggle("hidden", viewMode !== "custom");
-        renderSummary(all);
-        renderGlobal(rows);
-        renderPairs(rows);
-        renderProcessCalc(all);
-        updateImportMeta();
-      }
+      tabAnalysis.addEventListener("click", () => { state.top = "analysis"; render(); });
+      tabToolkit.addEventListener("click", () => { state.top = "toolkit"; render(); });
+      tabOther.addEventListener("click", () => { state.top = "other"; render(); });
 
-      lookbackSel.addEventListener("change", render);
-      quickFilterInput.addEventListener("input", () => { focusPage = 1; render(); });
-      modeAllTab.addEventListener("click", () => { viewMode = "all"; localStorage.setItem(VIEW_MODE_KEY, viewMode); render(); });
-      modeCustomTab.addEventListener("click", () => { viewMode = "custom"; localStorage.setItem(VIEW_MODE_KEY, viewMode); focusPage = 1; render(); });
-      presetSel.addEventListener("change", () => {
-        applyPreset(presetSel.value);
-        focusPage = 1;
+      catFocus.addEventListener("click", () => { state.cat = "focus"; render(); });
+      catHerb.addEventListener("click", () => { state.cat = "herb"; render(); });
+      catIns.addEventListener("click", () => { state.cat = "ins"; render(); });
+      catOther.addEventListener("click", () => { state.cat = "other"; render(); });
+
+      productSel.addEventListener("change", () => { state.product = productSel.value; render(); });
+      rankSel.addEventListener("change", () => { state.rankMode = rankSel.value; render(); });
+      toggleZone.addEventListener("click", () => { state.showZone = !state.showZone; toggleZone.classList.toggle("active", state.showZone); drawMainChart(); });
+      toggleMA.addEventListener("click", () => { state.showMA = !state.showMA; toggleMA.classList.toggle("active", state.showMA); drawMainChart(); });
+      toggleTrend.addEventListener("click", () => { state.showTrend = !state.showTrend; toggleTrend.classList.toggle("active", state.showTrend); drawMainChart(); });
+      toggleZone.classList.toggle("active", state.showZone);
+      toggleMA.classList.toggle("active", state.showMA);
+      toggleTrend.classList.toggle("active", state.showTrend);
+
+      [calcItemSel, calcInputRank, calcInputQty, calcOutputRank, calcFeePct].forEach(x => {
+        x.addEventListener("input", updateCalc);
+        x.addEventListener("change", updateCalc);
+      });
+
+      importBtn.addEventListener("click", () => {
+        const p = parseReplicateText(importText.value);
+        if (p.error) { importMeta.textContent = `导入失败：${p.error}`; return; }
+        const key = r => `${r.ts}|${r.item_name}|${r.rank}|${r.price}|${r.qty}`;
+        const seen = new Set(state.localRows.map(key));
+        let add = 0;
+        p.rows.forEach(r => { const k = key(r); if (!seen.has(k)) { state.localRows.push(r); seen.add(k); add++; } });
+        saveLocalRows();
+        importMeta.textContent = `导入成功：${add} 条`;
         render();
       });
-      presetSaveBtn.addEventListener("click", () => {
-        const name = (presetNameInput.value || "").trim();
-        const items = [...focusItemsSel.selectedOptions].map(o => o.value);
-        if (!name) { focusCount.textContent = "请先输入分类名称"; return; }
-        if (!items.length) { focusCount.textContent = "请先选择至少1个物品"; return; }
-        presets[name] = items;
-        activePreset = name;
-        savePresets();
-        refreshPresetSelect();
-        applyPreset(name);
-        focusCount.textContent = `分类已保存：${name}（${items.length}项）`;
+      clearLocalBtn.addEventListener("click", () => {
+        state.localRows = [];
+        saveLocalRows();
+        render();
       });
-      presetDeleteBtn.addEventListener("click", () => {
-        const name = presetSel.value || (presetNameInput.value || "").trim();
-        if (!name || !presets[name]) { focusCount.textContent = "没有可删除的分类"; return; }
-        delete presets[name];
-        if (activePreset === name) activePreset = "";
-        savePresets();
-        localStorage.setItem(ACTIVE_PRESET_KEY, activePreset);
-        refreshPresetSelect();
-        focusCount.textContent = `分类已删除：${name}`;
-      });
+
       eventAddBtn.addEventListener("click", () => {
-        const ts = fromDateTimeLocal(eventTimeInput.value);
+        const ts = (eventTimeInput.value || "").replace("T", " ") + ":00";
         const title = (eventTitleInput.value || "").trim();
-        const note = (eventNoteInput.value || "").trim();
-        const item = eventItemSel.value || "*";
-        if (!ts || !title) {
-          eventMeta.textContent = "新增失败：时间和标题必填";
-          return;
-        }
-        const e = {
-          id: `${Date.now()}_${Math.random().toString(16).slice(2, 8)}`,
-          ts,
-          item,
-          title,
-          note
-        };
-        events.push(e);
+        if (!eventTimeInput.value || !title) { eventMeta.textContent = "新增失败：时间和标题必填"; return; }
+        state.events.push({ id: `${Date.now()}_${Math.random().toString(16).slice(2, 8)}`, ts, item: eventItemSel.value || "*", title, note: (eventNoteInput.value || "").trim() });
         saveEvents();
         refreshEventList();
-        eventMeta.textContent = `已新增事件：${title}`;
         render();
       });
       eventDeleteBtn.addEventListener("click", () => {
         const id = eventListSel.value;
-        if (!id) {
-          eventMeta.textContent = "请先在事件列表选择一条";
-          return;
-        }
-        events = events.filter(e => e.id !== id);
+        if (!id) { eventMeta.textContent = "请先选择要删除的事件"; return; }
+        state.events = state.events.filter(e => e.id !== id);
         saveEvents();
         refreshEventList();
-        eventMeta.textContent = "事件已删除";
         render();
       });
       eventExportBtn.addEventListener("click", () => {
-        const blob = new Blob([JSON.stringify(events, null, 2)], { type: "application/json" });
+        const blob = new Blob([JSON.stringify(state.events, null, 2)], { type: "application/json" });
         const a = document.createElement("a");
         a.href = URL.createObjectURL(blob);
         a.download = "events.json";
@@ -1162,73 +1199,22 @@
         try {
           const text = await f.text();
           const arr = JSON.parse(text);
-          if (!Array.isArray(arr)) throw new Error("invalid");
-          events = arr.filter(e => e && e.id && e.ts && e.title).map(e => ({
-            id: String(e.id),
-            ts: String(e.ts),
-            item: String(e.item || "*"),
-            title: String(e.title),
-            note: String(e.note || "")
-          }));
+          if (!Array.isArray(arr)) throw new Error();
+          state.events = arr;
           saveEvents();
           refreshEventList();
-          eventMeta.textContent = `导入成功：${events.length} 条事件`;
           render();
         } catch (_) {
-          eventMeta.textContent = "导入失败：events.json 格式不正确";
+          eventMeta.textContent = "导入失败：events.json格式不正确";
         } finally {
           eventImportFile.value = "";
         }
       });
-      importBtn.addEventListener("click", () => {
-        const parsed = parseReplicateText(importText.value);
-        if (parsed.error) {
-          importMeta.textContent = `导入失败：${parsed.error}`;
-          return;
-        }
-        const key = r => `${r.ts}|${r.item_name}|${r.rank}|${r.price}|${r.qty}`;
-        const seen = new Set(localRows.map(key));
-        let added = 0;
-        parsed.rows.forEach(r => {
-          const k = key(r);
-          if (!seen.has(k)) {
-            localRows.push(r);
-            seen.add(k);
-            added++;
-          }
-        });
-        saveLocalRows(localRows);
-        importMeta.textContent = `导入成功：${added} 条（时间 ${parsed.ts}）`;
-        render();
-      });
-      clearLocalBtn.addEventListener("click", () => {
-        localRows = [];
-        saveLocalRows(localRows);
-        importMeta.textContent = "本地导入已清空";
-        render();
-      });
-      focusItemsSel.addEventListener("change", () => { focusPage = 1; render(); });
-      focusPageSizeSel.addEventListener("change", () => { focusPage = 1; render(); });
-      focusClearBtn.addEventListener("click", () => {
-        [...focusItemsSel.options].forEach(o => { o.selected = false; });
-        focusPage = 1;
-        render();
-      });
-      focusPrevBtn.addEventListener("click", () => { if (focusPage > 1) { focusPage -= 1; render(); } });
-      focusNextBtn.addEventListener("click", () => { focusPage += 1; render(); });
-      [calcItemSel, calcInputRank, calcInputQty, calcOutputRank, calcFeePct].forEach(el => {
-        el.addEventListener("input", () => renderProcessCalc(getAllRows()));
-        el.addEventListener("change", () => renderProcessCalc(getAllRows()));
-      });
-      window.addEventListener("resize", () => {
-        globalPrice.resize();
-        globalMovers.resize();
-        pairCharts.forEach(c => c.resize());
-      });
-      updateImportMeta();
+
+      window.addEventListener("resize", () => mainChart.resize());
+      mainChart.on("globalout", () => setMiniQty(null, null));
       render();
     })();
   </script>
 </body>
 </html>
-
