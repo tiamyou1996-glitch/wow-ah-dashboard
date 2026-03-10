@@ -467,12 +467,7 @@
       </div>
 
       <div id="analysisPage">
-        <div class="sub-tabs">
-          <button id="catFocus" class="sub-tab">关注</button>
-          <button id="catHerb" class="sub-tab active">草药学</button>
-          <button id="catIns" class="sub-tab">铭文</button>
-          <button id="catOther" class="sub-tab">其他</button>
-        </div>
+        <div id="categoryTabs" class="sub-tabs"></div>
         <div class="product-strip-wrap">
           <div id="productStrip" class="product-strip"></div>
         </div>
@@ -489,7 +484,7 @@
             </div>
             <div class="meta" id="analysisMeta">-</div>
             <div class="right-tools">
-              <button id="toggleZone" class="tool-toggle active" type="button">高亮区间</button>
+              <button id="toggleZone" class="tool-toggle" type="button">高亮区间</button>
               <button id="toggleMA" class="tool-toggle active" type="button">平均线</button>
               <button id="toggleTrend" class="tool-toggle" type="button">趋势线</button>
             </div>
@@ -538,13 +533,18 @@
       <div id="otherPage" class="hidden page">
         <section class="panel">
           <h3>本地快速导入（AHMerchant 文本）</h3>
-          <div class="meta">导入数据保存在当前浏览器本地，刷新不丢。</div>
+          <div class="meta">可仅导入本地，或通过本地服务导入并自动推送 GitHub。</div>
+          <div class="row" style="margin:8px 0 6px;">
+            <a href="/admin.html" target="_blank" rel="noopener noreferrer"><button class="btn" type="button">打开后台管理</button></a>
+          </div>
           <textarea id="importText" placeholder="粘贴 AHMercant Replicate Export 文本..."></textarea>
           <div class="row" style="margin-top:8px;">
-            <button id="importBtn" class="btn" type="button">导入到本地</button>
-            <button id="clearLocalBtn" class="btn" type="button">清空本地导入</button>
-            <span id="importMeta" class="meta">本地导入记录：0 条</span>
+            <button id="importBtn" class="btn" type="button">仅导入本地</button>
+            <button id="importPublishBtn" class="btn" type="button">导入并发布(GitHub)</button>
+            <button id="clearLocalBtn" class="btn" type="button">清空浏览器缓存</button>
+            <span id="importMeta" class="meta">等待导入</span>
           </div>
+          <div class="meta" style="margin-top:6px;">发布服务: <span id="serverMeta">未检测</span>（默认 http://127.0.0.1:8787）</div>
         </section>
 
         <section class="panel">
@@ -590,11 +590,18 @@
     (() => {
       const BASE_ROWS = (window.WOW_AH_DATA?.snapshots || []).map(r => ({
         item_name: String(r.item_name || ""),
-        rank: Number(r.rank),
+        item_id: Number(r.item_id || 0),
+        rank: Number(r.rank || r.quality_tier || 1),
+        quality_tier: Number(r.quality_tier || r.rank || 0),
+        quality_text: String(r.quality_text || ""),
+        group: String(r.group || ""),
+        wow_class: String(r.wow_class || ""),
+        wow_sub_class: String(r.wow_sub_class || ""),
         price: Number(r.unit_price_gold),
         qty: Number(r.available_quantity),
-        ts: String(r.observed_at || "")
-      })).filter(r => r.item_name && Number.isFinite(r.rank) && Number.isFinite(r.price) && Number.isFinite(r.qty) && r.ts)
+        ts: String(r.observed_at || ""),
+        ingestedAt: String(r.ingested_at || r.observed_at || "")
+      })).filter(r => r.item_name && Number.isFinite(r.price) && Number.isFinite(r.qty) && r.ts)
         .sort((a, b) => new Date(a.ts) - new Date(b.ts));
 
       const LOCAL_ROWS_KEY = "wow_ah_local_rows_v1";
@@ -606,12 +613,39 @@
         { name: "猪黄墨水（白银叶路线）", output: "猪黄墨水", outMin: 2, mats: [{ item: "粉末颜料", q: 20 }, { item: "白银叶颜料", q: 10 }, { item: "法力百合颜料", q: 5 }] },
         { name: "标色墨水（血艳蓟路线）", output: "标色墨水", outMin: 2, mats: [{ item: "粉末颜料", q: 20 }, { item: "血艳蓟颜料", q: 10 }, { item: "法力百合颜料", q: 5 }] }
       ];
-
-      const CAT_MAP = {
-        focus: ["白银叶", "宁心花", "法力百合", "血艳蓟", "粉末颜料", "白银叶颜料", "法力百合颜料", "血艳蓟颜料", "猪黄墨水", "标色墨水"],
-        herb: ["白银叶", "宁心花", "法力百合", "血艳蓟", "艾泽之根", "圣光微粒", "原始能量微粒"],
-        ins: ["粉末颜料", "白银叶颜料", "法力百合颜料", "血艳蓟颜料", "编码艾泽之根", "猪黄墨水", "标色墨水", "灵魂密文"],
-        other: []
+      const FALLBACK_GROUP_MAP = {
+        "白银叶": "草药",
+        "宁心花": "草药",
+        "法力百合": "草药",
+        "血艳蓟": "草药",
+        "艾泽之根": "草药",
+        "夜莲花": "草药",
+        "粉末颜料": "颜料",
+        "白银叶颜料": "颜料",
+        "法力百合颜料": "颜料",
+        "血艳蓟颜料": "颜料",
+        "编码艾泽之根": "其他",
+        "标色墨水": "其他",
+        "赭黄墨水": "其他",
+        "灵魂密文": "其他",
+        "光明亚麻布": "布料",
+        "光明亚麻布卷": "布料",
+        "注能光明亚麻布卷": "布料",
+        "奥纹布": "布料",
+        "奥纹布卷": "布料",
+        "薄暮合金": "合金",
+        "纯银合金": "合金",
+        "原始能量微粒": "其他",
+        "圣光微粒": "其他",
+        "狂野魔法微粒": "其他",
+        "纯净虚空微粒": "其他",
+        "永歌之尘": "其他",
+        "暮胧石": "其他",
+        "萨拉斯抗性合剂": "其他",
+        "虚触强化符文": "其他",
+        "威风皮毛": "其他",
+        "威风之爪": "其他",
+        "威风尾翼": "其他"
       };
 
       const el = (id) => document.getElementById(id);
@@ -621,10 +655,7 @@
       const analysisPage = el("analysisPage");
       const toolkitPage = el("toolkitPage");
       const otherPage = el("otherPage");
-      const catFocus = el("catFocus");
-      const catHerb = el("catHerb");
-      const catIns = el("catIns");
-      const catOther = el("catOther");
+      const categoryTabs = el("categoryTabs");
       const productSel = el("productSel");
       const productStrip = el("productStrip");
       const rankSel = el("rankSel");
@@ -645,8 +676,10 @@
 
       const importText = el("importText");
       const importBtn = el("importBtn");
+      const importPublishBtn = el("importPublishBtn");
       const clearLocalBtn = el("clearLocalBtn");
       const importMeta = el("importMeta");
+      const serverMeta = el("serverMeta");
 
       const eventItemSel = el("eventItemSel");
       const eventTimeInput = el("eventTimeInput");
@@ -657,15 +690,22 @@
       const eventExportBtn = el("eventExportBtn");
       const eventImportBtn = el("eventImportBtn");
       const eventImportFile = el("eventImportFile");
+
+      function lastNonEmpty(arr) {
+        for (let i = arr.length - 1; i >= 0; i--) {
+          if (arr[i]) return arr[i];
+        }
+        return "";
+      }
       const eventListSel = el("eventListSel");
       const eventMeta = el("eventMeta");
 
       const state = {
         top: localStorage.getItem(VIEW_TAB_KEY) || "analysis",
-        cat: localStorage.getItem(CAT_KEY) || "herb",
+        cat: localStorage.getItem(CAT_KEY) || "focus",
         product: "",
         rankMode: "all",
-        showZone: true,
+        showZone: false,
         showMA: true,
         showTrend: false,
         localRows: [],
@@ -674,6 +714,10 @@
 
       function fmtNum(v, digits = 4) {
         return Number(v).toLocaleString(undefined, { maximumFractionDigits: digits });
+      }
+      function normalizeRankForClient(value) {
+        const n = Number(value);
+        return Number.isFinite(n) && n > 0 ? Math.floor(n) : null;
       }
       function setMiniQty(r1, r2) {
         miniR1Qty.textContent = r1 == null ? "-" : fmtNum(r1, 0);
@@ -700,6 +744,39 @@
       function rowsAll() {
         return [...BASE_ROWS, ...state.localRows].sort((a, b) => new Date(a.ts) - new Date(b.ts));
       }
+      function rowGroup(row) {
+        const direct = String(row.group || "").trim();
+        if (direct) return direct;
+        return FALLBACK_GROUP_MAP[row.item_name] || "";
+      }
+      function categoryLabel(cat) {
+        const map = { focus: "关注" };
+        return map[cat] || cat || "其他";
+      }
+      function dynamicCategories(rows) {
+        const groups = [...new Set(rows.map(rowGroup).filter(Boolean))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+        return ["focus", ...groups];
+      }
+      function itemsForCategory(rows, cat) {
+        const items = [...new Set(rows.map(r => r.item_name))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+        if (cat === "focus") {
+          const priority = ["白银叶", "宁心花", "法力百合", "血艳蓟", "粉末颜料", "白银叶颜料", "法力百合颜料", "血艳蓟颜料", "编码艾泽之根", "标色墨水", "赭黄墨水", "光明亚麻布", "光明亚麻布卷", "注能光明亚麻布卷", "奥纹布", "奥纹布卷"];
+          const picked = priority.filter(i => items.includes(i));
+          return picked.length ? picked : items;
+        }
+        return items.filter(i => rows.some(r => r.item_name === i && rowGroup(r) === cat));
+      }
+      function renderCategoryTabs() {
+        const categories = dynamicCategories(rowsAll());
+        if (!categories.includes(state.cat)) state.cat = categories[0] || "focus";
+        categoryTabs.innerHTML = categories.map(cat => `<button type="button" class="sub-tab${state.cat === cat ? " active" : ""}" data-cat="${cat}">${categoryLabel(cat)}</button>`).join("");
+        categoryTabs.querySelectorAll(".sub-tab").forEach(btn => {
+          btn.addEventListener("click", () => {
+            state.cat = btn.dataset.cat || "focus";
+            render();
+          });
+        });
+      }
       function latestPriceMap() {
         const m = new Map();
         rowsAll().forEach(r => m.set(`${r.item_name}|${r.rank}`, r.price));
@@ -711,11 +788,13 @@
 
       function toIndexed(rows, item) {
         const s = rows.filter(r => r.item_name === item);
-        const ts = [...new Set(s.map(r => r.ts))].sort((a, b) => new Date(a) - new Date(b));
-        const r1p = new Map(s.filter(r => r.rank === 1).map(r => [r.ts, r.price]));
+        const tsRaw = [...new Set(s.map(r => r.ts))].sort((a, b) => new Date(a) - new Date(b));
+        // 历史数据中 rank=0 代表“无品质”，默认并入 R1 轨道展示，避免图上出现空洞时间点。
+        const r1p = new Map(s.filter(r => r.rank === 1 || r.rank === 0).map(r => [r.ts, r.price]));
         const r2p = new Map(s.filter(r => r.rank === 2).map(r => [r.ts, r.price]));
-        const r1q = new Map(s.filter(r => r.rank === 1).map(r => [r.ts, r.qty]));
+        const r1q = new Map(s.filter(r => r.rank === 1 || r.rank === 0).map(r => [r.ts, r.qty]));
         const r2q = new Map(s.filter(r => r.rank === 2).map(r => [r.ts, r.qty]));
+        const ts = tsRaw.filter(t => r1p.has(t) || r2p.has(t) || r1q.has(t) || r2q.has(t));
         return {
           ts,
           r1p: ts.map(t => r1p.has(t) ? r1p.get(t) : null),
@@ -864,9 +943,24 @@
         barSeries.push({ name: "R2 Qty", type: "bar", data: idx.r2q, yAxisIndex: 1, z: 1, barMaxWidth: 9, itemStyle: { opacity: .1, color: "#b39dff" } });
         const series = [...barSeries, ...lineSeries];
 
-        const markLineData = eventsFor(state.product).filter(e => idx.ts.includes(e.ts)).map(e => ({ xAxis: e.ts, name: e.title, label: { formatter: e.title, color: "#ffd166" }, lineStyle: { color: "#ffd166", type: "dashed" } }));
+        const dayBreakLines = [];
+        for (let i = 1; i < idx.ts.length; i++) {
+          const prevDay = String(idx.ts[i - 1]).split(" ")[0];
+          const curDay = String(idx.ts[i]).split(" ")[0];
+          if (prevDay && curDay && prevDay !== curDay) {
+            dayBreakLines.push({
+              xAxis: idx.ts[i],
+              label: { show: false },
+              lineStyle: { color: "rgba(205,210,238,.25)", width: 1, type: "solid" }
+            });
+          }
+        }
+        const eventMarkLines = eventsFor(state.product).filter(e => idx.ts.includes(e.ts)).map(e => ({ xAxis: e.ts, name: e.title, label: { formatter: e.title, color: "#ffd166" }, lineStyle: { color: "#ffd166", type: "dashed" } }));
         const firstLine = series.find(s => s.type === "line");
-        if (markLineData.length && firstLine) firstLine.markLine = { symbol: ["none", "none"], data: markLineData, animation: false };
+        const markLineData = [...dayBreakLines, ...eventMarkLines];
+        if (markLineData.length && firstLine) {
+          firstLine.markLine = { symbol: ["none", "none"], data: markLineData, animation: false, silent: true };
+        }
 
         if (state.showZone) {
           const fixed = [
@@ -963,20 +1057,15 @@
           series
         }, true);
 
+        const selectedRows = all.filter(r => r.item_name === state.product);
         const lastTs = idx.ts[idx.ts.length - 1] || "-";
-        analysisMeta.textContent = `${state.product} | 最新: ${lastTs} | 数据点: ${idx.ts.length}`;
+        const lastIngestedAt = lastNonEmpty(selectedRows.map(r => r.ingestedAt)) || "-";
+        analysisMeta.textContent = `${state.product} | 市场时间: ${lastTs} | 入库时间: ${lastIngestedAt} | 数据点: ${idx.ts.length}`;
       }
 
       function refreshProductOptions() {
         const all = uniqItems();
-        let list = all;
-        if (state.cat === "focus") list = CAT_MAP.focus.filter(i => all.includes(i));
-        if (state.cat === "herb") list = CAT_MAP.herb.filter(i => all.includes(i));
-        if (state.cat === "ins") list = CAT_MAP.ins.filter(i => all.includes(i));
-        if (state.cat === "other") {
-          const taken = new Set([...CAT_MAP.focus, ...CAT_MAP.herb, ...CAT_MAP.ins]);
-          list = all.filter(i => !taken.has(i));
-        }
+        const list = itemsForCategory(rowsAll(), state.cat);
         if (!list.length) list = all;
         productSel.innerHTML = list.map(i => `<option value="${i}">${i}</option>`).join("");
         if (!state.product || !list.includes(state.product)) state.product = list[0] || "";
@@ -1011,9 +1100,6 @@
         analysisPage.classList.toggle("hidden", state.top !== "analysis");
         toolkitPage.classList.toggle("hidden", state.top !== "toolkit");
         otherPage.classList.toggle("hidden", state.top !== "other");
-
-        const cats = { focus: catFocus, herb: catHerb, ins: catIns, other: catOther };
-        Object.entries(cats).forEach(([k, v]) => v.classList.toggle("active", state.cat === k));
         localStorage.setItem(VIEW_TAB_KEY, state.top);
         localStorage.setItem(CAT_KEY, state.cat);
       }
@@ -1038,25 +1124,44 @@
         const lines = String(raw || "").replace(/\r/g, "").split("\n").map(v => v.trim()).filter(Boolean);
         const headerIdx = lines.findIndex(v => /itemID/i.test(v) && /name/i.test(v) && /listingCount/i.test(v));
         if (headerIdx < 0) return { rows: [], error: "未识别到导出表头" };
-        const sep = lines[headerIdx].includes("\t") ? "\t" : (lines[headerIdx].includes("|") ? "|" : ",");
-        const cols = lines[headerIdx].split(sep).map(v => v.trim());
-        const idxName = cols.findIndex(v => /name/i.test(v));
-        const idxPrice = cols.findIndex(v => /minUnitPrice$/i.test(v));
+        const cols = lines[headerIdx].split("\t").map(v => v.trim());
+        const idxGroup = cols.findIndex(v => /^group$/i.test(v));
+        const idxClass = cols.findIndex(v => /^wowClass$/i.test(v));
+        const idxSubClass = cols.findIndex(v => /^wowSubClass$/i.test(v));
+        const idxItemId = cols.findIndex(v => /^itemID$/i.test(v));
+        const idxName = cols.findIndex(v => /^name$/i.test(v));
+        const idxTier = cols.findIndex(v => /^craftQualityTier$/i.test(v));
+        const idxTierText = cols.findIndex(v => /^craftQualityText$/i.test(v));
         const idxText = cols.findIndex(v => /minUnitPriceText/i.test(v));
         const idxCount = cols.findIndex(v => /listingCount/i.test(v));
         const tsLine = lines.find(v => /ScanTime/i.test(v));
         const mt = tsLine && tsLine.match(/(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2})/);
         const ts = mt ? mt[1] : new Date().toISOString().slice(0, 19).replace("T", " ");
+        const ingestedAt = new Date().toISOString().slice(0, 19).replace("T", " ");
 
         const out = [];
         for (let i = headerIdx + 1; i < lines.length; i++) {
-          const p = lines[i].split(sep).map(v => v.trim());
+          const p = lines[i].split("\t").map(v => v.trim());
           if (p.length < cols.length) continue;
-          const n = parseNameRank(p[idxName]);
+          const itemName = String(p[idxName] || "").trim();
           const qty = Number(p[idxCount]);
-          const price = parsePrice(p[idxPrice], idxText >= 0 ? p[idxText] : "");
-          if (!n.item || !Number.isFinite(qty) || !Number.isFinite(price)) continue;
-          out.push({ item_name: n.item, rank: n.rank, price, qty, ts });
+          const price = parsePrice("", idxText >= 0 ? p[idxText] : "");
+          const rank = normalizeRankForClient(idxTier >= 0 ? p[idxTier] : "");
+          if (!itemName || !Number.isFinite(qty) || !Number.isFinite(price)) continue;
+          out.push({
+            item_name: itemName,
+            item_id: Number(p[idxItemId] || 0),
+            rank: rank == null ? 1 : rank,
+            quality_tier: rank == null ? 0 : rank,
+            quality_text: idxTierText >= 0 ? String(p[idxTierText] || "").trim() : "",
+            group: idxGroup >= 0 ? String(p[idxGroup] || "").trim() : "",
+            wow_class: idxClass >= 0 ? String(p[idxClass] || "").trim() : "",
+            wow_sub_class: idxSubClass >= 0 ? String(p[idxSubClass] || "").trim() : "",
+            price,
+            qty,
+            ts,
+            ingestedAt
+          });
         }
         if (!out.length) return { rows: [], error: "没有解析到有效行" };
         return { rows: out, error: null };
@@ -1108,6 +1213,7 @@
 
       function render() {
         renderTabs();
+        renderCategoryTabs();
         refreshProductOptions();
         refreshEventItemOptions();
         drawMainChart();
@@ -1120,6 +1226,19 @@
         updateCalc();
       }
 
+      async function checkPublishServer() {
+        try {
+          const r = await fetch("http://127.0.0.1:8787/api/health", { method: "GET" });
+          if (!r.ok) throw new Error("server not ready");
+          const d = await r.json();
+          serverMeta.textContent = `在线 (${d.ts || "ok"})`;
+          serverMeta.style.color = "#7ddfa2";
+        } catch (_) {
+          serverMeta.textContent = "离线";
+          serverMeta.style.color = "#ffd38d";
+        }
+      }
+
       state.localRows = loadLocalRows();
       state.events = loadEvents();
       refreshEventList();
@@ -1130,11 +1249,6 @@
       tabAnalysis.addEventListener("click", () => { state.top = "analysis"; render(); });
       tabToolkit.addEventListener("click", () => { state.top = "toolkit"; render(); });
       tabOther.addEventListener("click", () => { state.top = "other"; render(); });
-
-      catFocus.addEventListener("click", () => { state.cat = "focus"; render(); });
-      catHerb.addEventListener("click", () => { state.cat = "herb"; render(); });
-      catIns.addEventListener("click", () => { state.cat = "ins"; render(); });
-      catOther.addEventListener("click", () => { state.cat = "other"; render(); });
 
       productSel.addEventListener("change", () => { state.product = productSel.value; render(); });
       rankSel.addEventListener("change", () => { state.rankMode = rankSel.value; render(); });
@@ -1151,19 +1265,78 @@
       });
 
       importBtn.addEventListener("click", () => {
-        const p = parseReplicateText(importText.value);
-        if (p.error) { importMeta.textContent = `导入失败：${p.error}`; return; }
-        const key = r => `${r.ts}|${r.item_name}|${r.rank}|${r.price}|${r.qty}`;
-        const seen = new Set(state.localRows.map(key));
-        let add = 0;
-        p.rows.forEach(r => { const k = key(r); if (!seen.has(k)) { state.localRows.push(r); seen.add(k); add++; } });
-        saveLocalRows();
-        importMeta.textContent = `导入成功：${add} 条`;
-        render();
+        const text = (importText.value || "").trim();
+        if (!text) { importMeta.textContent = "导入失败：请先粘贴导出文本"; return; }
+        importBtn.disabled = true;
+        importMeta.textContent = "正在导入到本地文件...";
+        fetch("http://127.0.0.1:8787/api/import-local", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text })
+        }).then(async (r) => {
+          const d = await r.json();
+          if (!r.ok || !d.ok) {
+            importMeta.textContent = `本地导入失败：${d.error || "unknown error"}`;
+            await checkPublishServer();
+            return;
+          }
+          const p = parseReplicateText(text);
+          if (!p.error) {
+            const key = x => `${x.ts}|${x.item_id}|${x.item_name}|${x.rank}|${x.price}|${x.qty}`;
+            const seen = new Set(state.localRows.map(key));
+            p.rows.forEach(x => { const k = key(x); if (!seen.has(k)) { state.localRows.push(x); seen.add(k); } });
+            saveLocalRows();
+          }
+          render();
+          importMeta.textContent = `本地入库成功：${d.addedRows}/${d.parsedRows} 条`;
+          await checkPublishServer();
+        }).catch(async (e) => {
+          importMeta.textContent = `本地导入失败：${e && e.message ? e.message : "网络错误"}`;
+          await checkPublishServer();
+        }).finally(() => {
+          importBtn.disabled = false;
+        });
+      });
+      importPublishBtn.addEventListener("click", async () => {
+        const text = (importText.value || "").trim();
+        if (!text) { importMeta.textContent = "导入失败：请先粘贴导出文本"; return; }
+        importPublishBtn.disabled = true;
+        importMeta.textContent = "正在导入并发布...";
+        try {
+          const r = await fetch("http://127.0.0.1:8787/api/import-and-publish", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ text, autoPush: true })
+          });
+          const d = await r.json();
+          if (!r.ok || !d.ok) {
+            importMeta.textContent = `发布失败：${d.error || "unknown error"}`;
+            await checkPublishServer();
+            return;
+          }
+
+          const p = parseReplicateText(text);
+          if (!p.error) {
+            const key = x => `${x.ts}|${x.item_id}|${x.item_name}|${x.rank}|${x.price}|${x.qty}`;
+            const seen = new Set(state.localRows.map(key));
+            p.rows.forEach(x => { const k = key(x); if (!seen.has(k)) { state.localRows.push(x); seen.add(k); } });
+            saveLocalRows();
+          }
+          render();
+          const commit = d.publish && d.publish.commit ? d.publish.commit : "无提交";
+          importMeta.textContent = `导入${d.addedRows}/${d.parsedRows}条，已发布：${commit}`;
+          await checkPublishServer();
+        } catch (e) {
+          importMeta.textContent = `发布失败：${e && e.message ? e.message : "网络错误"}`;
+          await checkPublishServer();
+        } finally {
+          importPublishBtn.disabled = false;
+        }
       });
       clearLocalBtn.addEventListener("click", () => {
         state.localRows = [];
         saveLocalRows();
+        importMeta.textContent = "已清空浏览器缓存，本地文件未删除";
         render();
       });
 
@@ -1214,6 +1387,7 @@
       window.addEventListener("resize", () => mainChart.resize());
       mainChart.on("globalout", () => setMiniQty(null, null));
       render();
+      checkPublishServer();
     })();
   </script>
 </body>
