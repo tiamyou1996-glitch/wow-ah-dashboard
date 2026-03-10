@@ -1,8 +1,9 @@
 ﻿window.WOW_AH_DATA = {
-    "generated_at":  "2026-03-10 13:08:01",
+    "generated_at":  "2026-03-10 14:23:09",
     "snapshots":  [
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  28.92,
@@ -13,6 +14,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  38.97,
@@ -23,6 +25,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  50.32,
@@ -33,6 +36,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  56.68,
@@ -43,6 +47,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  36.98,
@@ -53,6 +58,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  75.9,
@@ -63,6 +69,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  51.2,
@@ -73,6 +80,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  59.68,
@@ -83,6 +91,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -93,6 +102,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  78.88,
@@ -103,6 +113,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  22.95,
@@ -113,6 +124,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  32,
@@ -123,6 +135,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  409,
@@ -133,6 +146,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1887.99,
@@ -143,6 +157,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  29.88,
@@ -153,6 +168,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:38:17",
+                          "ingested_at":  "2026-03-07 11:38:17",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  89,
@@ -163,6 +179,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  31.87,
@@ -173,6 +190,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  37.4,
@@ -183,6 +201,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  51.87,
@@ -193,6 +212,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  55.68,
@@ -203,6 +223,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  36.98,
@@ -213,6 +234,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  75.9,
@@ -223,6 +245,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  50.29,
@@ -233,6 +256,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  50.68,
@@ -243,6 +267,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -253,6 +278,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  78.88,
@@ -263,6 +289,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  23,
@@ -273,6 +300,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  29,
@@ -283,6 +311,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  408.88,
@@ -293,6 +322,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1800,
@@ -303,6 +333,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  29.05,
@@ -313,6 +344,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 11:52:49",
+                          "ingested_at":  "2026-03-07 11:52:49",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  85.09,
@@ -323,6 +355,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  31.6,
@@ -333,6 +366,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  40,
@@ -343,6 +377,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  49.66,
@@ -353,6 +388,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  56.68,
@@ -363,6 +399,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  36.98,
@@ -373,6 +410,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  75.9,
@@ -383,6 +421,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  51.31,
@@ -393,6 +432,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  54.68,
@@ -403,6 +443,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -413,6 +454,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  78.88,
@@ -423,6 +465,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  23,
@@ -433,6 +476,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  29,
@@ -443,6 +487,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  409,
@@ -453,6 +498,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1800,
@@ -463,6 +509,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  30,
@@ -473,6 +520,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:08:55",
+                          "ingested_at":  "2026-03-07 12:08:55",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  85,
@@ -483,6 +531,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  30.49,
@@ -493,6 +542,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  45,
@@ -503,6 +553,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  49.8,
@@ -513,6 +564,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  53.58,
@@ -523,6 +575,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  36.95,
@@ -533,6 +586,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  75.9,
@@ -543,6 +597,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  52.35,
@@ -553,6 +608,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  54.68,
@@ -563,6 +619,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -573,6 +630,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  78.88,
@@ -583,6 +641,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  25,
@@ -593,6 +652,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  30,
@@ -603,6 +663,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  390,
@@ -613,6 +674,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1799.79,
@@ -623,6 +685,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  32.39,
@@ -633,6 +696,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 12:54:27",
+                          "ingested_at":  "2026-03-07 12:54:27",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  90.69,
@@ -643,6 +707,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  27.5,
@@ -653,6 +718,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  35,
@@ -663,6 +729,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  50,
@@ -673,6 +740,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  53.68,
@@ -683,6 +751,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  37,
@@ -693,6 +762,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  79.9,
@@ -703,6 +773,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  51,
@@ -713,6 +784,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  59.68,
@@ -723,6 +795,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -733,6 +806,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  78.88,
@@ -743,6 +817,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  22,
@@ -753,6 +828,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  30,
@@ -763,6 +839,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  330.3,
@@ -773,6 +850,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1700,
@@ -783,6 +861,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  29.35,
@@ -793,6 +872,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:08:07",
+                          "ingested_at":  "2026-03-07 15:08:07",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  96,
@@ -803,6 +883,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  190,
@@ -813,6 +894,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  195,
@@ -823,6 +905,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1040,
@@ -833,6 +916,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2725.99,
@@ -843,6 +927,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  28.59,
@@ -853,6 +938,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  36.79,
@@ -863,6 +949,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  3.99,
@@ -873,6 +960,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  12.23,
@@ -883,6 +971,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  49.8,
@@ -893,6 +982,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  50.68,
@@ -903,6 +993,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  39.34,
@@ -913,6 +1004,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  79.9,
@@ -923,6 +1015,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.3,
@@ -933,6 +1026,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  51.99,
@@ -943,6 +1037,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  98.55,
@@ -953,6 +1048,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -963,6 +1059,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -973,6 +1070,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  21.88,
@@ -983,6 +1081,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  30,
@@ -993,6 +1092,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4.21,
@@ -1003,6 +1103,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  360.3,
@@ -1013,6 +1114,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1799.3,
@@ -1023,6 +1125,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  28.18,
@@ -1033,6 +1136,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:28:08",
+                          "ingested_at":  "2026-03-07 15:28:08",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  89.99,
@@ -1043,6 +1147,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  35.94,
@@ -1053,6 +1158,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  36.95,
@@ -1063,6 +1169,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  33.49,
@@ -1073,6 +1180,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  34,
@@ -1083,6 +1191,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  7.93,
@@ -1093,6 +1202,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  8.44,
@@ -1103,6 +1213,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  190,
@@ -1113,6 +1224,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  196,
@@ -1123,6 +1235,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1018,
@@ -1133,6 +1246,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2711.99,
@@ -1143,6 +1257,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  26.1,
@@ -1153,6 +1268,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  32.3,
@@ -1163,6 +1279,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -1173,6 +1290,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  12.23,
@@ -1183,6 +1301,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  38.5,
@@ -1193,6 +1312,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  54.68,
@@ -1203,6 +1323,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  40,
@@ -1213,6 +1334,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  79.9,
@@ -1223,6 +1345,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  52.99,
@@ -1233,6 +1356,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1299.01,
@@ -1243,6 +1367,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.5,
@@ -1253,6 +1378,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  44.99,
@@ -1263,6 +1389,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  55.68,
@@ -1273,6 +1400,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -1283,6 +1411,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -1293,6 +1422,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  22,
@@ -1303,6 +1433,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -1313,6 +1444,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4.2,
@@ -1323,6 +1455,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  355,
@@ -1333,6 +1466,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1799,
@@ -1343,6 +1477,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  30.75,
@@ -1353,6 +1488,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 15:45:44",
+                          "ingested_at":  "2026-03-07 15:45:44",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  87,
@@ -1363,6 +1499,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  36.38,
@@ -1373,6 +1510,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  36.38,
@@ -1383,6 +1521,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  30.97,
@@ -1393,6 +1532,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  36.99,
@@ -1403,6 +1543,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  7.92,
@@ -1413,6 +1554,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  8.43,
@@ -1423,6 +1565,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  190,
@@ -1433,6 +1576,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  197,
@@ -1443,6 +1587,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1017,
@@ -1453,6 +1598,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2739.99,
@@ -1463,6 +1609,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  26.39,
@@ -1473,6 +1620,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  34.77,
@@ -1483,6 +1631,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -1493,6 +1642,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  12.29,
@@ -1503,6 +1653,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  46,
@@ -1513,6 +1664,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  53.68,
@@ -1523,6 +1675,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  40,
@@ -1533,6 +1686,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  79.9,
@@ -1543,6 +1697,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  63.77,
@@ -1553,6 +1708,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1298.99,
@@ -1563,6 +1719,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.49,
@@ -1573,6 +1730,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  48.37,
@@ -1583,6 +1741,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  95.04,
@@ -1593,6 +1752,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -1603,6 +1763,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -1613,6 +1774,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  23.99,
@@ -1623,6 +1785,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -1633,6 +1796,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -1643,6 +1807,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  360.77,
@@ -1653,6 +1818,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1799.7,
@@ -1663,6 +1829,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  29.96,
@@ -1673,6 +1840,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:06:35",
+                          "ingested_at":  "2026-03-07 16:06:35",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  84.39,
@@ -1683,6 +1851,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  36.88,
@@ -1693,6 +1862,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  36.97,
@@ -1703,6 +1873,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  32.93,
@@ -1713,6 +1884,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  33,
@@ -1723,6 +1895,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  7.92,
@@ -1733,6 +1906,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  8.4,
@@ -1743,6 +1917,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  190,
@@ -1753,6 +1928,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  196,
@@ -1763,6 +1939,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1014.99,
@@ -1773,6 +1950,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2739.98,
@@ -1783,6 +1961,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  27.42,
@@ -1793,6 +1972,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  34.1,
@@ -1803,6 +1983,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -1813,6 +1994,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  12.27,
@@ -1823,6 +2005,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  49,
@@ -1833,6 +2016,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  50.68,
@@ -1843,6 +2027,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  40,
@@ -1853,6 +2038,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  79.9,
@@ -1863,6 +2049,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  68.74,
@@ -1873,6 +2060,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1297.99,
@@ -1883,6 +2071,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.3,
@@ -1893,6 +2082,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  50,
@@ -1903,6 +2093,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  55.68,
@@ -1913,6 +2104,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -1923,6 +2115,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -1933,6 +2126,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  23,
@@ -1943,6 +2137,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -1953,6 +2148,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3,
@@ -1963,6 +2159,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  360.8,
@@ -1973,6 +2170,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1799.7,
@@ -1983,6 +2181,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  31.29,
@@ -1993,6 +2192,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:21:49",
+                          "ingested_at":  "2026-03-07 16:21:49",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  84.76,
@@ -2003,6 +2203,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  37,
@@ -2013,6 +2214,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  38,
@@ -2023,6 +2225,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  32.57,
@@ -2033,6 +2236,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  35.87,
@@ -2043,6 +2247,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  7,
@@ -2053,6 +2258,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  7,
@@ -2063,6 +2269,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  194.31,
@@ -2073,6 +2280,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  195,
@@ -2083,6 +2291,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1013.97,
@@ -2093,6 +2302,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2738.99,
@@ -2103,6 +2313,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  26.99,
@@ -2113,6 +2324,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  31.88,
@@ -2123,6 +2335,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -2133,6 +2346,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  14.49,
@@ -2143,6 +2357,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  49.48,
@@ -2153,6 +2368,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  55.68,
@@ -2163,6 +2379,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  42.5,
@@ -2173,6 +2390,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  79.9,
@@ -2183,6 +2401,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  66.48,
@@ -2193,6 +2412,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1298.99,
@@ -2203,6 +2423,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.07,
@@ -2213,6 +2434,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  47,
@@ -2223,6 +2445,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  55.08,
@@ -2233,6 +2456,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36,
@@ -2243,6 +2467,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -2253,6 +2478,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  22,
@@ -2263,6 +2489,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -2273,6 +2500,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.75,
@@ -2283,6 +2511,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  360.8,
@@ -2293,6 +2522,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1719,
@@ -2303,6 +2533,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  30,
@@ -2313,6 +2544,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 16:48:24",
+                          "ingested_at":  "2026-03-07 16:48:24",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  84.07,
@@ -2323,6 +2555,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  37,
@@ -2333,6 +2566,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  37.98,
@@ -2343,6 +2577,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  31.98,
@@ -2353,6 +2588,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  35.84,
@@ -2363,6 +2599,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.49,
@@ -2373,6 +2610,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  7.5,
@@ -2383,6 +2621,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  189,
@@ -2393,6 +2632,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  195,
@@ -2403,6 +2643,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1010,
@@ -2413,6 +2654,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2500,
@@ -2423,6 +2665,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  28.9,
@@ -2433,6 +2676,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  37.86,
@@ -2443,6 +2687,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -2453,6 +2698,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  18.86,
@@ -2463,6 +2709,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  48.88,
@@ -2473,6 +2720,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  55.68,
@@ -2483,6 +2731,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  42.45,
@@ -2493,6 +2742,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  79.9,
@@ -2503,6 +2753,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  66.9,
@@ -2513,6 +2764,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1090,
@@ -2523,6 +2775,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -2533,6 +2786,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  50.9,
@@ -2543,6 +2797,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  53.68,
@@ -2553,6 +2808,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -2563,6 +2819,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  74.88,
@@ -2573,6 +2830,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  24,
@@ -2583,6 +2841,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  29,
@@ -2593,6 +2852,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.18,
@@ -2603,6 +2863,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  360.55,
@@ -2613,6 +2874,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1350,
@@ -2623,6 +2885,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  29,
@@ -2633,6 +2896,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 18:05:48",
+                          "ingested_at":  "2026-03-07 18:05:48",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -2643,6 +2907,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  38.05,
@@ -2653,6 +2918,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  38.55,
@@ -2663,6 +2929,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  35.93,
@@ -2673,6 +2940,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  36.42,
@@ -2683,6 +2951,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.95,
@@ -2693,6 +2962,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  7.89,
@@ -2703,6 +2973,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  188,
@@ -2713,6 +2984,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  190,
@@ -2723,6 +2995,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1008.97,
@@ -2733,6 +3006,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2498.8,
@@ -2743,6 +3017,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  28.99,
@@ -2753,6 +3028,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  37.03,
@@ -2763,6 +3039,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -2773,6 +3050,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  15,
@@ -2783,6 +3061,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  46.48,
@@ -2793,6 +3072,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  75.9,
@@ -2803,6 +3083,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  38.45,
@@ -2813,6 +3094,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  79.01,
@@ -2823,6 +3105,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  64.57,
@@ -2833,6 +3116,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1089,
@@ -2843,6 +3127,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.77,
@@ -2853,6 +3138,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  46.99,
@@ -2863,6 +3149,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  87.99,
@@ -2873,6 +3160,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -2883,6 +3171,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -2893,6 +3182,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  22,
@@ -2903,6 +3193,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  30,
@@ -2913,6 +3204,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.17,
@@ -2923,6 +3215,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  350,
@@ -2933,6 +3226,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1395.54,
@@ -2943,6 +3237,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  29,
@@ -2953,6 +3248,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:26:15",
+                          "ingested_at":  "2026-03-07 19:26:15",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  77.5,
@@ -2963,6 +3259,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  37.99,
@@ -2973,6 +3270,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  40,
@@ -2983,6 +3281,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  36.5,
@@ -2993,6 +3292,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  39.84,
@@ -3003,6 +3303,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.92,
@@ -3013,6 +3314,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  7.88,
@@ -3023,6 +3325,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  187.06,
@@ -3033,6 +3336,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  188.06,
@@ -3043,6 +3347,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  999.99,
@@ -3053,6 +3358,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2779.99,
@@ -3063,6 +3369,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  27,
@@ -3073,6 +3380,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  35.51,
@@ -3083,6 +3391,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  3.88,
@@ -3093,6 +3402,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  14.77,
@@ -3103,6 +3413,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  46.45,
@@ -3113,6 +3424,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -3123,6 +3435,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  38.22,
@@ -3133,6 +3446,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  79.11,
@@ -3143,6 +3457,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  64.38,
@@ -3153,6 +3468,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1089,
@@ -3163,6 +3479,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -3173,6 +3490,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  45.52,
@@ -3183,6 +3501,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  55.67,
@@ -3193,6 +3512,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -3203,6 +3523,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -3213,6 +3534,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  21.99,
@@ -3223,6 +3545,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  30,
@@ -3233,6 +3556,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.28,
@@ -3243,6 +3567,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  350,
@@ -3253,6 +3578,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1720,
@@ -3263,6 +3589,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  27.35,
@@ -3273,6 +3600,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 19:55:08",
+                          "ingested_at":  "2026-03-07 19:55:08",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  77.44,
@@ -3283,6 +3611,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  36.54,
@@ -3293,6 +3622,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  37.22,
@@ -3303,6 +3633,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  35,
@@ -3313,6 +3644,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  37.81,
@@ -3323,6 +3655,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.91,
@@ -3333,6 +3666,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  7.88,
@@ -3343,6 +3677,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  150,
@@ -3353,6 +3688,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  188.99,
@@ -3363,6 +3699,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1000,
@@ -3373,6 +3710,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2779.88,
@@ -3383,6 +3721,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  29,
@@ -3393,6 +3732,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  35.45,
@@ -3403,6 +3743,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -3413,6 +3754,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  14.77,
@@ -3423,6 +3765,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  45.98,
@@ -3433,6 +3776,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  79,
@@ -3443,6 +3787,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  38.22,
@@ -3453,6 +3798,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  79.11,
@@ -3463,6 +3809,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  64.69,
@@ -3473,6 +3820,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1089,
@@ -3483,6 +3831,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  246,
@@ -3493,6 +3842,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  800.65,
@@ -3503,6 +3853,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3,
@@ -3513,6 +3864,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  46.91,
@@ -3523,6 +3875,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  95,
@@ -3533,6 +3886,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -3543,6 +3897,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -3553,6 +3908,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  21.99,
@@ -3563,6 +3919,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  29,
@@ -3573,6 +3930,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.19,
@@ -3583,6 +3941,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  348.99,
@@ -3593,6 +3952,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1721,
@@ -3603,6 +3963,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  28.99,
@@ -3613,6 +3974,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:09:18",
+                          "ingested_at":  "2026-03-07 20:09:18",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  76.4,
@@ -3623,6 +3985,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  37.88,
@@ -3633,6 +3996,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  39.92,
@@ -3643,6 +4007,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  35.39,
@@ -3653,6 +4018,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  39.87,
@@ -3663,6 +4029,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.94,
@@ -3673,6 +4040,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  5.99,
@@ -3683,6 +4051,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  187.82,
@@ -3693,6 +4062,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  188.38,
@@ -3703,6 +4073,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1000,
@@ -3713,6 +4084,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2640,
@@ -3723,6 +4095,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  29.97,
@@ -3733,6 +4106,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  35.87,
@@ -3743,6 +4117,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -3753,6 +4128,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  13.44,
@@ -3763,6 +4139,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  45.55,
@@ -3773,6 +4150,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  84.16,
@@ -3783,6 +4161,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  38.22,
@@ -3793,6 +4172,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  78.99,
@@ -3803,6 +4183,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  64.58,
@@ -3813,6 +4194,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1089,
@@ -3823,6 +4205,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  245.88,
@@ -3833,6 +4216,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  789,
@@ -3843,6 +4227,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.56,
@@ -3853,6 +4238,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  45.4,
@@ -3863,6 +4249,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  52.68,
@@ -3873,6 +4260,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -3883,6 +4271,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -3893,6 +4282,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  21,
@@ -3903,6 +4293,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -3913,6 +4304,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.28,
@@ -3923,6 +4315,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  348,
@@ -3933,6 +4326,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1799,
@@ -3943,6 +4337,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  28.11,
@@ -3953,6 +4348,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  72.71,
@@ -3963,6 +4359,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  11.88,
@@ -3973,6 +4370,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  33.97,
@@ -3983,6 +4381,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  8.99,
@@ -3993,6 +4392,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 20:52:08",
+                          "ingested_at":  "2026-03-07 20:52:08",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  41,
@@ -4003,6 +4403,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  37.88,
@@ -4013,6 +4414,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  39.92,
@@ -4023,6 +4425,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  35.39,
@@ -4033,6 +4436,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  39.87,
@@ -4043,6 +4447,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.94,
@@ -4053,6 +4458,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  5.99,
@@ -4063,6 +4469,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  187.82,
@@ -4073,6 +4480,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  188.38,
@@ -4083,6 +4491,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1000,
@@ -4093,6 +4502,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2640,
@@ -4103,6 +4513,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  29.97,
@@ -4113,6 +4524,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  35.87,
@@ -4123,6 +4535,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -4133,6 +4546,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  13.44,
@@ -4143,6 +4557,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  45.55,
@@ -4153,6 +4568,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  84.16,
@@ -4163,6 +4579,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  38.22,
@@ -4173,6 +4590,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  78.99,
@@ -4183,6 +4601,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  64.58,
@@ -4193,6 +4612,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1089,
@@ -4203,6 +4623,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  245.88,
@@ -4213,6 +4634,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  789,
@@ -4223,6 +4645,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.56,
@@ -4233,6 +4656,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  45.4,
@@ -4243,6 +4667,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  52.68,
@@ -4253,6 +4678,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -4263,6 +4689,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -4273,6 +4700,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  21,
@@ -4283,6 +4711,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -4293,6 +4722,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.28,
@@ -4303,6 +4733,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  348,
@@ -4313,6 +4744,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1799,
@@ -4323,6 +4755,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  28.11,
@@ -4333,6 +4766,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  72.71,
@@ -4343,6 +4777,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  11.88,
@@ -4353,6 +4788,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  33.97,
@@ -4363,6 +4799,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  8.99,
@@ -4373,6 +4810,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 21:06:04",
+                          "ingested_at":  "2026-03-07 21:06:04",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  41,
@@ -4383,6 +4821,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  38,
@@ -4393,6 +4832,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  38.77,
@@ -4403,6 +4843,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  35.1,
@@ -4413,6 +4854,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  39.78,
@@ -4423,6 +4865,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6,
@@ -4433,6 +4876,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  8,
@@ -4443,6 +4887,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  187.98,
@@ -4453,6 +4898,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  189.04,
@@ -4463,6 +4909,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  999.99,
@@ -4473,6 +4920,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2499.53,
@@ -4483,6 +4931,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  28,
@@ -4493,6 +4942,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  36.88,
@@ -4503,6 +4953,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -4513,6 +4964,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  12.91,
@@ -4523,6 +4975,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  45.01,
@@ -4533,6 +4986,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  81,
@@ -4543,6 +4997,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -4553,6 +5008,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  78.99,
@@ -4563,6 +5019,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  59.77,
@@ -4573,6 +5030,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  999.99,
@@ -4583,6 +5041,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  244,
@@ -4593,6 +5052,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  780,
@@ -4603,6 +5063,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  2.88,
@@ -4613,6 +5074,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  48.5,
@@ -4623,6 +5085,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  87.99,
@@ -4633,6 +5096,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -4643,6 +5107,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -4653,6 +5118,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  22,
@@ -4663,6 +5129,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  44,
@@ -4673,6 +5140,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  2.88,
@@ -4683,6 +5151,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  340.66,
@@ -4693,6 +5162,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1745,
@@ -4703,6 +5173,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  28.54,
@@ -4713,6 +5184,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  78.75,
@@ -4723,6 +5195,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  11.99,
@@ -4733,6 +5206,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  24.99,
@@ -4743,6 +5217,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  8.99,
@@ -4753,6 +5228,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 22:13:42",
+                          "ingested_at":  "2026-03-07 22:13:42",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  35.99,
@@ -4763,6 +5239,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  37.96,
@@ -4773,6 +5250,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  39.05,
@@ -4783,6 +5261,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  30.95,
@@ -4793,6 +5272,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  39.75,
@@ -4803,6 +5283,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  5.99,
@@ -4813,6 +5294,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  9.43,
@@ -4823,6 +5305,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  185.99,
@@ -4833,6 +5316,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  189.04,
@@ -4843,6 +5327,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  995,
@@ -4853,6 +5338,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2600,
@@ -4863,6 +5349,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  26.99,
@@ -4873,6 +5360,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  36.09,
@@ -4883,6 +5371,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -4893,6 +5382,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  12.2,
@@ -4903,6 +5393,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  45.38,
@@ -4913,6 +5404,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  76.98,
@@ -4923,6 +5415,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  34.2,
@@ -4933,6 +5426,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -4943,6 +5437,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  59.89,
@@ -4953,6 +5448,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  995,
@@ -4963,6 +5459,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  230,
@@ -4973,6 +5470,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  780,
@@ -4983,6 +5481,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  2.88,
@@ -4993,6 +5492,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  47.11,
@@ -5003,6 +5503,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -5013,6 +5514,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -5023,6 +5525,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -5033,6 +5536,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  20.58,
@@ -5043,6 +5547,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  40,
@@ -5053,6 +5558,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3,
@@ -5063,6 +5569,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  340.66,
@@ -5073,6 +5580,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1690,
@@ -5083,6 +5591,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  26.98,
@@ -5093,6 +5602,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  83.79,
@@ -5103,6 +5613,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  6.87,
@@ -5113,6 +5624,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  29.99,
@@ -5123,6 +5635,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  8.99,
@@ -5133,6 +5646,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:09:19",
+                          "ingested_at":  "2026-03-07 23:09:19",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  35.99,
@@ -5143,6 +5657,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  36.69,
@@ -5153,6 +5668,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  36.69,
@@ -5163,6 +5679,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  32.99,
@@ -5173,6 +5690,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  39.37,
@@ -5183,6 +5701,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  5.7,
@@ -5193,6 +5712,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  9.03,
@@ -5203,6 +5723,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  187,
@@ -5213,6 +5734,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  189.04,
@@ -5223,6 +5745,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  994.99,
@@ -5233,6 +5756,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2599.98,
@@ -5243,6 +5767,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  25.45,
@@ -5253,6 +5778,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  33.94,
@@ -5263,6 +5789,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -5273,6 +5800,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  12.42,
@@ -5283,6 +5811,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  43,
@@ -5293,6 +5822,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  74.44,
@@ -5303,6 +5833,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  34.2,
@@ -5313,6 +5844,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -5323,6 +5855,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  58.92,
@@ -5333,6 +5866,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  998,
@@ -5343,6 +5877,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  242,
@@ -5353,6 +5888,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  777,
@@ -5363,6 +5899,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.88,
@@ -5373,6 +5910,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  42.09,
@@ -5383,6 +5921,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  79,
@@ -5393,6 +5932,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36,
@@ -5403,6 +5943,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -5413,6 +5954,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  19.99,
@@ -5423,6 +5965,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  39,
@@ -5433,6 +5976,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  2.95,
@@ -5443,6 +5987,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  348.66,
@@ -5453,6 +5998,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1688,
@@ -5463,6 +6009,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  25.95,
@@ -5473,6 +6020,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  80.11,
@@ -5483,6 +6031,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  10.75,
@@ -5493,6 +6042,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  28.9,
@@ -5503,6 +6053,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  8.66,
@@ -5513,6 +6064,7 @@
                       },
                       {
                           "observed_at":  "2026-03-07 23:31:32",
+                          "ingested_at":  "2026-03-07 23:31:32",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  35.99,
@@ -5523,6 +6075,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  37,
@@ -5533,6 +6086,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  38.5,
@@ -5543,6 +6097,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  33.49,
@@ -5553,6 +6108,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  39.75,
@@ -5563,6 +6119,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  5.95,
@@ -5573,6 +6130,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  8.76,
@@ -5583,6 +6141,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  188,
@@ -5593,6 +6152,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  188,
@@ -5603,6 +6163,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  980,
@@ -5613,6 +6174,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2599.98,
@@ -5623,6 +6185,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  20.1,
@@ -5633,6 +6196,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  34.7,
@@ -5643,6 +6207,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "暮贼石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -5653,6 +6218,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  12,
@@ -5663,6 +6229,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  42.9,
@@ -5673,6 +6240,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  72.7,
@@ -5683,6 +6251,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  36.22,
@@ -5693,6 +6262,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -5703,6 +6273,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  58.3,
@@ -5713,6 +6284,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  998,
@@ -5723,6 +6295,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  244,
@@ -5733,6 +6306,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  777,
@@ -5743,6 +6317,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  2.9,
@@ -5753,6 +6328,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  44.96,
@@ -5763,6 +6339,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  77.78,
@@ -5773,6 +6350,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  35.6,
@@ -5783,6 +6361,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -5793,6 +6372,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  19.99,
@@ -5803,6 +6383,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  39,
@@ -5813,6 +6394,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  2.95,
@@ -5823,6 +6405,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  335.95,
@@ -5833,6 +6416,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1600,
@@ -5843,6 +6427,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  25.66,
@@ -5853,6 +6438,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  73,
@@ -5863,6 +6449,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  10.48,
@@ -5873,6 +6460,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  27.1,
@@ -5883,6 +6471,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  8.6,
@@ -5893,6 +6482,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 00:15:33",
+                          "ingested_at":  "2026-03-08 00:15:33",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  35.99,
@@ -5903,6 +6493,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  36,
@@ -5913,6 +6504,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  38.9,
@@ -5923,6 +6515,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  33.06,
@@ -5933,6 +6526,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  36.77,
@@ -5943,6 +6537,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.91,
@@ -5953,6 +6548,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  8.73,
@@ -5963,6 +6559,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  188.99,
@@ -5973,6 +6570,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  189.04,
@@ -5983,6 +6581,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  950.77,
@@ -5993,6 +6592,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2559,
@@ -6003,6 +6603,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  26.33,
@@ -6013,6 +6614,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  35.72,
@@ -6023,6 +6625,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -6033,6 +6636,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  195,
@@ -6043,6 +6647,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  480.03,
@@ -6053,6 +6658,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  12.14,
@@ -6063,6 +6669,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  47,
@@ -6073,6 +6680,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  67.64,
@@ -6083,6 +6691,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  40.4,
@@ -6093,6 +6702,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -6103,6 +6713,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  51.75,
@@ -6113,6 +6724,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1060,
@@ -6123,6 +6735,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  230,
@@ -6133,6 +6746,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  776.99,
@@ -6143,6 +6757,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.07,
@@ -6153,6 +6768,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  46.48,
@@ -6163,6 +6779,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  74,
@@ -6173,6 +6790,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  35,
@@ -6183,6 +6801,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -6193,6 +6812,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  21.22,
@@ -6203,6 +6823,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  38,
@@ -6213,6 +6834,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  2.88,
@@ -6223,6 +6845,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  325,
@@ -6233,6 +6856,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1600,
@@ -6243,6 +6867,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  26.89,
@@ -6253,6 +6878,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  70.74,
@@ -6263,6 +6889,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  9.09,
@@ -6273,6 +6900,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  13.09,
@@ -6283,6 +6911,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  8.6,
@@ -6293,6 +6922,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  35.99,
@@ -6303,6 +6933,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  270.09,
@@ -6313,6 +6944,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 01:27:22",
+                          "ingested_at":  "2026-03-08 01:27:22",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  605.7,
@@ -6323,6 +6955,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  15.68,
@@ -6333,6 +6966,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  36,
@@ -6343,6 +6977,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  29.98,
@@ -6353,6 +6988,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  39.66,
@@ -6363,6 +6999,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.84,
@@ -6373,6 +7010,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  8.3,
@@ -6383,6 +7021,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  185,
@@ -6393,6 +7032,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  186,
@@ -6403,6 +7043,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  950.76,
@@ -6413,6 +7054,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2566.97,
@@ -6423,6 +7065,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  26.98,
@@ -6433,6 +7076,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  33,
@@ -6443,6 +7087,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -6453,6 +7098,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  190,
@@ -6463,6 +7109,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  480.13,
@@ -6473,6 +7120,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  12.3,
@@ -6483,6 +7131,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  45.9,
@@ -6493,6 +7142,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  66.99,
@@ -6503,6 +7153,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  39,
@@ -6513,6 +7164,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  65,
@@ -6523,6 +7175,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  49.99,
@@ -6533,6 +7186,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1030.98,
@@ -6543,6 +7197,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  200,
@@ -6553,6 +7208,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  770,
@@ -6563,6 +7219,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  2.87,
@@ -6573,6 +7230,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  46.09,
@@ -6583,6 +7241,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  83.33,
@@ -6593,6 +7252,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  35.5,
@@ -6603,6 +7263,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -6613,6 +7274,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  21.3,
@@ -6623,6 +7285,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  35,
@@ -6633,6 +7296,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  2.78,
@@ -6643,6 +7307,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  320,
@@ -6653,6 +7318,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1500.85,
@@ -6663,6 +7329,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  26.94,
@@ -6673,6 +7340,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  68.43,
@@ -6683,6 +7351,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  12,
@@ -6693,6 +7362,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  13.09,
@@ -6703,6 +7373,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  8.59,
@@ -6713,6 +7384,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  35,
@@ -6723,6 +7395,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  270.09,
@@ -6733,6 +7406,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 02:53:09",
+                          "ingested_at":  "2026-03-08 02:53:09",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  605.69,
@@ -6743,6 +7417,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  37.51,
@@ -6753,6 +7428,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  38,
@@ -6763,6 +7439,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  30.49,
@@ -6773,6 +7450,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  35.48,
@@ -6783,6 +7461,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.72,
@@ -6793,6 +7472,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  7.99,
@@ -6803,6 +7483,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  188,
@@ -6813,6 +7494,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  189,
@@ -6823,6 +7505,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  895.97,
@@ -6833,6 +7516,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2470.89,
@@ -6843,6 +7527,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  29,
@@ -6853,6 +7538,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  35.28,
@@ -6863,6 +7549,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  31.73,
@@ -6873,6 +7560,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  195,
@@ -6883,6 +7571,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  475,
@@ -6893,6 +7582,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  10.95,
@@ -6903,6 +7593,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  46.9,
@@ -6913,6 +7604,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  70.91,
@@ -6923,6 +7615,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  34.99,
@@ -6933,6 +7626,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  63.27,
@@ -6943,6 +7637,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  57.34,
@@ -6953,6 +7648,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  990,
@@ -6963,6 +7659,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  230,
@@ -6973,6 +7670,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  696.91,
@@ -6983,6 +7681,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -6993,6 +7692,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  49.5,
@@ -7003,6 +7703,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  87.75,
@@ -7013,6 +7714,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  35.5,
@@ -7023,6 +7725,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -7033,6 +7736,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  22.98,
@@ -7043,6 +7747,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  24.5,
@@ -7053,6 +7758,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.07,
@@ -7063,6 +7769,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  318.55,
@@ -7073,6 +7780,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1380,
@@ -7083,6 +7791,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  30.99,
@@ -7093,6 +7802,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  80.25,
@@ -7103,6 +7813,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  12.22,
@@ -7113,6 +7824,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  47.3,
@@ -7123,6 +7835,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7.46,
@@ -7133,6 +7846,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  29.5,
@@ -7143,6 +7857,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  290,
@@ -7153,6 +7868,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 12:33:31",
+                          "ingested_at":  "2026-03-08 12:33:31",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  596.29,
@@ -7163,6 +7879,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  35.99,
@@ -7173,6 +7890,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  37,
@@ -7183,6 +7901,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  30.32,
@@ -7193,6 +7912,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  37.21,
@@ -7203,6 +7923,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.7,
@@ -7213,6 +7934,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  8.66,
@@ -7223,6 +7945,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  524.98,
@@ -7233,6 +7956,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  186.66,
@@ -7243,6 +7967,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  188,
@@ -7253,6 +7978,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  888,
@@ -7263,6 +7989,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2400,
@@ -7273,6 +8000,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  28.3,
@@ -7283,6 +8011,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  31.97,
@@ -7293,6 +8022,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  29.57,
@@ -7303,6 +8033,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  195,
@@ -7313,6 +8044,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  475,
@@ -7323,6 +8055,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  10.74,
@@ -7333,6 +8066,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  49,
@@ -7343,6 +8077,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  67,
@@ -7353,6 +8088,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  36,
@@ -7363,6 +8099,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  63.26,
@@ -7373,6 +8110,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  57.33,
@@ -7383,6 +8121,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  996.03,
@@ -7393,6 +8132,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  230,
@@ -7403,6 +8143,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  690.1,
@@ -7413,6 +8154,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.88,
@@ -7423,6 +8165,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  50,
@@ -7433,6 +8176,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  88,
@@ -7443,6 +8187,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  39.4,
@@ -7453,6 +8198,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -7463,6 +8209,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  22.97,
@@ -7473,6 +8220,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  26,
@@ -7483,6 +8231,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.04,
@@ -7493,6 +8242,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  318.55,
@@ -7503,6 +8253,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1380,
@@ -7513,6 +8264,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  31.5,
@@ -7523,6 +8275,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  73.2,
@@ -7533,6 +8286,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  12.78,
@@ -7543,6 +8297,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  40.19,
@@ -7553,6 +8308,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7.46,
@@ -7563,6 +8319,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  29.5,
@@ -7573,6 +8330,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  280,
@@ -7583,6 +8341,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 13:18:52",
+                          "ingested_at":  "2026-03-08 13:18:52",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  596.27,
@@ -7593,6 +8352,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  36.39,
@@ -7603,6 +8363,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  59.26,
@@ -7613,6 +8374,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  40.66,
@@ -7623,6 +8385,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -7633,6 +8396,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  22.97,
@@ -7643,6 +8407,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  29.2,
@@ -7653,6 +8418,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7.41,
@@ -7663,6 +8429,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  29.5,
@@ -7673,6 +8440,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  279.99,
@@ -7683,6 +8451,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  596,
@@ -7693,6 +8462,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  48.8,
@@ -7703,6 +8473,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  79.99,
@@ -7713,6 +8484,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  46,
@@ -7723,6 +8495,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  63.58,
@@ -7733,6 +8506,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  11.3,
@@ -7743,6 +8517,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 14:20:58",
+                          "ingested_at":  "2026-03-08 14:20:58",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  38.45,
@@ -7753,6 +8528,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  35.88,
@@ -7763,6 +8539,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  36.88,
@@ -7773,6 +8550,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  28.4,
@@ -7783,6 +8561,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  32.98,
@@ -7793,6 +8572,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.01,
@@ -7803,6 +8583,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  11,
@@ -7813,6 +8594,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  526.21,
@@ -7823,6 +8605,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  186.5,
@@ -7833,6 +8616,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  186.5,
@@ -7843,6 +8627,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  978.98,
@@ -7853,6 +8638,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2999,
@@ -7863,6 +8649,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  28,
@@ -7873,6 +8660,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  30.58,
@@ -7883,6 +8671,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  10.17,
@@ -7893,6 +8682,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  191.99,
@@ -7903,6 +8693,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  474.33,
@@ -7913,6 +8704,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  11,
@@ -7923,6 +8715,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  45.4,
@@ -7933,6 +8726,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  60.64,
@@ -7943,6 +8737,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  36.89,
@@ -7953,6 +8748,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  63.26,
@@ -7963,6 +8759,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  53.99,
@@ -7973,6 +8770,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  996.96,
@@ -7983,6 +8781,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  229,
@@ -7993,6 +8792,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  690.66,
@@ -8003,6 +8803,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.87,
@@ -8013,6 +8814,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  46.8,
@@ -8023,6 +8825,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  79,
@@ -8033,6 +8836,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  59.59,
@@ -8043,6 +8847,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -8053,6 +8858,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  21.96,
@@ -8063,6 +8869,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  29,
@@ -8073,6 +8880,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -8083,6 +8891,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  335,
@@ -8093,6 +8902,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1188,
@@ -8103,6 +8913,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  31,
@@ -8113,6 +8924,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  80,
@@ -8123,6 +8935,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  10.9,
@@ -8133,6 +8946,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  30.88,
@@ -8143,6 +8957,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7.41,
@@ -8153,6 +8968,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  270,
@@ -8163,6 +8979,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 15:03:49",
+                          "ingested_at":  "2026-03-08 15:03:49",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  596,
@@ -8173,6 +8990,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  34.44,
@@ -8183,6 +9001,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  34.95,
@@ -8193,6 +9012,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  27.33,
@@ -8203,6 +9023,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  32.92,
@@ -8213,6 +9034,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.82,
@@ -8223,6 +9045,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  10.59,
@@ -8233,6 +9056,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  499.22,
@@ -8243,6 +9067,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  186.97,
@@ -8253,6 +9078,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  187,
@@ -8263,6 +9089,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1060.81,
@@ -8273,6 +9100,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  3400,
@@ -8283,6 +9111,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  28.08,
@@ -8293,6 +9122,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  31.97,
@@ -8303,6 +9133,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  26.04,
@@ -8313,6 +9144,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  190.07,
@@ -8323,6 +9155,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  470.33,
@@ -8333,6 +9166,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  11.66,
@@ -8343,6 +9177,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  43.08,
@@ -8353,6 +9188,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  60.58,
@@ -8363,6 +9199,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  33.88,
@@ -8373,6 +9210,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  63.26,
@@ -8383,6 +9221,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  45,
@@ -8393,6 +9232,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1000,
@@ -8403,6 +9243,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  228.99,
@@ -8413,6 +9254,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  685,
@@ -8423,6 +9265,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.1,
@@ -8433,6 +9276,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  44.99,
@@ -8443,6 +9287,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  90.65,
@@ -8453,6 +9298,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  40.75,
@@ -8463,6 +9309,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -8473,6 +9320,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  21.75,
@@ -8483,6 +9331,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  29,
@@ -8493,6 +9342,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -8503,6 +9353,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  320,
@@ -8513,6 +9364,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1380,
@@ -8523,6 +9375,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  28.99,
@@ -8533,6 +9386,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  72.76,
@@ -8543,6 +9397,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  11.27,
@@ -8553,6 +9408,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  37.99,
@@ -8563,6 +9419,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7.33,
@@ -8573,6 +9430,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  29.5,
@@ -8583,6 +9441,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  270,
@@ -8593,6 +9452,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 16:41:22",
+                          "ingested_at":  "2026-03-08 16:41:22",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  589.99,
@@ -8603,6 +9463,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  30.39,
@@ -8613,6 +9474,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  34.09,
@@ -8623,6 +9485,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  27.96,
@@ -8633,6 +9496,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  32.48,
@@ -8643,6 +9507,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.73,
@@ -8653,6 +9518,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  9.69,
@@ -8663,6 +9529,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  520.78,
@@ -8673,6 +9540,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  179.96,
@@ -8683,6 +9551,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  186.95,
@@ -8693,6 +9562,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1060.18,
@@ -8703,6 +9573,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  3120.09,
@@ -8713,6 +9584,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  27,
@@ -8723,6 +9595,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  35.28,
@@ -8733,6 +9606,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  11,
@@ -8743,6 +9617,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  185.99,
@@ -8753,6 +9628,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  470.28,
@@ -8763,6 +9639,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  11.24,
@@ -8773,6 +9650,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  44.33,
@@ -8783,6 +9661,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  57.68,
@@ -8793,6 +9672,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31.88,
@@ -8803,6 +9683,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  63.26,
@@ -8813,6 +9694,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  47.08,
@@ -8823,6 +9705,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1030.07,
@@ -8833,6 +9716,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  229,
@@ -8843,6 +9727,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  689.99,
@@ -8853,6 +9738,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3,
@@ -8863,6 +9749,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  48.02,
@@ -8873,6 +9760,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  77.85,
@@ -8883,6 +9771,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  35.75,
@@ -8893,6 +9782,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -8903,6 +9793,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  20.98,
@@ -8913,6 +9804,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  39.95,
@@ -8923,6 +9815,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.9,
@@ -8933,6 +9826,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  318,
@@ -8943,6 +9837,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1250,
@@ -8953,6 +9848,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  28.05,
@@ -8963,6 +9859,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  76.99,
@@ -8973,6 +9870,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  11,
@@ -8983,6 +9881,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7.15,
@@ -8993,6 +9892,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  29.5,
@@ -9003,6 +9903,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  269,
@@ -9013,6 +9914,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 18:36:18",
+                          "ingested_at":  "2026-03-08 18:36:18",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  589.88,
@@ -9023,6 +9925,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  31.97,
@@ -9033,6 +9936,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  33.99,
@@ -9043,6 +9947,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  28.6,
@@ -9053,6 +9958,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  32.14,
@@ -9063,6 +9969,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.69,
@@ -9073,6 +9980,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  9.58,
@@ -9083,6 +9991,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  523.05,
@@ -9093,6 +10002,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  169.99,
@@ -9103,6 +10013,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  174.98,
@@ -9113,6 +10024,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1055.17,
@@ -9123,6 +10035,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  3200,
@@ -9133,6 +10046,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  26.98,
@@ -9143,6 +10057,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  37.06,
@@ -9153,6 +10068,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  10.41,
@@ -9163,6 +10079,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  190,
@@ -9173,6 +10090,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  470.23,
@@ -9183,6 +10101,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  11.91,
@@ -9193,6 +10112,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  46.7,
@@ -9203,6 +10123,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  57.68,
@@ -9213,6 +10134,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  32.88,
@@ -9223,6 +10145,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  63.26,
@@ -9233,6 +10156,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  47.73,
@@ -9243,6 +10167,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  950,
@@ -9253,6 +10178,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  229,
@@ -9263,6 +10189,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  689.95,
@@ -9273,6 +10200,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.08,
@@ -9283,6 +10211,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  48,
@@ -9293,6 +10222,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  77.78,
@@ -9303,6 +10233,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  35.75,
@@ -9313,6 +10244,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -9323,6 +10255,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  20.5,
@@ -9333,6 +10266,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  35.94,
@@ -9343,6 +10277,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4.97,
@@ -9353,6 +10288,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  315.88,
@@ -9363,6 +10299,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1240.95,
@@ -9373,6 +10310,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  30,
@@ -9383,6 +10321,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  76.97,
@@ -9393,6 +10332,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  12.46,
@@ -9403,6 +10343,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  35,
@@ -9413,6 +10354,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7.13,
@@ -9423,6 +10365,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  29.5,
@@ -9433,6 +10376,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  260,
@@ -9443,6 +10387,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:01:11",
+                          "ingested_at":  "2026-03-08 20:01:11",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  580.01,
@@ -9453,6 +10398,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  30.98,
@@ -9463,6 +10409,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  32.67,
@@ -9473,6 +10420,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  27.26,
@@ -9483,6 +10431,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  32.31,
@@ -9493,6 +10442,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  18.98,
@@ -9503,6 +10453,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  15.29,
@@ -9513,6 +10464,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  637.92,
@@ -9523,6 +10475,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  174,
@@ -9533,6 +10486,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  173.25,
@@ -9543,6 +10497,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1740,
@@ -9553,6 +10508,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  3180,
@@ -9563,6 +10519,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  26.44,
@@ -9573,6 +10530,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  31.97,
@@ -9583,6 +10541,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  9.14,
@@ -9593,6 +10552,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  190,
@@ -9603,6 +10563,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  460,
@@ -9613,6 +10574,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  11.1,
@@ -9623,6 +10585,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  43,
@@ -9633,6 +10596,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  59,
@@ -9643,6 +10607,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  32.88,
@@ -9653,6 +10618,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  63,
@@ -9663,6 +10629,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  43.99,
@@ -9673,6 +10640,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  999.92,
@@ -9683,6 +10651,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  228,
@@ -9693,6 +10662,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  600,
@@ -9703,6 +10673,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  5.99,
@@ -9713,6 +10684,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  41,
@@ -9723,6 +10695,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  73,
@@ -9733,6 +10706,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  40.75,
@@ -9743,6 +10717,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -9753,6 +10728,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  21.5,
@@ -9763,6 +10739,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  35.92,
@@ -9773,6 +10750,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  5.7,
@@ -9783,6 +10761,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  310,
@@ -9793,6 +10772,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1000,
@@ -9803,6 +10783,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  24.5,
@@ -9813,6 +10794,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  63.2,
@@ -9823,6 +10805,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  10.4,
@@ -9833,6 +10816,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  28.06,
@@ -9843,6 +10827,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7.1,
@@ -9853,6 +10838,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -9863,6 +10849,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  270,
@@ -9873,6 +10860,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:46:58",
+                          "ingested_at":  "2026-03-08 20:46:58",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  580.76,
@@ -9883,6 +10871,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  32.88,
@@ -9893,6 +10882,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  33.7,
@@ -9903,6 +10893,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  27.18,
@@ -9913,6 +10904,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  31.99,
@@ -9923,6 +10915,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  16.89,
@@ -9933,6 +10926,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  14,
@@ -9943,6 +10937,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  590,
@@ -9953,6 +10948,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  172.99,
@@ -9963,6 +10959,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  175,
@@ -9973,6 +10970,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  2400,
@@ -9983,6 +10981,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  3200,
@@ -9993,6 +10992,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  25.9,
@@ -10003,6 +11003,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  31.96,
@@ -10013,6 +11014,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  9.05,
@@ -10023,6 +11025,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  190,
@@ -10033,6 +11036,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  459.82,
@@ -10043,6 +11047,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  10.46,
@@ -10053,6 +11058,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  37,
@@ -10063,6 +11069,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  59.8,
@@ -10073,6 +11080,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  32.88,
@@ -10083,6 +11091,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  62,
@@ -10093,6 +11102,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  41.97,
@@ -10103,6 +11113,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1058.96,
@@ -10113,6 +11124,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  227.99,
@@ -10123,6 +11135,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  600,
@@ -10133,6 +11146,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  6.2,
@@ -10143,6 +11157,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  49.5,
@@ -10153,6 +11168,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  74.99,
@@ -10163,6 +11179,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  48.99,
@@ -10173,6 +11190,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  69.99,
@@ -10183,6 +11201,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  21.01,
@@ -10193,6 +11212,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  35.22,
@@ -10203,6 +11223,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  5.48,
@@ -10213,6 +11234,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  310,
@@ -10223,6 +11245,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1000,
@@ -10233,6 +11256,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  10.8,
@@ -10243,6 +11267,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  24,
@@ -10253,6 +11278,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  10.5,
@@ -10263,6 +11289,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  27.7,
@@ -10273,6 +11300,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7.15,
@@ -10283,6 +11311,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -10293,6 +11322,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  269.99,
@@ -10303,6 +11333,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 20:59:55",
+                          "ingested_at":  "2026-03-08 20:59:55",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  580.16,
@@ -10313,6 +11344,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  31,
@@ -10323,6 +11355,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  33,
@@ -10333,6 +11366,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  25.37,
@@ -10343,6 +11377,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  31.93,
@@ -10353,6 +11388,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  15.11,
@@ -10363,6 +11399,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  12.78,
@@ -10373,6 +11410,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  546.99,
@@ -10383,6 +11421,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  173.55,
@@ -10393,6 +11432,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  175.99,
@@ -10403,6 +11443,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  2100,
@@ -10413,6 +11454,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2900.99,
@@ -10423,6 +11465,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  24.38,
@@ -10433,6 +11476,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  31.97,
@@ -10443,6 +11487,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  8.94,
@@ -10453,6 +11498,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  189.98,
@@ -10463,6 +11509,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  459.77,
@@ -10473,6 +11520,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  10,
@@ -10483,6 +11531,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  41.8,
@@ -10493,6 +11542,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  58.98,
@@ -10503,6 +11553,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  32.87,
@@ -10513,6 +11564,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  61.98,
@@ -10523,6 +11575,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  44.95,
@@ -10533,6 +11586,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1000.96,
@@ -10543,6 +11597,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220.9,
@@ -10553,6 +11608,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  599.99,
@@ -10563,6 +11619,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  5.1,
@@ -10573,6 +11630,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  47.18,
@@ -10583,6 +11641,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  71.9,
@@ -10593,6 +11652,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  48.98,
@@ -10603,6 +11663,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  69.33,
@@ -10613,6 +11674,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  20,
@@ -10623,6 +11685,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  35.91,
@@ -10633,6 +11696,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  5.2,
@@ -10643,6 +11707,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  305,
@@ -10653,6 +11718,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  898.98,
@@ -10663,6 +11729,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  22.88,
@@ -10673,6 +11740,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  64.9,
@@ -10683,6 +11751,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  10.6,
@@ -10693,6 +11762,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  26.18,
@@ -10703,6 +11773,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7.15,
@@ -10713,6 +11784,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -10723,6 +11795,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  269.68,
@@ -10733,6 +11806,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 21:24:04",
+                          "ingested_at":  "2026-03-08 21:24:04",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  580.08,
@@ -10743,6 +11817,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  28.9,
@@ -10753,6 +11828,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  32.92,
@@ -10763,6 +11839,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  25.87,
@@ -10773,6 +11850,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  28.05,
@@ -10783,6 +11861,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  11,
@@ -10793,6 +11872,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  11,
@@ -10803,6 +11883,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  539,
@@ -10813,6 +11894,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  172.86,
@@ -10823,6 +11905,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  175,
@@ -10833,6 +11916,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1679.99,
@@ -10843,6 +11927,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2766,
@@ -10853,6 +11938,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  24.01,
@@ -10863,6 +11949,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  31.97,
@@ -10873,6 +11960,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  8.9,
@@ -10883,6 +11971,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  189.92,
@@ -10893,6 +11982,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  459.37,
@@ -10903,6 +11993,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  10.11,
@@ -10913,6 +12004,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  42,
@@ -10923,6 +12015,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  56.29,
@@ -10933,6 +12026,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31,
@@ -10943,6 +12037,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  55,
@@ -10953,6 +12048,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  42.94,
@@ -10963,6 +12059,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  984,
@@ -10973,6 +12070,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220.9,
@@ -10983,6 +12081,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  600,
@@ -10993,6 +12092,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.99,
@@ -11003,6 +12103,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  43,
@@ -11013,6 +12114,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  81.6,
@@ -11023,6 +12125,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  42,
@@ -11033,6 +12136,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  60,
@@ -11043,6 +12147,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  21,
@@ -11053,6 +12158,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  33,
@@ -11063,6 +12169,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4.88,
@@ -11073,6 +12180,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  300,
@@ -11083,6 +12191,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  900,
@@ -11093,6 +12202,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  24.1,
@@ -11103,6 +12213,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  77.66,
@@ -11113,6 +12224,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  1015.99,
@@ -11123,6 +12235,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  10.49,
@@ -11133,6 +12246,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  32.15,
@@ -11143,6 +12257,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7.15,
@@ -11153,6 +12268,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -11163,6 +12279,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  269.98,
@@ -11173,6 +12290,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 22:15:43",
+                          "ingested_at":  "2026-03-08 22:15:43",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  579.12,
@@ -11183,6 +12301,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  30.5,
@@ -11193,6 +12312,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  30.81,
@@ -11203,6 +12323,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  24.97,
@@ -11213,6 +12334,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  29.95,
@@ -11223,6 +12345,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  10.19,
@@ -11233,6 +12356,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  11,
@@ -11243,6 +12367,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  500,
@@ -11253,6 +12378,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  157.54,
@@ -11263,6 +12389,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  174.18,
@@ -11273,6 +12400,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1735,
@@ -11283,6 +12411,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2899.01,
@@ -11293,6 +12422,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  26.5,
@@ -11303,6 +12433,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  33.33,
@@ -11313,6 +12444,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  5.65,
@@ -11323,6 +12455,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  179.97,
@@ -11333,6 +12466,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  457,
@@ -11343,6 +12477,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  10.16,
@@ -11353,6 +12488,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  39,
@@ -11363,6 +12499,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  51.93,
@@ -11373,6 +12510,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  30.98,
@@ -11383,6 +12521,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  54,
@@ -11393,6 +12532,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  40.92,
@@ -11403,6 +12543,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  997.01,
@@ -11413,6 +12554,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220.9,
@@ -11423,6 +12565,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  597,
@@ -11433,6 +12576,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.88,
@@ -11443,6 +12587,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  45.85,
@@ -11453,6 +12598,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  73.49,
@@ -11463,6 +12609,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  36,
@@ -11473,6 +12620,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  55,
@@ -11483,6 +12631,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  20.5,
@@ -11493,6 +12642,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  31,
@@ -11503,6 +12653,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.84,
@@ -11513,6 +12664,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  300,
@@ -11523,6 +12675,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  900,
@@ -11533,6 +12686,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  23.5,
@@ -11543,6 +12697,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  75.95,
@@ -11553,6 +12708,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  999,
@@ -11563,6 +12719,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  10.33,
@@ -11573,6 +12730,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  13.39,
@@ -11583,6 +12741,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  6,
@@ -11593,6 +12752,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -11603,6 +12763,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  269.99,
@@ -11613,6 +12774,7 @@
                       },
                       {
                           "observed_at":  "2026-03-08 23:36:32",
+                          "ingested_at":  "2026-03-08 23:36:32",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  578.66,
@@ -11623,6 +12785,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  29.77,
@@ -11633,6 +12796,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  29.8,
@@ -11643,6 +12807,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  24.97,
@@ -11653,6 +12818,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  29.95,
@@ -11663,6 +12829,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.56,
@@ -11673,6 +12840,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  11.23,
@@ -11683,6 +12851,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  494.83,
@@ -11693,6 +12862,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  157.4,
@@ -11703,6 +12873,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  173,
@@ -11713,6 +12884,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1550,
@@ -11723,6 +12895,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  3000,
@@ -11733,6 +12906,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  24.4,
@@ -11743,6 +12917,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  40.5,
@@ -11753,6 +12928,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  5.6,
@@ -11763,6 +12939,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  180.23,
@@ -11773,6 +12950,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  457,
@@ -11783,6 +12961,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  10.16,
@@ -11793,6 +12972,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  40,
@@ -11803,6 +12983,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  49.75,
@@ -11813,6 +12994,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31,
@@ -11823,6 +13005,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  54,
@@ -11833,6 +13016,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  40,
@@ -11843,6 +13027,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  999,
@@ -11853,6 +13038,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220.9,
@@ -11863,6 +13049,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  590,
@@ -11873,6 +13060,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.68,
@@ -11883,6 +13071,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  45.9,
@@ -11893,6 +13082,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  77.45,
@@ -11903,6 +13093,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  35,
@@ -11913,6 +13104,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  60,
@@ -11923,6 +13115,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  20,
@@ -11933,6 +13126,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  32,
@@ -11943,6 +13137,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4.35,
@@ -11953,6 +13148,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  300,
@@ -11963,6 +13159,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  900,
@@ -11973,6 +13170,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  24.8,
@@ -11983,6 +13181,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  77,
@@ -11993,6 +13192,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  929,
@@ -12003,6 +13203,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  9.94,
@@ -12013,6 +13214,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  13.89,
@@ -12023,6 +13225,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7,
@@ -12033,6 +13236,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -12043,6 +13247,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  269.99,
@@ -12053,6 +13258,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:01:29",
+                          "ingested_at":  "2026-03-09 00:01:29",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  578,
@@ -12063,6 +13269,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  2.96,
@@ -12073,6 +13280,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  26.8,
@@ -12083,6 +13291,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  25.92,
@@ -12093,6 +13302,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  25,
@@ -12103,6 +13313,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.49,
@@ -12113,6 +13324,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  11.3,
@@ -12123,6 +13335,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  519.98,
@@ -12133,6 +13346,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  157,
@@ -12143,6 +13357,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  170.99,
@@ -12153,6 +13368,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1450,
@@ -12163,6 +13379,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  3195.88,
@@ -12173,6 +13390,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9996,
@@ -12183,6 +13401,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  16299,
@@ -12193,6 +13412,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  9475,
@@ -12203,6 +13423,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  24.09,
@@ -12213,6 +13434,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  38.06,
@@ -12223,6 +13445,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  5.59,
@@ -12233,6 +13456,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  180.03,
@@ -12243,6 +13467,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  455.5,
@@ -12253,6 +13478,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  10.16,
@@ -12263,6 +13489,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  36.99,
@@ -12273,6 +13500,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  59.83,
@@ -12283,6 +13511,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31,
@@ -12293,6 +13522,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  52,
@@ -12303,6 +13533,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  37.96,
@@ -12313,6 +13544,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  997,
@@ -12323,6 +13555,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220.9,
@@ -12333,6 +13566,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  589.99,
@@ -12343,6 +13577,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.42,
@@ -12353,6 +13588,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  46.78,
@@ -12363,6 +13599,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  77.43,
@@ -12373,6 +13610,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  35,
@@ -12383,6 +13621,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  60,
@@ -12393,6 +13632,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  19.9,
@@ -12403,6 +13643,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  32,
@@ -12413,6 +13654,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -12423,6 +13665,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  300,
@@ -12433,6 +13676,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  899.99,
@@ -12443,6 +13687,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  24.97,
@@ -12453,6 +13698,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  73.48,
@@ -12463,6 +13709,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  995,
@@ -12473,6 +13720,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  9.99,
@@ -12483,6 +13731,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  30.55,
@@ -12493,6 +13742,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  6.5,
@@ -12503,6 +13753,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  27,
@@ -12513,6 +13764,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  250.99,
@@ -12523,6 +13775,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:20:25",
+                          "ingested_at":  "2026-03-09 00:20:25",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  577.99,
@@ -12533,6 +13786,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  28.97,
@@ -12543,6 +13797,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  28.91,
@@ -12553,6 +13808,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  25.32,
@@ -12563,6 +13819,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  26,
@@ -12573,6 +13830,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.98,
@@ -12583,6 +13841,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  11.28,
@@ -12593,6 +13852,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  520.07,
@@ -12603,6 +13863,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  157,
@@ -12613,6 +13874,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  168,
@@ -12623,6 +13885,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1299,
@@ -12633,6 +13896,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  3098,
@@ -12643,6 +13907,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9988,
@@ -12653,6 +13918,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  16320,
@@ -12663,6 +13929,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  9400.99,
@@ -12673,6 +13940,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  24,
@@ -12683,6 +13951,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  33,
@@ -12693,6 +13962,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  5.59,
@@ -12703,6 +13973,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  180.03,
@@ -12713,6 +13984,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  455.5,
@@ -12723,6 +13995,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  10.11,
@@ -12733,6 +14006,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  40.9,
@@ -12743,6 +14017,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  62.88,
@@ -12753,6 +14028,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  32.88,
@@ -12763,6 +14039,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  49.5,
@@ -12773,6 +14050,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  38.32,
@@ -12783,6 +14061,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  997,
@@ -12793,6 +14072,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220,
@@ -12803,6 +14083,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  589,
@@ -12813,6 +14094,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -12823,6 +14105,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  44,
@@ -12833,6 +14116,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  74.43,
@@ -12843,6 +14127,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  34,
@@ -12853,6 +14138,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  55,
@@ -12863,6 +14149,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  19.55,
@@ -12873,6 +14160,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  32,
@@ -12883,6 +14171,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.84,
@@ -12893,6 +14182,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  285,
@@ -12903,6 +14193,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  899.99,
@@ -12913,6 +14204,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  25.54,
@@ -12923,6 +14215,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  70.3,
@@ -12933,6 +14226,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  985.99,
@@ -12943,6 +14237,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  9.2,
@@ -12953,6 +14248,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  28,
@@ -12963,6 +14259,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  6.5,
@@ -12973,6 +14270,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  27,
@@ -12983,6 +14281,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  265.99,
@@ -12993,6 +14292,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 00:47:46",
+                          "ingested_at":  "2026-03-09 00:47:46",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  577.99,
@@ -13003,6 +14303,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  28.97,
@@ -13013,6 +14314,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  29,
@@ -13023,6 +14325,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  24.68,
@@ -13033,6 +14336,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  25.99,
@@ -13043,6 +14347,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.97,
@@ -13053,6 +14358,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  10.99,
@@ -13063,6 +14369,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  514.94,
@@ -13073,6 +14380,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  156,
@@ -13083,6 +14391,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  163.82,
@@ -13093,6 +14402,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1298.88,
@@ -13103,6 +14413,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2850,
@@ -13113,6 +14424,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9990,
@@ -13123,6 +14435,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  16300,
@@ -13133,6 +14446,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  8250.64,
@@ -13143,6 +14457,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  24.98,
@@ -13153,6 +14468,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  29.23,
@@ -13163,6 +14479,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  5.55,
@@ -13173,6 +14490,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  180.04,
@@ -13183,6 +14501,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  455.5,
@@ -13193,6 +14512,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  10,
@@ -13203,6 +14523,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  40.99,
@@ -13213,6 +14534,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  62.88,
@@ -13223,6 +14545,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  29,
@@ -13233,6 +14556,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  45.22,
@@ -13243,6 +14567,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  37.99,
@@ -13253,6 +14578,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  997,
@@ -13263,6 +14589,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220,
@@ -13273,6 +14600,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  585,
@@ -13283,6 +14611,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.05,
@@ -13293,6 +14622,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  47.13,
@@ -13303,6 +14633,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  73.98,
@@ -13313,6 +14644,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  33,
@@ -13323,6 +14655,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  45,
@@ -13333,6 +14666,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  18.5,
@@ -13343,6 +14677,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  35.91,
@@ -13353,6 +14688,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.78,
@@ -13363,6 +14699,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  275,
@@ -13373,6 +14710,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  899,
@@ -13383,6 +14721,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  24.69,
@@ -13393,6 +14732,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  69.97,
@@ -13403,6 +14743,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  1024.98,
@@ -13413,6 +14754,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  9.9,
@@ -13423,6 +14765,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  26.04,
@@ -13433,6 +14776,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7,
@@ -13443,6 +14787,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  27,
@@ -13453,6 +14798,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  260.99,
@@ -13463,6 +14809,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:20:56",
+                          "ingested_at":  "2026-03-09 01:20:56",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  570.99,
@@ -13473,6 +14820,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  28.97,
@@ -13483,6 +14831,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  28.98,
@@ -13493,6 +14842,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  23.61,
@@ -13503,6 +14853,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  25.99,
@@ -13513,6 +14864,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.88,
@@ -13523,6 +14875,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  10.48,
@@ -13533,6 +14886,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  520.07,
@@ -13543,6 +14897,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  157,
@@ -13553,6 +14908,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  162.89,
@@ -13563,6 +14919,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1450,
@@ -13573,6 +14930,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  3088,
@@ -13583,6 +14941,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9880.88,
@@ -13593,6 +14952,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  16300,
@@ -13603,6 +14963,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  7999.63,
@@ -13613,6 +14974,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  23.57,
@@ -13623,6 +14985,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  31.98,
@@ -13633,6 +14996,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  5.55,
@@ -13643,6 +15007,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  180.04,
@@ -13653,6 +15018,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  455.49,
@@ -13663,6 +15029,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  10,
@@ -13673,6 +15040,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  42.21,
@@ -13683,6 +15051,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  61.99,
@@ -13693,6 +15062,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  30,
@@ -13703,6 +15073,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  45.22,
@@ -13713,6 +15084,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  37.99,
@@ -13723,6 +15095,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  960,
@@ -13733,6 +15106,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220,
@@ -13743,6 +15117,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  585,
@@ -13753,6 +15128,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.99,
@@ -13763,6 +15139,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  47.15,
@@ -13773,6 +15150,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  74.55,
@@ -13783,6 +15161,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  34,
@@ -13793,6 +15172,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  45,
@@ -13803,6 +15183,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  18.99,
@@ -13813,6 +15194,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  35.91,
@@ -13823,6 +15205,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.88,
@@ -13833,6 +15216,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  270,
@@ -13843,6 +15227,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  899,
@@ -13853,6 +15238,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  24.69,
@@ -13863,6 +15249,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  77.86,
@@ -13873,6 +15260,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  1000.93,
@@ -13883,6 +15271,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  9.54,
@@ -13893,6 +15282,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  23.77,
@@ -13903,6 +15293,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  7,
@@ -13913,6 +15304,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  25,
@@ -13923,6 +15315,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  260.99,
@@ -13933,6 +15326,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 01:33:40",
+                          "ingested_at":  "2026-03-09 01:33:40",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  570.98,
@@ -13943,6 +15337,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  26.54,
@@ -13953,6 +15348,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  28.88,
@@ -13963,6 +15359,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  23.49,
@@ -13973,6 +15370,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  26.99,
@@ -13983,6 +15381,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.9,
@@ -13993,6 +15392,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  11.23,
@@ -14003,6 +15403,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  521.96,
@@ -14013,6 +15414,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  154.16,
@@ -14023,6 +15425,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  155.65,
@@ -14033,6 +15436,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1439.99,
@@ -14043,6 +15447,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2988.17,
@@ -14053,6 +15458,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  8900.98,
@@ -14063,6 +15469,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  15350.85,
@@ -14073,6 +15480,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  8800.98,
@@ -14083,6 +15491,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  26,
@@ -14093,6 +15502,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  35.5,
@@ -14103,6 +15513,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  5.5,
@@ -14113,6 +15524,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  180.94,
@@ -14123,6 +15535,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  460.24,
@@ -14133,6 +15546,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  10,
@@ -14143,6 +15557,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  42.93,
@@ -14153,6 +15568,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  59,
@@ -14163,6 +15579,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  33.88,
@@ -14173,6 +15590,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  44.84,
@@ -14183,6 +15601,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  40,
@@ -14193,6 +15612,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  900,
@@ -14203,6 +15623,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220.9,
@@ -14213,6 +15634,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  681,
@@ -14223,6 +15645,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.93,
@@ -14233,6 +15656,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  49,
@@ -14243,6 +15667,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  68.33,
@@ -14253,6 +15678,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  34.99,
@@ -14263,6 +15689,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  45,
@@ -14273,6 +15700,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  19.96,
@@ -14283,6 +15711,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  33.33,
@@ -14293,6 +15722,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  5,
@@ -14303,6 +15733,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  280,
@@ -14313,6 +15744,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  998.96,
@@ -14323,6 +15755,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  30.11,
@@ -14333,6 +15766,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  83.55,
@@ -14343,6 +15777,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  991,
@@ -14353,6 +15788,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  10.03,
@@ -14363,6 +15799,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  26.06,
@@ -14373,6 +15810,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  6.89,
@@ -14383,6 +15821,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  25,
@@ -14393,6 +15832,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  269.99,
@@ -14403,6 +15843,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 10:04:43",
+                          "ingested_at":  "2026-03-09 10:04:43",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  560.34,
@@ -14413,6 +15854,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  26.97,
@@ -14423,6 +15865,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  27.64,
@@ -14433,6 +15876,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  24.49,
@@ -14443,6 +15887,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  26.93,
@@ -14453,6 +15898,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.9,
@@ -14463,6 +15909,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  11.05,
@@ -14473,6 +15920,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  517.21,
@@ -14483,6 +15931,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  154.13,
@@ -14493,6 +15942,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  155.61,
@@ -14503,6 +15953,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1439,
@@ -14513,6 +15964,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2794,
@@ -14523,6 +15975,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9675,
@@ -14533,6 +15986,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  15166.94,
@@ -14543,6 +15997,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  8998,
@@ -14553,6 +16008,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  26,
@@ -14563,6 +16019,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  35.49,
@@ -14573,6 +16030,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  5.53,
@@ -14583,6 +16041,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  188.94,
@@ -14593,6 +16052,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  460,
@@ -14603,6 +16063,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  9.99,
@@ -14613,6 +16074,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  42.01,
@@ -14623,6 +16085,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  71.1,
@@ -14633,6 +16096,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  33.88,
@@ -14643,6 +16107,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  44.84,
@@ -14653,6 +16118,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  38.91,
@@ -14663,6 +16129,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  899.99,
@@ -14673,6 +16140,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220.9,
@@ -14683,6 +16151,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  685.98,
@@ -14693,6 +16162,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.88,
@@ -14703,6 +16173,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  50,
@@ -14713,6 +16184,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  80,
@@ -14723,6 +16195,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  34.99,
@@ -14733,6 +16206,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  45,
@@ -14743,6 +16217,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  18.88,
@@ -14753,6 +16228,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  26.32,
@@ -14763,6 +16239,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4.85,
@@ -14773,6 +16250,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  280,
@@ -14783,6 +16261,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  998,
@@ -14793,6 +16272,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  30.11,
@@ -14803,6 +16283,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  86,
@@ -14813,6 +16294,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  985,
@@ -14823,6 +16305,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  9.15,
@@ -14833,6 +16316,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  38.99,
@@ -14843,6 +16327,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  5.89,
@@ -14853,6 +16338,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  20,
@@ -14863,6 +16349,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  269.99,
@@ -14873,6 +16360,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 11:06:47",
+                          "ingested_at":  "2026-03-09 11:06:47",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  550,
@@ -14883,6 +16371,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  22,
@@ -14893,6 +16382,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  27.45,
@@ -14903,6 +16393,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  24.38,
@@ -14913,6 +16404,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  26.84,
@@ -14923,6 +16415,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.91,
@@ -14933,6 +16426,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  10.99,
@@ -14943,6 +16437,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  511.99,
@@ -14953,6 +16448,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  153.13,
@@ -14963,6 +16459,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  155.47,
@@ -14973,6 +16470,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1439.99,
@@ -14983,6 +16481,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2498.79,
@@ -14993,6 +16492,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9666.66,
@@ -15003,6 +16503,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  13999.98,
@@ -15013,6 +16514,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  9000,
@@ -15023,6 +16525,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  24.99,
@@ -15033,6 +16536,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  32.9,
@@ -15043,6 +16547,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4.99,
@@ -15053,6 +16558,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  188.88,
@@ -15063,6 +16569,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  459,
@@ -15073,6 +16580,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  9.92,
@@ -15083,6 +16591,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  41.9,
@@ -15093,6 +16602,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  65.99,
@@ -15103,6 +16613,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  33.8,
@@ -15113,6 +16624,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  49.5,
@@ -15123,6 +16635,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  39.23,
@@ -15133,6 +16646,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  997,
@@ -15143,6 +16657,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220.9,
@@ -15153,6 +16668,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  620.97,
@@ -15163,6 +16679,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.59,
@@ -15173,6 +16690,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  47.49,
@@ -15183,6 +16701,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  51.68,
@@ -15193,6 +16712,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  37,
@@ -15203,6 +16723,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  45,
@@ -15213,6 +16734,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  18.87,
@@ -15223,6 +16745,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  26.32,
@@ -15233,6 +16756,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4.8,
@@ -15243,6 +16767,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  279.99,
@@ -15253,6 +16778,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  999.45,
@@ -15263,6 +16789,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  28.77,
@@ -15273,6 +16800,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  75,
@@ -15283,6 +16811,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  993.99,
@@ -15293,6 +16822,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  9.31,
@@ -15303,6 +16833,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  36.73,
@@ -15313,6 +16844,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  5.87,
@@ -15323,6 +16855,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  19,
@@ -15333,6 +16866,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  269.99,
@@ -15343,6 +16877,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:02:55",
+                          "ingested_at":  "2026-03-09 12:02:55",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  516,
@@ -15353,6 +16888,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  27,
@@ -15363,6 +16899,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  27.09,
@@ -15373,6 +16910,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  24.38,
@@ -15383,6 +16921,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  26.84,
@@ -15393,6 +16932,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.89,
@@ -15403,6 +16943,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  10.88,
@@ -15413,6 +16954,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  516.95,
@@ -15423,6 +16965,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  153.13,
@@ -15433,6 +16976,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  154.99,
@@ -15443,6 +16987,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1435,
@@ -15453,6 +16998,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2698.99,
@@ -15463,6 +17009,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9878.99,
@@ -15473,6 +17020,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  13777,
@@ -15483,6 +17031,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  9450.99,
@@ -15493,6 +17042,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  25.06,
@@ -15503,6 +17053,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  35.5,
@@ -15513,6 +17064,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4.98,
@@ -15523,6 +17075,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  188.87,
@@ -15533,6 +17086,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  459,
@@ -15543,6 +17097,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  9.99,
@@ -15553,6 +17108,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  43.78,
@@ -15563,6 +17119,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  68.5,
@@ -15573,6 +17130,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  30.8,
@@ -15583,6 +17141,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  49.5,
@@ -15593,6 +17152,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  39.99,
@@ -15603,6 +17163,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  950,
@@ -15613,6 +17174,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220.9,
@@ -15623,6 +17185,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  650.98,
@@ -15633,6 +17196,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.5,
@@ -15643,6 +17207,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  50,
@@ -15653,6 +17218,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  53.68,
@@ -15663,6 +17229,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  37,
@@ -15673,6 +17240,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  44.99,
@@ -15683,6 +17251,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  19.88,
@@ -15693,6 +17262,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  26.31,
@@ -15703,6 +17273,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  5,
@@ -15713,6 +17284,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  279.99,
@@ -15723,6 +17295,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  999.49,
@@ -15733,6 +17306,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  29.99,
@@ -15743,6 +17317,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  79.8,
@@ -15753,6 +17328,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  999,
@@ -15763,6 +17339,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  9.96,
@@ -15773,6 +17350,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  30.98,
@@ -15783,6 +17361,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  5,
@@ -15793,6 +17372,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  19,
@@ -15803,6 +17383,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  260.99,
@@ -15813,6 +17394,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 12:36:45",
+                          "ingested_at":  "2026-03-09 12:36:45",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  544,
@@ -15823,6 +17405,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  26.09,
@@ -15833,6 +17416,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  26.98,
@@ -15843,6 +17427,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  23.39,
@@ -15853,6 +17438,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  26.86,
@@ -15863,6 +17449,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.86,
@@ -15873,6 +17460,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  10.76,
@@ -15883,6 +17471,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  516.88,
@@ -15893,6 +17482,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  145,
@@ -15903,6 +17493,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  149,
@@ -15913,6 +17504,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1439.99,
@@ -15923,6 +17515,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  3154.99,
@@ -15933,6 +17526,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9849,
@@ -15943,6 +17537,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  14000,
@@ -15953,6 +17548,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  9179,
@@ -15963,6 +17559,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  25.62,
@@ -15973,6 +17570,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  35.65,
@@ -15983,6 +17581,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4.76,
@@ -15993,6 +17592,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  188.85,
@@ -16003,6 +17603,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  458,
@@ -16013,6 +17614,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  9.8,
@@ -16023,6 +17625,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  43,
@@ -16033,6 +17636,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  68.99,
@@ -16043,6 +17647,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  30.8,
@@ -16053,6 +17658,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  49.5,
@@ -16063,6 +17669,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  39.92,
@@ -16073,6 +17680,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  949,
@@ -16083,6 +17691,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220.89,
@@ -16093,6 +17702,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  650.01,
@@ -16103,6 +17713,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.21,
@@ -16113,6 +17724,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  49.55,
@@ -16123,6 +17735,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  57.68,
@@ -16133,6 +17746,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  47.68,
@@ -16143,6 +17757,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  60,
@@ -16153,6 +17768,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  19.88,
@@ -16163,6 +17779,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  26,
@@ -16173,6 +17790,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4.44,
@@ -16183,6 +17801,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  279.98,
@@ -16193,6 +17812,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  950,
@@ -16203,6 +17823,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  27.65,
@@ -16213,6 +17834,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  72.89,
@@ -16223,6 +17845,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  1035,
@@ -16233,6 +17856,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  8.77,
@@ -16243,6 +17867,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  36.75,
@@ -16253,6 +17878,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  5.87,
@@ -16263,6 +17889,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  11.8,
@@ -16273,6 +17900,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  260.02,
@@ -16283,6 +17911,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 13:14:36",
+                          "ingested_at":  "2026-03-09 13:14:36",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  543.95,
@@ -16293,6 +17922,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  20.68,
@@ -16303,6 +17933,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  23.9,
@@ -16313,6 +17944,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  19.55,
@@ -16323,6 +17955,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  23.99,
@@ -16333,6 +17966,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.65,
@@ -16343,6 +17977,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  10.3,
@@ -16353,6 +17988,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  491.32,
@@ -16363,6 +17999,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  104,
@@ -16373,6 +18010,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  111.9,
@@ -16383,6 +18021,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1497,
@@ -16393,6 +18032,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2887,
@@ -16403,6 +18043,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9877,
@@ -16413,6 +18054,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  14500,
@@ -16423,6 +18065,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  9995,
@@ -16433,6 +18076,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  24.85,
@@ -16443,6 +18087,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  33.57,
@@ -16453,6 +18098,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4.44,
@@ -16463,6 +18109,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  175.32,
@@ -16473,6 +18120,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  458,
@@ -16483,6 +18131,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  8.64,
@@ -16493,6 +18142,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  37.8,
@@ -16503,6 +18153,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  65,
@@ -16513,6 +18164,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31.79,
@@ -16523,6 +18175,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  49.5,
@@ -16533,6 +18186,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  39.55,
@@ -16543,6 +18197,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  949.98,
@@ -16553,6 +18208,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  220.89,
@@ -16563,6 +18219,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  640,
@@ -16573,6 +18230,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.11,
@@ -16583,6 +18241,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  48.71,
@@ -16593,6 +18252,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  85.65,
@@ -16603,6 +18263,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  33.33,
@@ -16613,6 +18274,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  130.61,
@@ -16623,6 +18285,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  17.99,
@@ -16633,6 +18296,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  26,
@@ -16643,6 +18307,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -16653,6 +18318,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  278.98,
@@ -16663,6 +18329,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  988,
@@ -16673,6 +18340,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  27,
@@ -16683,6 +18351,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  78.88,
@@ -16693,6 +18362,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  900,
@@ -16703,6 +18373,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  8.48,
@@ -16713,6 +18384,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  28.99,
@@ -16723,6 +18395,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  5.86,
@@ -16733,6 +18406,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  26.99,
@@ -16743,6 +18417,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  250.01,
@@ -16753,6 +18428,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 16:09:49",
+                          "ingested_at":  "2026-03-09 16:09:49",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  539,
@@ -16763,6 +18439,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  19,
@@ -16773,6 +18450,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  20.99,
@@ -16783,6 +18461,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  18.87,
@@ -16793,6 +18472,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  22.98,
@@ -16803,6 +18483,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.82,
@@ -16813,6 +18494,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  10.14,
@@ -16823,6 +18505,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  509.5,
@@ -16833,6 +18516,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  102.98,
@@ -16843,6 +18527,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  110.93,
@@ -16853,6 +18538,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1443,
@@ -16863,6 +18549,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2900,
@@ -16873,6 +18560,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9699,
@@ -16883,6 +18571,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  15100,
@@ -16893,6 +18582,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  9996,
@@ -16903,6 +18593,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  23,
@@ -16913,6 +18604,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  31.97,
@@ -16923,6 +18615,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4.39,
@@ -16933,6 +18626,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  175.32,
@@ -16943,6 +18637,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  458,
@@ -16953,6 +18648,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  8.22,
@@ -16963,6 +18659,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  35.28,
@@ -16973,6 +18670,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  57.68,
@@ -16983,6 +18681,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31.79,
@@ -16993,6 +18692,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  49.5,
@@ -17003,6 +18703,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  25.21,
@@ -17013,6 +18714,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  950.11,
@@ -17023,6 +18725,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  219,
@@ -17033,6 +18736,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  639.99,
@@ -17043,6 +18747,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.64,
@@ -17053,6 +18758,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  45.5,
@@ -17063,6 +18769,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  60,
@@ -17073,6 +18780,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  33.32,
@@ -17083,6 +18791,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  80.61,
@@ -17093,6 +18802,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  17.96,
@@ -17103,6 +18813,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  30.32,
@@ -17113,6 +18824,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.6,
@@ -17123,6 +18835,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  278.97,
@@ -17133,6 +18846,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1001,
@@ -17143,6 +18857,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  26.65,
@@ -17153,6 +18868,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  65,
@@ -17163,6 +18879,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  990.98,
@@ -17173,6 +18890,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  7.4,
@@ -17183,6 +18901,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  28.33,
@@ -17193,6 +18912,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  5.3,
@@ -17203,6 +18923,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  26.99,
@@ -17213,6 +18934,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  250,
@@ -17223,6 +18945,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:23:15",
+                          "ingested_at":  "2026-03-09 17:23:15",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  539.9,
@@ -17233,6 +18956,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  16,
@@ -17243,6 +18967,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  19,
@@ -17253,6 +18978,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  18.72,
@@ -17263,6 +18989,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  19,
@@ -17273,6 +19000,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  9.76,
@@ -17283,6 +19011,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  10,
@@ -17293,6 +19022,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  507,
@@ -17303,6 +19033,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  95,
@@ -17313,6 +19044,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  100,
@@ -17323,6 +19055,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1600,
@@ -17333,6 +19066,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2794.49,
@@ -17343,6 +19077,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9598,
@@ -17353,6 +19088,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  15000.5,
@@ -17363,6 +19099,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  9998.5,
@@ -17373,6 +19110,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  23.49,
@@ -17383,6 +19121,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  31.26,
@@ -17393,6 +19132,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4.32,
@@ -17403,6 +19143,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  175.32,
@@ -17413,6 +19154,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  458,
@@ -17423,6 +19165,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  8.6,
@@ -17433,6 +19176,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  39.88,
@@ -17443,6 +19187,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  59,
@@ -17453,6 +19198,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31.78,
@@ -17463,6 +19209,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  49.5,
@@ -17473,6 +19220,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  31.03,
@@ -17483,6 +19231,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  950.1,
@@ -17493,6 +19242,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  219,
@@ -17503,6 +19253,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  639.99,
@@ -17513,6 +19264,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.14,
@@ -17523,6 +19275,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  47.88,
@@ -17533,6 +19286,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  75.58,
@@ -17543,6 +19297,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  33.33,
@@ -17553,6 +19308,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  80.61,
@@ -17563,6 +19319,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  17.94,
@@ -17573,6 +19330,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  29.32,
@@ -17583,6 +19341,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.68,
@@ -17593,6 +19352,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  278.97,
@@ -17603,6 +19363,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1001,
@@ -17613,6 +19374,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  26.32,
@@ -17623,6 +19385,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  59,
@@ -17633,6 +19396,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  1065,
@@ -17643,6 +19407,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  8.99,
@@ -17653,6 +19418,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  29.22,
@@ -17663,6 +19429,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  5.22,
@@ -17673,6 +19440,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  26.99,
@@ -17683,6 +19451,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  249,
@@ -17693,6 +19462,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 17:59:07",
+                          "ingested_at":  "2026-03-09 17:59:07",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  539.75,
@@ -17703,6 +19473,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  18,
@@ -17713,6 +19484,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  18.88,
@@ -17723,6 +19495,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  18.99,
@@ -17733,6 +19506,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  22.8,
@@ -17743,6 +19517,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  8.95,
@@ -17753,6 +19528,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  9.65,
@@ -17763,6 +19539,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  500.22,
@@ -17773,6 +19550,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  102,
@@ -17783,6 +19561,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  113.8,
@@ -17793,6 +19572,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1699,
@@ -17803,6 +19583,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  3150,
@@ -17813,6 +19594,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9187,
@@ -17823,6 +19605,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  13886,
@@ -17833,6 +19616,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  8997,
@@ -17843,6 +19627,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  21.66,
@@ -17853,6 +19638,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  27,
@@ -17863,6 +19649,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -17873,6 +19660,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  170,
@@ -17883,6 +19671,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  458,
@@ -17893,6 +19682,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  9.97,
@@ -17903,6 +19693,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  39,
@@ -17913,6 +19704,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  58,
@@ -17923,6 +19715,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31.79,
@@ -17933,6 +19726,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  48.5,
@@ -17943,6 +19737,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  30.87,
@@ -17953,6 +19748,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  997,
@@ -17963,6 +19759,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  200.97,
@@ -17973,6 +19770,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  587.98,
@@ -17983,6 +19781,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.22,
@@ -17993,6 +19792,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  45.27,
@@ -18003,6 +19803,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  77.3,
@@ -18013,6 +19814,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  35.99,
@@ -18023,6 +19825,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  80.61,
@@ -18033,6 +19836,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  17.94,
@@ -18043,6 +19847,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  29.32,
@@ -18053,6 +19858,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.88,
@@ -18063,6 +19869,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  259.99,
@@ -18073,6 +19880,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  795.99,
@@ -18083,6 +19891,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  22.48,
@@ -18093,6 +19902,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  76.55,
@@ -18103,6 +19913,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  984,
@@ -18113,6 +19924,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  8.97,
@@ -18123,6 +19935,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  29.98,
@@ -18133,6 +19946,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  4.2,
@@ -18143,6 +19957,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  26.07,
@@ -18153,6 +19968,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  248,
@@ -18163,6 +19979,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:09:23",
+                          "ingested_at":  "2026-03-09 21:09:23",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  557.88,
@@ -18173,6 +19990,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  17.93,
@@ -18183,6 +20001,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  18.59,
@@ -18193,6 +20012,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  18.98,
@@ -18203,6 +20023,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  19.99,
@@ -18213,6 +20034,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  8.88,
@@ -18223,6 +20045,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  9.6,
@@ -18233,6 +20056,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  504.98,
@@ -18243,6 +20067,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  102.55,
@@ -18253,6 +20078,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  109.98,
@@ -18263,6 +20089,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1499.99,
@@ -18273,6 +20100,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2899.02,
@@ -18283,6 +20111,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9183.89,
@@ -18293,6 +20122,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  13884.8,
@@ -18303,6 +20133,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  8898,
@@ -18313,6 +20144,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  24.25,
@@ -18323,6 +20155,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  28.39,
@@ -18333,6 +20166,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -18343,6 +20177,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  169,
@@ -18353,6 +20188,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  458,
@@ -18363,6 +20199,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  9,
@@ -18373,6 +20210,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  40,
@@ -18383,6 +20221,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  53.99,
@@ -18393,6 +20232,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31.78,
@@ -18403,6 +20243,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  48.5,
@@ -18413,6 +20254,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  30.75,
@@ -18423,6 +20265,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  997,
@@ -18433,6 +20276,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  200.97,
@@ -18443,6 +20287,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  565,
@@ -18453,6 +20298,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.87,
@@ -18463,6 +20309,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  47.69,
@@ -18473,6 +20320,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  72.98,
@@ -18483,6 +20331,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  33.33,
@@ -18493,6 +20342,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  80.61,
@@ -18503,6 +20353,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  17.93,
@@ -18513,6 +20364,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  29.11,
@@ -18523,6 +20375,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.55,
@@ -18533,6 +20386,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  259.99,
@@ -18543,6 +20397,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  795,
@@ -18553,6 +20408,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  23.2,
@@ -18563,6 +20419,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  81.84,
@@ -18573,6 +20430,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  980,
@@ -18583,6 +20441,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  8.94,
@@ -18593,6 +20452,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  16.93,
@@ -18603,6 +20463,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  5.2,
@@ -18613,6 +20474,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  26.9,
@@ -18623,6 +20485,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  248,
@@ -18633,6 +20496,7 @@
                       },
                       {
                           "observed_at":  "2026-03-09 21:39:17",
+                          "ingested_at":  "2026-03-09 21:39:17",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  550,
@@ -18642,7 +20506,8 @@
                           "source_ref":  "chat-image-20260309-213917"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  16.76,
@@ -18652,7 +20517,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  17,
@@ -18662,7 +20528,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  17.02,
@@ -18672,7 +20539,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  22.78,
@@ -18682,7 +20550,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  6.93,
@@ -18692,7 +20561,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  8.35,
@@ -18702,7 +20572,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  498.53,
@@ -18712,7 +20583,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  100,
@@ -18722,7 +20594,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  105,
@@ -18732,7 +20605,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1400,
@@ -18742,7 +20616,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2898.99,
@@ -18752,7 +20627,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  9180,
@@ -18762,7 +20638,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  13883.79,
@@ -18772,7 +20649,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  9100,
@@ -18782,7 +20660,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  22.46,
@@ -18792,7 +20671,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  29.13,
@@ -18802,7 +20682,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -18812,7 +20693,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  167,
@@ -18822,7 +20704,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  460,
@@ -18832,7 +20715,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  8.79,
@@ -18842,7 +20726,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  37.87,
@@ -18852,7 +20737,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  56.88,
@@ -18862,7 +20748,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31,
@@ -18872,7 +20759,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  48.5,
@@ -18882,7 +20770,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  29,
@@ -18892,7 +20781,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  996.98,
@@ -18902,7 +20792,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  200.97,
@@ -18912,7 +20803,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  565,
@@ -18922,7 +20814,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.2,
@@ -18932,7 +20825,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  43.9,
@@ -18942,7 +20836,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  71.95,
@@ -18952,7 +20847,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  35.55,
@@ -18962,7 +20858,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  80.01,
@@ -18972,7 +20869,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  17.66,
@@ -18982,7 +20880,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  29.32,
@@ -18992,7 +20891,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.79,
@@ -19002,7 +20902,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "纯银合金",
                           "rank":  1,
                           "unit_price_gold":  491,
@@ -19012,7 +20913,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "纯银合金",
                           "rank":  2,
                           "unit_price_gold":  1055,
@@ -19022,7 +20924,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  258,
@@ -19032,7 +20935,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  790,
@@ -19042,7 +20946,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  22.89,
@@ -19052,7 +20957,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  78.88,
@@ -19062,7 +20968,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "薄暮合金",
                           "rank":  1,
                           "unit_price_gold":  485,
@@ -19072,7 +20979,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "薄暮合金",
                           "rank":  2,
                           "unit_price_gold":  1088.98,
@@ -19082,7 +20990,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  1000,
@@ -19092,7 +21001,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  7.68,
@@ -19102,7 +21012,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  26.88,
@@ -19112,7 +21023,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  5.18,
@@ -19122,7 +21034,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  26.9,
@@ -19132,7 +21045,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  245,
@@ -19142,7 +21056,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:16:54",
+                          "observed_at":  "2026-03-10 10:16:54",
+                          "ingested_at":  "2026-03-09 22:16:54",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  557,
@@ -19152,7 +21067,8 @@
                           "source_ref":  "chat-image-20260309-221654"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  16.74,
@@ -19162,7 +21078,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  16.98,
@@ -19172,7 +21089,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  17.35,
@@ -19182,7 +21100,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  22.71,
@@ -19192,7 +21111,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  8.35,
@@ -19202,7 +21122,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  9.48,
@@ -19212,7 +21133,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  502.09,
@@ -19222,7 +21144,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  90.98,
@@ -19232,7 +21155,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  94,
@@ -19242,7 +21166,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1444,
@@ -19252,7 +21177,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2896,
@@ -19262,7 +21188,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  8700.99,
@@ -19272,7 +21199,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  12220.99,
@@ -19282,7 +21210,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  8777.89,
@@ -19292,7 +21221,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  22.66,
@@ -19302,7 +21232,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  31,
@@ -19312,7 +21243,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -19322,7 +21254,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  166.96,
@@ -19332,7 +21265,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  458.99,
@@ -19342,7 +21276,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  8,
@@ -19352,7 +21287,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  37.99,
@@ -19362,7 +21298,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  62.85,
@@ -19372,7 +21309,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31.78,
@@ -19382,7 +21320,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  48.5,
@@ -19392,7 +21331,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  29.02,
@@ -19402,7 +21342,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  999,
@@ -19412,7 +21353,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  200.11,
@@ -19422,7 +21364,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  554.54,
@@ -19432,7 +21375,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  4.01,
@@ -19442,7 +21386,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  46.01,
@@ -19452,7 +21397,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  82,
@@ -19462,7 +21408,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  42,
@@ -19472,7 +21419,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  80.51,
@@ -19482,7 +21430,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  16.98,
@@ -19492,7 +21441,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  26,
@@ -19502,7 +21452,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  4.1,
@@ -19512,7 +21463,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "纯银合金",
                           "rank":  1,
                           "unit_price_gold":  489,
@@ -19522,7 +21474,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "纯银合金",
                           "rank":  2,
                           "unit_price_gold":  1068.96,
@@ -19532,7 +21485,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  254.88,
@@ -19542,7 +21496,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  749.99,
@@ -19552,7 +21507,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  21.37,
@@ -19562,7 +21518,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  76.59,
@@ -19572,7 +21529,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "薄暮合金",
                           "rank":  1,
                           "unit_price_gold":  483,
@@ -19582,7 +21540,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "薄暮合金",
                           "rank":  2,
                           "unit_price_gold":  1097.99,
@@ -19592,7 +21551,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  1017,
@@ -19602,7 +21562,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  8.88,
@@ -19612,7 +21573,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  13.39,
@@ -19622,7 +21584,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -19632,7 +21595,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  26,
@@ -19642,7 +21606,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  244,
@@ -19652,7 +21617,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:31:42",
+                          "observed_at":  "2026-03-10 10:31:42",
+                          "ingested_at":  "2026-03-09 22:31:42",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  539,
@@ -19662,7 +21628,8 @@
                           "source_ref":  "chat-image-20260309-223142"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  16.2,
@@ -19672,7 +21639,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  17,
@@ -19682,7 +21650,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  16.88,
@@ -19692,7 +21661,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  20,
@@ -19702,7 +21672,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  8.9,
@@ -19712,7 +21683,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  9,
@@ -19722,7 +21694,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  503,
@@ -19732,7 +21705,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  89.99,
@@ -19742,7 +21716,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  91.99,
@@ -19752,7 +21727,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1650,
@@ -19762,7 +21738,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2888,
@@ -19772,7 +21749,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  8890.98,
@@ -19782,7 +21760,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  12500,
@@ -19792,7 +21771,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  8990,
@@ -19802,7 +21782,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  20,
@@ -19812,7 +21793,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  30,
@@ -19822,7 +21804,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -19832,7 +21815,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  166.95,
@@ -19842,7 +21826,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  458,
@@ -19852,7 +21837,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  8.66,
@@ -19862,7 +21848,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  37.08,
@@ -19872,7 +21859,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  63,
@@ -19882,7 +21870,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31.78,
@@ -19892,7 +21881,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  49.45,
@@ -19902,7 +21892,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  29,
@@ -19912,7 +21903,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  999,
@@ -19922,7 +21914,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  200.11,
@@ -19932,7 +21925,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  554.53,
@@ -19942,7 +21936,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3,
@@ -19952,7 +21947,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  46,
@@ -19962,7 +21958,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  79.08,
@@ -19972,7 +21969,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  39.99,
@@ -19982,7 +21980,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  80.61,
@@ -19992,7 +21991,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  16.07,
@@ -20002,7 +22002,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  26,
@@ -20012,7 +22013,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.9,
@@ -20022,7 +22024,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "纯银合金",
                           "rank":  1,
                           "unit_price_gold":  487.99,
@@ -20032,7 +22035,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "纯银合金",
                           "rank":  2,
                           "unit_price_gold":  1100,
@@ -20042,7 +22046,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  254.08,
@@ -20052,7 +22057,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  749.09,
@@ -20062,7 +22068,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  21.09,
@@ -20072,7 +22079,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  78,
@@ -20082,7 +22090,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "薄暮合金",
                           "rank":  1,
                           "unit_price_gold":  483,
@@ -20092,7 +22101,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "薄暮合金",
                           "rank":  2,
                           "unit_price_gold":  1100,
@@ -20102,7 +22112,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  1046.88,
@@ -20112,7 +22123,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  7.22,
@@ -20122,7 +22134,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  13.39,
@@ -20132,7 +22145,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -20142,7 +22156,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  26.9,
@@ -20152,7 +22167,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  244,
@@ -20162,7 +22178,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-09 22:45:36",
+                          "observed_at":  "2026-03-10 10:45:36",
+                          "ingested_at":  "2026-03-09 22:45:36",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  539,
@@ -20172,7 +22189,8 @@
                           "source_ref":  "chat-image-20260309-224536"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  16.96,
@@ -20182,7 +22200,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  16.99,
@@ -20192,7 +22211,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  17.23,
@@ -20202,7 +22222,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  22.61,
@@ -20212,7 +22233,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  7.09,
@@ -20222,7 +22244,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  9,
@@ -20232,7 +22255,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  495.27,
@@ -20242,7 +22266,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  90.98,
@@ -20252,7 +22277,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  90.98,
@@ -20262,7 +22288,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1646,
@@ -20272,7 +22299,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2500,
@@ -20282,7 +22310,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  8749.99,
@@ -20292,7 +22321,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  11450,
@@ -20302,7 +22332,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  8000.98,
@@ -20312,7 +22343,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  22,
@@ -20322,7 +22354,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  28.11,
@@ -20332,7 +22365,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4,
@@ -20342,7 +22376,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  160.76,
@@ -20352,7 +22387,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  458.45,
@@ -20362,7 +22398,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  8.55,
@@ -20372,7 +22409,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  36.2,
@@ -20382,7 +22420,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  60.99,
@@ -20392,7 +22431,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  31.5,
@@ -20402,7 +22442,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  53,
@@ -20412,7 +22453,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  29.53,
@@ -20422,7 +22464,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1294,
@@ -20432,7 +22475,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  199,
@@ -20442,7 +22486,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  550.52,
@@ -20452,7 +22497,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.99,
@@ -20462,7 +22508,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  44.09,
@@ -20472,7 +22519,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  74.99,
@@ -20482,7 +22530,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  33.99,
@@ -20492,7 +22541,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  80.61,
@@ -20502,7 +22552,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  16.94,
@@ -20512,7 +22563,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  26,
@@ -20522,7 +22574,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.97,
@@ -20532,7 +22585,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "纯银合金",
                           "rank":  1,
                           "unit_price_gold":  485.99,
@@ -20542,7 +22596,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "纯银合金",
                           "rank":  2,
                           "unit_price_gold":  1034,
@@ -20552,7 +22607,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  248,
@@ -20562,7 +22618,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  748,
@@ -20572,7 +22629,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  23.2,
@@ -20582,7 +22640,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  76,
@@ -20592,7 +22651,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "萨拉斯抗性合剂",
                           "rank":  1,
                           "unit_price_gold":  149.99,
@@ -20602,7 +22662,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "萨拉斯抗性合剂",
                           "rank":  2,
                           "unit_price_gold":  439.99,
@@ -20612,7 +22673,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "薄暮合金",
                           "rank":  1,
                           "unit_price_gold":  483.99,
@@ -20622,7 +22684,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "薄暮合金",
                           "rank":  2,
                           "unit_price_gold":  1035.97,
@@ -20632,7 +22695,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  1000.5,
@@ -20642,7 +22706,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  3.56,
@@ -20652,7 +22717,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  7.34,
@@ -20662,7 +22728,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  2.99,
@@ -20672,7 +22739,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  26.98,
@@ -20682,7 +22750,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  240,
@@ -20692,7 +22761,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:03:12",
+                          "observed_at":  "2026-03-10 12:03:12",
+                          "ingested_at":  "2026-03-10 00:03:12",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  537.98,
@@ -20702,7 +22772,8 @@
                           "source_ref":  "chat-image-20260310-000312"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  26.22,
@@ -20712,7 +22783,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  27.18,
@@ -20722,7 +22794,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  24.01,
@@ -20732,7 +22805,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  26.49,
@@ -20742,7 +22816,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  7.98,
@@ -20752,7 +22827,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  8.32,
@@ -20762,7 +22838,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  501.13,
@@ -20772,7 +22849,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  145.5,
@@ -20782,7 +22860,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  146,
@@ -20792,7 +22871,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1517,
@@ -20802,7 +22882,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2278.88,
@@ -20812,7 +22893,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  7999,
@@ -20822,7 +22904,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  11500,
@@ -20832,7 +22915,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  7555,
@@ -20842,7 +22926,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  23.23,
@@ -20852,7 +22937,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  30.88,
@@ -20862,7 +22948,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4.95,
@@ -20872,7 +22959,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  160.75,
@@ -20882,7 +22970,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  449,
@@ -20892,7 +22981,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  8.02,
@@ -20902,7 +22992,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  41,
@@ -20912,7 +23003,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  60.4,
@@ -20922,7 +23014,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  29,
@@ -20932,7 +23025,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  59,
@@ -20942,7 +23036,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  45.31,
@@ -20952,7 +23047,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1172.33,
@@ -20962,7 +23058,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  196.18,
@@ -20972,7 +23069,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  499.88,
@@ -20982,7 +23080,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3,
@@ -20992,7 +23091,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  60.46,
@@ -21002,7 +23102,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  71,
@@ -21012,7 +23113,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  39.98,
@@ -21022,7 +23124,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70.49,
@@ -21032,7 +23135,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  17.91,
@@ -21042,7 +23146,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  26,
@@ -21052,7 +23157,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.78,
@@ -21062,7 +23168,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "纯银合金",
                           "rank":  1,
                           "unit_price_gold":  483.94,
@@ -21072,7 +23179,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "纯银合金",
                           "rank":  2,
                           "unit_price_gold":  930.59,
@@ -21082,7 +23190,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  250,
@@ -21092,7 +23201,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  800,
@@ -21102,7 +23212,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  25.18,
@@ -21112,7 +23223,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  70,
@@ -21122,7 +23234,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "萨拉斯抗性合剂",
                           "rank":  1,
                           "unit_price_gold":  132,
@@ -21132,7 +23245,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "萨拉斯抗性合剂",
                           "rank":  2,
                           "unit_price_gold":  358,
@@ -21142,7 +23256,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "薄暮合金",
                           "rank":  1,
                           "unit_price_gold":  474.98,
@@ -21152,7 +23267,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "薄暮合金",
                           "rank":  2,
                           "unit_price_gold":  970,
@@ -21162,7 +23278,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  954.98,
@@ -21172,7 +23289,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  8.75,
@@ -21182,7 +23300,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  12.98,
@@ -21192,7 +23311,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  4.99,
@@ -21202,7 +23322,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  20.98,
@@ -21212,7 +23333,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  240,
@@ -21222,7 +23344,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:26:40",
+                          "observed_at":  "2026-03-10 12:26:40",
+                          "ingested_at":  "2026-03-10 00:26:40",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  520,
@@ -21232,7 +23355,8 @@
                           "source_ref":  "chat-image-20260310-002640"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "光明亚麻布",
                           "rank":  1,
                           "unit_price_gold":  12.58,
@@ -21242,7 +23366,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "光明亚麻布",
                           "rank":  2,
                           "unit_price_gold":  25.96,
@@ -21252,7 +23377,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  23.84,
@@ -21262,7 +23388,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  26.22,
@@ -21272,7 +23399,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "原始能量微粒",
                           "rank":  1,
                           "unit_price_gold":  7.83,
@@ -21282,7 +23410,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "圣光微粒",
                           "rank":  1,
                           "unit_price_gold":  8.36,
@@ -21292,7 +23421,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "夜莲花",
                           "rank":  1,
                           "unit_price_gold":  501.66,
@@ -21302,7 +23432,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "奥纹布",
                           "rank":  1,
                           "unit_price_gold":  138.99,
@@ -21312,7 +23443,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "奥纹布",
                           "rank":  2,
                           "unit_price_gold":  145.5,
@@ -21322,7 +23454,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "奥纹布卷",
                           "rank":  1,
                           "unit_price_gold":  1499.9,
@@ -21332,7 +23465,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "奥纹布卷",
                           "rank":  2,
                           "unit_price_gold":  2440.01,
@@ -21342,7 +23476,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "威风之爪",
                           "rank":  1,
                           "unit_price_gold":  7499,
@@ -21352,7 +23487,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "威风尾翼",
                           "rank":  1,
                           "unit_price_gold":  10499,
@@ -21362,7 +23498,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "威风皮毛",
                           "rank":  1,
                           "unit_price_gold":  7200,
@@ -21372,7 +23509,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "宁心花",
                           "rank":  1,
                           "unit_price_gold":  22.96,
@@ -21382,7 +23520,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "宁心花",
                           "rank":  2,
                           "unit_price_gold":  31.63,
@@ -21392,7 +23531,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "暮腊石",
                           "rank":  1,
                           "unit_price_gold":  4.93,
@@ -21402,7 +23542,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "标色墨水",
                           "rank":  1,
                           "unit_price_gold":  160.75,
@@ -21412,7 +23553,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "标色墨水",
                           "rank":  2,
                           "unit_price_gold":  448.99,
@@ -21422,7 +23564,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "永歌之尘",
                           "rank":  1,
                           "unit_price_gold":  8.18,
@@ -21432,7 +23575,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "法力百合",
                           "rank":  1,
                           "unit_price_gold":  40.63,
@@ -21442,7 +23586,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "法力百合",
                           "rank":  2,
                           "unit_price_gold":  57.92,
@@ -21452,7 +23597,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "法力百合颜料",
                           "rank":  1,
                           "unit_price_gold":  28.9,
@@ -21462,7 +23608,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "法力百合颜料",
                           "rank":  2,
                           "unit_price_gold":  59,
@@ -21472,7 +23619,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  1,
                           "unit_price_gold":  39.95,
@@ -21482,7 +23630,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "注能光明亚麻布卷",
                           "rank":  2,
                           "unit_price_gold":  1172.92,
@@ -21492,7 +23641,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "灵魂密文",
                           "rank":  1,
                           "unit_price_gold":  196,
@@ -21502,7 +23652,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "灵魂密文",
                           "rank":  2,
                           "unit_price_gold":  499,
@@ -21512,7 +23663,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "狂野魔法微粒",
                           "rank":  1,
                           "unit_price_gold":  3.44,
@@ -21522,7 +23674,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "白银叶",
                           "rank":  1,
                           "unit_price_gold":  50.93,
@@ -21532,7 +23685,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "白银叶",
                           "rank":  2,
                           "unit_price_gold":  71,
@@ -21542,7 +23696,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "白银叶颜料",
                           "rank":  1,
                           "unit_price_gold":  39.88,
@@ -21552,7 +23707,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "白银叶颜料",
                           "rank":  2,
                           "unit_price_gold":  70.49,
@@ -21562,7 +23718,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "粉末颜料",
                           "rank":  1,
                           "unit_price_gold":  17.91,
@@ -21572,7 +23729,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "粉末颜料",
                           "rank":  2,
                           "unit_price_gold":  26,
@@ -21582,7 +23740,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "纯净虚空微粒",
                           "rank":  1,
                           "unit_price_gold":  3.32,
@@ -21592,7 +23751,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "纯银合金",
                           "rank":  1,
                           "unit_price_gold":  479.99,
@@ -21602,7 +23762,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "纯银合金",
                           "rank":  2,
                           "unit_price_gold":  948.99,
@@ -21612,7 +23773,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "编码艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  249.98,
@@ -21622,7 +23784,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "编码艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  1229,
@@ -21632,7 +23795,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "艾泽之根",
                           "rank":  1,
                           "unit_price_gold":  25,
@@ -21642,7 +23806,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "艾泽之根",
                           "rank":  2,
                           "unit_price_gold":  70.74,
@@ -21652,7 +23817,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "萨拉斯抗性合剂",
                           "rank":  1,
                           "unit_price_gold":  118.88,
@@ -21662,7 +23828,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "萨拉斯抗性合剂",
                           "rank":  2,
                           "unit_price_gold":  328.93,
@@ -21672,7 +23839,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "薄暮合金",
                           "rank":  1,
                           "unit_price_gold":  474.87,
@@ -21682,7 +23850,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "薄暮合金",
                           "rank":  2,
                           "unit_price_gold":  940,
@@ -21692,7 +23861,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "虚触强化符文",
                           "rank":  1,
                           "unit_price_gold":  999.99,
@@ -21702,7 +23872,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "血艳蓟",
                           "rank":  1,
                           "unit_price_gold":  7.98,
@@ -21712,7 +23883,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "血艳蓟",
                           "rank":  2,
                           "unit_price_gold":  36.97,
@@ -21722,7 +23894,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "血艳蓟颜料",
                           "rank":  1,
                           "unit_price_gold":  4.99,
@@ -21732,7 +23905,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "血艳蓟颜料",
                           "rank":  2,
                           "unit_price_gold":  20.98,
@@ -21742,7 +23916,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "猪黄墨水",
                           "rank":  1,
                           "unit_price_gold":  240,
@@ -21752,7 +23927,8 @@
                           "source_ref":  "chat-image-20260310-004128"
                       },
                       {
-                          "observed_at":  "2026-03-10 00:41:28",
+                          "observed_at":  "2026-03-10 12:41:28",
+                          "ingested_at":  "2026-03-10 00:41:28",
                           "item_name":  "猪黄墨水",
                           "rank":  2,
                           "unit_price_gold":  519.99,
@@ -21966,9 +24142,11 @@
                   ],
     "analysis":  {
                      "title":  "merchant_multi_tf",
-                     "generated_at":  "2026-03-10 13:08:01",
-                     "latest_ts":  "2026-03-10 00:41:28",
-                     "prev_ts":  "2026-03-10 00:26:40",
+                     "generated_at":  "2026-03-10 14:23:08",
+                     "latest_ts":  "2026-03-10 12:41:28",
+                     "prev_ts":  "2026-03-10 12:26:40",
+                     "latest_ingested_at":  "2026-03-10 00:41:28",
+                     "prev_ingested_at":  "2026-03-10 00:26:40",
                      "confidence":  "medium",
                      "signals":  [
                                      {

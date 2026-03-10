@@ -17,6 +17,7 @@ New-Item -ItemType Directory -Force -Path $dashboardDir | Out-Null
 $snapshots = Import-Csv $snapshotFile | ForEach-Object {
   [pscustomobject]@{
     observed_at = $_.observed_at
+    ingested_at = if ($_.PSObject.Properties.Name -contains "ingested_at" -and -not [string]::IsNullOrWhiteSpace($_.ingested_at)) { $_.ingested_at } else { $_.observed_at }
     item_name = $_.item_name
     rank = [int]$_.rank
     unit_price_gold = [double]$_.unit_price_gold
@@ -63,6 +64,8 @@ $analysis = [ordered]@{
   generated_at = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss")
   latest_ts = $null
   prev_ts = $null
+  latest_ingested_at = $null
+  prev_ingested_at = $null
   confidence = "low"
   signals = @()
 }
@@ -77,6 +80,12 @@ if ($distinctTimes.Count -ge 2) {
 
   $latestRows = $snapshots | Where-Object { $_.observed_at -eq $latestTs }
   $prevRows = $snapshots | Where-Object { $_.observed_at -eq $prevTs }
+  if ($latestRows.Count -gt 0) {
+    $analysis.latest_ingested_at = ($latestRows | Select-Object -First 1).ingested_at
+  }
+  if ($prevRows.Count -gt 0) {
+    $analysis.prev_ingested_at = ($prevRows | Select-Object -First 1).ingested_at
+  }
   $prevMap = @{}
   foreach ($r in $prevRows) {
     $prevMap["$($r.item_name)|$($r.rank)"] = $r
