@@ -1,5 +1,5 @@
 ﻿window.WOW_AH_DATA = {
-    "generated_at":  "2026-03-10 15:52:00",
+    "generated_at":  "2026-03-10 22:01:40",
     "snapshots":  [
                       {
                           "observed_at":  "2026-03-07 11:38:17",
@@ -25102,6 +25102,589 @@
                           "available_quantity":  12657,
                           "source_type":  "screenshot",
                           "source_ref":  "chat-image-20260310-131152"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "光明亚麻布",
+                          "rank":  1,
+                          "unit_price_gold":  19.33,
+                          "unit_price_display":  "19金33银",
+                          "available_quantity":  518083,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "光明亚麻布",
+                          "rank":  2,
+                          "unit_price_gold":  19.77,
+                          "unit_price_display":  "19金77银",
+                          "available_quantity":  289062,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "光明亚麻布卷",
+                          "rank":  1,
+                          "unit_price_gold":  18.65,
+                          "unit_price_display":  "18金65银",
+                          "available_quantity":  342983,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "光明亚麻布卷",
+                          "rank":  2,
+                          "unit_price_gold":  22.5,
+                          "unit_price_display":  "22金50银",
+                          "available_quantity":  95781,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "原始能量微粒",
+                          "rank":  1,
+                          "unit_price_gold":  7.35,
+                          "unit_price_display":  "7金35银",
+                          "available_quantity":  940151,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "圣光微粒",
+                          "rank":  1,
+                          "unit_price_gold":  7.78,
+                          "unit_price_display":  "7金78银",
+                          "available_quantity":  1021000,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "夜莲花",
+                          "rank":  1,
+                          "unit_price_gold":  502.97,
+                          "unit_price_display":  "502金97银",
+                          "available_quantity":  9025,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "奥纹布",
+                          "rank":  1,
+                          "unit_price_gold":  133,
+                          "unit_price_display":  "133金0银",
+                          "available_quantity":  75410,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "奥纹布",
+                          "rank":  2,
+                          "unit_price_gold":  133.86,
+                          "unit_price_display":  "133金86银",
+                          "available_quantity":  83910,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "奥纹布卷",
+                          "rank":  1,
+                          "unit_price_gold":  1354.97,
+                          "unit_price_display":  "1354金97银",
+                          "available_quantity":  3176,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "奥纹布卷",
+                          "rank":  2,
+                          "unit_price_gold":  2099.99,
+                          "unit_price_display":  "2099金99银",
+                          "available_quantity":  4701,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "威风之爪",
+                          "rank":  1,
+                          "unit_price_gold":  6792.33,
+                          "unit_price_display":  "6792金33银",
+                          "available_quantity":  3355,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "威风尾翼",
+                          "rank":  1,
+                          "unit_price_gold":  9990.95,
+                          "unit_price_display":  "9990金95银",
+                          "available_quantity":  1478,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "威风皮毛",
+                          "rank":  1,
+                          "unit_price_gold":  5896.96,
+                          "unit_price_display":  "5896金96银",
+                          "available_quantity":  3558,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "宁心花",
+                          "rank":  1,
+                          "unit_price_gold":  22.18,
+                          "unit_price_display":  "22金18银",
+                          "available_quantity":  473870,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "宁心花",
+                          "rank":  2,
+                          "unit_price_gold":  28.39,
+                          "unit_price_display":  "28金39银",
+                          "available_quantity":  94135,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "暮腊石",
+                          "rank":  1,
+                          "unit_price_gold":  3,
+                          "unit_price_display":  "3金0银",
+                          "available_quantity":  160248,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "标色墨水",
+                          "rank":  1,
+                          "unit_price_gold":  152.8,
+                          "unit_price_display":  "152金80银",
+                          "available_quantity":  31463,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "标色墨水",
+                          "rank":  2,
+                          "unit_price_gold":  378.98,
+                          "unit_price_display":  "378金98银",
+                          "available_quantity":  4279,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "永歌之尘",
+                          "rank":  1,
+                          "unit_price_gold":  7.89,
+                          "unit_price_display":  "7金89银",
+                          "available_quantity":  793812,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "法力百合",
+                          "rank":  1,
+                          "unit_price_gold":  32,
+                          "unit_price_display":  "32金0银",
+                          "available_quantity":  102813,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "法力百合",
+                          "rank":  2,
+                          "unit_price_gold":  58.19,
+                          "unit_price_display":  "58金19银",
+                          "available_quantity":  17255,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "法力百合颜料",
+                          "rank":  1,
+                          "unit_price_gold":  26.98,
+                          "unit_price_display":  "26金98银",
+                          "available_quantity":  29200,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "法力百合颜料",
+                          "rank":  2,
+                          "unit_price_gold":  49.73,
+                          "unit_price_display":  "49金73银",
+                          "available_quantity":  6490,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "注能光明亚麻布卷",
+                          "rank":  1,
+                          "unit_price_gold":  31.36,
+                          "unit_price_display":  "31金36银",
+                          "available_quantity":  153343,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "注能光明亚麻布卷",
+                          "rank":  2,
+                          "unit_price_gold":  999,
+                          "unit_price_display":  "999金0银",
+                          "available_quantity":  959,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "灵魂密文",
+                          "rank":  1,
+                          "unit_price_gold":  185.7,
+                          "unit_price_display":  "185金70银",
+                          "available_quantity":  8203,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "灵魂密文",
+                          "rank":  2,
+                          "unit_price_gold":  450.97,
+                          "unit_price_display":  "450金97银",
+                          "available_quantity":  3252,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "狂野魔法微粒",
+                          "rank":  1,
+                          "unit_price_gold":  3.9,
+                          "unit_price_display":  "3金90银",
+                          "available_quantity":  807442,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "白银叶",
+                          "rank":  1,
+                          "unit_price_gold":  42,
+                          "unit_price_display":  "42金0银",
+                          "available_quantity":  129125,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "白银叶",
+                          "rank":  2,
+                          "unit_price_gold":  72.72,
+                          "unit_price_display":  "72金72银",
+                          "available_quantity":  19120,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "白银叶颜料",
+                          "rank":  1,
+                          "unit_price_gold":  33.54,
+                          "unit_price_display":  "33金54银",
+                          "available_quantity":  22041,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "白银叶颜料",
+                          "rank":  2,
+                          "unit_price_gold":  68.33,
+                          "unit_price_display":  "68金33银",
+                          "available_quantity":  9916,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "粉末颜料",
+                          "rank":  1,
+                          "unit_price_gold":  16,
+                          "unit_price_display":  "16金0银",
+                          "available_quantity":  181589,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "粉末颜料",
+                          "rank":  2,
+                          "unit_price_gold":  25.76,
+                          "unit_price_display":  "25金76银",
+                          "available_quantity":  10022,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "纯净虚空微粒",
+                          "rank":  1,
+                          "unit_price_gold":  3.01,
+                          "unit_price_display":  "3金1银",
+                          "available_quantity":  645245,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "纯银合金",
+                          "rank":  1,
+                          "unit_price_gold":  465.99,
+                          "unit_price_display":  "465金99银",
+                          "available_quantity":  7610,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "纯银合金",
+                          "rank":  2,
+                          "unit_price_gold":  957.07,
+                          "unit_price_display":  "957金07银",
+                          "available_quantity":  6055,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "编码艾泽之根",
+                          "rank":  1,
+                          "unit_price_gold":  243.99,
+                          "unit_price_display":  "243金99银",
+                          "available_quantity":  6648,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "编码艾泽之根",
+                          "rank":  2,
+                          "unit_price_gold":  800.64,
+                          "unit_price_display":  "800金64银",
+                          "available_quantity":  2805,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "艾泽之根",
+                          "rank":  1,
+                          "unit_price_gold":  21.32,
+                          "unit_price_display":  "21金32银",
+                          "available_quantity":  123829,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "艾泽之根",
+                          "rank":  2,
+                          "unit_price_gold":  70,
+                          "unit_price_display":  "70金0银",
+                          "available_quantity":  11954,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "萨拉斯抗性合剂",
+                          "rank":  1,
+                          "unit_price_gold":  209.9,
+                          "unit_price_display":  "209金90银",
+                          "available_quantity":  5062,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "萨拉斯抗性合剂",
+                          "rank":  2,
+                          "unit_price_gold":  420.5,
+                          "unit_price_display":  "420金50银",
+                          "available_quantity":  3670,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "薄暮合金",
+                          "rank":  1,
+                          "unit_price_gold":  465.55,
+                          "unit_price_display":  "465金55银",
+                          "available_quantity":  5547,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "薄暮合金",
+                          "rank":  2,
+                          "unit_price_gold":  938,
+                          "unit_price_display":  "938金0银",
+                          "available_quantity":  5867,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "虚触强化符文",
+                          "rank":  1,
+                          "unit_price_gold":  990,
+                          "unit_price_display":  "990金0银",
+                          "available_quantity":  9344,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "血艳蓟",
+                          "rank":  1,
+                          "unit_price_gold":  11.06,
+                          "unit_price_display":  "11金6银",
+                          "available_quantity":  115880,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "血艳蓟",
+                          "rank":  2,
+                          "unit_price_gold":  21.56,
+                          "unit_price_display":  "21金56银",
+                          "available_quantity":  29970,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "血艳蓟颜料",
+                          "rank":  1,
+                          "unit_price_gold":  4.49,
+                          "unit_price_display":  "4金49银",
+                          "available_quantity":  131473,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "血艳蓟颜料",
+                          "rank":  2,
+                          "unit_price_gold":  20.56,
+                          "unit_price_display":  "20金56银",
+                          "available_quantity":  9140,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "猪黄墨水",
+                          "rank":  1,
+                          "unit_price_gold":  230,
+                          "unit_price_display":  "230金0银",
+                          "available_quantity":  11193,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
+                      },
+                      {
+                          "observed_at":  "2026-03-10 13:27:08",
+                          "ingested_at":  "2026-03-10 22:01:39",
+                          "item_name":  "猪黄墨水",
+                          "rank":  2,
+                          "unit_price_gold":  450,
+                          "unit_price_display":  "450金0银",
+                          "available_quantity":  2438,
+                          "source_type":  "screenshot",
+                          "source_ref":  "chat-image-20260310-132708"
                       }
                   ],
     "relations":  [
@@ -25308,365 +25891,232 @@
                   ],
     "analysis":  {
                      "title":  "merchant_multi_tf",
-                     "generated_at":  "2026-03-10 15:52:00",
-                     "latest_ts":  "2026-03-10 13:11:52",
-                     "prev_ts":  "2026-03-10 12:56:37",
-                     "latest_ingested_at":  "2026-03-10 15:51:59",
-                     "prev_ingested_at":  "2026-03-10 15:06:08",
+                     "generated_at":  "2026-03-10 22:01:39",
+                     "latest_ts":  "2026-03-10 13:27:08",
+                     "prev_ts":  "2026-03-10 13:11:52",
+                     "latest_ingested_at":  "2026-03-10 22:01:39",
+                     "prev_ingested_at":  "2026-03-10 15:51:59",
                      "confidence":  "medium",
                      "signals":  [
                                      {
                                          "item":  "光明亚麻布",
                                          "rank":  1,
-                                         "price_pct":  -0.89,
-                                         "qty_pct":  10.33,
-                                         "tag":  "sell_now",
+                                         "price_pct":  -21.23,
+                                         "qty_pct":  25.09,
+                                         "tag":  "watch",
                                          "scores":  {
                                                         "restock":  42,
-                                                        "sell":  65,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0.982,
-                                                               "mid":  0.877,
-                                                               "day":  0.615,
-                                                               "week":  0.615
-                                                           },
-                                         "depth_ratio_mid":  0.805
-                                     },
-                                     {
-                                         "item":  "光明亚麻布",
-                                         "rank":  2,
-                                         "price_pct":  0.12,
-                                         "qty_pct":  1.36,
-                                         "tag":  "watch",
-                                         "scores":  {
-                                                        "restock":  47,
-                                                        "sell":  48,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0.03,
-                                                               "mid":  0.786,
-                                                               "day":  0.348,
-                                                               "week":  0.348
-                                                           },
-                                         "depth_ratio_mid":  0.682
-                                     },
-                                     {
-                                         "item":  "光明亚麻布卷",
-                                         "rank":  1,
-                                         "price_pct":  -5.67,
-                                         "qty_pct":  58.19,
-                                         "tag":  "watch",
-                                         "scores":  {
-                                                        "restock":  51,
-                                                        "sell":  41,
+                                                        "sell":  50,
                                                         "avoid":  45
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
-                                                               "mid":  0.715,
-                                                               "day":  0.26,
-                                                               "week":  0.26
+                                                               "mid":  0.495,
+                                                               "day":  0.466,
+                                                               "week":  0.466
                                                            },
-                                         "depth_ratio_mid":  1.217
+                                         "depth_ratio_mid":  1.008
+                                     },
+                                     {
+                                         "item":  "光明亚麻布",
+                                         "rank":  2,
+                                         "price_pct":  -20.92,
+                                         "qty_pct":  46.27,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  69,
+                                                        "sell":  26,
+                                                        "avoid":  45
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0.274,
+                                                               "day":  0.121,
+                                                               "week":  0.121
+                                                           },
+                                         "depth_ratio_mid":  1.005
+                                     },
+                                     {
+                                         "item":  "光明亚麻布卷",
+                                         "rank":  1,
+                                         "price_pct":  -15.15,
+                                         "qty_pct":  116.42,
+                                         "tag":  "avoid_trap",
+                                         "scores":  {
+                                                        "restock":  71,
+                                                        "sell":  24,
+                                                        "avoid":  90
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0.248,
+                                                               "day":  0.09,
+                                                               "week":  0.09
+                                                           },
+                                         "depth_ratio_mid":  2.467
                                      },
                                      {
                                          "item":  "光明亚麻布卷",
                                          "rank":  2,
-                                         "price_pct":  -8.08,
-                                         "qty_pct":  1.37,
-                                         "tag":  "restock_buy",
+                                         "price_pct":  -6.21,
+                                         "qty_pct":  57.21,
+                                         "tag":  "avoid_trap",
                                          "scores":  {
-                                                        "restock":  71,
-                                                        "sell":  39,
-                                                        "avoid":  0
+                                                        "restock":  62,
+                                                        "sell":  32,
+                                                        "avoid":  65
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
-                                                               "mid":  0.666,
-                                                               "day":  0.239,
-                                                               "week":  0.239
+                                                               "mid":  0.467,
+                                                               "day":  0.168,
+                                                               "week":  0.168
                                                            },
-                                         "depth_ratio_mid":  1.092
+                                         "depth_ratio_mid":  1.626
                                      },
                                      {
                                          "item":  "原始能量微粒",
                                          "rank":  1,
-                                         "price_pct":  15.47,
-                                         "qty_pct":  -21.24,
-                                         "tag":  "restock_buy",
+                                         "price_pct":  -8.81,
+                                         "qty_pct":  106.38,
+                                         "tag":  "avoid_trap",
                                          "scores":  {
-                                                        "restock":  81,
-                                                        "sell":  42,
-                                                        "avoid":  0
+                                                        "restock":  71,
+                                                        "sell":  25,
+                                                        "avoid":  65
                                                     },
                                          "timeframe_pos":  {
-                                                               "short":  1,
-                                                               "mid":  0.391,
-                                                               "day":  0.178,
-                                                               "week":  0.178
+                                                               "short":  0.343,
+                                                               "mid":  0.148,
+                                                               "day":  0.124,
+                                                               "week":  0.124
                                                            },
-                                         "depth_ratio_mid":  0.807
+                                         "depth_ratio_mid":  1.534
                                      },
                                      {
                                          "item":  "圣光微粒",
                                          "rank":  1,
-                                         "price_pct":  -3.9,
-                                         "qty_pct":  -5.7,
+                                         "price_pct":  -1.39,
+                                         "qty_pct":  21.97,
                                          "tag":  "restock_buy",
                                          "scores":  {
                                                         "restock":  87,
                                                         "sell":  27,
-                                                        "avoid":  25
+                                                        "avoid":  45
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
                                                                "mid":  0,
-                                                               "day":  0.204,
-                                                               "week":  0.204
+                                                               "day":  0.192,
+                                                               "week":  0.192
                                                            },
-                                         "depth_ratio_mid":  1.135
+                                         "depth_ratio_mid":  1.31
                                      },
                                      {
                                          "item":  "夜莲花",
                                          "rank":  1,
-                                         "price_pct":  0.16,
-                                         "qty_pct":  -4.48,
+                                         "price_pct":  -0.4,
+                                         "qty_pct":  -28.66,
                                          "tag":  "restock_buy",
                                          "scores":  {
-                                                        "restock":  65,
-                                                        "sell":  31,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  1,
-                                                               "mid":  0.684,
-                                                               "day":  0.093,
-                                                               "week":  0.093
-                                                           },
-                                         "depth_ratio_mid":  0.73
-                                     },
-                                     {
-                                         "item":  "奥纹布",
-                                         "rank":  1,
-                                         "price_pct":  -0.07,
-                                         "qty_pct":  36.66,
-                                         "tag":  "watch",
-                                         "scores":  {
-                                                        "restock":  52,
-                                                        "sell":  56,
+                                                        "restock":  67,
+                                                        "sell":  15,
                                                         "avoid":  0
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
-                                                               "mid":  0.874,
-                                                               "day":  0.465,
-                                                               "week":  0.465
+                                                               "mid":  0.656,
+                                                               "day":  0.08,
+                                                               "week":  0.08
                                                            },
-                                         "depth_ratio_mid":  0.834
+                                         "depth_ratio_mid":  0.552
+                                     },
+                                     {
+                                         "item":  "奥纹布",
+                                         "rank":  1,
+                                         "price_pct":  -3.96,
+                                         "qty_pct":  78.11,
+                                         "tag":  "avoid_trap",
+                                         "scores":  {
+                                                        "restock":  40,
+                                                        "sell":  51,
+                                                        "avoid":  65
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0.775,
+                                                               "day":  0.412,
+                                                               "week":  0.412
+                                                           },
+                                         "depth_ratio_mid":  1.455
                                      },
                                      {
                                          "item":  "奥纹布",
                                          "rank":  2,
-                                         "price_pct":  0,
-                                         "qty_pct":  6.51,
-                                         "tag":  "watch",
+                                         "price_pct":  -5.04,
+                                         "qty_pct":  12.29,
+                                         "tag":  "avoid_trap",
                                          "scores":  {
-                                                        "restock":  51,
-                                                        "sell":  57,
-                                                        "avoid":  20
+                                                        "restock":  40,
+                                                        "sell":  51,
+                                                        "avoid":  65
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
-                                                               "mid":  0.909,
-                                                               "day":  0.476,
-                                                               "week":  0.472
+                                                               "mid":  0.779,
+                                                               "day":  0.412,
+                                                               "week":  0.404
                                                            },
-                                         "depth_ratio_mid":  1.278
+                                         "depth_ratio_mid":  1.426
                                      },
                                      {
                                          "item":  "奥纹布卷",
                                          "rank":  1,
-                                         "price_pct":  -5.53,
-                                         "qty_pct":  15.64,
+                                         "price_pct":  -3.08,
+                                         "qty_pct":  15.45,
                                          "tag":  "avoid_trap",
                                          "scores":  {
-                                                        "restock":  60,
-                                                        "sell":  35,
+                                                        "restock":  62,
+                                                        "sell":  34,
                                                         "avoid":  90
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
                                                                "mid":  0,
-                                                               "day":  0.337,
-                                                               "week":  0.337
+                                                               "day":  0.309,
+                                                               "week":  0.309
                                                            },
-                                         "depth_ratio_mid":  1.521
+                                         "depth_ratio_mid":  1.585
                                      },
                                      {
                                          "item":  "奥纹布卷",
                                          "rank":  2,
-                                         "price_pct":  24.52,
-                                         "qty_pct":  -37.85,
-                                         "tag":  "watch",
+                                         "price_pct":  -19.23,
+                                         "qty_pct":  239.18,
+                                         "tag":  "avoid_trap",
                                          "scores":  {
-                                                        "restock":  50,
-                                                        "sell":  56,
-                                                        "avoid":  0
+                                                        "restock":  81,
+                                                        "sell":  16,
+                                                        "avoid":  90
                                                     },
                                          "timeframe_pos":  {
-                                                               "short":  1,
-                                                               "mid":  0.482,
-                                                               "day":  0.39,
-                                                               "week":  0.39
+                                                               "short":  0.023,
+                                                               "mid":  0.011,
+                                                               "day":  0.009,
+                                                               "week":  0.009
                                                            },
-                                         "depth_ratio_mid":  0.739
+                                         "depth_ratio_mid":  2.199
                                      },
                                      {
                                          "item":  "威风之爪",
                                          "rank":  1,
-                                         "price_pct":  -0.51,
-                                         "qty_pct":  5.68,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  82,
-                                                        "sell":  30,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0.924,
-                                                               "mid":  0.228,
-                                                               "day":  0.201,
-                                                               "week":  0.201
-                                                           },
-                                         "depth_ratio_mid":  1.103
-                                     },
-                                     {
-                                         "item":  "威风尾翼",
-                                         "rank":  1,
-                                         "price_pct":  -4.43,
-                                         "qty_pct":  5.57,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  92,
-                                                        "sell":  22,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0.49,
-                                                               "mid":  0.106,
-                                                               "day":  0.084,
-                                                               "week":  0.084
-                                                           },
-                                         "depth_ratio_mid":  1.09
-                                     },
-                                     {
-                                         "item":  "威风皮毛",
-                                         "rank":  1,
-                                         "price_pct":  1.72,
-                                         "qty_pct":  -6.28,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  96,
-                                                        "sell":  18,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0.99,
-                                                               "mid":  0.042,
-                                                               "day":  0.042,
-                                                               "week":  0.042
-                                                           },
-                                         "depth_ratio_mid":  0.986
-                                     },
-                                     {
-                                         "item":  "宁心花",
-                                         "rank":  1,
-                                         "price_pct":  -10.94,
-                                         "qty_pct":  8.3,
+                                         "price_pct":  -15.1,
+                                         "qty_pct":  85.77,
                                          "tag":  "avoid_trap",
                                          "scores":  {
-                                                        "restock":  74,
-                                                        "sell":  24,
-                                                        "avoid":  70
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0.238,
-                                                               "day":  0.101,
-                                                               "week":  0.085
-                                                           },
-                                         "depth_ratio_mid":  0.706
-                                     },
-                                     {
-                                         "item":  "宁心花",
-                                         "rank":  2,
-                                         "price_pct":  -9.51,
-                                         "qty_pct":  -7.49,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  95,
-                                                        "sell":  19,
-                                                        "avoid":  25
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0.117,
-                                                               "day":  0.043,
-                                                               "week":  0.032
-                                                           },
-                                         "depth_ratio_mid":  0.978
-                                     },
-                                     {
-                                         "item":  "暮腊石",
-                                         "rank":  1,
-                                         "price_pct":  0,
-                                         "qty_pct":  -1.37,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  81,
-                                                        "sell":  29,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0.842,
-                                                               "day":  0.029,
-                                                               "week":  0.029
-                                                           },
-                                         "depth_ratio_mid":  1.227
-                                     },
-                                     {
-                                         "item":  "标色墨水",
-                                         "rank":  1,
-                                         "price_pct":  3.23,
-                                         "qty_pct":  -4.75,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  72,
-                                                        "sell":  21,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0.87,
-                                                               "mid":  0.246,
-                                                               "day":  0.125,
-                                                               "week":  0.125
-                                                           },
-                                         "depth_ratio_mid":  0.575
-                                     },
-                                     {
-                                         "item":  "标色墨水",
-                                         "rank":  2,
-                                         "price_pct":  0,
-                                         "qty_pct":  0.52,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  100,
+                                                        "restock":  82,
                                                         "sell":  15,
-                                                        "avoid":  45
+                                                        "avoid":  90
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
@@ -25674,13 +26124,13 @@
                                                                "day":  0,
                                                                "week":  0
                                                            },
-                                         "depth_ratio_mid":  2.667
+                                         "depth_ratio_mid":  1.851
                                      },
                                      {
-                                         "item":  "永歌之尘",
+                                         "item":  "威风尾翼",
                                          "rank":  1,
-                                         "price_pct":  0,
-                                         "qty_pct":  6.13,
+                                         "price_pct":  -9.08,
+                                         "qty_pct":  -1.27,
                                          "tag":  "restock_buy",
                                          "scores":  {
                                                         "restock":  100,
@@ -25696,53 +26146,15 @@
                                          "depth_ratio_mid":  1.044
                                      },
                                      {
-                                         "item":  "法力百合",
+                                         "item":  "威风皮毛",
                                          "rank":  1,
-                                         "price_pct":  9.48,
-                                         "qty_pct":  6.17,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  83,
-                                                        "sell":  30,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0.35,
-                                                               "mid":  0.336,
-                                                               "day":  0.173,
-                                                               "week":  0.152
-                                                           },
-                                         "depth_ratio_mid":  1.142
-                                     },
-                                     {
-                                         "item":  "法力百合",
-                                         "rank":  2,
-                                         "price_pct":  -6.75,
-                                         "qty_pct":  11.97,
+                                         "price_pct":  -18.08,
+                                         "qty_pct":  76.75,
                                          "tag":  "avoid_trap",
                                          "scores":  {
-                                                        "restock":  85,
-                                                        "sell":  29,
-                                                        "avoid":  70
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0.201,
-                                                               "day":  0.176,
-                                                               "week":  0.176
-                                                           },
-                                         "depth_ratio_mid":  1.091
-                                     },
-                                     {
-                                         "item":  "法力百合颜料",
-                                         "rank":  1,
-                                         "price_pct":  -1.04,
-                                         "qty_pct":  6.44,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  100,
+                                                        "restock":  82,
                                                         "sell":  15,
-                                                        "avoid":  25
+                                                        "avoid":  90
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
@@ -25750,56 +26162,56 @@
                                                                "day":  0,
                                                                "week":  0
                                                            },
-                                         "depth_ratio_mid":  0.899
+                                         "depth_ratio_mid":  1.562
                                      },
                                      {
-                                         "item":  "法力百合颜料",
+                                         "item":  "宁心花",
+                                         "rank":  1,
+                                         "price_pct":  5.57,
+                                         "qty_pct":  38.38,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  76,
+                                                        "sell":  35,
+                                                        "avoid":  0
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0.454,
+                                                               "mid":  0.513,
+                                                               "day":  0.219,
+                                                               "week":  0.184
+                                                           },
+                                         "depth_ratio_mid":  0.977
+                                     },
+                                     {
+                                         "item":  "宁心花",
                                          "rank":  2,
-                                         "price_pct":  0,
-                                         "qty_pct":  0.64,
+                                         "price_pct":  2.94,
+                                         "qty_pct":  3.81,
                                          "tag":  "restock_buy",
                                          "scores":  {
                                                         "restock":  88,
-                                                        "sell":  26,
-                                                        "avoid":  45
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0.143,
-                                                               "day":  0.147,
-                                                               "week":  0.147
-                                                           },
-                                         "depth_ratio_mid":  1.385
-                                     },
-                                     {
-                                         "item":  "注能光明亚麻布卷",
-                                         "rank":  1,
-                                         "price_pct":  -6.7,
-                                         "qty_pct":  3.42,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  80,
-                                                        "sell":  32,
+                                                        "sell":  25,
                                                         "avoid":  0
                                                     },
                                          "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0.394,
-                                                               "day":  0.182,
-                                                               "week":  0.182
+                                                               "short":  0.279,
+                                                               "mid":  0.3,
+                                                               "day":  0.103,
+                                                               "week":  0.077
                                                            },
-                                         "depth_ratio_mid":  1.173
+                                         "depth_ratio_mid":  1.009
                                      },
                                      {
-                                         "item":  "注能光明亚麻布卷",
-                                         "rank":  2,
-                                         "price_pct":  -20.76,
-                                         "qty_pct":  6.87,
-                                         "tag":  "restock_buy",
+                                         "item":  "暮腊石",
+                                         "rank":  1,
+                                         "price_pct":  -37.5,
+                                         "qty_pct":  22.42,
+                                         "tag":  "avoid_trap",
                                          "scores":  {
-                                                        "restock":  100,
+                                                        "restock":  82,
                                                         "sell":  15,
-                                                        "avoid":  45
+                                                        "avoid":  90
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
@@ -25807,13 +26219,32 @@
                                                                "day":  0,
                                                                "week":  0
                                                            },
-                                         "depth_ratio_mid":  1.865
+                                         "depth_ratio_mid":  1.439
                                      },
                                      {
-                                         "item":  "灵魂密文",
+                                         "item":  "标色墨水",
                                          "rank":  1,
-                                         "price_pct":  0,
-                                         "qty_pct":  5.85,
+                                         "price_pct":  -4.5,
+                                         "qty_pct":  137.21,
+                                         "tag":  "avoid_trap",
+                                         "scores":  {
+                                                        "restock":  82,
+                                                        "sell":  15,
+                                                        "avoid":  90
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0,
+                                                               "day":  0,
+                                                               "week":  0
+                                                           },
+                                         "depth_ratio_mid":  1.301
+                                     },
+                                     {
+                                         "item":  "标色墨水",
+                                         "rank":  2,
+                                         "price_pct":  -6.42,
+                                         "qty_pct":  -54.12,
                                          "tag":  "restock_buy",
                                          "scores":  {
                                                         "restock":  100,
@@ -25826,13 +26257,70 @@
                                                                "day":  0,
                                                                "week":  0
                                                            },
-                                         "depth_ratio_mid":  1.148
+                                         "depth_ratio_mid":  1.17
                                      },
                                      {
-                                         "item":  "灵魂密文",
+                                         "item":  "永歌之尘",
+                                         "rank":  1,
+                                         "price_pct":  -1.38,
+                                         "qty_pct":  87.19,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  100,
+                                                        "sell":  15,
+                                                        "avoid":  45
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0,
+                                                               "day":  0,
+                                                               "week":  0
+                                                           },
+                                         "depth_ratio_mid":  1.875
+                                     },
+                                     {
+                                         "item":  "法力百合",
+                                         "rank":  1,
+                                         "price_pct":  -8.57,
+                                         "qty_pct":  36.86,
+                                         "tag":  "avoid_trap",
+                                         "scores":  {
+                                                        "restock":  82,
+                                                        "sell":  15,
+                                                        "avoid":  90
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0.01,
+                                                               "mid":  0.003,
+                                                               "day":  0.002,
+                                                               "week":  0.002
+                                                           },
+                                         "depth_ratio_mid":  1.489
+                                     },
+                                     {
+                                         "item":  "法力百合",
                                          "rank":  2,
-                                         "price_pct":  -3.02,
-                                         "qty_pct":  22.29,
+                                         "price_pct":  4.28,
+                                         "qty_pct":  32.78,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  75,
+                                                        "sell":  37,
+                                                        "avoid":  20
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0.592,
+                                                               "mid":  0.466,
+                                                               "day":  0.245,
+                                                               "week":  0.245
+                                                           },
+                                         "depth_ratio_mid":  1.417
+                                     },
+                                     {
+                                         "item":  "法力百合颜料",
+                                         "rank":  1,
+                                         "price_pct":  -5.66,
+                                         "qty_pct":  34.59,
                                          "tag":  "avoid_trap",
                                          "scores":  {
                                                         "restock":  82,
@@ -25845,170 +26333,75 @@
                                                                "day":  0,
                                                                "week":  0
                                                            },
-                                         "depth_ratio_mid":  0.945
+                                         "depth_ratio_mid":  1.188
                                      },
                                      {
-                                         "item":  "狂野魔法微粒",
-                                         "rank":  1,
-                                         "price_pct":  -20.31,
-                                         "qty_pct":  -13.08,
+                                         "item":  "法力百合颜料",
+                                         "rank":  2,
+                                         "price_pct":  -0.54,
+                                         "qty_pct":  97.08,
                                          "tag":  "restock_buy",
                                          "scores":  {
-                                                        "restock":  79,
-                                                        "sell":  20,
-                                                        "avoid":  25
+                                                        "restock":  89,
+                                                        "sell":  25,
+                                                        "avoid":  45
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
-                                                               "mid":  0.061,
-                                                               "day":  0.069,
-                                                               "week":  0.069
+                                                               "mid":  0.117,
+                                                               "day":  0.14,
+                                                               "week":  0.14
                                                            },
-                                         "depth_ratio_mid":  0.793
+                                         "depth_ratio_mid":  2.376
                                      },
                                      {
-                                         "item":  "白银叶",
+                                         "item":  "注能光明亚麻布卷",
                                          "rank":  1,
-                                         "price_pct":  -4.99,
-                                         "qty_pct":  10.91,
+                                         "price_pct":  -5.37,
+                                         "qty_pct":  12.82,
                                          "tag":  "avoid_trap",
                                          "scores":  {
-                                                        "restock":  87,
+                                                        "restock":  70,
                                                         "sell":  26,
                                                         "avoid":  90
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
-                                                               "mid":  0.039,
-                                                               "day":  0.182,
-                                                               "week":  0.182
+                                                               "mid":  0.145,
+                                                               "day":  0.148,
+                                                               "week":  0.141
                                                            },
-                                         "depth_ratio_mid":  2.072
+                                         "depth_ratio_mid":  1.339
                                      },
                                      {
-                                         "item":  "白银叶",
+                                         "item":  "注能光明亚麻布卷",
                                          "rank":  2,
-                                         "price_pct":  -2.01,
-                                         "qty_pct":  11.88,
-                                         "tag":  "watch",
-                                         "scores":  {
-                                                        "restock":  56,
-                                                        "sell":  54,
-                                                        "avoid":  45
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0.622,
-                                                               "mid":  0.613,
-                                                               "day":  0.503,
-                                                               "week":  0.476
-                                                           },
-                                         "depth_ratio_mid":  1.02
-                                     },
-                                     {
-                                         "item":  "白银叶颜料",
-                                         "rank":  1,
-                                         "price_pct":  -3.23,
-                                         "qty_pct":  23.23,
-                                         "tag":  "avoid_trap",
-                                         "scores":  {
-                                                        "restock":  76,
-                                                        "sell":  20,
-                                                        "avoid":  70
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0.124,
-                                                               "day":  0.053,
-                                                               "week":  0.053
-                                                           },
-                                         "depth_ratio_mid":  1.118
-                                     },
-                                     {
-                                         "item":  "白银叶颜料",
-                                         "rank":  2,
-                                         "price_pct":  0,
-                                         "qty_pct":  0.52,
+                                         "price_pct":  12.5,
+                                         "qty_pct":  -10.62,
                                          "tag":  "restock_buy",
                                          "scores":  {
-                                                        "restock":  81,
-                                                        "sell":  33,
+                                                        "restock":  77,
+                                                        "sell":  35,
                                                         "avoid":  20
                                                     },
                                          "timeframe_pos":  {
-                                                               "short":  0.5,
-                                                               "mid":  0,
-                                                               "day":  0.298,
-                                                               "week":  0.298
+                                                               "short":  0.477,
+                                                               "mid":  0.273,
+                                                               "day":  0.27,
+                                                               "week":  0.27
                                                            },
-                                         "depth_ratio_mid":  1.465
+                                         "depth_ratio_mid":  1.577
                                      },
                                      {
-                                         "item":  "粉末颜料",
+                                         "item":  "灵魂密文",
                                          "rank":  1,
-                                         "price_pct":  1.47,
-                                         "qty_pct":  8.75,
-                                         "tag":  "watch",
-                                         "scores":  {
-                                                        "restock":  51,
-                                                        "sell":  43,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  1,
-                                                               "mid":  0.974,
-                                                               "day":  0.232,
-                                                               "week":  0.206
-                                                           },
-                                         "depth_ratio_mid":  0.684
-                                     },
-                                     {
-                                         "item":  "粉末颜料",
-                                         "rank":  2,
-                                         "price_pct":  -1.73,
-                                         "qty_pct":  6.31,
-                                         "tag":  "restock_buy",
+                                         "price_pct":  -2.26,
+                                         "qty_pct":  53.1,
+                                         "tag":  "avoid_trap",
                                          "scores":  {
                                                         "restock":  82,
-                                                        "sell":  18,
-                                                        "avoid":  25
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0,
-                                                               "day":  0.054,
-                                                               "week":  0.054
-                                                           },
-                                         "depth_ratio_mid":  0.61
-                                     },
-                                     {
-                                         "item":  "纯净虚空微粒",
-                                         "rank":  1,
-                                         "price_pct":  -4.91,
-                                         "qty_pct":  -6.72,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  89,
-                                                        "sell":  25,
-                                                        "avoid":  25
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0,
-                                                               "day":  0.175,
-                                                               "week":  0.175
-                                                           },
-                                         "depth_ratio_mid":  1.053
-                                     },
-                                     {
-                                         "item":  "纯银合金",
-                                         "rank":  1,
-                                         "price_pct":  -0.21,
-                                         "qty_pct":  2.89,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  100,
                                                         "sell":  15,
-                                                        "avoid":  25
+                                                        "avoid":  90
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
@@ -26016,32 +26409,89 @@
                                                                "day":  0,
                                                                "week":  0
                                                            },
-                                         "depth_ratio_mid":  1.127
+                                         "depth_ratio_mid":  1.618
                                      },
                                      {
-                                         "item":  "纯银合金",
+                                         "item":  "灵魂密文",
                                          "rank":  2,
-                                         "price_pct":  -1.03,
-                                         "qty_pct":  -2.5,
-                                         "tag":  "restock_buy",
+                                         "price_pct":  -6.24,
+                                         "qty_pct":  46.35,
+                                         "tag":  "avoid_trap",
                                          "scores":  {
-                                                        "restock":  70,
-                                                        "sell":  28,
-                                                        "avoid":  0
+                                                        "restock":  82,
+                                                        "sell":  15,
+                                                        "avoid":  90
                                                     },
                                          "timeframe_pos":  {
-                                                               "short":  0.524,
-                                                               "mid":  0.174,
-                                                               "day":  0.174,
-                                                               "week":  0.174
+                                                               "short":  0,
+                                                               "mid":  0,
+                                                               "day":  0,
+                                                               "week":  0
                                                            },
-                                         "depth_ratio_mid":  0.725
+                                         "depth_ratio_mid":  1.283
                                      },
                                      {
-                                         "item":  "编码艾泽之根",
+                                         "item":  "狂野魔法微粒",
                                          "rank":  1,
-                                         "price_pct":  0,
-                                         "qty_pct":  15.87,
+                                         "price_pct":  25.81,
+                                         "qty_pct":  161.73,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  65,
+                                                        "sell":  55,
+                                                        "avoid":  20
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  1,
+                                                               "mid":  0.738,
+                                                               "day":  0.309,
+                                                               "week":  0.309
+                                                           },
+                                         "depth_ratio_mid":  1.934
+                                     },
+                                     {
+                                         "item":  "白银叶",
+                                         "rank":  1,
+                                         "price_pct":  -5.7,
+                                         "qty_pct":  57.31,
+                                         "tag":  "avoid_trap",
+                                         "scores":  {
+                                                        "restock":  79,
+                                                        "sell":  18,
+                                                        "avoid":  90
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0,
+                                                               "day":  0.051,
+                                                               "week":  0.051
+                                                           },
+                                         "depth_ratio_mid":  2.724
+                                     },
+                                     {
+                                         "item":  "白银叶",
+                                         "rank":  2,
+                                         "price_pct":  -1.05,
+                                         "qty_pct":  53.33,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  66,
+                                                        "sell":  46,
+                                                        "avoid":  45
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0.156,
+                                                               "day":  0.486,
+                                                               "week":  0.46
+                                                           },
+                                         "depth_ratio_mid":  1.485
+                                     },
+                                     {
+                                         "item":  "白银叶颜料",
+                                         "rank":  1,
+                                         "price_pct":  -2.5,
+                                         "qty_pct":  -26.96,
                                          "tag":  "restock_buy",
                                          "scores":  {
                                                         "restock":  98,
@@ -26050,249 +26500,40 @@
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
-                                                               "mid":  0.064,
-                                                               "day":  0.018,
-                                                               "week":  0.012
+                                                               "mid":  0.024,
+                                                               "day":  0.02,
+                                                               "week":  0.02
                                                            },
-                                         "depth_ratio_mid":  0.844
+                                         "depth_ratio_mid":  0.804
                                      },
                                      {
-                                         "item":  "编码艾泽之根",
+                                         "item":  "白银叶颜料",
                                          "rank":  2,
-                                         "price_pct":  0,
-                                         "qty_pct":  7.44,
-                                         "tag":  "watch",
-                                         "scores":  {
-                                                        "restock":  40,
-                                                        "sell":  38,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0.923,
-                                                               "day":  0.422,
-                                                               "week":  0.39
-                                                           },
-                                         "depth_ratio_mid":  0.433
-                                     },
-                                     {
-                                         "item":  "艾泽之根",
-                                         "rank":  1,
-                                         "price_pct":  -8.42,
-                                         "qty_pct":  8.59,
+                                         "price_pct":  -3.06,
+                                         "qty_pct":  83.15,
                                          "tag":  "avoid_trap",
                                          "scores":  {
-                                                        "restock":  62,
-                                                        "sell":  49,
-                                                        "avoid":  70
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0.16,
-                                                               "day":  0.54,
-                                                               "week":  0.518
-                                                           },
-                                         "depth_ratio_mid":  1.086
-                                     },
-                                     {
-                                         "item":  "艾泽之根",
-                                         "rank":  2,
-                                         "price_pct":  0.6,
-                                         "qty_pct":  0.03,
-                                         "tag":  "watch",
-                                         "scores":  {
-                                                        "restock":  44,
-                                                        "sell":  52,
-                                                        "avoid":  25
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0.043,
-                                                               "mid":  0.155,
-                                                               "day":  0.622,
-                                                               "week":  0.535
-                                                           },
-                                         "depth_ratio_mid":  0.746
-                                     },
-                                     {
-                                         "item":  "萨拉斯抗性合剂",
-                                         "rank":  1,
-                                         "price_pct":  0,
-                                         "qty_pct":  -0.96,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  83,
-                                                        "sell":  30,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  1,
-                                                               "mid":  0.197,
-                                                               "day":  0.197,
-                                                               "week":  0.197
-                                                           },
-                                         "depth_ratio_mid":  1.045
-                                     },
-                                     {
-                                         "item":  "萨拉斯抗性合剂",
-                                         "rank":  2,
-                                         "price_pct":  0,
-                                         "qty_pct":  0.21,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  93,
-                                                        "sell":  21,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  1,
-                                                               "mid":  0.086,
-                                                               "day":  0.086,
-                                                               "week":  0.086
-                                                           },
-                                         "depth_ratio_mid":  0.982
-                                     },
-                                     {
-                                         "item":  "薄暮合金",
-                                         "rank":  1,
-                                         "price_pct":  0,
-                                         "qty_pct":  -1.88,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  85,
-                                                        "sell":  0,
-                                                        "avoid":  25
+                                                        "restock":  64,
+                                                        "sell":  31,
+                                                        "avoid":  90
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
                                                                "mid":  0,
-                                                               "day":  0,
-                                                               "week":  0
+                                                               "day":  0.273,
+                                                               "week":  0.273
                                                            },
-                                         "depth_ratio_mid":  0.544
+                                         "depth_ratio_mid":  2.296
                                      },
                                      {
-                                         "item":  "薄暮合金",
-                                         "rank":  2,
-                                         "price_pct":  0,
-                                         "qty_pct":  0.41,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  89,
-                                                        "sell":  24,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  1,
-                                                               "mid":  0.125,
-                                                               "day":  0.125,
-                                                               "week":  0.125
-                                                           },
-                                         "depth_ratio_mid":  0.946
-                                     },
-                                     {
-                                         "item":  "虚触强化符文",
+                                         "item":  "粉末颜料",
                                          "rank":  1,
-                                         "price_pct":  4.06,
-                                         "qty_pct":  2.76,
-                                         "tag":  "sell_now",
-                                         "scores":  {
-                                                        "restock":  53,
-                                                        "sell":  67,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0.975,
-                                                               "mid":  0.4,
-                                                               "day":  0.6,
-                                                               "week":  0.6
-                                                           },
-                                         "depth_ratio_mid":  0.872
-                                     },
-                                     {
-                                         "item":  "血艳蓟",
-                                         "rank":  1,
-                                         "price_pct":  -1.32,
-                                         "qty_pct":  -4.59,
-                                         "tag":  "watch",
-                                         "scores":  {
-                                                        "restock":  58,
-                                                        "sell":  52,
-                                                        "avoid":  20
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0.726,
-                                                               "day":  0.427,
-                                                               "week":  0.427
-                                                           },
-                                         "depth_ratio_mid":  1.424
-                                     },
-                                     {
-                                         "item":  "血艳蓟",
-                                         "rank":  2,
-                                         "price_pct":  93.95,
-                                         "qty_pct":  -3.69,
-                                         "tag":  "watch",
-                                         "scores":  {
-                                                        "restock":  44,
-                                                        "sell":  35,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0.503,
-                                                               "mid":  0.596,
-                                                               "day":  0.442,
-                                                               "week":  0.442
-                                                           },
-                                         "depth_ratio_mid":  0.416
-                                     },
-                                     {
-                                         "item":  "血艳蓟颜料",
-                                         "rank":  1,
-                                         "price_pct":  -2,
-                                         "qty_pct":  75.07,
-                                         "tag":  "restock_buy",
-                                         "scores":  {
-                                                        "restock":  63,
-                                                        "sell":  46,
-                                                        "avoid":  0
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0.827,
-                                                               "day":  0.318,
-                                                               "week":  0.318
-                                                           },
-                                         "depth_ratio_mid":  0.838
-                                     },
-                                     {
-                                         "item":  "血艳蓟颜料",
-                                         "rank":  2,
-                                         "price_pct":  0,
-                                         "qty_pct":  -1.34,
-                                         "tag":  "restock_buy",
+                                         "price_pct":  -10.66,
+                                         "qty_pct":  19.83,
+                                         "tag":  "avoid_trap",
                                          "scores":  {
                                                         "restock":  82,
-                                                        "sell":  32,
-                                                        "avoid":  25
-                                                    },
-                                         "timeframe_pos":  {
-                                                               "short":  0,
-                                                               "mid":  0,
-                                                               "day":  0.281,
-                                                               "week":  0.281
-                                                           },
-                                         "depth_ratio_mid":  1.05
-                                     },
-                                     {
-                                         "item":  "猪黄墨水",
-                                         "rank":  1,
-                                         "price_pct":  -4.17,
-                                         "qty_pct":  42.94,
-                                         "tag":  "avoid_trap",
-                                         "scores":  {
-                                                        "restock":  67,
-                                                        "sell":  0,
+                                                        "sell":  15,
                                                         "avoid":  70
                                                     },
                                          "timeframe_pos":  {
@@ -26301,18 +26542,56 @@
                                                                "day":  0,
                                                                "week":  0
                                                            },
-                                         "depth_ratio_mid":  0.362
+                                         "depth_ratio_mid":  0.813
                                      },
                                      {
-                                         "item":  "猪黄墨水",
+                                         "item":  "粉末颜料",
                                          "rank":  2,
-                                         "price_pct":  0,
-                                         "qty_pct":  0.6,
+                                         "price_pct":  0.82,
+                                         "qty_pct":  -44.23,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  80,
+                                                        "sell":  5,
+                                                        "avoid":  0
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0.467,
+                                                               "mid":  0.056,
+                                                               "day":  0.065,
+                                                               "week":  0.065
+                                                           },
+                                         "depth_ratio_mid":  0.352
+                                     },
+                                     {
+                                         "item":  "纯净虚空微粒",
+                                         "rank":  1,
+                                         "price_pct":  -8.51,
+                                         "qty_pct":  47.1,
+                                         "tag":  "avoid_trap",
+                                         "scores":  {
+                                                        "restock":  77,
+                                                        "sell":  20,
+                                                        "avoid":  90
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0,
+                                                               "day":  0.079,
+                                                               "week":  0.079
+                                                           },
+                                         "depth_ratio_mid":  1.561
+                                     },
+                                     {
+                                         "item":  "纯银合金",
+                                         "rank":  1,
+                                         "price_pct":  -1.27,
+                                         "qty_pct":  -8.11,
                                          "tag":  "restock_buy",
                                          "scores":  {
                                                         "restock":  100,
                                                         "sell":  15,
-                                                        "avoid":  45
+                                                        "avoid":  25
                                                     },
                                          "timeframe_pos":  {
                                                                "short":  0,
@@ -26320,7 +26599,311 @@
                                                                "day":  0,
                                                                "week":  0
                                                            },
-                                         "depth_ratio_mid":  4.147
+                                         "depth_ratio_mid":  1.031
+                                     },
+                                     {
+                                         "item":  "纯银合金",
+                                         "rank":  2,
+                                         "price_pct":  -0.31,
+                                         "qty_pct":  33.63,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  87,
+                                                        "sell":  27,
+                                                        "avoid":  25
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0.156,
+                                                               "day":  0.156,
+                                                               "week":  0.156
+                                                           },
+                                         "depth_ratio_mid":  0.972
+                                     },
+                                     {
+                                         "item":  "编码艾泽之根",
+                                         "rank":  1,
+                                         "price_pct":  -2.4,
+                                         "qty_pct":  45.25,
+                                         "tag":  "avoid_trap",
+                                         "scores":  {
+                                                        "restock":  82,
+                                                        "sell":  15,
+                                                        "avoid":  70
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0,
+                                                               "day":  0,
+                                                               "week":  0
+                                                           },
+                                         "depth_ratio_mid":  1.203
+                                     },
+                                     {
+                                         "item":  "编码艾泽之根",
+                                         "rank":  2,
+                                         "price_pct":  -32.83,
+                                         "qty_pct":  223.9,
+                                         "tag":  "avoid_trap",
+                                         "scores":  {
+                                                        "restock":  77,
+                                                        "sell":  20,
+                                                        "avoid":  90
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0.109,
+                                                               "day":  0.05,
+                                                               "week":  0.046
+                                                           },
+                                         "depth_ratio_mid":  1.327
+                                     },
+                                     {
+                                         "item":  "艾泽之根",
+                                         "rank":  1,
+                                         "price_pct":  -3,
+                                         "qty_pct":  -6.63,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  67,
+                                                        "sell":  46,
+                                                        "avoid":  25
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0.044,
+                                                               "day":  0.508,
+                                                               "week":  0.487
+                                                           },
+                                         "depth_ratio_mid":  1.018
+                                     },
+                                     {
+                                         "item":  "艾泽之根",
+                                         "rank":  2,
+                                         "price_pct":  11.91,
+                                         "qty_pct":  4.1,
+                                         "tag":  "sell_now",
+                                         "scores":  {
+                                                        "restock":  45,
+                                                        "sell":  74,
+                                                        "avoid":  0
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  1,
+                                                               "mid":  0.482,
+                                                               "day":  0.742,
+                                                               "week":  0.639
+                                                           },
+                                         "depth_ratio_mid":  0.865
+                                     },
+                                     {
+                                         "item":  "萨拉斯抗性合剂",
+                                         "rank":  1,
+                                         "price_pct":  67.92,
+                                         "qty_pct":  -42.65,
+                                         "tag":  "sell_now",
+                                         "scores":  {
+                                                        "restock":  0,
+                                                        "sell":  100,
+                                                        "avoid":  0
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  1,
+                                                               "mid":  1,
+                                                               "day":  1,
+                                                               "week":  1
+                                                           },
+                                         "depth_ratio_mid":  0.642
+                                     },
+                                     {
+                                         "item":  "萨拉斯抗性合剂",
+                                         "rank":  2,
+                                         "price_pct":  24.22,
+                                         "qty_pct":  -14.31,
+                                         "tag":  "sell_now",
+                                         "scores":  {
+                                                        "restock":  30,
+                                                        "sell":  87,
+                                                        "avoid":  0
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  1,
+                                                               "mid":  0.824,
+                                                               "day":  0.824,
+                                                               "week":  0.824
+                                                           },
+                                         "depth_ratio_mid":  0.865
+                                     },
+                                     {
+                                         "item":  "薄暮合金",
+                                         "rank":  1,
+                                         "price_pct":  -1.34,
+                                         "qty_pct":  15.61,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  85,
+                                                        "sell":  15,
+                                                        "avoid":  25
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0,
+                                                               "day":  0,
+                                                               "week":  0
+                                                           },
+                                         "depth_ratio_mid":  0.656
+                                     },
+                                     {
+                                         "item":  "薄暮合金",
+                                         "rank":  2,
+                                         "price_pct":  -2.29,
+                                         "qty_pct":  -4.09,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  100,
+                                                        "sell":  15,
+                                                        "avoid":  25
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0,
+                                                               "day":  0,
+                                                               "week":  0
+                                                           },
+                                         "depth_ratio_mid":  0.917
+                                     },
+                                     {
+                                         "item":  "虚触强化符文",
+                                         "rank":  1,
+                                         "price_pct":  -0.9,
+                                         "qty_pct":  -5.09,
+                                         "tag":  "watch",
+                                         "scores":  {
+                                                        "restock":  58,
+                                                        "sell":  53,
+                                                        "avoid":  0
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0.769,
+                                                               "mid":  0.318,
+                                                               "day":  0.546,
+                                                               "week":  0.546
+                                                           },
+                                         "depth_ratio_mid":  0.83
+                                     },
+                                     {
+                                         "item":  "血艳蓟",
+                                         "rank":  1,
+                                         "price_pct":  47.47,
+                                         "qty_pct":  -57.91,
+                                         "tag":  "sell_now",
+                                         "scores":  {
+                                                        "restock":  12,
+                                                        "sell":  89,
+                                                        "avoid":  0
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  1,
+                                                               "mid":  1,
+                                                               "day":  0.813,
+                                                               "week":  0.813
+                                                           },
+                                         "depth_ratio_mid":  0.619
+                                     },
+                                     {
+                                         "item":  "血艳蓟",
+                                         "rank":  2,
+                                         "price_pct":  -13.76,
+                                         "qty_pct":  92.73,
+                                         "tag":  "watch",
+                                         "scores":  {
+                                                        "restock":  34,
+                                                        "sell":  44,
+                                                        "avoid":  45
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0.716,
+                                                               "mid":  0.48,
+                                                               "day":  0.356,
+                                                               "week":  0.356
+                                                           },
+                                         "depth_ratio_mid":  0.798
+                                     },
+                                     {
+                                         "item":  "血艳蓟颜料",
+                                         "rank":  1,
+                                         "price_pct":  -8.37,
+                                         "qty_pct":  12.85,
+                                         "tag":  "watch",
+                                         "scores":  {
+                                                        "restock":  52,
+                                                        "sell":  40,
+                                                        "avoid":  45
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0.673,
+                                                               "day":  0.25,
+                                                               "week":  0.25
+                                                           },
+                                         "depth_ratio_mid":  0.928
+                                     },
+                                     {
+                                         "item":  "血艳蓟颜料",
+                                         "rank":  2,
+                                         "price_pct":  2.8,
+                                         "qty_pct":  19.24,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  79,
+                                                        "sell":  44,
+                                                        "avoid":  0
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  1,
+                                                               "mid":  0.08,
+                                                               "day":  0.3,
+                                                               "week":  0.3
+                                                           },
+                                         "depth_ratio_mid":  1.225
+                                     },
+                                     {
+                                         "item":  "猪黄墨水",
+                                         "rank":  1,
+                                         "price_pct":  0,
+                                         "qty_pct":  111.47,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  85,
+                                                        "sell":  15,
+                                                        "avoid":  25
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0,
+                                                               "day":  0,
+                                                               "week":  0
+                                                           },
+                                         "depth_ratio_mid":  0.793
+                                     },
+                                     {
+                                         "item":  "猪黄墨水",
+                                         "rank":  2,
+                                         "price_pct":  -4.36,
+                                         "qty_pct":  -80.74,
+                                         "tag":  "restock_buy",
+                                         "scores":  {
+                                                        "restock":  85,
+                                                        "sell":  15,
+                                                        "avoid":  25
+                                                    },
+                                         "timeframe_pos":  {
+                                                               "short":  0,
+                                                               "mid":  0,
+                                                               "day":  0,
+                                                               "week":  0
+                                                           },
+                                         "depth_ratio_mid":  0.765
                                      }
                                  ]
                  }
