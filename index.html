@@ -475,6 +475,8 @@
         <div class="page">
           <div class="toolbar">
             <div class="left-tools">
+              <button id="rangeAll" class="tool-toggle active" type="button">总览</button>
+              <button id="range1d" class="tool-toggle" type="button">1天</button>
               <select id="rankSel" class="tool-select">
                 <option value="all">星级选择: 全部</option>
                 <option value="r1">星级选择: R1</option>
@@ -651,6 +653,8 @@
       const otherPage = el("otherPage");
       const categoryTabs = el("categoryTabs");
       const productStrip = el("productStrip");
+      const rangeAll = el("rangeAll");
+      const range1d = el("range1d");
       const rankSel = el("rankSel");
       const toggleZone = el("toggleZone");
       const toggleMA = el("toggleMA");
@@ -695,6 +699,7 @@
         top: localStorage.getItem(VIEW_TAB_KEY) || "analysis",
         cat: localStorage.getItem(CAT_KEY) || "focus",
         product: "",
+        rangeMode: "all",
         rankMode: "all",
         showZone: false,
         showMA: true,
@@ -708,9 +713,57 @@
         bottomGridTop: "74%",
         bottomGridHeight: "14%"
       };
+      const INTRADAY_STEP_MIN = 10;
+      const INTRADAY_MAX_CONNECT_MIN = 180;
 
       function fmtNum(v, digits = 4) {
         return Number(v).toLocaleString(undefined, { maximumFractionDigits: digits });
+      }
+      function pad2(v) { return String(v).padStart(2, "0"); }
+      function dayStart(ts) {
+        const d = new Date(ts);
+        return new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0);
+      }
+      function dayLabel(d) {
+        return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}:00`;
+      }
+      function slotLabel(ts, stepMin) {
+        const d = new Date(ts);
+        const minute = Math.floor(d.getMinutes() / stepMin) * stepMin;
+        const slot = new Date(d.getFullYear(), d.getMonth(), d.getDate(), d.getHours(), minute, 0);
+        return dayLabel(slot);
+      }
+      function daySlots(dayTs, stepMin = 10) {
+        const s = dayStart(dayTs);
+        const arr = [];
+        for (let m = 0; m < 24 * 60; m += stepMin) {
+          const d = new Date(s.getTime() + m * 60 * 1000);
+          arr.push(dayLabel(d));
+        }
+        return arr;
+      }
+      function buildIntradayPlot(ts, sampleMap, stepMin, maxConnectMin) {
+        const idxByTs = new Map(ts.map((t, i) => [t, i]));
+        const points = [];
+        sampleMap.forEach((v, t) => {
+          const i = idxByTs.get(t);
+          if (i == null || v == null) return;
+          points.push({ i, v: Number(v) });
+        });
+        points.sort((a, b) => a.i - b.i);
+        const raw = ts.map(t => sampleMap.has(t) ? sampleMap.get(t) : null);
+        const plot = new Array(ts.length).fill(null);
+        const observed = new Array(ts.length).fill(false);
+        points.forEach(p => { observed[p.i] = true; plot[p.i] = p.v; });
+        for (let n = 0; n < points.length - 1; n++) {
+          const a = points[n], b = points[n + 1];
+          const gapMin = (b.i - a.i) * stepMin;
+          if (gapMin <= maxConnectMin) {
+            for (let k = a.i; k < b.i; k++) plot[k] = a.v;
+            plot[b.i] = b.v;
+          }
+        }
+        return { raw, plot, observed };
       }
       function normalizeRankForClient(value) {
         const n = Number(value);
@@ -780,6 +833,29 @@
 
       function toIndexed(rows, item) {
         const s = rows.filter(r => r.item_name === item);
+        if (state.rangeMode === "1d" && s.length) {
+          const lastTs = s[s.length - 1].ts;
+          const day = String(lastTs).split(" ")[0];
+          const sameDay = s.filter(r => String(r.ts || "").startsWith(day));
+          const ts = daySlots(lastTs, INTRADAY_STEP_MIN);
+          const r1pMap = new Map(sameDay.filter(r => r.rank === 1 || r.rank === 0).map(r => [slotLabel(r.ts, INTRADAY_STEP_MIN), r.price]));
+          const r2pMap = new Map(sameDay.filter(r => r.rank === 2).map(r => [slotLabel(r.ts, INTRADAY_STEP_MIN), r.price]));
+          const r1qMap = new Map(sameDay.filter(r => r.rank === 1 || r.rank === 0).map(r => [slotLabel(r.ts, INTRADAY_STEP_MIN), r.qty]));
+          const r2qMap = new Map(sameDay.filter(r => r.rank === 2).map(r => [slotLabel(r.ts, INTRADAY_STEP_MIN), r.qty]));
+          const r1Build = buildIntradayPlot(ts, r1pMap, INTRADAY_STEP_MIN, INTRADAY_MAX_CONNECT_MIN);
+          const r2Build = buildIntradayPlot(ts, r2pMap, INTRADAY_STEP_MIN, INTRADAY_MAX_CONNECT_MIN);
+          return {
+            ts,
+            r1p: r1Build.raw,
+            r2p: r2Build.raw,
+            r1pPlot: r1Build.plot,
+            r2pPlot: r2Build.plot,
+            r1Observed: r1Build.observed,
+            r2Observed: r2Build.observed,
+            r1q: ts.map(t => r1qMap.has(t) ? r1qMap.get(t) : null),
+            r2q: ts.map(t => r2qMap.has(t) ? r2qMap.get(t) : null)
+          };
+        }
         const tsRaw = [...new Set(s.map(r => r.ts))].sort((a, b) => new Date(a) - new Date(b));
         // 历史数据中 rank=0 代表“无品质”，默认并入 R1 轨道展示，避免图上出现空洞时间点。
         const r1p = new Map(s.filter(r => r.rank === 1 || r.rank === 0).map(r => [r.ts, r.price]));
@@ -860,12 +936,13 @@
         if (showR1) lineSeries.push({
           name: "R1 Price",
           type: "line",
-          smooth: true,
+          smooth: state.rangeMode !== "1d",
+          step: state.rangeMode === "1d" ? "end" : false,
           smoothMonotone: "x",
           symbol: "circle",
           symbolSize: 6,
           showSymbol: false,
-          data: idx.r1p,
+          data: state.rangeMode === "1d" ? (idx.r1pPlot || idx.r1p) : idx.r1p,
           yAxisIndex: 0,
           z: 5,
           lineStyle: { width: 2.8, color: "#8fbcff", shadowBlur: 12, shadowColor: "rgba(143,188,255,.45)" },
@@ -874,12 +951,13 @@
         if (showR2) lineSeries.push({
           name: "R2 Price",
           type: "line",
-          smooth: true,
+          smooth: state.rangeMode !== "1d",
+          step: state.rangeMode === "1d" ? "end" : false,
           smoothMonotone: "x",
           symbol: "circle",
           symbolSize: 6,
           showSymbol: false,
-          data: idx.r2p,
+          data: state.rangeMode === "1d" ? (idx.r2pPlot || idx.r2p) : idx.r2p,
           yAxisIndex: 0,
           z: 5,
           lineStyle: { width: 2.8, color: "#c3a8ff", shadowBlur: 12, shadowColor: "rgba(195,168,255,.45)" },
@@ -941,6 +1019,42 @@
             emphasis: lineEmphasis
           });
         }
+        const isIntraday = state.rangeMode === "1d";
+        lineSeries.forEach((s) => { s.connectNulls = false; });
+        if (isIntraday && showR1) {
+          lineSeries.push({
+            name: "R1 Point",
+            type: "scatter",
+            data: (idx.r1p || []).map((v, i) => (idx.r1Observed && idx.r1Observed[i] ? v : null)),
+            yAxisIndex: 0,
+            xAxisIndex: 0,
+            symbol: "circle",
+            symbolSize: 4,
+            z: 7,
+            silent: true,
+            legendHoverLink: false,
+            emphasis: { disabled: true },
+            itemStyle: { color: "#8fbcff", opacity: 0.9 },
+            tooltip: { show: false }
+          });
+        }
+        if (isIntraday && showR2) {
+          lineSeries.push({
+            name: "R2 Point",
+            type: "scatter",
+            data: (idx.r2p || []).map((v, i) => (idx.r2Observed && idx.r2Observed[i] ? v : null)),
+            yAxisIndex: 0,
+            xAxisIndex: 0,
+            symbol: "circle",
+            symbolSize: 4,
+            z: 7,
+            silent: true,
+            legendHoverLink: false,
+            emphasis: { disabled: true },
+            itemStyle: { color: "#c3a8ff", opacity: 0.9 },
+            tooltip: { show: false }
+          });
+        }
         barSeries.push({
           name: "R1 Qty",
           type: "bar",
@@ -978,20 +1092,22 @@
 
         const dayBreakLines = [];
         const dayBreakLinesBottom = [];
-        for (let i = 1; i < idx.ts.length; i++) {
-          const prevDay = String(idx.ts[i - 1]).split(" ")[0];
-          const curDay = String(idx.ts[i]).split(" ")[0];
-          if (prevDay && curDay && prevDay !== curDay) {
-            dayBreakLines.push({
-              xAxis: idx.ts[i],
-              label: { show: false },
-              lineStyle: { color: "rgba(205,210,238,.25)", width: 1, type: "solid" }
-            });
-            dayBreakLinesBottom.push({
-              xAxis: idx.ts[i],
-              label: { show: false },
-              lineStyle: { color: "rgba(205,210,238,.2)", width: 1, type: "solid" }
-            });
+        if (state.rangeMode !== "1d") {
+          for (let i = 1; i < idx.ts.length; i++) {
+            const prevDay = String(idx.ts[i - 1]).split(" ")[0];
+            const curDay = String(idx.ts[i]).split(" ")[0];
+            if (prevDay && curDay && prevDay !== curDay) {
+              dayBreakLines.push({
+                xAxis: idx.ts[i],
+                label: { show: false },
+                lineStyle: { color: "rgba(205,210,238,.25)", width: 1, type: "solid" }
+              });
+              dayBreakLinesBottom.push({
+                xAxis: idx.ts[i],
+                label: { show: false },
+                lineStyle: { color: "rgba(205,210,238,.2)", width: 1, type: "solid" }
+              });
+            }
           }
         }
         const eventMarkLines = eventsFor(state.product).filter(e => idx.ts.includes(e.ts)).map(e => ({ xAxis: e.ts, name: e.title, label: { formatter: e.title, color: "#ffd166" }, lineStyle: { color: "#ffd166", type: "dashed" } }));
@@ -1053,15 +1169,24 @@
             textStyle: { color: "#11162a" },
             formatter: (params) => {
               if (!params || !params.length) return "";
-              const ts = params[0].axisValue || "-";
+              const rawTs = params[0].axisValue || "-";
+              const ts = state.rangeMode === "1d" ? ((String(rawTs).split(" ")[1] || String(rawTs)).slice(0, 5)) : rawTs;
+              const idxAt = idx.ts.indexOf(rawTs);
+              const realR1 = idxAt >= 0 ? idx.r1p[idxAt] : null;
+              const realR2 = idxAt >= 0 ? idx.r2p[idxAt] : null;
               const pR1 = params.find(p => p.seriesName === "R1 Price" && p.data != null);
               const pR2 = params.find(p => p.seriesName === "R2 Price" && p.data != null);
               const q1 = params.find(p => p.seriesName === "R1 Qty")?.data;
               const q2 = params.find(p => p.seriesName === "R2 Qty")?.data;
 
-              const priceRows = [pR1, pR2].filter(Boolean).sort((a, b) => Number(b.data) - Number(a.data));
-              const lines = priceRows.map(p =>
-                `<div style="margin-top:3px;"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${p.color};margin-right:6px;"></span>${p.seriesName}: <b>${fmtNum(p.data, 4)}g</b></div>`
+              const p1v = state.rangeMode === "1d" && realR1 != null ? realR1 : (pR1 ? pR1.data : null);
+              const p2v = state.rangeMode === "1d" && realR2 != null ? realR2 : (pR2 ? pR2.data : null);
+              const rows = [
+                p1v != null ? { name: "R1 Price", color: "#8fbcff", v: p1v } : null,
+                p2v != null ? { name: "R2 Price", color: "#c3a8ff", v: p2v } : null
+              ].filter(Boolean).sort((a, b) => Number(b.v) - Number(a.v));
+              const lines = rows.map(p =>
+                `<div style="margin-top:3px;"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${p.color};margin-right:6px;"></span>${p.name}: <b>${fmtNum(p.v, 4)}g</b></div>`
               ).join("");
               const qty = `<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(33,37,64,.18);color:#3a4060;">库存: R1 <b>${q1 == null ? "-" : fmtNum(q1, 0)}</b> / R2 <b>${q2 == null ? "-" : fmtNum(q2, 0)}</b></div>`;
               return `<div style="min-width:190px;"><div style="font-weight:700;margin-bottom:4px;">${ts}</div>${lines || "<div>-</div>"}${qty}</div>`;
@@ -1073,7 +1198,11 @@
             text: statsText,
             textStyle: { color: "#e7dcaa", fontSize: 12, fontWeight: 600 }
           }],
-          legend: { top: 26, textStyle: { color: "#eae7ff" } },
+          legend: {
+            top: 26,
+            textStyle: { color: "#eae7ff" },
+            data: ["R1 Qty", "R2 Qty", "R1 Price", "R2 Price", "R1 MA5", "R2 MA5", "R1 Trend", "R2 Trend"]
+          },
           axisPointer: { link: [{ xAxisIndex: [0, 1] }] },
           grid: [
             { left: 56, right: 58, top: GRID_TUNE.topGridTop, height: GRID_TUNE.topGridHeight },
@@ -1096,7 +1225,16 @@
               type: "category",
               data: idx.ts,
               gridIndex: 1,
-              axisLabel: { color: "#b9c0dd", hideOverlap: true },
+              axisLabel: {
+                color: "#b9c0dd",
+                hideOverlap: true,
+                interval: state.rangeMode === "1d" ? 17 : "auto",
+                formatter: (v) => {
+                  if (state.rangeMode !== "1d") return v;
+                  const t = String(v).split(" ")[1] || "";
+                  return t.slice(0, 5);
+                }
+              },
               axisLine: { lineStyle: { color: "#3e4668" } },
               axisPointer: {
                 show: true,
@@ -1145,7 +1283,8 @@
         const selectedRows = all.filter(r => r.item_name === state.product);
         const lastTs = idx.ts[idx.ts.length - 1] || "-";
         const lastIngestedAt = lastNonEmpty(selectedRows.map(r => r.ingestedAt)) || "-";
-        analysisMeta.textContent = `${state.product} | 市场时间: ${lastTs} | 入库时间: ${lastIngestedAt} | 数据点: ${idx.ts.length}`;
+        const realPointCount = idx.r1p.filter(v => v != null).length + idx.r2p.filter(v => v != null).length;
+        analysisMeta.textContent = `${state.product} | 视图: ${state.rangeMode === "1d" ? "1天(00:00-24:00)" : "总览"} | 市场时间: ${lastTs} | 入库时间: ${lastIngestedAt} | 数据点: ${state.rangeMode === "1d" ? realPointCount : idx.ts.length}`;
       }
 
       function refreshProductOptions() {
@@ -1333,10 +1472,24 @@
       tabToolkit.addEventListener("click", () => { state.top = "toolkit"; render(); });
       tabOther.addEventListener("click", () => { state.top = "other"; render(); });
 
+      rangeAll.addEventListener("click", () => {
+        state.rangeMode = "all";
+        rangeAll.classList.add("active");
+        range1d.classList.remove("active");
+        drawMainChart();
+      });
+      range1d.addEventListener("click", () => {
+        state.rangeMode = "1d";
+        range1d.classList.add("active");
+        rangeAll.classList.remove("active");
+        drawMainChart();
+      });
       rankSel.addEventListener("change", () => { state.rankMode = rankSel.value; render(); });
       toggleZone.addEventListener("click", () => { state.showZone = !state.showZone; toggleZone.classList.toggle("active", state.showZone); drawMainChart(); });
       toggleMA.addEventListener("click", () => { state.showMA = !state.showMA; toggleMA.classList.toggle("active", state.showMA); drawMainChart(); });
       toggleTrend.addEventListener("click", () => { state.showTrend = !state.showTrend; toggleTrend.classList.toggle("active", state.showTrend); drawMainChart(); });
+      rangeAll.classList.toggle("active", state.rangeMode === "all");
+      range1d.classList.toggle("active", state.rangeMode === "1d");
       toggleZone.classList.toggle("active", state.showZone);
       toggleMA.classList.toggle("active", state.showMA);
       toggleTrend.classList.toggle("active", state.showTrend);
