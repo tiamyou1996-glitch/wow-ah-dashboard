@@ -850,6 +850,16 @@
         const r1ma = ma(idx.r1p, 5), r2ma = ma(idx.r2p, 5);
         const r1tr = ema(idx.r1p, 0.35), r2tr = ema(idx.r2p, 0.35);
         const lineEmphasis = { focus: "none", lineStyle: { width: 3.6 } };
+        const avgOf = (arr) => {
+          const v = arr.filter(x => x != null);
+          if (!v.length) return null;
+          return v.reduce((a, b) => a + b, 0) / v.length;
+        };
+        const firstOf = (arr) => arr.find(x => x != null) ?? null;
+        const lastOf = (arr) => {
+          for (let i = arr.length - 1; i >= 0; i--) if (arr[i] != null) return arr[i];
+          return null;
+        };
 
         const showR1 = state.rankMode === "all" || state.rankMode === "r1";
         const showR2 = state.rankMode === "all" || state.rankMode === "r2";
@@ -939,9 +949,40 @@
             emphasis: lineEmphasis
           });
         }
-        barSeries.push({ name: "R1 Qty", type: "bar", data: idx.r1q, yAxisIndex: 1, z: 1, barMaxWidth: 9, itemStyle: { opacity: .12, color: "#f0d27c" } });
-        barSeries.push({ name: "R2 Qty", type: "bar", data: idx.r2q, yAxisIndex: 1, z: 1, barMaxWidth: 9, itemStyle: { opacity: .1, color: "#b39dff" } });
+        barSeries.push({
+          name: "R1 Qty",
+          type: "bar",
+          data: idx.r1q,
+          xAxisIndex: 1,
+          yAxisIndex: 1,
+          z: 1,
+          barMaxWidth: 10,
+          itemStyle: { opacity: 0.26, color: "#f0d27c" }
+        });
+        barSeries.push({
+          name: "R2 Qty",
+          type: "bar",
+          data: idx.r2q,
+          xAxisIndex: 1,
+          yAxisIndex: 1,
+          z: 1,
+          barMaxWidth: 10,
+          itemStyle: { opacity: 0.22, color: "#8f86de" }
+        });
         const series = [...barSeries, ...lineSeries];
+        const lineStatsText = (label, arr) => {
+          const avg = avgOf(arr);
+          const first = firstOf(arr);
+          const last = lastOf(arr);
+          const delta = last != null && first != null ? last - first : null;
+          const pct = delta != null && first ? (delta / first) * 100 : null;
+          if (avg == null || last == null) return `${label} 均价:- 最新:-`;
+          return `${label} 均价:${fmtNum(avg, 2)}g 最新:${fmtNum(last, 2)}g ${delta >= 0 ? "+" : ""}${fmtNum(delta, 2)}g ${pct == null ? "-" : `${pct >= 0 ? "+" : ""}${fmtNum(pct, 2)}%`}`;
+        };
+        const statsParts = [];
+        if (showR1) statsParts.push(lineStatsText("R1", idx.r1p));
+        if (showR2) statsParts.push(lineStatsText("R2", idx.r2p));
+        const statsText = statsParts.length ? statsParts.join("    |    ") : "均价:- 最新:-";
 
         const dayBreakLines = [];
         for (let i = 1; i < idx.ts.length; i++) {
@@ -973,7 +1014,7 @@
             return Math.max(d1, d2) >= 0.18;
           }).map(([s, e]) => [{ xAxis: s }, { xAxis: e, itemStyle: { color: "rgba(255,206,120,0.12)" } }]);
           const area = [...fixed, ...abnormal];
-          if (area.length && series.length) series[0].markArea = { silent: true, data: area };
+          if (area.length && firstLine) firstLine.markArea = { silent: true, data: area };
         }
 
         mainChart.setOption({
@@ -982,10 +1023,9 @@
             trigger: "axis",
             triggerOn: "mousemove|click",
             axisPointer: {
-              type: "cross",
+              type: "line",
               snap: false,
               lineStyle: { color: "rgba(226, 221, 255, .45)", width: 1, type: "solid" },
-              crossStyle: { color: "rgba(226, 221, 255, .45)", width: 1, type: "solid" },
               label: {
                 show: true,
                 backgroundColor: "rgba(245,244,255,.95)",
@@ -1011,21 +1051,52 @@
               const lines = priceRows.map(p =>
                 `<div style="margin-top:3px;"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${p.color};margin-right:6px;"></span>${p.seriesName}: <b>${fmtNum(p.data, 4)}g</b></div>`
               ).join("");
-              return `<div style="min-width:170px;"><div style="font-weight:700;margin-bottom:4px;">${ts}</div>${lines || "<div>-</div>"}</div>`;
+              const qty = `<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(33,37,64,.18);color:#3a4060;">库存: R1 <b>${q1 == null ? "-" : fmtNum(q1, 0)}</b> / R2 <b>${q2 == null ? "-" : fmtNum(q2, 0)}</b></div>`;
+              return `<div style="min-width:190px;"><div style="font-weight:700;margin-bottom:4px;">${ts}</div>${lines || "<div>-</div>"}${qty}</div>`;
             }
           },
-          legend: { top: 8, textStyle: { color: "#eae7ff" } },
-          grid: { left: 56, right: 58, top: 52, bottom: 72 },
-          xAxis: {
-            type: "category",
-            data: idx.ts,
-            axisLabel: { color: "#b9c0dd", hideOverlap: true },
-            axisLine: { lineStyle: { color: "#3e4668" } }
-          },
+          title: [{
+            left: 10,
+            top: 6,
+            text: statsText,
+            textStyle: { color: "#e7dcaa", fontSize: 12, fontWeight: 600 }
+          }],
+          legend: { top: 26, textStyle: { color: "#eae7ff" } },
+          axisPointer: { link: [{ xAxisIndex: [0, 1] }] },
+          grid: [
+            { left: 56, right: 58, top: 70, height: "53%" },
+            { left: 56, right: 58, top: "73%", height: "14%" }
+          ],
+          xAxis: [
+            {
+              type: "category",
+              data: idx.ts,
+              gridIndex: 0,
+              axisLabel: { show: false },
+              axisLine: { lineStyle: { color: "#3e4668" } },
+              axisTick: { show: false },
+              axisPointer: {
+                show: true,
+                lineStyle: { color: "rgba(226,221,255,.45)", width: 1 }
+              }
+            },
+            {
+              type: "category",
+              data: idx.ts,
+              gridIndex: 1,
+              axisLabel: { color: "#b9c0dd", hideOverlap: true },
+              axisLine: { lineStyle: { color: "#3e4668" } },
+              axisPointer: {
+                show: true,
+                lineStyle: { color: "rgba(226,221,255,.45)", width: 1 }
+              }
+            }
+          ],
           yAxis: [
             {
               type: "value",
               name: "Price",
+              gridIndex: 0,
               axisLabel: { color: "#b9c0dd" },
               splitLine: { lineStyle: { color: "rgba(122,132,170,.22)" } },
               axisPointer: {
@@ -1039,21 +1110,23 @@
             {
               type: "value",
               name: "Qty",
+              gridIndex: 1,
               axisLabel: { color: "#b9c0dd" },
-              splitLine: { show: false },
+              splitLine: { lineStyle: { color: "rgba(122,132,170,.16)" } },
               axisPointer: { show: false }
             }
           ],
           dataZoom: [{
             type: "slider",
             height: 24,
-            bottom: 16,
+            bottom: 8,
             borderColor: "#3c4568",
             backgroundColor: "#11172f",
             fillerColor: "rgba(149, 133, 255, .30)",
             handleStyle: { color: "#9587ff", borderColor: "#d7d0ff" },
-            textStyle: { color: "#b5bbd8" }
-          }, { type: "inside" }],
+            textStyle: { color: "#b5bbd8" },
+            xAxisIndex: [0, 1]
+          }, { type: "inside", xAxisIndex: [0, 1] }],
           series
         }, true);
 
