@@ -477,6 +477,7 @@
             <div class="left-tools">
               <button id="rangeAll" class="tool-toggle active" type="button">总览</button>
               <button id="range1d" class="tool-toggle" type="button">1天</button>
+              <button id="togglePrevDay" class="tool-toggle" type="button">同比前一天</button>
               <select id="rankSel" class="tool-select">
                 <option value="all">星级选择: 全部</option>
                 <option value="r1">星级选择: R1</option>
@@ -655,6 +656,7 @@
       const productStrip = el("productStrip");
       const rangeAll = el("rangeAll");
       const range1d = el("range1d");
+      const togglePrevDay = el("togglePrevDay");
       const rankSel = el("rankSel");
       const toggleZone = el("toggleZone");
       const toggleMA = el("toggleMA");
@@ -700,6 +702,7 @@
         cat: localStorage.getItem(CAT_KEY) || "focus",
         product: "",
         rangeMode: "all",
+        showPrevDay: false,
         rankMode: "all",
         showZone: false,
         showMA: true,
@@ -733,6 +736,11 @@
         const slot = new Date(d.getFullYear(), d.getMonth(), d.getDate(), d.getHours(), minute, 0);
         return dayLabel(slot);
       }
+      function slotTimeKey(ts, stepMin) {
+        const d = new Date(ts);
+        const minute = Math.floor(d.getMinutes() / stepMin) * stepMin;
+        return `${pad2(d.getHours())}:${pad2(minute)}`;
+      }
       function daySlots(dayTs, stepMin = 10) {
         const s = dayStart(dayTs);
         const arr = [];
@@ -764,6 +772,16 @@
           }
         }
         return { raw, plot, observed };
+      }
+      function buildIntradayByTimeKeys(keys, sampleMapByTime, stepMin, maxConnectMin) {
+        const raw = keys.map(k => (sampleMapByTime.has(k) ? sampleMapByTime.get(k) : null));
+        const sampleMapByIdx = new Map();
+        for (let i = 0; i < raw.length; i++) {
+          if (raw[i] != null) sampleMapByIdx.set(String(i), raw[i]);
+        }
+        const tsDummy = keys.map((_, i) => String(i));
+        const built = buildIntradayPlot(tsDummy, sampleMapByIdx, stepMin, maxConnectMin);
+        return { raw, plot: built.plot, observed: built.observed };
       }
       function normalizeRankForClient(value) {
         const n = Number(value);
@@ -836,14 +854,23 @@
         if (state.rangeMode === "1d" && s.length) {
           const lastTs = s[s.length - 1].ts;
           const day = String(lastTs).split(" ")[0];
+          const prevDayDate = new Date(`${day} 00:00:00`);
+          prevDayDate.setDate(prevDayDate.getDate() - 1);
+          const prevDay = `${prevDayDate.getFullYear()}-${pad2(prevDayDate.getMonth() + 1)}-${pad2(prevDayDate.getDate())}`;
           const sameDay = s.filter(r => String(r.ts || "").startsWith(day));
+          const prevDayRows = s.filter(r => String(r.ts || "").startsWith(prevDay));
           const ts = daySlots(lastTs, INTRADAY_STEP_MIN);
-          const r1pMap = new Map(sameDay.filter(r => r.rank === 1 || r.rank === 0).map(r => [slotLabel(r.ts, INTRADAY_STEP_MIN), r.price]));
-          const r2pMap = new Map(sameDay.filter(r => r.rank === 2).map(r => [slotLabel(r.ts, INTRADAY_STEP_MIN), r.price]));
-          const r1qMap = new Map(sameDay.filter(r => r.rank === 1 || r.rank === 0).map(r => [slotLabel(r.ts, INTRADAY_STEP_MIN), r.qty]));
-          const r2qMap = new Map(sameDay.filter(r => r.rank === 2).map(r => [slotLabel(r.ts, INTRADAY_STEP_MIN), r.qty]));
-          const r1Build = buildIntradayPlot(ts, r1pMap, INTRADAY_STEP_MIN, INTRADAY_MAX_CONNECT_MIN);
-          const r2Build = buildIntradayPlot(ts, r2pMap, INTRADAY_STEP_MIN, INTRADAY_MAX_CONNECT_MIN);
+          const timeKeys = ts.map(t => (String(t).split(" ")[1] || "").slice(0, 5));
+          const r1pMap = new Map(sameDay.filter(r => r.rank === 1 || r.rank === 0).map(r => [slotTimeKey(r.ts, INTRADAY_STEP_MIN), r.price]));
+          const r2pMap = new Map(sameDay.filter(r => r.rank === 2).map(r => [slotTimeKey(r.ts, INTRADAY_STEP_MIN), r.price]));
+          const r1qMap = new Map(sameDay.filter(r => r.rank === 1 || r.rank === 0).map(r => [slotTimeKey(r.ts, INTRADAY_STEP_MIN), r.qty]));
+          const r2qMap = new Map(sameDay.filter(r => r.rank === 2).map(r => [slotTimeKey(r.ts, INTRADAY_STEP_MIN), r.qty]));
+          const prevR1Map = new Map(prevDayRows.filter(r => r.rank === 1 || r.rank === 0).map(r => [slotTimeKey(r.ts, INTRADAY_STEP_MIN), r.price]));
+          const prevR2Map = new Map(prevDayRows.filter(r => r.rank === 2).map(r => [slotTimeKey(r.ts, INTRADAY_STEP_MIN), r.price]));
+          const r1Build = buildIntradayByTimeKeys(timeKeys, r1pMap, INTRADAY_STEP_MIN, INTRADAY_MAX_CONNECT_MIN);
+          const r2Build = buildIntradayByTimeKeys(timeKeys, r2pMap, INTRADAY_STEP_MIN, INTRADAY_MAX_CONNECT_MIN);
+          const p1Build = buildIntradayByTimeKeys(timeKeys, prevR1Map, INTRADAY_STEP_MIN, INTRADAY_MAX_CONNECT_MIN);
+          const p2Build = buildIntradayByTimeKeys(timeKeys, prevR2Map, INTRADAY_STEP_MIN, INTRADAY_MAX_CONNECT_MIN);
           return {
             ts,
             r1p: r1Build.raw,
@@ -852,8 +879,12 @@
             r2pPlot: r2Build.plot,
             r1Observed: r1Build.observed,
             r2Observed: r2Build.observed,
-            r1q: ts.map(t => r1qMap.has(t) ? r1qMap.get(t) : null),
-            r2q: ts.map(t => r2qMap.has(t) ? r2qMap.get(t) : null)
+            r1q: timeKeys.map(t => r1qMap.has(t) ? r1qMap.get(t) : null),
+            r2q: timeKeys.map(t => r2qMap.has(t) ? r2qMap.get(t) : null),
+            prevR1p: p1Build.raw,
+            prevR2p: p2Build.raw,
+            prevR1pPlot: p1Build.plot,
+            prevR2pPlot: p2Build.plot
           };
         }
         const tsRaw = [...new Set(s.map(r => r.ts))].sort((a, b) => new Date(a) - new Date(b));
@@ -988,6 +1019,34 @@
             yAxisIndex: 0,
             z: 4,
             lineStyle: { type: "dashed", color: "#ab91ea", opacity: 0.65, width: 1.6 },
+            emphasis: lineEmphasis
+          });
+        }
+        if (state.rangeMode === "1d" && state.showPrevDay) {
+          if (showR1) lineSeries.push({
+            name: "R1 昨日",
+            type: "line",
+            smooth: false,
+            step: "end",
+            symbol: "none",
+            showSymbol: false,
+            data: idx.prevR1pPlot || idx.prevR1p || [],
+            yAxisIndex: 0,
+            z: 3,
+            lineStyle: { width: 1.6, color: "rgba(143,188,255,.6)", type: "dashed" },
+            emphasis: lineEmphasis
+          });
+          if (showR2) lineSeries.push({
+            name: "R2 昨日",
+            type: "line",
+            smooth: false,
+            step: "end",
+            symbol: "none",
+            showSymbol: false,
+            data: idx.prevR2pPlot || idx.prevR2p || [],
+            yAxisIndex: 0,
+            z: 3,
+            lineStyle: { width: 1.6, color: "rgba(195,168,255,.6)", type: "dashed" },
             emphasis: lineEmphasis
           });
         }
@@ -1174,6 +1233,8 @@
               const idxAt = idx.ts.indexOf(rawTs);
               const realR1 = idxAt >= 0 ? idx.r1p[idxAt] : null;
               const realR2 = idxAt >= 0 ? idx.r2p[idxAt] : null;
+              const prevR1 = idxAt >= 0 && idx.prevR1p ? idx.prevR1p[idxAt] : null;
+              const prevR2 = idxAt >= 0 && idx.prevR2p ? idx.prevR2p[idxAt] : null;
               const pR1 = params.find(p => p.seriesName === "R1 Price" && p.data != null);
               const pR2 = params.find(p => p.seriesName === "R2 Price" && p.data != null);
               const q1 = params.find(p => p.seriesName === "R1 Qty")?.data;
@@ -1188,8 +1249,22 @@
               const lines = rows.map(p =>
                 `<div style="margin-top:3px;"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${p.color};margin-right:6px;"></span>${p.name}: <b>${fmtNum(p.v, 4)}g</b></div>`
               ).join("");
+              const cmp = [];
+              if (state.rangeMode === "1d" && state.showPrevDay) {
+                if (p1v != null && prevR1 != null) {
+                  const d = p1v - prevR1;
+                  const pct = prevR1 ? (d / prevR1) * 100 : null;
+                  cmp.push(`R1对比昨: ${d >= 0 ? "+" : ""}${fmtNum(d, 4)}g${pct == null ? "" : ` (${pct >= 0 ? "+" : ""}${fmtNum(pct, 2)}%)`}`);
+                }
+                if (p2v != null && prevR2 != null) {
+                  const d = p2v - prevR2;
+                  const pct = prevR2 ? (d / prevR2) * 100 : null;
+                  cmp.push(`R2对比昨: ${d >= 0 ? "+" : ""}${fmtNum(d, 4)}g${pct == null ? "" : ` (${pct >= 0 ? "+" : ""}${fmtNum(pct, 2)}%)`}`);
+                }
+              }
+              const cmpHtml = cmp.length ? `<div style="margin-top:6px;color:#3a4060;">${cmp.join("<br/>")}</div>` : "";
               const qty = `<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(33,37,64,.18);color:#3a4060;">库存: R1 <b>${q1 == null ? "-" : fmtNum(q1, 0)}</b> / R2 <b>${q2 == null ? "-" : fmtNum(q2, 0)}</b></div>`;
-              return `<div style="min-width:190px;"><div style="font-weight:700;margin-bottom:4px;">${ts}</div>${lines || "<div>-</div>"}${qty}</div>`;
+              return `<div style="min-width:210px;"><div style="font-weight:700;margin-bottom:4px;">${ts}</div>${lines || "<div>-</div>"}${cmpHtml}${qty}</div>`;
             }
           },
           title: [{
@@ -1201,7 +1276,7 @@
           legend: {
             top: 26,
             textStyle: { color: "#eae7ff" },
-            data: ["R1 Qty", "R2 Qty", "R1 Price", "R2 Price", "R1 MA5", "R2 MA5", "R1 Trend", "R2 Trend"]
+            data: ["R1 Qty", "R2 Qty", "R1 Price", "R2 Price", "R1 MA5", "R2 MA5", "R1 Trend", "R2 Trend", "R1 昨日", "R2 昨日"]
           },
           axisPointer: { link: [{ xAxisIndex: [0, 1] }] },
           grid: [
@@ -1474,6 +1549,7 @@
 
       rangeAll.addEventListener("click", () => {
         state.rangeMode = "all";
+        state.showPrevDay = false;
         rangeAll.classList.add("active");
         range1d.classList.remove("active");
         drawMainChart();
@@ -1484,12 +1560,20 @@
         rangeAll.classList.remove("active");
         drawMainChart();
       });
+      togglePrevDay.addEventListener("click", () => {
+        if (state.rangeMode !== "1d") return;
+        state.showPrevDay = !state.showPrevDay;
+        togglePrevDay.classList.toggle("active", state.showPrevDay);
+        drawMainChart();
+      });
       rankSel.addEventListener("change", () => { state.rankMode = rankSel.value; render(); });
       toggleZone.addEventListener("click", () => { state.showZone = !state.showZone; toggleZone.classList.toggle("active", state.showZone); drawMainChart(); });
       toggleMA.addEventListener("click", () => { state.showMA = !state.showMA; toggleMA.classList.toggle("active", state.showMA); drawMainChart(); });
       toggleTrend.addEventListener("click", () => { state.showTrend = !state.showTrend; toggleTrend.classList.toggle("active", state.showTrend); drawMainChart(); });
       rangeAll.classList.toggle("active", state.rangeMode === "all");
       range1d.classList.toggle("active", state.rangeMode === "1d");
+      togglePrevDay.classList.toggle("active", state.showPrevDay && state.rangeMode === "1d");
+      togglePrevDay.style.opacity = state.rangeMode === "1d" ? "1" : "0.45";
       toggleZone.classList.toggle("active", state.showZone);
       toggleMA.classList.toggle("active", state.showMA);
       toggleTrend.classList.toggle("active", state.showTrend);
