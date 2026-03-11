@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-11 10:46:09",
+  "updated_at": "2026-03-11 20:21:02",
   "groups": [
     {
       "id": "grp-dcd4ul",
@@ -181,11 +181,11 @@
       "item_id": 0,
       "name": "夜莲花",
       "group_id": "grp-1iwecca",
-      "wow_class": "",
-      "wow_sub_class": "",
+      "wow_class": "商业技能",
+      "wow_sub_class": "草药",
       "enabled": true,
       "created_at": "2026-03-10 23:05:50",
-      "updated_at": "2026-03-10 23:33:37"
+      "updated_at": "2026-03-11 20:21:02"
     },
     {
       "id": "item-236771",
@@ -236,11 +236,11 @@
       "item_id": 0,
       "name": "纯净虚空微粒",
       "group_id": "grp-dcd4ul",
-      "wow_class": "",
-      "wow_sub_class": "",
+      "wow_class": "商业技能",
+      "wow_sub_class": "其它",
       "enabled": true,
       "created_at": "2026-03-10 23:05:50",
-      "updated_at": "2026-03-10 23:05:50"
+      "updated_at": "2026-03-11 20:21:02"
     },
     {
       "id": "itm-1rzrvpi",
@@ -302,11 +302,11 @@
       "item_id": 0,
       "name": "圣光微粒",
       "group_id": "grp-dcd4ul",
-      "wow_class": "",
-      "wow_sub_class": "",
+      "wow_class": "商业技能",
+      "wow_sub_class": "其它",
       "enabled": true,
       "created_at": "2026-03-10 23:05:50",
-      "updated_at": "2026-03-10 23:05:50"
+      "updated_at": "2026-03-11 20:21:02"
     },
     {
       "id": "itm-jzr6ex",
@@ -384,72 +384,6 @@
       "enabled": true,
       "created_at": "2026-03-10 23:05:50",
       "updated_at": "2026-03-10 23:05:50"
-    },
-    {
-      "id": "item-236780",
-      "item_id": 236780,
-      "name": "???",
-      "group_id": "grp-o46ih5",
-      "wow_class": "????",
-      "wow_sub_class": "??",
-      "enabled": true,
-      "created_at": "2026-03-11 00:31:02",
-      "updated_at": "2026-03-11 00:31:02"
-    },
-    {
-      "id": "item-236949",
-      "item_id": 236949,
-      "name": "????",
-      "group_id": "grp-o46ih5",
-      "wow_class": "????",
-      "wow_sub_class": "??",
-      "enabled": true,
-      "created_at": "2026-03-11 00:00:59",
-      "updated_at": "2026-03-11 00:00:59"
-    },
-    {
-      "id": "item-236963",
-      "item_id": 236963,
-      "name": "?????",
-      "group_id": "grp-o46ih5",
-      "wow_class": "????",
-      "wow_sub_class": "??",
-      "enabled": true,
-      "created_at": "2026-03-11 00:00:59",
-      "updated_at": "2026-03-11 00:00:59"
-    },
-    {
-      "id": "item-236952",
-      "item_id": 236952,
-      "name": "??????",
-      "group_id": "grp-o46ih5",
-      "wow_class": "????",
-      "wow_sub_class": "??",
-      "enabled": true,
-      "created_at": "2026-03-11 00:00:59",
-      "updated_at": "2026-03-11 00:00:59"
-    },
-    {
-      "id": "item-241321",
-      "item_id": 241321,
-      "name": "???????",
-      "group_id": "grp-o46ih5",
-      "wow_class": "???",
-      "wow_sub_class": "?????",
-      "enabled": true,
-      "created_at": "2026-03-11 00:00:59",
-      "updated_at": "2026-03-11 00:00:59"
-    },
-    {
-      "id": "item-239702",
-      "item_id": 239702,
-      "name": "????????",
-      "group_id": "grp-o46ih5",
-      "wow_class": "????",
-      "wow_sub_class": "??",
-      "enabled": true,
-      "created_at": "2026-03-11 00:00:59",
-      "updated_at": "2026-03-11 00:00:59"
     },
     {
       "id": "item-242788",
