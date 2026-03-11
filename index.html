@@ -475,7 +475,6 @@
         <div class="page">
           <div class="toolbar">
             <div class="left-tools">
-              <select id="productSel" class="tool-select"></select>
               <select id="rankSel" class="tool-select">
                 <option value="all">星级选择: 全部</option>
                 <option value="r1">星级选择: R1</option>
@@ -491,11 +490,6 @@
           </div>
           <div class="chart-box">
             <div id="mainChart"></div>
-            <div id="hoverMini" class="hover-mini">
-              <div class="t">库存</div>
-              <div class="r"><span class="k">R1 Qty</span><span id="miniR1Qty" class="v">-</span></div>
-              <div class="r"><span class="k">R2 Qty</span><span id="miniR2Qty" class="v">-</span></div>
-            </div>
           </div>
         </div>
       </div>
@@ -656,7 +650,6 @@
       const toolkitPage = el("toolkitPage");
       const otherPage = el("otherPage");
       const categoryTabs = el("categoryTabs");
-      const productSel = el("productSel");
       const productStrip = el("productStrip");
       const rankSel = el("rankSel");
       const toggleZone = el("toggleZone");
@@ -664,8 +657,6 @@
       const toggleTrend = el("toggleTrend");
       const analysisMeta = el("analysisMeta");
       const mainChart = echarts.init(el("mainChart"));
-      const miniR1Qty = el("miniR1Qty");
-      const miniR2Qty = el("miniR2Qty");
 
       const calcItemSel = el("calcItemSel");
       const calcInputRank = el("calcInputRank");
@@ -711,6 +702,12 @@
         localRows: [],
         events: []
       };
+      const GRID_TUNE = {
+        topGridTop: 70,
+        topGridHeight: "54%",
+        bottomGridTop: "74%",
+        bottomGridHeight: "14%"
+      };
 
       function fmtNum(v, digits = 4) {
         return Number(v).toLocaleString(undefined, { maximumFractionDigits: digits });
@@ -719,11 +716,6 @@
         const n = Number(value);
         return Number.isFinite(n) && n > 0 ? Math.floor(n) : null;
       }
-      function setMiniQty(r1, r2) {
-        miniR1Qty.textContent = r1 == null ? "-" : fmtNum(r1, 0);
-        miniR2Qty.textContent = r2 == null ? "-" : fmtNum(r2, 0);
-      }
-
       function loadLocalRows() {
         try {
           const raw = localStorage.getItem(LOCAL_ROWS_KEY);
@@ -985,6 +977,7 @@
         const statsText = statsParts.length ? statsParts.join("    |    ") : "均价:- 最新:-";
 
         const dayBreakLines = [];
+        const dayBreakLinesBottom = [];
         for (let i = 1; i < idx.ts.length; i++) {
           const prevDay = String(idx.ts[i - 1]).split(" ")[0];
           const curDay = String(idx.ts[i]).split(" ")[0];
@@ -994,6 +987,11 @@
               label: { show: false },
               lineStyle: { color: "rgba(205,210,238,.25)", width: 1, type: "solid" }
             });
+            dayBreakLinesBottom.push({
+              xAxis: idx.ts[i],
+              label: { show: false },
+              lineStyle: { color: "rgba(205,210,238,.2)", width: 1, type: "solid" }
+            });
           }
         }
         const eventMarkLines = eventsFor(state.product).filter(e => idx.ts.includes(e.ts)).map(e => ({ xAxis: e.ts, name: e.title, label: { formatter: e.title, color: "#ffd166" }, lineStyle: { color: "#ffd166", type: "dashed" } }));
@@ -1001,6 +999,21 @@
         const markLineData = [...dayBreakLines, ...eventMarkLines];
         if (markLineData.length && firstLine) {
           firstLine.markLine = { symbol: ["none", "none"], data: markLineData, animation: false, silent: true };
+        }
+        if (dayBreakLinesBottom.length) {
+          series.push({
+            name: "__day_break_bottom__",
+            type: "line",
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+            data: idx.ts.map(() => null),
+            symbol: "none",
+            showSymbol: false,
+            lineStyle: { opacity: 0 },
+            emphasis: { disabled: true },
+            tooltip: { show: false },
+            markLine: { symbol: ["none", "none"], data: dayBreakLinesBottom, animation: false, silent: true }
+          });
         }
 
         if (state.showZone) {
@@ -1045,7 +1058,6 @@
               const pR2 = params.find(p => p.seriesName === "R2 Price" && p.data != null);
               const q1 = params.find(p => p.seriesName === "R1 Qty")?.data;
               const q2 = params.find(p => p.seriesName === "R2 Qty")?.data;
-              setMiniQty(q1, q2);
 
               const priceRows = [pR1, pR2].filter(Boolean).sort((a, b) => Number(b.data) - Number(a.data));
               const lines = priceRows.map(p =>
@@ -1064,8 +1076,8 @@
           legend: { top: 26, textStyle: { color: "#eae7ff" } },
           axisPointer: { link: [{ xAxisIndex: [0, 1] }] },
           grid: [
-            { left: 56, right: 58, top: 70, height: "53%" },
-            { left: 56, right: 58, top: "73%", height: "14%" }
+            { left: 56, right: 58, top: GRID_TUNE.topGridTop, height: GRID_TUNE.topGridHeight },
+            { left: 56, right: 58, top: GRID_TUNE.bottomGridTop, height: GRID_TUNE.bottomGridHeight }
           ],
           xAxis: [
             {
@@ -1095,7 +1107,7 @@
           yAxis: [
             {
               type: "value",
-              name: "Price",
+              name: "价格变化",
               gridIndex: 0,
               axisLabel: { color: "#b9c0dd" },
               splitLine: { lineStyle: { color: "rgba(122,132,170,.22)" } },
@@ -1109,7 +1121,7 @@
             },
             {
               type: "value",
-              name: "Qty",
+              name: "库存变化",
               gridIndex: 1,
               axisLabel: { color: "#b9c0dd" },
               splitLine: { lineStyle: { color: "rgba(122,132,170,.16)" } },
@@ -1138,11 +1150,9 @@
 
       function refreshProductOptions() {
         const all = uniqItems();
-        const list = itemsForCategory(rowsAll(), state.cat);
+        let list = itemsForCategory(rowsAll(), state.cat);
         if (!list.length) list = all;
-        productSel.innerHTML = list.map(i => `<option value="${i}">${i}</option>`).join("");
         if (!state.product || !list.includes(state.product)) state.product = list[0] || "";
-        productSel.value = state.product;
         productStrip.innerHTML = list.map(i => `<button type="button" class="product-chip${state.product === i ? " active" : ""}" data-item="${i}">${i}</button>`).join("");
         productStrip.querySelectorAll(".product-chip").forEach(btn => {
           btn.addEventListener("click", () => {
@@ -1323,7 +1333,6 @@
       tabToolkit.addEventListener("click", () => { state.top = "toolkit"; render(); });
       tabOther.addEventListener("click", () => { state.top = "other"; render(); });
 
-      productSel.addEventListener("change", () => { state.product = productSel.value; render(); });
       rankSel.addEventListener("change", () => { state.rankMode = rankSel.value; render(); });
       toggleZone.addEventListener("click", () => { state.showZone = !state.showZone; toggleZone.classList.toggle("active", state.showZone); drawMainChart(); });
       toggleMA.addEventListener("click", () => { state.showMA = !state.showMA; toggleMA.classList.toggle("active", state.showMA); drawMainChart(); });
@@ -1458,7 +1467,6 @@
       });
 
       window.addEventListener("resize", () => mainChart.resize());
-      mainChart.on("globalout", () => setMiniQty(null, null));
       render();
       checkPublishServer();
     })();
