@@ -924,6 +924,11 @@
         const [h, m] = t.split(":").map(Number);
         return (h || 0) * 60 + (m || 0);
       }
+      function weekdayZh(ts) {
+        const d = new Date(ts);
+        const arr = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+        return arr[d.getDay()] || "";
+      }
       function ranges(ts, pred) {
         const out = [];
         let st = null;
@@ -1156,15 +1161,25 @@
             const prevDay = String(idx.ts[i - 1]).split(" ")[0];
             const curDay = String(idx.ts[i]).split(" ")[0];
             if (prevDay && curDay && prevDay !== curDay) {
+              const wd = weekdayZh(idx.ts[i]);
+              const isThu = wd === "周四";
               dayBreakLines.push({
                 xAxis: idx.ts[i],
-                label: { show: false },
-                lineStyle: { color: "rgba(205,210,238,.25)", width: 1, type: "solid" }
+                label: {
+                  show: true,
+                  formatter: wd,
+                  position: "insideStartTop",
+                  distance: 6,
+                  color: isThu ? "#ffd166" : "rgba(214,221,246,.82)",
+                  fontWeight: isThu ? 700 : 500,
+                  fontSize: isThu ? 12 : 11
+                },
+                lineStyle: { color: isThu ? "rgba(255,209,102,.58)" : "rgba(205,210,238,.25)", width: isThu ? 1.5 : 1, type: "solid" }
               });
               dayBreakLinesBottom.push({
                 xAxis: idx.ts[i],
                 label: { show: false },
-                lineStyle: { color: "rgba(205,210,238,.2)", width: 1, type: "solid" }
+                lineStyle: { color: isThu ? "rgba(255,209,102,.35)" : "rgba(205,210,238,.2)", width: isThu ? 1.3 : 1, type: "solid" }
               });
             }
           }
