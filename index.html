@@ -724,7 +724,6 @@
       };
       const INTRADAY_STEP_MIN = 10;
       const INTRADAY_MAX_CONNECT_MIN = 180;
-      const QTY_SHOCK_THRESHOLD_PCT = 15;
 
       function fmtNum(v, digits = 4) {
         return Number(v).toLocaleString(undefined, { maximumFractionDigits: digits });
@@ -1011,27 +1010,6 @@
         const all = rowsAll();
         if (!state.product) return;
         const idx = toIndexed(all, state.product);
-        const qtyTotal = idx.ts.map((_, i) => {
-          const a = idx.r1q[i], b = idx.r2q[i];
-          if (a == null && b == null) return null;
-          return Number(a || 0) + Number(b || 0);
-        });
-        const qtyShock = (() => {
-          let prev = null;
-          return qtyTotal.map((v) => {
-            if (v == null) return null;
-            if (prev == null || prev <= 0) {
-              prev = v;
-              return 0;
-            }
-            const pct = ((v - prev) / prev) * 100;
-            prev = v;
-            const clipped = Math.max(-60, Math.min(60, pct));
-            return Number(clipped.toFixed(2));
-          });
-        })();
-        const qtyShockUp = qtyShock.map(v => (v != null && v >= QTY_SHOCK_THRESHOLD_PCT ? v : null));
-        const qtyShockDown = qtyShock.map(v => (v != null && v <= -QTY_SHOCK_THRESHOLD_PCT ? v : null));
         const r1ma = ma(idx.r1p, 5), r2ma = ma(idx.r2p, 5);
         const r1tr = ema(idx.r1p, 0.35), r2tr = ema(idx.r2p, 0.35);
         const lineEmphasis = { focus: "none", lineStyle: { width: 3.6 } };
@@ -1220,39 +1198,6 @@
           barMaxWidth: 10,
           itemStyle: { opacity: 0.22, color: "#8f86de" }
         });
-        barSeries.push({
-          name: "库存异动↑",
-          type: "line",
-          data: qtyShockUp,
-          xAxisIndex: 1,
-          yAxisIndex: 2,
-          smooth: false,
-          connectNulls: false,
-          showSymbol: false,
-          z: 3,
-          lineStyle: { width: 2, color: "rgba(109,220,255,.98)", shadowBlur: 10, shadowColor: "rgba(109,220,255,.35)" },
-          markLine: {
-            silent: true,
-            symbol: ["none", "none"],
-            label: { show: false },
-            lineStyle: { type: "dashed", color: "rgba(160,188,235,.36)", width: 1 },
-            data: [{ yAxis: QTY_SHOCK_THRESHOLD_PCT }, { yAxis: -QTY_SHOCK_THRESHOLD_PCT }]
-          },
-          emphasis: lineEmphasis
-        });
-        barSeries.push({
-          name: "库存异动↓",
-          type: "line",
-          data: qtyShockDown,
-          xAxisIndex: 1,
-          yAxisIndex: 2,
-          smooth: false,
-          connectNulls: false,
-          showSymbol: false,
-          z: 3,
-          lineStyle: { width: 2, color: "rgba(255,116,130,.98)", shadowBlur: 10, shadowColor: "rgba(255,116,130,.35)" },
-          emphasis: lineEmphasis
-        });
         const series = [...barSeries, ...lineSeries];
         const lineStatsText = (label, arr) => {
           const avg = avgOf(arr);
@@ -1373,9 +1318,6 @@
               const pR2 = params.find(p => p.seriesName === "R2 Price" && p.data != null);
               const q1 = params.find(p => p.seriesName === "R1 Qty")?.data;
               const q2 = params.find(p => p.seriesName === "R2 Qty")?.data;
-              const qsUp = params.find(p => p.seriesName === "库存异动↑")?.data;
-              const qsDown = params.find(p => p.seriesName === "库存异动↓")?.data;
-              const qs = qsUp != null ? qsUp : (qsDown != null ? qsDown : (idxAt >= 0 ? qtyShock[idxAt] : null));
 
               const p1v = state.rangeMode === "1d" && realR1 != null ? realR1 : (pR1 ? pR1.data : null);
               const p2v = state.rangeMode === "1d" && realR2 != null ? realR2 : (pR2 ? pR2.data : null);
@@ -1400,7 +1342,7 @@
                 }
               }
               const cmpHtml = cmp.length ? `<div style="margin-top:6px;color:#3a4060;">${cmp.join("<br/>")}</div>` : "";
-              const qty = `<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(33,37,64,.18);color:#3a4060;">库存: R1 <b>${q1 == null ? "-" : fmtNum(q1, 0)}</b> / R2 <b>${q2 == null ? "-" : fmtNum(q2, 0)}</b> | 异动 <b>${qs == null ? "-" : `${fmtNum(qs, 2)}%`}</b></div>`;
+              const qty = `<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(33,37,64,.18);color:#3a4060;">库存: R1 <b>${q1 == null ? "-" : fmtNum(q1, 0)}</b> / R2 <b>${q2 == null ? "-" : fmtNum(q2, 0)}</b></div>`;
               return `<div style="min-width:210px;"><div style="font-weight:700;margin-bottom:4px;">${ts}</div>${lines || "<div>-</div>"}${cmpHtml}${qty}</div>`;
             }
           },
@@ -1413,7 +1355,7 @@
           legend: {
             top: 26,
             textStyle: { color: "#eae7ff" },
-            data: ["R1 Qty", "R2 Qty", "库存异动↑", "库存异动↓", "R1 Price", "R2 Price", "R1 MA5", "R2 MA5", "R1 Trend", "R2 Trend", "R1 昨日", "R2 昨日"]
+            data: ["R1 Qty", "R2 Qty", "R1 Price", "R2 Price", "R1 MA5", "R2 MA5", "R1 Trend", "R2 Trend", "R1 昨日", "R2 昨日"]
           },
           axisPointer: { link: [{ xAxisIndex: [0, 1] }] },
           grid: [
@@ -1476,17 +1418,6 @@
               axisLabel: { color: "#b9c0dd" },
               splitLine: { lineStyle: { color: "rgba(122,132,170,.16)" } },
               axisPointer: { show: false }
-            },
-            {
-              type: "value",
-              name: "库存趋势",
-              gridIndex: 1,
-              position: "right",
-              axisLabel: { color: "rgba(120,228,255,.85)", formatter: "{value}%" },
-              splitLine: { show: false },
-              min: -60,
-              max: 60,
-              axisLine: { show: true, lineStyle: { color: "rgba(120,228,255,.45)" } }
             }
           ],
           dataZoom: [{
