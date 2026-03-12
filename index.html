@@ -486,6 +486,8 @@
             </div>
             <div class="meta" id="analysisMeta">-</div>
             <div class="right-tools">
+              <button id="toggleDateMarks" class="tool-toggle active" type="button">日期标记</button>
+              <button id="toggleWeekBands" class="tool-toggle active" type="button">版本周带</button>
               <button id="toggleZone" class="tool-toggle" type="button">高亮区间</button>
               <button id="toggleMA" class="tool-toggle active" type="button">平均线</button>
               <button id="toggleTrend" class="tool-toggle" type="button">趋势线</button>
@@ -658,6 +660,8 @@
       const range1d = el("range1d");
       const togglePrevDay = el("togglePrevDay");
       const rankSel = el("rankSel");
+      const toggleDateMarks = el("toggleDateMarks");
+      const toggleWeekBands = el("toggleWeekBands");
       const toggleZone = el("toggleZone");
       const toggleMA = el("toggleMA");
       const toggleTrend = el("toggleTrend");
@@ -704,6 +708,8 @@
         rangeMode: "all",
         showPrevDay: false,
         rankMode: "all",
+        showDateMarks: true,
+        showWeekBands: true,
         showZone: false,
         showMA: true,
         showTrend: false,
@@ -929,6 +935,59 @@
         const arr = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
         return arr[d.getDay()] || "";
       }
+      function dayKey(ts) {
+        const d = new Date(ts);
+        return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
+      }
+      function addDays(dayStr, delta) {
+        const d = new Date(`${dayStr} 00:00:00`);
+        d.setDate(d.getDate() + delta);
+        return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
+      }
+      function thursdayAnchor(dayStr) {
+        const d = new Date(`${dayStr} 00:00:00`);
+        const diff = (d.getDay() - 4 + 7) % 7; // 4 = Thursday
+        d.setDate(d.getDate() - diff);
+        return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
+      }
+      function buildWeekBandAreas(ts) {
+        const days = [...new Set(ts.map(dayKey))].sort();
+        if (!days.length) return [];
+        const dayFirstTs = new Map();
+        const dayLastTs = new Map();
+        ts.forEach((t) => {
+          const k = dayKey(t);
+          if (!dayFirstTs.has(k)) dayFirstTs.set(k, t);
+          dayLastTs.set(k, t);
+        });
+        const anchors = [...new Set(days.map(thursdayAnchor))].sort();
+        const anchorRank = new Map(anchors.map((a, i) => [a, i + 1]));
+        const out = [];
+        anchors.forEach((anchor, i) => {
+          const nextAnchor = anchors[i + 1] || addDays(anchor, 7);
+          const segDays = days.filter((d) => d >= anchor && d < nextAnchor);
+          if (!segDays.length) return;
+          const firstDay = segDays[0];
+          const lastDay = segDays[segDays.length - 1];
+          const isEven = anchorRank.get(anchor) % 2 === 0;
+          out.push([
+            {
+              xAxis: dayFirstTs.get(firstDay),
+              itemStyle: { color: isEven ? "rgba(120,160,255,0.055)" : "rgba(165,125,255,0.05)" },
+              label: {
+                show: true,
+                position: "insideTop",
+                formatter: `第${anchorRank.get(anchor)}周`,
+                color: "rgba(215,222,248,.86)",
+                fontSize: 11,
+                fontWeight: 600
+              }
+            },
+            { xAxis: dayLastTs.get(lastDay) }
+          ]);
+        });
+        return out;
+      }
       function ranges(ts, pred) {
         const out = [];
         let st = null;
@@ -951,6 +1010,25 @@
         const all = rowsAll();
         if (!state.product) return;
         const idx = toIndexed(all, state.product);
+        const qtyTotal = idx.ts.map((_, i) => {
+          const a = idx.r1q[i], b = idx.r2q[i];
+          if (a == null && b == null) return null;
+          return Number(a || 0) + Number(b || 0);
+        });
+        const qtyShock = (() => {
+          let prev = null;
+          return qtyTotal.map((v) => {
+            if (v == null) return null;
+            if (prev == null || prev <= 0) {
+              prev = v;
+              return 0;
+            }
+            const pct = ((v - prev) / prev) * 100;
+            prev = v;
+            const clipped = Math.max(-60, Math.min(60, pct));
+            return Number(clipped.toFixed(2));
+          });
+        })();
         const r1ma = ma(idx.r1p, 5), r2ma = ma(idx.r2p, 5);
         const r1tr = ema(idx.r1p, 0.35), r2tr = ema(idx.r2p, 0.35);
         const lineEmphasis = { focus: "none", lineStyle: { width: 3.6 } };
@@ -1139,6 +1217,18 @@
           barMaxWidth: 10,
           itemStyle: { opacity: 0.22, color: "#8f86de" }
         });
+        barSeries.push({
+          name: "Qty Trend",
+          type: "line",
+          data: qtyShock,
+          xAxisIndex: 1,
+          yAxisIndex: 2,
+          smooth: true,
+          showSymbol: false,
+          z: 3,
+          lineStyle: { width: 1.8, color: "rgba(109,220,255,.95)", shadowBlur: 10, shadowColor: "rgba(109,220,255,.35)" },
+          emphasis: lineEmphasis
+        });
         const series = [...barSeries, ...lineSeries];
         const lineStatsText = (label, arr) => {
           const avg = avgOf(arr);
@@ -1156,7 +1246,7 @@
 
         const dayBreakLines = [];
         const dayBreakLinesBottom = [];
-        if (state.rangeMode !== "1d") {
+        if (state.rangeMode !== "1d" && state.showDateMarks) {
           for (let i = 1; i < idx.ts.length; i++) {
             const prevDay = String(idx.ts[i - 1]).split(" ")[0];
             const curDay = String(idx.ts[i]).split(" ")[0];
@@ -1170,6 +1260,7 @@
                   formatter: wd,
                   position: "insideStartTop",
                   distance: 6,
+                  rotate: 0,
                   color: isThu ? "#ffd166" : "rgba(214,221,246,.82)",
                   fontWeight: isThu ? 700 : 500,
                   fontSize: isThu ? 12 : 11
@@ -1206,6 +1297,10 @@
           });
         }
 
+        const area = [];
+        if (state.showWeekBands && state.rangeMode !== "1d") {
+          area.push(...buildWeekBandAreas(idx.ts));
+        }
         if (state.showZone) {
           const fixed = [
             ...ranges(idx.ts, t => { const m = toMin(t); return m >= 19 * 60 && m <= 23 * 60; }).map(([s, e]) => [{ xAxis: s }, { xAxis: e, itemStyle: { color: "rgba(255,120,120,0.13)" } }]),
@@ -1216,9 +1311,9 @@
             const d2 = idx.r2p[i] != null && r2ma[i] != null ? Math.abs(idx.r2p[i] - r2ma[i]) / (r2ma[i] || 1) : 0;
             return Math.max(d1, d2) >= 0.18;
           }).map(([s, e]) => [{ xAxis: s }, { xAxis: e, itemStyle: { color: "rgba(255,206,120,0.12)" } }]);
-          const area = [...fixed, ...abnormal];
-          if (area.length && firstLine) firstLine.markArea = { silent: true, data: area };
+          area.push(...fixed, ...abnormal);
         }
+        if (area.length && firstLine) firstLine.markArea = { silent: true, data: area };
 
         mainChart.setOption({
           backgroundColor: "#0c1123",
@@ -1254,6 +1349,7 @@
               const pR2 = params.find(p => p.seriesName === "R2 Price" && p.data != null);
               const q1 = params.find(p => p.seriesName === "R1 Qty")?.data;
               const q2 = params.find(p => p.seriesName === "R2 Qty")?.data;
+              const qs = params.find(p => p.seriesName === "Qty Trend")?.data;
 
               const p1v = state.rangeMode === "1d" && realR1 != null ? realR1 : (pR1 ? pR1.data : null);
               const p2v = state.rangeMode === "1d" && realR2 != null ? realR2 : (pR2 ? pR2.data : null);
@@ -1278,7 +1374,7 @@
                 }
               }
               const cmpHtml = cmp.length ? `<div style="margin-top:6px;color:#3a4060;">${cmp.join("<br/>")}</div>` : "";
-              const qty = `<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(33,37,64,.18);color:#3a4060;">库存: R1 <b>${q1 == null ? "-" : fmtNum(q1, 0)}</b> / R2 <b>${q2 == null ? "-" : fmtNum(q2, 0)}</b></div>`;
+              const qty = `<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(33,37,64,.18);color:#3a4060;">库存: R1 <b>${q1 == null ? "-" : fmtNum(q1, 0)}</b> / R2 <b>${q2 == null ? "-" : fmtNum(q2, 0)}</b> | 趋势 <b>${qs == null ? "-" : `${fmtNum(qs, 2)}%`}</b></div>`;
               return `<div style="min-width:210px;"><div style="font-weight:700;margin-bottom:4px;">${ts}</div>${lines || "<div>-</div>"}${cmpHtml}${qty}</div>`;
             }
           },
@@ -1291,7 +1387,7 @@
           legend: {
             top: 26,
             textStyle: { color: "#eae7ff" },
-            data: ["R1 Qty", "R2 Qty", "R1 Price", "R2 Price", "R1 MA5", "R2 MA5", "R1 Trend", "R2 Trend", "R1 昨日", "R2 昨日"]
+            data: ["R1 Qty", "R2 Qty", "Qty Trend", "R1 Price", "R2 Price", "R1 MA5", "R2 MA5", "R1 Trend", "R2 Trend", "R1 昨日", "R2 昨日"]
           },
           axisPointer: { link: [{ xAxisIndex: [0, 1] }] },
           grid: [
@@ -1354,6 +1450,16 @@
               axisLabel: { color: "#b9c0dd" },
               splitLine: { lineStyle: { color: "rgba(122,132,170,.16)" } },
               axisPointer: { show: false }
+            },
+            {
+              type: "value",
+              name: "库存趋势",
+              gridIndex: 1,
+              position: "right",
+              axisLabel: { color: "rgba(120,228,255,.85)", formatter: "{value}%" },
+              splitLine: { show: false },
+              min: -60,
+              max: 60
             }
           ],
           dataZoom: [{
@@ -1582,6 +1688,16 @@
         drawMainChart();
       });
       rankSel.addEventListener("change", () => { state.rankMode = rankSel.value; render(); });
+      toggleDateMarks.addEventListener("click", () => {
+        state.showDateMarks = !state.showDateMarks;
+        toggleDateMarks.classList.toggle("active", state.showDateMarks);
+        drawMainChart();
+      });
+      toggleWeekBands.addEventListener("click", () => {
+        state.showWeekBands = !state.showWeekBands;
+        toggleWeekBands.classList.toggle("active", state.showWeekBands);
+        drawMainChart();
+      });
       toggleZone.addEventListener("click", () => { state.showZone = !state.showZone; toggleZone.classList.toggle("active", state.showZone); drawMainChart(); });
       toggleMA.addEventListener("click", () => { state.showMA = !state.showMA; toggleMA.classList.toggle("active", state.showMA); drawMainChart(); });
       toggleTrend.addEventListener("click", () => { state.showTrend = !state.showTrend; toggleTrend.classList.toggle("active", state.showTrend); drawMainChart(); });
@@ -1589,6 +1705,10 @@
       range1d.classList.toggle("active", state.rangeMode === "1d");
       togglePrevDay.classList.toggle("active", state.showPrevDay && state.rangeMode === "1d");
       togglePrevDay.style.opacity = state.rangeMode === "1d" ? "1" : "0.45";
+      toggleDateMarks.classList.toggle("active", state.showDateMarks);
+      toggleWeekBands.classList.toggle("active", state.showWeekBands);
+      toggleDateMarks.style.opacity = state.rangeMode === "1d" ? "0.45" : "1";
+      toggleWeekBands.style.opacity = state.rangeMode === "1d" ? "0.45" : "1";
       toggleZone.classList.toggle("active", state.showZone);
       toggleMA.classList.toggle("active", state.showMA);
       toggleTrend.classList.toggle("active", state.showTrend);
