@@ -829,7 +829,7 @@
       function itemsForCategory(rows, cat) {
         const items = [...new Set(rows.map(r => r.item_name))].sort((a, b) => a.localeCompare(b, "zh-CN"));
         if (cat === "focus") {
-          const priority = ["白银叶", "宁心花", "法力百合", "血艳蓟", "粉末颜料", "白银叶颜料", "法力百合颜料", "血艳蓟颜料", "编码艾泽之根", "标色墨水", "赭黄墨水", "光明亚麻布", "光明亚麻布卷", "注能光明亚麻布卷", "奥纹布", "奥纹布卷"];
+          const priority = ["白银叶", "宁心花", "法力百合", "血艳蓟", "粉末颜料", "白银叶颜料", "法力百合颜料", "血艳蓟颜料", "编码艾泽之根", "标色墨水", "赭黄墨水", "猪黄墨水", "光明亚麻布", "光明亚麻布卷", "注能光明亚麻布卷", "奥纹布", "奥纹布卷"];
           const picked = priority.filter(i => items.includes(i));
           return picked.length ? picked : items;
         }
