@@ -190,29 +190,33 @@
       padding-bottom: 4px;
     }
     .product-chip {
-      border: 1px solid #3d456f;
-      border-radius: 10px;
-      background: #171d3a;
-      color: #cfd6f4;
-      height: 30px;
-      line-height: 28px;
-      padding: 0 12px;
-      font-size: 13px;
+      border: 1px solid #232734;
+      border-radius: 16px;
+      background: #151814;
+      color: #f1f3f7;
+      height: 34px;
+      line-height: 32px;
+      padding: 0 14px;
+      font-size: 14px;
+      font-weight: 600;
       white-space: nowrap;
       cursor: pointer;
-      transition: all .16s ease;
+      transition: border-color .16s ease, color .16s ease, background .16s ease, box-shadow .16s ease;
       user-select: none;
+      box-shadow: none;
+      letter-spacing: .2px;
     }
     .product-chip:hover {
-      border-color: #646eaa;
-      color: #eef2ff;
-      background: #1e2548;
+      border-color: #303646;
+      color: #ffffff;
+      background: #1b1f1a;
+      box-shadow: none;
     }
     .product-chip.active {
-      border-color: #7a7fc5;
-      color: #f7f8ff;
-      background: linear-gradient(180deg, #6a63ad, #4b4f84);
-      box-shadow: inset 0 1px 0 rgba(234, 229, 255, 0.2);
+      border-color: #d5c1f5;
+      color: #1f2430;
+      background: #d8c2f4;
+      box-shadow: none;
     }
     .sub-tab {
       border: 1px solid transparent;
@@ -225,6 +229,16 @@
       border-radius: 10px;
       cursor: pointer;
       transition: all .18s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sub-tab-icon {
+      width: 18px;
+      text-align: center;
+      opacity: .92;
+      font-size: 14px;
+      line-height: 1;
     }
     .sub-tab:hover {
       color: #f0f3ff;
@@ -590,9 +604,20 @@
       const ITEM_NAME_ALIAS = {
         "赭黄墨水": "赭黄墨水"
       };
+      const GROUP_ALIAS_MAP = {
+        "??": "其他",
+        "草药": "草药学",
+        "颜料": "铭文",
+        "合金": "锻造",
+        "布料": "裁缝"
+      };
       function canonicalItemNameClient(name) {
         const n = String(name || "").trim();
         return ITEM_NAME_ALIAS[n] || n;
+      }
+      function canonicalGroupClient(group) {
+        const g = String(group || "").trim();
+        return GROUP_ALIAS_MAP[g] || g;
       }
       const BASE_ROWS = (window.WOW_AH_DATA?.snapshots || []).map(r => ({
         item_name: canonicalItemNameClient(r.item_name),
@@ -600,7 +625,7 @@
         rank: Number(r.rank || r.quality_tier || 1),
         quality_tier: Number(r.quality_tier || r.rank || 0),
         quality_text: String(r.quality_text || ""),
-        group: String(r.group || ""),
+        group: canonicalGroupClient(r.group),
         wow_class: String(r.wow_class || ""),
         wow_sub_class: String(r.wow_sub_class || ""),
         price: Number(r.unit_price_gold),
@@ -710,7 +735,7 @@
 
       const state = {
         top: localStorage.getItem(VIEW_TAB_KEY) || "analysis",
-        cat: localStorage.getItem(CAT_KEY) || "focus",
+        cat: localStorage.getItem(CAT_KEY) || "",
         product: "",
         rangeMode: "all",
         showPrevDay: false,
@@ -821,35 +846,42 @@
         return [...BASE_ROWS, ...state.localRows].sort((a, b) => new Date(a.ts) - new Date(b.ts));
       }
       function rowGroup(row) {
-        const direct = String(row.group || "").trim();
-        if (direct === "??") return "其他";
+        const direct = canonicalGroupClient(row.group);
         if (direct) return direct;
         return FALLBACK_GROUP_MAP[row.item_name] || "";
       }
       function categoryLabel(cat) {
-        const map = { focus: "关注" };
-        return map[cat] || cat || "其他";
+        return cat || "其他";
+      }
+      function categoryIcon(cat) {
+        const map = {
+          "草药学": "🌿",
+          "铭文": "📜",
+          "裁缝": "🧵",
+          "锻造": "⚒",
+          "炼金": "⚗",
+          "剥皮": "🦴",
+          "增益": "✨",
+          "其他": "📦"
+        };
+        return map[cat] || "•";
       }
       function dynamicCategories(rows) {
         const groups = [...new Set(rows.map(rowGroup).filter(Boolean))].sort((a, b) => a.localeCompare(b, "zh-CN"));
-        return ["focus", ...groups];
+        return groups;
       }
       function itemsForCategory(rows, cat) {
         const items = [...new Set(rows.map(r => r.item_name))].sort((a, b) => a.localeCompare(b, "zh-CN"));
-        if (cat === "focus") {
-          const priority = ["白银叶", "宁心花", "法力百合", "血艳蓟", "粉末颜料", "白银叶颜料", "法力百合颜料", "血艳蓟颜料", "编码艾泽之根", "标色墨水", "赭黄墨水", "光明亚麻布", "光明亚麻布卷", "注能光明亚麻布卷", "奥纹布", "奥纹布卷"];
-          const picked = priority.filter(i => items.includes(i));
-          return picked.length ? picked : items;
-        }
+        if (!cat) return items;
         return items.filter(i => rows.some(r => r.item_name === i && rowGroup(r) === cat));
       }
       function renderCategoryTabs() {
         const categories = dynamicCategories(rowsAll());
-        if (!categories.includes(state.cat)) state.cat = categories[0] || "focus";
-        categoryTabs.innerHTML = categories.map(cat => `<button type="button" class="sub-tab${state.cat === cat ? " active" : ""}" data-cat="${cat}">${categoryLabel(cat)}</button>`).join("");
+        if (!categories.includes(state.cat)) state.cat = categories[0] || "";
+        categoryTabs.innerHTML = categories.map(cat => `<button type="button" class="sub-tab${state.cat === cat ? " active" : ""}" data-cat="${cat}"><span class="sub-tab-icon">${categoryIcon(cat)}</span><span>${categoryLabel(cat)}</span></button>`).join("");
         categoryTabs.querySelectorAll(".sub-tab").forEach(btn => {
           btn.addEventListener("click", () => {
-            state.cat = btn.dataset.cat || "focus";
+            state.cat = btn.dataset.cat || "";
             render();
           });
         });
@@ -1538,7 +1570,7 @@
             rank: rank == null ? 1 : rank,
             quality_tier: rank == null ? 0 : rank,
             quality_text: idxTierText >= 0 ? String(p[idxTierText] || "").trim() : "",
-            group: idxGroup >= 0 ? String(p[idxGroup] || "").trim() : "",
+            group: idxGroup >= 0 ? canonicalGroupClient(p[idxGroup]) : "",
             wow_class: idxClass >= 0 ? String(p[idxClass] || "").trim() : "",
             wow_sub_class: idxSubClass >= 0 ? String(p[idxSubClass] || "").trim() : "",
             price,
