@@ -266,7 +266,7 @@
     }
     .toolbar {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr auto;
       gap: 10px;
       align-items: center;
       background: linear-gradient(180deg, #171c36, #11152b);
@@ -537,20 +537,27 @@
         <div class="page">
           <div class="toolbar">
             <div class="left-tools">
-              <button id="rangeAll" class="tool-toggle active" type="button">总览</button>
-              <button id="range1d" class="tool-toggle" type="button">1天</button>
-              <button id="togglePrevDay" class="tool-toggle" type="button">同比前一天</button>
-              <select id="rankSel" class="tool-select">
-                <option value="all">星级选择: 全部</option>
-                <option value="r1">星级选择: R1</option>
-                <option value="r2">星级选择: R2</option>
+              <select id="viewSel" class="tool-select">
+                <option value="all">视图：总览</option>
+                <option value="1d">视图：1天</option>
+              </select>
+              <select id="compareSel" class="tool-select">
+                <option value="off">同比：关闭</option>
+                <option value="prev_day">同比：前一天</option>
               </select>
             </div>
-            <div class="meta" id="analysisMeta">-</div>
             <div class="right-tools">
               <div id="displayMenuWrap" class="display-menu">
                 <button id="displayMenuBtn" class="tool-toggle menu-trigger" type="button">显示选项 ▾</button>
                 <div id="displayMenuPanel" class="display-menu-panel hidden">
+                  <label class="menu-item" style="display:block;">
+                    <span style="display:block;margin-bottom:6px;color:#b9c7f2;">星级选择</span>
+                    <select id="rankSel" class="tool-select" style="width:100%;min-width:0;">
+                      <option value="all">全部</option>
+                      <option value="r1">R1</option>
+                      <option value="r2">R2</option>
+                    </select>
+                  </label>
                   <label id="optDateMarksWrap" class="menu-item"><input id="optDateMarks" type="checkbox">日期标记</label>
                   <label id="optWeekBandsWrap" class="menu-item"><input id="optWeekBands" type="checkbox">版本周带</label>
                   <label class="menu-item"><input id="optZone" type="checkbox">高亮区间</label>
@@ -741,9 +748,8 @@
       const otherPage = el("otherPage");
       const categoryTabs = el("categoryTabs");
       const productStrip = el("productStrip");
-      const rangeAll = el("rangeAll");
-      const range1d = el("range1d");
-      const togglePrevDay = el("togglePrevDay");
+      const viewSel = el("viewSel");
+      const compareSel = el("compareSel");
       const rankSel = el("rankSel");
       const displayMenuWrap = el("displayMenuWrap");
       const displayMenuBtn = el("displayMenuBtn");
@@ -755,7 +761,6 @@
       const optTrend = el("optTrend");
       const optDateMarksWrap = el("optDateMarksWrap");
       const optWeekBandsWrap = el("optWeekBandsWrap");
-      const analysisMeta = el("analysisMeta");
       const mainChart = echarts.init(el("mainChart"));
 
       const calcItemSel = el("calcItemSel");
@@ -1532,11 +1537,6 @@
           series
         }, true);
 
-        const selectedRows = all.filter(r => r.item_name === state.product);
-        const lastTs = idx.ts[idx.ts.length - 1] || "-";
-        const lastIngestedAt = lastNonEmpty(selectedRows.map(r => r.ingestedAt)) || "-";
-        const realPointCount = idx.r1p.filter(v => v != null).length + idx.r2p.filter(v => v != null).length;
-        analysisMeta.textContent = `${state.product} | 视图: ${state.rangeMode === "1d" ? "1天(00:00-24:00)" : "总览"} | 市场时间: ${lastTs} | 入库时间: ${lastIngestedAt} | 数据点: ${state.rangeMode === "1d" ? realPointCount : idx.ts.length}`;
       }
 
       function refreshProductOptions() {
@@ -1700,6 +1700,7 @@
         updateCalc();
       }
       function syncDisplayMenuControls() {
+        rankSel.value = state.rankMode || "all";
         optDateMarks.checked = !!state.showDateMarks;
         optWeekBands.checked = !!state.showWeekBands;
         optZone.checked = !!state.showZone;
@@ -1714,6 +1715,13 @@
 
         const onCount = [state.showDateMarks, state.showWeekBands, state.showZone, state.showMA, state.showTrend].filter(Boolean).length;
         displayMenuBtn.textContent = `显示选项 ${onCount}/5 ▾`;
+      }
+      function syncViewControls() {
+        viewSel.value = state.rangeMode === "1d" ? "1d" : "all";
+        compareSel.value = state.showPrevDay ? "prev_day" : "off";
+        const disableCompare = state.rangeMode !== "1d";
+        compareSel.disabled = disableCompare;
+        compareSel.style.opacity = disableCompare ? "0.55" : "1";
       }
 
       async function checkPublishServer() {
@@ -1740,25 +1748,20 @@
       tabToolkit.addEventListener("click", () => { state.top = "toolkit"; render(); });
       tabOther.addEventListener("click", () => { state.top = "other"; render(); });
 
-      rangeAll.addEventListener("click", () => {
-        state.rangeMode = "all";
-        state.showPrevDay = false;
-        rangeAll.classList.add("active");
-        range1d.classList.remove("active");
+      viewSel.addEventListener("change", () => {
+        state.rangeMode = viewSel.value === "1d" ? "1d" : "all";
+        if (state.rangeMode !== "1d") state.showPrevDay = false;
+        syncViewControls();
         syncDisplayMenuControls();
         drawMainChart();
       });
-      range1d.addEventListener("click", () => {
-        state.rangeMode = "1d";
-        range1d.classList.add("active");
-        rangeAll.classList.remove("active");
-        syncDisplayMenuControls();
-        drawMainChart();
-      });
-      togglePrevDay.addEventListener("click", () => {
-        if (state.rangeMode !== "1d") return;
-        state.showPrevDay = !state.showPrevDay;
-        togglePrevDay.classList.toggle("active", state.showPrevDay);
+      compareSel.addEventListener("change", () => {
+        if (state.rangeMode !== "1d") {
+          state.showPrevDay = false;
+        } else {
+          state.showPrevDay = compareSel.value === "prev_day";
+        }
+        syncViewControls();
         drawMainChart();
       });
       rankSel.addEventListener("change", () => { state.rankMode = rankSel.value; render(); });
@@ -1784,10 +1787,7 @@
       optZone.addEventListener("change", () => { state.showZone = !!optZone.checked; syncDisplayMenuControls(); drawMainChart(); });
       optMA.addEventListener("change", () => { state.showMA = !!optMA.checked; syncDisplayMenuControls(); drawMainChart(); });
       optTrend.addEventListener("change", () => { state.showTrend = !!optTrend.checked; syncDisplayMenuControls(); drawMainChart(); });
-      rangeAll.classList.toggle("active", state.rangeMode === "all");
-      range1d.classList.toggle("active", state.rangeMode === "1d");
-      togglePrevDay.classList.toggle("active", state.showPrevDay && state.rangeMode === "1d");
-      togglePrevDay.style.opacity = state.rangeMode === "1d" ? "1" : "0.45";
+      syncViewControls();
       syncDisplayMenuControls();
 
       [calcItemSel, calcInputRank, calcInputQty, calcOutputRank, calcFeePct].forEach(x => {
