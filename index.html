@@ -278,6 +278,43 @@
     }
     .left-tools { display: flex; gap: 16px; align-items: center; }
     .right-tools { display: flex; justify-content: flex-end; gap: 10px; align-items: center; }
+    .display-menu { position: relative; }
+    .menu-trigger { min-width: 108px; }
+    .display-menu-panel {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 8px);
+      min-width: 170px;
+      padding: 8px;
+      border: 1px solid rgba(113, 124, 178, 0.42);
+      border-radius: 10px;
+      background: rgba(16, 21, 42, 0.96);
+      box-shadow: 0 10px 24px rgba(4, 7, 20, 0.46);
+      z-index: 30;
+    }
+    .menu-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #dbe4ff;
+      font-size: 13px;
+      padding: 6px 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .menu-item:hover { background: rgba(103, 116, 180, 0.16); }
+    .menu-item input[type="checkbox"] {
+      width: 14px;
+      height: 14px;
+      accent-color: #9ea7ef;
+      cursor: pointer;
+    }
+    .menu-item.disabled {
+      opacity: .45;
+      cursor: not-allowed;
+    }
+    .menu-item.disabled input[type="checkbox"] { pointer-events: none; }
     .tool-select {
       min-width: 220px;
       border: 1px solid #3a4267;
@@ -511,11 +548,16 @@
             </div>
             <div class="meta" id="analysisMeta">-</div>
             <div class="right-tools">
-              <button id="toggleDateMarks" class="tool-toggle active" type="button">日期标记</button>
-              <button id="toggleWeekBands" class="tool-toggle active" type="button">版本周带</button>
-              <button id="toggleZone" class="tool-toggle" type="button">高亮区间</button>
-              <button id="toggleMA" class="tool-toggle active" type="button">平均线</button>
-              <button id="toggleTrend" class="tool-toggle" type="button">趋势线</button>
+              <div id="displayMenuWrap" class="display-menu">
+                <button id="displayMenuBtn" class="tool-toggle menu-trigger" type="button">显示选项 ▾</button>
+                <div id="displayMenuPanel" class="display-menu-panel hidden">
+                  <label id="optDateMarksWrap" class="menu-item"><input id="optDateMarks" type="checkbox">日期标记</label>
+                  <label id="optWeekBandsWrap" class="menu-item"><input id="optWeekBands" type="checkbox">版本周带</label>
+                  <label class="menu-item"><input id="optZone" type="checkbox">高亮区间</label>
+                  <label class="menu-item"><input id="optMA" type="checkbox">平均线</label>
+                  <label class="menu-item"><input id="optTrend" type="checkbox">趋势线</label>
+                </div>
+              </div>
             </div>
           </div>
           <div class="chart-box">
@@ -703,11 +745,16 @@
       const range1d = el("range1d");
       const togglePrevDay = el("togglePrevDay");
       const rankSel = el("rankSel");
-      const toggleDateMarks = el("toggleDateMarks");
-      const toggleWeekBands = el("toggleWeekBands");
-      const toggleZone = el("toggleZone");
-      const toggleMA = el("toggleMA");
-      const toggleTrend = el("toggleTrend");
+      const displayMenuWrap = el("displayMenuWrap");
+      const displayMenuBtn = el("displayMenuBtn");
+      const displayMenuPanel = el("displayMenuPanel");
+      const optDateMarks = el("optDateMarks");
+      const optWeekBands = el("optWeekBands");
+      const optZone = el("optZone");
+      const optMA = el("optMA");
+      const optTrend = el("optTrend");
+      const optDateMarksWrap = el("optDateMarksWrap");
+      const optWeekBandsWrap = el("optWeekBandsWrap");
       const analysisMeta = el("analysisMeta");
       const mainChart = echarts.init(el("mainChart"));
 
@@ -1652,6 +1699,22 @@
         importMeta.textContent = `本地导入记录：${state.localRows.length} 条`;
         updateCalc();
       }
+      function syncDisplayMenuControls() {
+        optDateMarks.checked = !!state.showDateMarks;
+        optWeekBands.checked = !!state.showWeekBands;
+        optZone.checked = !!state.showZone;
+        optMA.checked = !!state.showMA;
+        optTrend.checked = !!state.showTrend;
+
+        const disableDateWeek = state.rangeMode === "1d";
+        optDateMarks.disabled = disableDateWeek;
+        optWeekBands.disabled = disableDateWeek;
+        optDateMarksWrap.classList.toggle("disabled", disableDateWeek);
+        optWeekBandsWrap.classList.toggle("disabled", disableDateWeek);
+
+        const onCount = [state.showDateMarks, state.showWeekBands, state.showZone, state.showMA, state.showTrend].filter(Boolean).length;
+        displayMenuBtn.textContent = `显示选项 ${onCount}/5 ▾`;
+      }
 
       async function checkPublishServer() {
         try {
@@ -1682,12 +1745,14 @@
         state.showPrevDay = false;
         rangeAll.classList.add("active");
         range1d.classList.remove("active");
+        syncDisplayMenuControls();
         drawMainChart();
       });
       range1d.addEventListener("click", () => {
         state.rangeMode = "1d";
         range1d.classList.add("active");
         rangeAll.classList.remove("active");
+        syncDisplayMenuControls();
         drawMainChart();
       });
       togglePrevDay.addEventListener("click", () => {
@@ -1697,30 +1762,33 @@
         drawMainChart();
       });
       rankSel.addEventListener("change", () => { state.rankMode = rankSel.value; render(); });
-      toggleDateMarks.addEventListener("click", () => {
-        state.showDateMarks = !state.showDateMarks;
-        toggleDateMarks.classList.toggle("active", state.showDateMarks);
+      displayMenuBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        displayMenuPanel.classList.toggle("hidden");
+      });
+      displayMenuPanel.addEventListener("click", (e) => e.stopPropagation());
+      document.addEventListener("click", () => displayMenuPanel.classList.add("hidden"));
+
+      optDateMarks.addEventListener("change", () => {
+        if (state.rangeMode === "1d") { optDateMarks.checked = state.showDateMarks; return; }
+        state.showDateMarks = !!optDateMarks.checked;
+        syncDisplayMenuControls();
         drawMainChart();
       });
-      toggleWeekBands.addEventListener("click", () => {
-        state.showWeekBands = !state.showWeekBands;
-        toggleWeekBands.classList.toggle("active", state.showWeekBands);
+      optWeekBands.addEventListener("change", () => {
+        if (state.rangeMode === "1d") { optWeekBands.checked = state.showWeekBands; return; }
+        state.showWeekBands = !!optWeekBands.checked;
+        syncDisplayMenuControls();
         drawMainChart();
       });
-      toggleZone.addEventListener("click", () => { state.showZone = !state.showZone; toggleZone.classList.toggle("active", state.showZone); drawMainChart(); });
-      toggleMA.addEventListener("click", () => { state.showMA = !state.showMA; toggleMA.classList.toggle("active", state.showMA); drawMainChart(); });
-      toggleTrend.addEventListener("click", () => { state.showTrend = !state.showTrend; toggleTrend.classList.toggle("active", state.showTrend); drawMainChart(); });
+      optZone.addEventListener("change", () => { state.showZone = !!optZone.checked; syncDisplayMenuControls(); drawMainChart(); });
+      optMA.addEventListener("change", () => { state.showMA = !!optMA.checked; syncDisplayMenuControls(); drawMainChart(); });
+      optTrend.addEventListener("change", () => { state.showTrend = !!optTrend.checked; syncDisplayMenuControls(); drawMainChart(); });
       rangeAll.classList.toggle("active", state.rangeMode === "all");
       range1d.classList.toggle("active", state.rangeMode === "1d");
       togglePrevDay.classList.toggle("active", state.showPrevDay && state.rangeMode === "1d");
       togglePrevDay.style.opacity = state.rangeMode === "1d" ? "1" : "0.45";
-      toggleDateMarks.classList.toggle("active", state.showDateMarks);
-      toggleWeekBands.classList.toggle("active", state.showWeekBands);
-      toggleDateMarks.style.opacity = state.rangeMode === "1d" ? "0.45" : "1";
-      toggleWeekBands.style.opacity = state.rangeMode === "1d" ? "0.45" : "1";
-      toggleZone.classList.toggle("active", state.showZone);
-      toggleMA.classList.toggle("active", state.showMA);
-      toggleTrend.classList.toggle("active", state.showTrend);
+      syncDisplayMenuControls();
 
       [calcItemSel, calcInputRank, calcInputQty, calcOutputRank, calcFeePct].forEach(x => {
         x.addEventListener("input", updateCalc);
