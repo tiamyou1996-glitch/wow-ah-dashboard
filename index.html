@@ -587,8 +587,15 @@
   <script src="./dashboard_data.js"></script>
   <script>
     (() => {
+      const ITEM_NAME_ALIAS = {
+        "赭黄墨水": "赭黄墨水"
+      };
+      function canonicalItemNameClient(name) {
+        const n = String(name || "").trim();
+        return ITEM_NAME_ALIAS[n] || n;
+      }
       const BASE_ROWS = (window.WOW_AH_DATA?.snapshots || []).map(r => ({
-        item_name: String(r.item_name || ""),
+        item_name: canonicalItemNameClient(r.item_name),
         item_id: Number(r.item_id || 0),
         rank: Number(r.rank || r.quality_tier || 1),
         quality_tier: Number(r.quality_tier || r.rank || 0),
@@ -609,42 +616,42 @@
       const CAT_KEY = "wow_ah_category_v1";
 
       const RECIPE = [
-        { name: "猪黄墨水（白银叶路线）", output: "猪黄墨水", outMin: 2, mats: [{ item: "粉末颜料", q: 20 }, { item: "白银叶颜料", q: 10 }, { item: "法力百合颜料", q: 5 }] },
+        { name: "赭黄墨水（白银叶路线）", output: "赭黄墨水", outMin: 2, mats: [{ item: "粉末颜料", q: 20 }, { item: "白银叶颜料", q: 10 }, { item: "法力百合颜料", q: 5 }] },
         { name: "标色墨水（血艳蓟路线）", output: "标色墨水", outMin: 2, mats: [{ item: "粉末颜料", q: 20 }, { item: "血艳蓟颜料", q: 10 }, { item: "法力百合颜料", q: 5 }] }
       ];
       const FALLBACK_GROUP_MAP = {
-        "白银叶": "草药",
-        "宁心花": "草药",
-        "法力百合": "草药",
-        "血艳蓟": "草药",
-        "艾泽之根": "草药",
-        "夜莲花": "草药",
-        "粉末颜料": "颜料",
-        "白银叶颜料": "颜料",
-        "法力百合颜料": "颜料",
-        "血艳蓟颜料": "颜料",
-        "编码艾泽之根": "其他",
-        "标色墨水": "其他",
-        "赭黄墨水": "其他",
-        "灵魂密文": "其他",
-        "光明亚麻布": "布料",
-        "光明亚麻布卷": "布料",
-        "注能光明亚麻布卷": "布料",
-        "奥纹布": "布料",
-        "奥纹布卷": "布料",
-        "薄暮合金": "合金",
-        "纯银合金": "合金",
+        "白银叶": "草药学",
+        "宁心花": "草药学",
+        "法力百合": "草药学",
+        "血艳蓟": "草药学",
+        "艾泽之根": "草药学",
+        "夜莲花": "草药学",
+        "粉末颜料": "铭文",
+        "白银叶颜料": "铭文",
+        "法力百合颜料": "铭文",
+        "血艳蓟颜料": "铭文",
+        "编码艾泽之根": "铭文",
+        "标色墨水": "铭文",
+        "赭黄墨水": "铭文",
+        "灵魂密文": "铭文",
+        "光明亚麻布": "裁缝",
+        "光明亚麻布卷": "裁缝",
+        "注能光明亚麻布卷": "裁缝",
+        "奥纹布": "裁缝",
+        "奥纹布卷": "裁缝",
+        "薄暮合金": "锻造",
+        "纯银合金": "锻造",
         "原始能量微粒": "其他",
         "圣光微粒": "其他",
         "狂野魔法微粒": "其他",
         "纯净虚空微粒": "其他",
         "永歌之尘": "其他",
         "暮胧石": "其他",
-        "萨拉斯抗性合剂": "其他",
-        "虚触强化符文": "其他",
-        "威风皮毛": "其他",
-        "威风之爪": "其他",
-        "威风尾翼": "其他"
+        "萨拉斯抗性合剂": "炼金",
+        "虚触强化符文": "增益",
+        "威风皮毛": "剥皮",
+        "威风之爪": "剥皮",
+        "威风尾翼": "剥皮"
       };
 
       const el = (id) => document.getElementById(id);
@@ -815,6 +822,7 @@
       }
       function rowGroup(row) {
         const direct = String(row.group || "").trim();
+        if (direct === "??") return "其他";
         if (direct) return direct;
         return FALLBACK_GROUP_MAP[row.item_name] || "";
       }
@@ -829,7 +837,7 @@
       function itemsForCategory(rows, cat) {
         const items = [...new Set(rows.map(r => r.item_name))].sort((a, b) => a.localeCompare(b, "zh-CN"));
         if (cat === "focus") {
-          const priority = ["白银叶", "宁心花", "法力百合", "血艳蓟", "粉末颜料", "白银叶颜料", "法力百合颜料", "血艳蓟颜料", "编码艾泽之根", "标色墨水", "赭黄墨水", "猪黄墨水", "光明亚麻布", "光明亚麻布卷", "注能光明亚麻布卷", "奥纹布", "奥纹布卷"];
+          const priority = ["白银叶", "宁心花", "法力百合", "血艳蓟", "粉末颜料", "白银叶颜料", "法力百合颜料", "血艳蓟颜料", "编码艾泽之根", "标色墨水", "赭黄墨水", "光明亚麻布", "光明亚麻布卷", "注能光明亚麻布卷", "奥纹布", "奥纹布卷"];
           const picked = priority.filter(i => items.includes(i));
           return picked.length ? picked : items;
         }
@@ -1519,7 +1527,7 @@
         for (let i = headerIdx + 1; i < lines.length; i++) {
           const p = lines[i].split("\t").map(v => v.trim());
           if (p.length < cols.length) continue;
-          const itemName = String(p[idxName] || "").trim();
+          const itemName = canonicalItemNameClient(String(p[idxName] || "").trim());
           const qty = Number(p[idxCount]);
           const price = parsePrice("", idxText >= 0 ? p[idxText] : "");
           const rank = normalizeRankForClient(idxTier >= 0 ? p[idxTier] : "");
@@ -1803,3 +1811,5 @@
   </script>
 </body>
 </html>
+
+
