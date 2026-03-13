@@ -372,8 +372,8 @@
     .chart-box::before {
       content: "";
       position: absolute;
-      left: 56px;
-      right: 58px;
+      left: 14px;
+      right: 14px;
       top: 50px;
       bottom: 70px;
       background-image: radial-gradient(rgba(201, 190, 255, .34) 1.1px, transparent 1.1px);
@@ -812,6 +812,8 @@
         events: []
       };
       const GRID_TUNE = {
+        gridLeft: 14,
+        gridRight: 14,
         topGridTop: 70,
         topGridHeight: "54%",
         bottomGridTop: "74%",
@@ -1053,7 +1055,7 @@
         d.setDate(d.getDate() - diff);
         return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
       }
-      function buildWeekBandAreas(ts) {
+      function buildWeekBandAreas(ts, yStart, yEnd) {
         const days = [...new Set(ts.map(dayKey))].sort();
         if (!days.length) return [];
         const dayFirstTs = new Map();
@@ -1076,6 +1078,7 @@
           out.push([
             {
               xAxis: dayFirstTs.get(firstDay),
+              yAxis: yStart,
               itemStyle: { color: isEven ? "rgba(120,160,255,0.055)" : "rgba(165,125,255,0.05)" },
               label: {
                 show: true,
@@ -1086,10 +1089,15 @@
                 fontWeight: 600
               }
             },
-            { xAxis: dayLastTs.get(lastDay) }
+            { xAxis: dayLastTs.get(lastDay), yAxis: yEnd }
           ]);
         });
         return out;
+      }
+      function buildWeekRankMap(ts) {
+        const days = [...new Set(ts.map(dayKey))].sort();
+        const anchors = [...new Set(days.map(thursdayAnchor))].sort();
+        return new Map(anchors.map((a, i) => [a, i + 1]));
       }
       function ranges(ts, pred) {
         const out = [];
@@ -1132,7 +1140,7 @@
         const lineSeries = [];
         const barSeries = [];
         if (showR1) lineSeries.push({
-          name: "R1 Price",
+          name: "R1价格",
           type: "line",
           smooth: state.rangeMode !== "1d",
           step: state.rangeMode === "1d" ? "end" : false,
@@ -1147,7 +1155,7 @@
           emphasis: lineEmphasis
         });
         if (showR2) lineSeries.push({
-          name: "R2 Price",
+          name: "R2价格",
           type: "line",
           smooth: state.rangeMode !== "1d",
           step: state.rangeMode === "1d" ? "end" : false,
@@ -1163,7 +1171,7 @@
         });
         if (state.showTrend) {
           if (showR1) lineSeries.push({
-            name: "R1 Trend",
+            name: "R1趋势",
             type: "line",
             smooth: true,
             smoothMonotone: "x",
@@ -1176,7 +1184,7 @@
             emphasis: lineEmphasis
           });
           if (showR2) lineSeries.push({
-            name: "R2 Trend",
+            name: "R2趋势",
             type: "line",
             smooth: true,
             smoothMonotone: "x",
@@ -1191,7 +1199,7 @@
         }
         if (state.rangeMode === "1d" && state.showPrevDay) {
           if (showR1) lineSeries.push({
-            name: "R1 昨日",
+            name: "R1昨日",
             type: "line",
             smooth: false,
             step: "end",
@@ -1204,7 +1212,7 @@
             emphasis: lineEmphasis
           });
           if (showR2) lineSeries.push({
-            name: "R2 昨日",
+            name: "R2昨日",
             type: "line",
             smooth: false,
             step: "end",
@@ -1219,7 +1227,7 @@
         }
         if (state.showMA) {
           lineSeries.push({
-            name: "R1 MA5",
+            name: "R1均线5",
             type: "line",
             smooth: true,
             smoothMonotone: "x",
@@ -1232,7 +1240,7 @@
             emphasis: lineEmphasis
           });
           lineSeries.push({
-            name: "R2 MA5",
+            name: "R2均线5",
             type: "line",
             smooth: true,
             smoothMonotone: "x",
@@ -1249,7 +1257,7 @@
         lineSeries.forEach((s) => { s.connectNulls = false; });
         if (isIntraday && showR1) {
           lineSeries.push({
-            name: "R1 Point",
+            name: "R1采样点",
             type: "scatter",
             data: (idx.r1p || []).map((v, i) => (idx.r1Observed && idx.r1Observed[i] ? v : null)),
             yAxisIndex: 0,
@@ -1266,7 +1274,7 @@
         }
         if (isIntraday && showR2) {
           lineSeries.push({
-            name: "R2 Point",
+            name: "R2采样点",
             type: "scatter",
             data: (idx.r2p || []).map((v, i) => (idx.r2Observed && idx.r2Observed[i] ? v : null)),
             yAxisIndex: 0,
@@ -1282,7 +1290,7 @@
           });
         }
         barSeries.push({
-          name: "R1 Qty",
+          name: "R1库存",
           type: "bar",
           data: idx.r1q,
           xAxisIndex: 1,
@@ -1292,7 +1300,7 @@
           itemStyle: { opacity: 0.26, color: "#f0d27c" }
         });
         barSeries.push({
-          name: "R2 Qty",
+          name: "R2库存",
           type: "bar",
           data: idx.r2q,
           xAxisIndex: 1,
@@ -1317,28 +1325,51 @@
         const statsText = statsParts.length ? statsParts.join("    |    ") : "均价:- 最新:-";
 
         const dayBreakLines = [];
+        const weekTopLines = [];
         const dayBreakLinesBottom = [];
-        if (state.rangeMode !== "1d" && state.showDateMarks) {
+        const weekRankMap = buildWeekRankMap(idx.ts);
+        if (state.rangeMode !== "1d" && (state.showDateMarks || state.showWeekBands)) {
           for (let i = 1; i < idx.ts.length; i++) {
             const prevDay = String(idx.ts[i - 1]).split(" ")[0];
             const curDay = String(idx.ts[i]).split(" ")[0];
             if (prevDay && curDay && prevDay !== curDay) {
               const wd = weekdayZh(idx.ts[i]);
               const isThu = wd === "周四";
-              dayBreakLines.push({
-                xAxis: idx.ts[i],
-                label: {
-                  show: true,
-                  formatter: wd,
-                  position: "insideStartTop",
-                  distance: 6,
-                  rotate: 0,
-                  color: isThu ? "#ffd166" : "rgba(214,221,246,.82)",
-                  fontWeight: isThu ? 700 : 500,
-                  fontSize: isThu ? 12 : 11
-                },
-                lineStyle: { color: isThu ? "rgba(255,209,102,.58)" : "rgba(205,210,238,.25)", width: isThu ? 1.5 : 1, type: "solid" }
-              });
+              if (state.showDateMarks) {
+                dayBreakLines.push({
+                  xAxis: idx.ts[i],
+                  label: {
+                    show: true,
+                    formatter: wd,
+                    position: "insideStartTop",
+                    distance: 6,
+                    rotate: 0,
+                    color: isThu ? "#ffd166" : "rgba(214,221,246,.82)",
+                    fontWeight: isThu ? 700 : 500,
+                    fontSize: isThu ? 12 : 11
+                  },
+                  lineStyle: { color: isThu ? "rgba(255,209,102,.58)" : "rgba(205,210,238,.25)", width: isThu ? 1.5 : 1, type: "solid" }
+                });
+              }
+              if (state.showWeekBands && isThu) {
+                const weekNo = weekRankMap.get(thursdayAnchor(curDay));
+                if (weekNo) {
+                  weekTopLines.push({
+                    xAxis: idx.ts[i],
+                    label: {
+                      show: true,
+                      formatter: `第${weekNo}周`,
+                      position: "insideEndTop",
+                      distance: 6,
+                      rotate: 0,
+                      color: "rgba(226,232,252,.92)",
+                      fontWeight: 700,
+                      fontSize: 11
+                    },
+                    lineStyle: { color: "rgba(255,209,102,0)", width: 1, type: "solid" }
+                  });
+                }
+              }
               dayBreakLinesBottom.push({
                 xAxis: idx.ts[i],
                 label: { show: false },
@@ -1349,7 +1380,7 @@
         }
         const eventMarkLines = eventsFor(state.product).filter(e => idx.ts.includes(e.ts)).map(e => ({ xAxis: e.ts, name: e.title, label: { formatter: e.title, color: "#ffd166" }, lineStyle: { color: "#ffd166", type: "dashed" } }));
         const firstLineTop = lineSeries.find(s => s.type === "line" && Number(s.yAxisIndex || 0) === 0);
-        const markLineData = [...dayBreakLines, ...eventMarkLines];
+        const markLineData = [...dayBreakLines, ...weekTopLines, ...eventMarkLines];
         if (markLineData.length && firstLineTop) {
           firstLineTop.markLine = { symbol: ["none", "none"], data: markLineData, animation: false, silent: true };
         }
@@ -1370,9 +1401,6 @@
         }
 
         const area = [];
-        if (state.showWeekBands && state.rangeMode !== "1d") {
-          area.push(...buildWeekBandAreas(idx.ts));
-        }
         if (state.showZone) {
           const fixed = [
             ...ranges(idx.ts, t => { const m = toMin(t); return m >= 19 * 60 && m <= 23 * 60; }).map(([s, e]) => [{ xAxis: s }, { xAxis: e, itemStyle: { color: "rgba(255,120,120,0.13)" } }]),
@@ -1417,16 +1445,16 @@
               const realR2 = idxAt >= 0 ? idx.r2p[idxAt] : null;
               const prevR1 = idxAt >= 0 && idx.prevR1p ? idx.prevR1p[idxAt] : null;
               const prevR2 = idxAt >= 0 && idx.prevR2p ? idx.prevR2p[idxAt] : null;
-              const pR1 = params.find(p => p.seriesName === "R1 Price" && p.data != null);
-              const pR2 = params.find(p => p.seriesName === "R2 Price" && p.data != null);
-              const q1 = params.find(p => p.seriesName === "R1 Qty")?.data;
-              const q2 = params.find(p => p.seriesName === "R2 Qty")?.data;
+              const pR1 = params.find(p => p.seriesName === "R1价格" && p.data != null);
+              const pR2 = params.find(p => p.seriesName === "R2价格" && p.data != null);
+              const q1 = params.find(p => p.seriesName === "R1库存")?.data;
+              const q2 = params.find(p => p.seriesName === "R2库存")?.data;
 
               const p1v = state.rangeMode === "1d" && realR1 != null ? realR1 : (pR1 ? pR1.data : null);
               const p2v = state.rangeMode === "1d" && realR2 != null ? realR2 : (pR2 ? pR2.data : null);
               const rows = [
-                p1v != null ? { name: "R1 Price", color: "#8fbcff", v: p1v } : null,
-                p2v != null ? { name: "R2 Price", color: "#c3a8ff", v: p2v } : null
+                p1v != null ? { name: "R1价格", color: "#8fbcff", v: p1v } : null,
+                p2v != null ? { name: "R2价格", color: "#c3a8ff", v: p2v } : null
               ].filter(Boolean).sort((a, b) => Number(b.v) - Number(a.v));
               const lines = rows.map(p =>
                 `<div style="margin-top:3px;"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${p.color};margin-right:6px;"></span>${p.name}: <b>${fmtNum(p.v, 4)}g</b></div>`
@@ -1455,15 +1483,24 @@
             text: statsText,
             textStyle: { color: "#e7dcaa", fontSize: 12, fontWeight: 600 }
           }],
-          legend: {
-            top: 26,
-            textStyle: { color: "#eae7ff" },
-            data: ["R1 Qty", "R2 Qty", "R1 Price", "R2 Price", "R1 MA5", "R2 MA5", "R1 Trend", "R2 Trend", "R1 昨日", "R2 昨日"]
-          },
+          legend: [
+            {
+              top: 26,
+              right: 16,
+              textStyle: { color: "#eae7ff" },
+              data: ["R1价格", "R2价格", "R1均线5", "R2均线5", "R1趋势", "R2趋势", "R1昨日", "R2昨日"]
+            },
+            {
+              top: "74.5%",
+              right: 16,
+              textStyle: { color: "#d8ddf4" },
+              data: ["R1库存", "R2库存"]
+            }
+          ],
           axisPointer: { link: [{ xAxisIndex: [0, 1] }] },
           grid: [
-            { left: 56, right: 58, top: GRID_TUNE.topGridTop, height: GRID_TUNE.topGridHeight },
-            { left: 56, right: 58, top: GRID_TUNE.bottomGridTop, height: GRID_TUNE.bottomGridHeight }
+            { left: GRID_TUNE.gridLeft, right: GRID_TUNE.gridRight, top: GRID_TUNE.topGridTop, height: GRID_TUNE.topGridHeight },
+            { left: GRID_TUNE.gridLeft, right: GRID_TUNE.gridRight, top: GRID_TUNE.bottomGridTop, height: GRID_TUNE.bottomGridHeight }
           ],
           xAxis: [
             {
@@ -1504,7 +1541,17 @@
               type: "value",
               name: "价格变化",
               gridIndex: 0,
-              axisLabel: { color: "#b9c0dd" },
+              nameLocation: "start",
+              nameGap: 10,
+              nameTextStyle: { color: "#9ea9cc", align: "left", padding: [0, 0, 0, 0] },
+              axisLabel: {
+                color: "#b9c0dd",
+                inside: true,
+                margin: 0,
+                align: "left",
+                verticalAlign: "bottom",
+                padding: [0, 0, 6, 0]
+              },
               splitLine: { lineStyle: { color: "rgba(122,132,170,.22)" } },
               axisPointer: {
                 show: true,
@@ -1518,7 +1565,17 @@
               type: "value",
               name: "库存变化",
               gridIndex: 1,
-              axisLabel: { color: "#b9c0dd" },
+              nameLocation: "start",
+              nameGap: 10,
+              nameTextStyle: { color: "#9ea9cc", align: "left", padding: [0, 0, 0, 0] },
+              axisLabel: {
+                color: "#b9c0dd",
+                inside: true,
+                margin: 0,
+                align: "left",
+                verticalAlign: "bottom",
+                padding: [0, 0, 6, 0]
+              },
               splitLine: { lineStyle: { color: "rgba(122,132,170,.16)" } },
               axisPointer: { show: false }
             }
