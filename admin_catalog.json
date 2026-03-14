@@ -1,439 +1,470 @@
-﻿{
-    "updated_at":  "2026-03-13 12:17:38",
-    "groups":  [
-                   {
-                       "id":  "grp-dcd4ul",
-                       "name":  "其他",
-                       "sort":  1
-                   },
-                   {
-                       "id":  "grp-58781c9a",
-                       "name":  "剥皮",
-                       "created_at":  "2026-03-13 10:38:01",
-                       "updated_at":  "2026-03-13 10:38:01"
-                   },
-                   {
-                       "id":  "grp-dcd809df",
-                       "name":  "裁缝",
-                       "created_at":  "2026-03-13 10:38:01",
-                       "updated_at":  "2026-03-13 10:38:01"
-                   },
-                   {
-                       "id":  "grp-9f73764d",
-                       "name":  "草药学",
-                       "created_at":  "2026-03-13 10:38:01",
-                       "updated_at":  "2026-03-13 10:38:01"
-                   },
-                   {
-                       "id":  "grp-c487743a",
-                       "name":  "锻造",
-                       "created_at":  "2026-03-13 10:38:01",
-                       "updated_at":  "2026-03-13 10:38:01"
-                   },
-                   {
-                       "id":  "grp-9c2f2e15",
-                       "name":  "炼金",
-                       "created_at":  "2026-03-13 10:38:01",
-                       "updated_at":  "2026-03-13 10:38:01"
-                   },
-                   {
-                       "id":  "grp-9ed54783",
-                       "name":  "铭文",
-                       "created_at":  "2026-03-13 10:38:01",
-                       "updated_at":  "2026-03-13 10:38:01"
-                   },
-                   {
-                       "id":  "grp-20526aea",
-                       "name":  "增益",
-                       "created_at":  "2026-03-13 10:38:01",
-                       "updated_at":  "2026-03-13 10:38:01"
-                   }
-               ],
-    "products":  [
-                     {
-                         "id":  "itm-1veeg2k",
-                         "item_id":  0,
-                         "name":  "艾泽之根",
-                         "group_id":  "grp-9f73764d",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "草药",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-s4k348",
-                         "item_id":  0,
-                         "name":  "奥纹布",
-                         "group_id":  "grp-dcd809df",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "布料",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-mzwzal",
-                         "item_id":  0,
-                         "name":  "奥纹布卷",
-                         "group_id":  "grp-dcd809df",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "布料",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-16er17o",
-                         "item_id":  0,
-                         "name":  "白银叶",
-                         "group_id":  "grp-9f73764d",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "草药",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-1q7nj7",
-                         "item_id":  0,
-                         "name":  "白银叶颜料",
-                         "group_id":  "grp-9ed54783",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "铭文",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-2fee04",
-                         "item_id":  0,
-                         "name":  "薄暮合金",
-                         "group_id":  "grp-c487743a",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "金属和矿石",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-wldoe9",
-                         "item_id":  0,
-                         "name":  "编码艾泽之根",
-                         "group_id":  "grp-9ed54783",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "铭文",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-ogkg0o",
-                         "item_id":  0,
-                         "name":  "标色墨水",
-                         "group_id":  "grp-9ed54783",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "铭文",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-1ruba3a",
-                         "item_id":  0,
-                         "name":  "纯净虚空微粒",
-                         "group_id":  "grp-dcd4ul",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "其它",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-11 20:21:02"
-                     },
-                     {
-                         "id":  "itm-128kzv7",
-                         "item_id":  0,
-                         "name":  "纯银合金",
-                         "group_id":  "grp-c487743a",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "金属和矿石",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-oah0i7",
-                         "item_id":  0,
-                         "name":  "法力百合",
-                         "group_id":  "grp-9f73764d",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "草药",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-1sew39s",
-                         "item_id":  0,
-                         "name":  "法力百合颜料",
-                         "group_id":  "grp-9ed54783",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "铭文",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-qo5mwu",
-                         "item_id":  0,
-                         "name":  "粉末颜料",
-                         "group_id":  "grp-9ed54783",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "铭文",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-k1f4wy",
-                         "item_id":  0,
-                         "name":  "光明亚麻布",
-                         "group_id":  "grp-dcd809df",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "布料",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-11jz87j",
-                         "item_id":  0,
-                         "name":  "光明亚麻布卷",
-                         "group_id":  "grp-dcd809df",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "布料",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-1rzrvpi",
-                         "item_id":  0,
-                         "name":  "狂野魔法微粒",
-                         "group_id":  "grp-dcd4ul",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "其它",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-11 00:17:47"
-                     },
-                     {
-                         "id":  "itm-1dnufo5",
-                         "item_id":  0,
-                         "name":  "灵魂密文",
-                         "group_id":  "grp-9ed54783",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "铭文",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-1lsntjq",
-                         "item_id":  0,
-                         "name":  "暮腊石",
-                         "group_id":  "grp-dcd4ul",
-                         "wow_class":  "",
-                         "wow_sub_class":  "",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-10 23:05:50"
-                     },
-                     {
-                         "id":  "item-242788",
-                         "item_id":  242788,
-                         "name":  "暮胧石",
-                         "group_id":  "grp-dcd4ul",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "珠宝加工",
-                         "enabled":  true,
-                         "created_at":  "2026-03-11 00:17:47",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-1lh5k7g",
-                         "item_id":  0,
-                         "name":  "暮贼石",
-                         "group_id":  "grp-dcd4ul",
-                         "wow_class":  "",
-                         "wow_sub_class":  "",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-10 23:05:50"
-                     },
-                     {
-                         "id":  "itm-tjv5l0",
-                         "item_id":  0,
-                         "name":  "宁心花",
-                         "group_id":  "grp-9f73764d",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "草药",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-fxchsn",
-                         "item_id":  0,
-                         "name":  "萨拉斯抗性合剂",
-                         "group_id":  "grp-9c2f2e15",
-                         "wow_class":  "消耗品",
-                         "wow_sub_class":  "合剂和瓶剂",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-1hwtocd",
-                         "item_id":  0,
-                         "name":  "圣光微粒",
-                         "group_id":  "grp-dcd4ul",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "其它",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-11 20:21:02"
-                     },
-                     {
-                         "id":  "item-251285",
-                         "item_id":  251285,
-                         "name":  "石化之根",
-                         "group_id":  "grp-dcd4ul",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "其它",
-                         "enabled":  true,
-                         "created_at":  "2026-03-13 00:07:17",
-                         "updated_at":  "2026-03-13 00:07:17"
-                     },
-                     {
-                         "id":  "itm-jzr6ex",
-                         "item_id":  0,
-                         "name":  "威风皮毛",
-                         "group_id":  "grp-58781c9a",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "皮革",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-3r4boc",
-                         "item_id":  0,
-                         "name":  "威风尾翼",
-                         "group_id":  "grp-58781c9a",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "皮革",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-1xzs93",
-                         "item_id":  0,
-                         "name":  "威风之爪",
-                         "group_id":  "grp-58781c9a",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "皮革",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-1g8dncq",
-                         "item_id":  0,
-                         "name":  "虚触强化符文",
-                         "group_id":  "grp-20526aea",
-                         "wow_class":  "消耗品",
-                         "wow_sub_class":  "其它",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-1371nnl",
-                         "item_id":  0,
-                         "name":  "血艳蓟",
-                         "group_id":  "grp-9f73764d",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "草药",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-1owvfh6",
-                         "item_id":  0,
-                         "name":  "血艳蓟颜料",
-                         "group_id":  "grp-9ed54783",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "铭文",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-1q9fu4u",
-                         "item_id":  0,
-                         "name":  "夜莲花",
-                         "group_id":  "grp-9f73764d",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "草药",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-mf5w02",
-                         "item_id":  0,
-                         "name":  "永歌之尘",
-                         "group_id":  "grp-dcd4ul",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "附魔材料",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-11 00:17:47"
-                     },
-                     {
-                         "id":  "itm-el5sif",
-                         "item_id":  0,
-                         "name":  "原始能量微粒",
-                         "group_id":  "grp-dcd4ul",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "其它",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-11 00:17:47"
-                     },
-                     {
-                         "id":  "item-245805",
-                         "item_id":  245805,
-                         "name":  "赭黄墨水",
-                         "group_id":  "grp-9ed54783",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "铭文",
-                         "enabled":  true,
-                         "created_at":  "2026-03-11 00:17:47",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     },
-                     {
-                         "id":  "itm-z1vaao",
-                         "item_id":  0,
-                         "name":  "注能光明亚麻布卷",
-                         "group_id":  "grp-dcd809df",
-                         "wow_class":  "商业技能",
-                         "wow_sub_class":  "布料",
-                         "enabled":  true,
-                         "created_at":  "2026-03-10 23:05:50",
-                         "updated_at":  "2026-03-13 10:38:01"
-                     }
-                 ]
+{
+  "updated_at": "2026-03-14 20:14:08",
+  "groups": [
+    {
+      "id": "grp-58781c9a",
+      "name": "剥皮",
+      "created_at": "2026-03-13 10:38:01",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "grp-dcd809df",
+      "name": "裁缝",
+      "created_at": "2026-03-13 10:38:01",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "grp-9f73764d",
+      "name": "草药学",
+      "created_at": "2026-03-13 10:38:01",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "grp-c487743a",
+      "name": "锻造",
+      "created_at": "2026-03-13 10:38:01",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "grp-9c2f2e15",
+      "name": "炼金",
+      "created_at": "2026-03-13 10:38:01",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "grp-9ed54783",
+      "name": "铭文",
+      "created_at": "2026-03-13 10:38:01",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "grp-20526aea",
+      "name": "增益",
+      "created_at": "2026-03-13 10:38:01",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "grp-dcd4ul",
+      "name": "其他",
+      "sort": 1
+    },
+    {
+      "id": "grp-1l8k2tj",
+      "name": "草药",
+      "sort": 9
+    },
+    {
+      "id": "grp-o6rezr",
+      "name": "布料",
+      "sort": 10
+    },
+    {
+      "id": "grp-1lq6v00",
+      "name": "合金",
+      "sort": 11
+    },
+    {
+      "id": "grp-a6531o",
+      "name": "颜料",
+      "sort": 12
+    }
+  ],
+  "products": [
+    {
+      "id": "itm-1g8dncq",
+      "item_id": 0,
+      "name": "虚触强化符文",
+      "group_id": "grp-20526aea",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-jzr6ex",
+      "item_id": 0,
+      "name": "威风皮毛",
+      "group_id": "grp-58781c9a",
+      "wow_class": "商业技能",
+      "wow_sub_class": "皮革",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-3r4boc",
+      "item_id": 0,
+      "name": "威风尾翼",
+      "group_id": "grp-58781c9a",
+      "wow_class": "商业技能",
+      "wow_sub_class": "皮革",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-1xzs93",
+      "item_id": 0,
+      "name": "威风之爪",
+      "group_id": "grp-58781c9a",
+      "wow_class": "商业技能",
+      "wow_sub_class": "皮革",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-fxchsn",
+      "item_id": 0,
+      "name": "萨拉斯抗性合剂",
+      "group_id": "grp-9c2f2e15",
+      "wow_class": "消耗品",
+      "wow_sub_class": "合剂和瓶剂",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-1q7nj7",
+      "item_id": 0,
+      "name": "白银叶颜料",
+      "group_id": "grp-9ed54783",
+      "wow_class": "商业技能",
+      "wow_sub_class": "铭文",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-wldoe9",
+      "item_id": 0,
+      "name": "编码艾泽之根",
+      "group_id": "grp-9ed54783",
+      "wow_class": "商业技能",
+      "wow_sub_class": "铭文",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-ogkg0o",
+      "item_id": 0,
+      "name": "标色墨水",
+      "group_id": "grp-9ed54783",
+      "wow_class": "商业技能",
+      "wow_sub_class": "铭文",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-1sew39s",
+      "item_id": 0,
+      "name": "法力百合颜料",
+      "group_id": "grp-9ed54783",
+      "wow_class": "商业技能",
+      "wow_sub_class": "铭文",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-qo5mwu",
+      "item_id": 0,
+      "name": "粉末颜料",
+      "group_id": "grp-9ed54783",
+      "wow_class": "商业技能",
+      "wow_sub_class": "铭文",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-1dnufo5",
+      "item_id": 0,
+      "name": "灵魂密文",
+      "group_id": "grp-9ed54783",
+      "wow_class": "商业技能",
+      "wow_sub_class": "铭文",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-1owvfh6",
+      "item_id": 0,
+      "name": "血艳蓟颜料",
+      "group_id": "grp-9ed54783",
+      "wow_class": "商业技能",
+      "wow_sub_class": "铭文",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "item-245805",
+      "item_id": 245805,
+      "name": "赭黄墨水",
+      "group_id": "grp-9ed54783",
+      "wow_class": "商业技能",
+      "wow_sub_class": "铭文",
+      "enabled": true,
+      "created_at": "2026-03-11 00:17:47",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-1veeg2k",
+      "item_id": 0,
+      "name": "艾泽之根",
+      "group_id": "grp-9f73764d",
+      "wow_class": "商业技能",
+      "wow_sub_class": "草药",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-16er17o",
+      "item_id": 0,
+      "name": "白银叶",
+      "group_id": "grp-9f73764d",
+      "wow_class": "商业技能",
+      "wow_sub_class": "草药",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-oah0i7",
+      "item_id": 0,
+      "name": "法力百合",
+      "group_id": "grp-9f73764d",
+      "wow_class": "商业技能",
+      "wow_sub_class": "草药",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-tjv5l0",
+      "item_id": 0,
+      "name": "宁心花",
+      "group_id": "grp-9f73764d",
+      "wow_class": "商业技能",
+      "wow_sub_class": "草药",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-1371nnl",
+      "item_id": 0,
+      "name": "血艳蓟",
+      "group_id": "grp-9f73764d",
+      "wow_class": "商业技能",
+      "wow_sub_class": "草药",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-1q9fu4u",
+      "item_id": 0,
+      "name": "夜莲花",
+      "group_id": "grp-9f73764d",
+      "wow_class": "商业技能",
+      "wow_sub_class": "草药",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-2fee04",
+      "item_id": 0,
+      "name": "薄暮合金",
+      "group_id": "grp-c487743a",
+      "wow_class": "商业技能",
+      "wow_sub_class": "金属和矿石",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-128kzv7",
+      "item_id": 0,
+      "name": "纯银合金",
+      "group_id": "grp-c487743a",
+      "wow_class": "商业技能",
+      "wow_sub_class": "金属和矿石",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-1ruba3a",
+      "item_id": 0,
+      "name": "纯净虚空微粒",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-11 20:21:02"
+    },
+    {
+      "id": "itm-1rzrvpi",
+      "item_id": 0,
+      "name": "狂野魔法微粒",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-11 00:17:47"
+    },
+    {
+      "id": "itm-1lsntjq",
+      "item_id": 0,
+      "name": "暮腊石",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "",
+      "wow_sub_class": "",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-10 23:05:50"
+    },
+    {
+      "id": "item-242788",
+      "item_id": 242788,
+      "name": "暮胧石",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "珠宝加工",
+      "enabled": true,
+      "created_at": "2026-03-11 00:17:47",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-1lh5k7g",
+      "item_id": 0,
+      "name": "暮贼石",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "",
+      "wow_sub_class": "",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-10 23:05:50"
+    },
+    {
+      "id": "item-242639",
+      "item_id": 242639,
+      "name": "赛猪肉",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "烹饪",
+      "enabled": true,
+      "created_at": "2026-03-14 20:14:08",
+      "updated_at": "2026-03-14 20:14:08"
+    },
+    {
+      "id": "itm-1hwtocd",
+      "item_id": 0,
+      "name": "圣光微粒",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-11 20:21:02"
+    },
+    {
+      "id": "item-251285",
+      "item_id": 251285,
+      "name": "石化之根",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-13 00:07:17",
+      "updated_at": "2026-03-13 00:07:17"
+    },
+    {
+      "id": "itm-mf5w02",
+      "item_id": 0,
+      "name": "永歌之尘",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "附魔材料",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-11 00:17:47"
+    },
+    {
+      "id": "itm-el5sif",
+      "item_id": 0,
+      "name": "原始能量微粒",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-11 00:17:47"
+    },
+    {
+      "id": "itm-s4k348",
+      "item_id": 0,
+      "name": "奥纹布",
+      "group_id": "grp-dcd809df",
+      "wow_class": "商业技能",
+      "wow_sub_class": "布料",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-mzwzal",
+      "item_id": 0,
+      "name": "奥纹布卷",
+      "group_id": "grp-dcd809df",
+      "wow_class": "商业技能",
+      "wow_sub_class": "布料",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-k1f4wy",
+      "item_id": 0,
+      "name": "光明亚麻布",
+      "group_id": "grp-dcd809df",
+      "wow_class": "商业技能",
+      "wow_sub_class": "布料",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-11jz87j",
+      "item_id": 0,
+      "name": "光明亚麻布卷",
+      "group_id": "grp-dcd809df",
+      "wow_class": "商业技能",
+      "wow_sub_class": "布料",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "itm-z1vaao",
+      "item_id": 0,
+      "name": "注能光明亚麻布卷",
+      "group_id": "grp-dcd809df",
+      "wow_class": "商业技能",
+      "wow_sub_class": "布料",
+      "enabled": true,
+      "created_at": "2026-03-10 23:05:50",
+      "updated_at": "2026-03-13 10:38:01"
+    }
+  ]
 }
