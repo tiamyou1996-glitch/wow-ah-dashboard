@@ -699,6 +699,7 @@
       const EVENTS_KEY = "wow_ah_events_v1";
       const VIEW_TAB_KEY = "wow_ah_top_tab_v1";
       const CAT_KEY = "wow_ah_category_v1";
+      const SERVER_BASE = "http://127.0.0.1:8787";
 
       const RECIPE = [
         { name: "赭黄墨水（白银叶路线）", output: "赭黄墨水", outMin: 2, mats: [{ item: "粉末颜料", q: 20 }, { item: "白银叶颜料", q: 10 }, { item: "法力百合颜料", q: 5 }] },
@@ -898,14 +899,59 @@
         } catch (_) { return []; }
       }
       function saveLocalRows() { localStorage.setItem(LOCAL_ROWS_KEY, JSON.stringify(state.localRows)); }
-      function loadEvents() {
+      function normalizeEventClient(e) {
+        if (!e || typeof e !== "object") return null;
+        const id = String(e.id || `${Date.now()}_${Math.random().toString(16).slice(2, 8)}`).trim();
+        const ts = String(e.ts || "").trim();
+        const title = String(e.title || "").trim();
+        if (!ts || !title) return null;
+        return {
+          id,
+          ts,
+          item: String(e.item || "*").trim() || "*",
+          title,
+          note: String(e.note || "").trim()
+        };
+      }
+      function loadEventsLocal() {
         try {
           const raw = localStorage.getItem(EVENTS_KEY);
           const arr = raw ? JSON.parse(raw) : [];
-          return Array.isArray(arr) ? arr : [];
+          return Array.isArray(arr) ? arr.map(normalizeEventClient).filter(Boolean) : [];
         } catch (_) { return []; }
       }
-      function saveEvents() { localStorage.setItem(EVENTS_KEY, JSON.stringify(state.events)); }
+      function saveEventsLocal() { localStorage.setItem(EVENTS_KEY, JSON.stringify(state.events)); }
+      async function loadEventsFromProject() {
+        try {
+          const r = await fetch(`${SERVER_BASE}/api/events`, { method: "GET" });
+          if (!r.ok) throw new Error("server not ready");
+          const d = await r.json();
+          const arr = Array.isArray(d.events) ? d.events.map(normalizeEventClient).filter(Boolean) : [];
+          state.events = arr;
+          saveEventsLocal();
+          refreshEventList();
+          drawMainChart();
+          return true;
+        } catch (_) {
+          state.events = loadEventsLocal();
+          refreshEventList();
+          return false;
+        }
+      }
+      async function saveEventsToProject() {
+        const normalized = state.events.map(normalizeEventClient).filter(Boolean);
+        state.events = normalized;
+        saveEventsLocal();
+        const r = await fetch(`${SERVER_BASE}/api/events`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ events: normalized })
+        });
+        const d = await r.json();
+        if (!r.ok || d.ok === false) throw new Error(d.error || "保存事件失败");
+        state.events = Array.isArray(d.events) ? d.events.map(normalizeEventClient).filter(Boolean) : normalized;
+        saveEventsLocal();
+      }
 
       function rowsAll() {
         return [...BASE_ROWS, ...state.localRows].sort((a, b) => new Date(a.ts) - new Date(b.ts));
@@ -1797,7 +1843,7 @@
       }
 
       state.localRows = loadLocalRows();
-      state.events = loadEvents();
+      state.events = loadEventsLocal();
       refreshEventList();
       const now = new Date();
       const pad = n => String(n).padStart(2, "0");
@@ -1930,20 +1976,30 @@
         render();
       });
 
-      eventAddBtn.addEventListener("click", () => {
+      eventAddBtn.addEventListener("click", async () => {
         const ts = (eventTimeInput.value || "").replace("T", " ") + ":00";
         const title = (eventTitleInput.value || "").trim();
         if (!eventTimeInput.value || !title) { eventMeta.textContent = "新增失败：时间和标题必填"; return; }
         state.events.push({ id: `${Date.now()}_${Math.random().toString(16).slice(2, 8)}`, ts, item: eventItemSel.value || "*", title, note: (eventNoteInput.value || "").trim() });
-        saveEvents();
+        try {
+          await saveEventsToProject();
+          eventMeta.textContent = "事件已保存到项目文件";
+        } catch (e) {
+          eventMeta.textContent = `事件仅本地保存：${e.message || "服务不可用"}`;
+        }
         refreshEventList();
         render();
       });
-      eventDeleteBtn.addEventListener("click", () => {
+      eventDeleteBtn.addEventListener("click", async () => {
         const id = eventListSel.value;
         if (!id) { eventMeta.textContent = "请先选择要删除的事件"; return; }
         state.events = state.events.filter(e => e.id !== id);
-        saveEvents();
+        try {
+          await saveEventsToProject();
+          eventMeta.textContent = "事件已从项目文件删除";
+        } catch (e) {
+          eventMeta.textContent = `删除后仅本地保存：${e.message || "服务不可用"}`;
+        }
         refreshEventList();
         render();
       });
@@ -1963,8 +2019,8 @@
           const text = await f.text();
           const arr = JSON.parse(text);
           if (!Array.isArray(arr)) throw new Error();
-          state.events = arr;
-          saveEvents();
+          state.events = Array.isArray(arr) ? arr.map(normalizeEventClient).filter(Boolean) : [];
+          await saveEventsToProject();
           refreshEventList();
           render();
         } catch (_) {
@@ -1974,9 +2030,34 @@
         }
       });
 
+      // 图上点击快速新增事件（落盘到项目文件）
+      mainChart.on("click", async (params) => {
+        if (state.top !== "analysis") return;
+        const rawTs = String((params && (params.axisValue || params.name)) || "").trim();
+        if (!rawTs || !/\\d{4}-\\d{2}-\\d{2}\\s+\\d{2}:\\d{2}:\\d{2}/.test(rawTs)) return;
+        const title = prompt(`新增事件\\n时间: ${rawTs}\\n物品: ${state.product || "全局"}\\n请输入事件标题：`, "");
+        if (!title || !title.trim()) return;
+        const note = prompt("事件备注（可选）：", "") || "";
+        state.events.push({
+          id: `${Date.now()}_${Math.random().toString(16).slice(2, 8)}`,
+          ts: rawTs,
+          item: state.product || "*",
+          title: title.trim(),
+          note: note.trim()
+        });
+        try {
+          await saveEventsToProject();
+          eventMeta.textContent = "图上事件已保存到项目文件";
+        } catch (e) {
+          eventMeta.textContent = `图上事件仅本地保存：${e.message || "服务不可用"}`;
+        }
+        refreshEventList();
+        drawMainChart();
+      });
+
       window.addEventListener("resize", () => mainChart.resize());
       render();
-      checkPublishServer();
+      checkPublishServer().then(loadEventsFromProject);
     })();
   </script>
 </body>
