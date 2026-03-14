@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-14 20:14:08",
+  "updated_at": "2026-03-14 20:33:02",
   "groups": [
     {
       "id": "grp-58781c9a",
@@ -313,6 +313,116 @@
       "updated_at": "2026-03-11 20:21:02"
     },
     {
+      "id": "item-262799",
+      "item_id": 262799,
+      "name": "脆弱的闪烁丝线",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-262794",
+      "item_id": 262794,
+      "name": "脆弱的绽华丝线",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-262798",
+      "item_id": 262798,
+      "name": "搁浅的闪烁丝线",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-262793",
+      "item_id": 262793,
+      "name": "搁浅的绽华丝线",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-241317",
+      "item_id": 241317,
+      "name": "哈籁尼尔感知瓶剂",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "合剂和瓶剂",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-241311",
+      "item_id": 241311,
+      "name": "哈籁尼尔精细瓶剂",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "合剂和瓶剂",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-241313",
+      "item_id": 241313,
+      "name": "哈籁尼尔奇思瓶剂",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "合剂和瓶剂",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-237371",
+      "item_id": 237371,
+      "name": "辉耀磨刀石",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-237369",
+      "item_id": 237369,
+      "name": "辉耀平衡石",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-237372",
+      "item_id": 237372,
+      "name": "辉耀剃刀石",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
       "id": "itm-1rzrvpi",
       "item_id": 0,
       "name": "狂野魔法微粒",
@@ -322,6 +432,28 @@
       "enabled": true,
       "created_at": "2026-03-10 23:05:50",
       "updated_at": "2026-03-11 00:17:47"
+    },
+    {
+      "id": "item-243736",
+      "item_id": 243736,
+      "name": "黎明之油",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-241323",
+      "item_id": 241323,
+      "name": "魔导师合剂",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "合剂和瓶剂",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
     },
     {
       "id": "itm-1lsntjq",
@@ -357,6 +489,28 @@
       "updated_at": "2026-03-10 23:05:50"
     },
     {
+      "id": "item-241327",
+      "item_id": 241327,
+      "name": "破碎残阳合剂",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "合剂和瓶剂",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-241334",
+      "item_id": 241334,
+      "name": "萨拉斯荣誉勇猛合剂",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "合剂和瓶剂",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
       "id": "item-242639",
       "item_id": 242639,
       "name": "赛猪肉",
@@ -388,6 +542,39 @@
       "enabled": true,
       "created_at": "2026-03-13 00:07:17",
       "updated_at": "2026-03-13 00:07:17"
+    },
+    {
+      "id": "item-244639",
+      "item_id": 244639,
+      "name": "虚触战鼓",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-241325",
+      "item_id": 241325,
+      "name": "血骑士合剂",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "合剂和瓶剂",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-269586",
+      "item_id": 269586,
+      "name": "应急灵魂链接",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "消耗品",
+      "wow_sub_class": "爆炸物与装置",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-14 20:33:02"
     },
     {
       "id": "itm-mf5w02",
