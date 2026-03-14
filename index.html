@@ -810,8 +810,10 @@
         showMA: true,
         showTrend: false,
         localRows: [],
-        events: []
+        events: [],
+        chartTs: []
       };
+      let lastChartClickAt = 0;
       const GRID_TUNE = {
         gridLeft: 14,
         gridRight: 14,
@@ -1167,6 +1169,7 @@
         const all = rowsAll();
         if (!state.product) return;
         const idx = toIndexed(all, state.product);
+        state.chartTs = Array.isArray(idx.ts) ? idx.ts.slice() : [];
         const r1ma = ma(idx.r1p, 5), r2ma = ma(idx.r2p, 5);
         const r1tr = ema(idx.r1p, 0.35), r2tr = ema(idx.r2p, 0.35);
         const lineEmphasis = { focus: "none", lineStyle: { width: 3.6 } };
@@ -2030,17 +2033,16 @@
         }
       });
 
-      // 图上点击快速新增事件（落盘到项目文件）
-      mainChart.on("click", async (params) => {
+      async function createEventByTs(rawTs) {
         if (state.top !== "analysis") return;
-        const rawTs = String((params && (params.axisValue || params.name)) || "").trim();
-        if (!rawTs || !/\\d{4}-\\d{2}-\\d{2}\\s+\\d{2}:\\d{2}:\\d{2}/.test(rawTs)) return;
-        const title = prompt(`新增事件\\n时间: ${rawTs}\\n物品: ${state.product || "全局"}\\n请输入事件标题：`, "");
+        const ts = String(rawTs || "").trim();
+        if (!ts || !/\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}/.test(ts)) return;
+        const title = prompt(`新增事件\n时间: ${ts}\n物品: ${state.product || "全局"}\n请输入事件标题：`, "");
         if (!title || !title.trim()) return;
         const note = prompt("事件备注（可选）：", "") || "";
         state.events.push({
           id: `${Date.now()}_${Math.random().toString(16).slice(2, 8)}`,
-          ts: rawTs,
+          ts,
           item: state.product || "*",
           title: title.trim(),
           note: note.trim()
@@ -2053,6 +2055,40 @@
         }
         refreshEventList();
         drawMainChart();
+      }
+
+      // 精准点击线/柱
+      mainChart.on("click", async (params) => {
+        lastChartClickAt = Date.now();
+        const rawTs = String((params && (params.axisValue || params.name)) || "").trim();
+        await createEventByTs(rawTs);
+      });
+
+      // 兜底：点击图内任意位置取最近时间
+      mainChart.getZr().on("click", async (ev) => {
+        if (Date.now() - lastChartClickAt < 260) return;
+        if (state.top !== "analysis") return;
+        const pt = [ev.offsetX, ev.offsetY];
+        const inTop = mainChart.containPixel({ gridIndex: 0 }, pt);
+        const inBottom = mainChart.containPixel({ gridIndex: 1 }, pt);
+        if (!inTop && !inBottom) return;
+        if (!Array.isArray(state.chartTs) || !state.chartTs.length) return;
+        let xVal = null;
+        try {
+          const cv = mainChart.convertFromPixel({ xAxisIndex: 0 }, pt);
+          xVal = Array.isArray(cv) ? cv[0] : cv;
+        } catch (_) {}
+        let ts = "";
+        if (typeof xVal === "string" && /\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}/.test(xVal)) {
+          ts = xVal;
+        } else {
+          const idxNum = Number(xVal);
+          if (Number.isFinite(idxNum)) {
+            const i = Math.max(0, Math.min(state.chartTs.length - 1, Math.round(idxNum)));
+            ts = String(state.chartTs[i] || "");
+          }
+        }
+        await createEventByTs(ts);
       });
 
       window.addEventListener("resize", () => mainChart.resize());

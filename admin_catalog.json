@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-14 21:47:15",
+  "updated_at": "2026-03-15 03:30:48",
   "groups": [
     {
       "id": "grp-58781c9a",
@@ -445,6 +445,28 @@
       "updated_at": "2026-03-14 20:33:02"
     },
     {
+      "id": "item-237364",
+      "item_id": 237364,
+      "name": "辉熠银矿石",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "金属和矿石",
+      "enabled": true,
+      "created_at": "2026-03-15 03:30:48",
+      "updated_at": "2026-03-15 03:30:48"
+    },
+    {
+      "id": "item-242787",
+      "item_id": 242787,
+      "name": "结晶玻璃",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "珠宝加工",
+      "enabled": true,
+      "created_at": "2026-03-15 03:30:48",
+      "updated_at": "2026-03-15 03:30:48"
+    },
+    {
       "id": "itm-1rzrvpi",
       "item_id": 0,
       "name": "狂野魔法微粒",
@@ -555,6 +577,50 @@
       "updated_at": "2026-03-13 00:07:17"
     },
     {
+      "id": "item-242620",
+      "item_id": 242620,
+      "name": "微光宝石尘",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "珠宝加工",
+      "enabled": true,
+      "created_at": "2026-03-15 03:30:48",
+      "updated_at": "2026-03-15 03:30:48"
+    },
+    {
+      "id": "item-242612",
+      "item_id": 242612,
+      "name": "无瑕阿曼尼青金石",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "珠宝加工",
+      "enabled": true,
+      "created_at": "2026-03-15 03:30:48",
+      "updated_at": "2026-03-15 03:30:48"
+    },
+    {
+      "id": "item-242610",
+      "item_id": 242610,
+      "name": "无瑕哈籁恩达尔榄石",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "珠宝加工",
+      "enabled": true,
+      "created_at": "2026-03-15 03:30:48",
+      "updated_at": "2026-03-15 03:30:48"
+    },
+    {
+      "id": "item-242611",
+      "item_id": 242611,
+      "name": "无瑕晦暗紫晶",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "珠宝加工",
+      "enabled": true,
+      "created_at": "2026-03-15 03:30:48",
+      "updated_at": "2026-03-15 03:30:48"
+    },
+    {
       "id": "item-244639",
       "item_id": 244639,
       "name": "虚触战鼓",
@@ -564,6 +630,17 @@
       "enabled": true,
       "created_at": "2026-03-14 20:33:02",
       "updated_at": "2026-03-14 20:33:02"
+    },
+    {
+      "id": "item-237359",
+      "item_id": 237359,
+      "name": "耀辉铜矿石",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "金属和矿石",
+      "enabled": true,
+      "created_at": "2026-03-15 03:30:48",
+      "updated_at": "2026-03-15 03:30:48"
     },
     {
       "id": "item-269586",
@@ -586,6 +663,28 @@
       "enabled": true,
       "created_at": "2026-03-10 23:05:50",
       "updated_at": "2026-03-11 00:17:47"
+    },
+    {
+      "id": "item-242608",
+      "item_id": 242608,
+      "name": "永歌钻石",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "珠宝加工",
+      "enabled": true,
+      "created_at": "2026-03-15 03:30:48",
+      "updated_at": "2026-03-15 03:30:48"
+    },
+    {
+      "id": "item-237362",
+      "item_id": 237362,
+      "name": "幽影锡矿石",
+      "group_id": "grp-dcd4ul",
+      "wow_class": "商业技能",
+      "wow_sub_class": "金属和矿石",
+      "enabled": true,
+      "created_at": "2026-03-15 03:30:48",
+      "updated_at": "2026-03-15 03:30:48"
     },
     {
       "id": "itm-el5sif",
