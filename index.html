@@ -924,18 +924,25 @@
       }
       function saveEventsLocal() { localStorage.setItem(EVENTS_KEY, JSON.stringify(state.events)); }
       async function loadEventsFromProject() {
+        const local = loadEventsLocal();
         try {
           const r = await fetch(`${SERVER_BASE}/api/events`, { method: "GET" });
           if (!r.ok) throw new Error("server not ready");
           const d = await r.json();
-          const arr = Array.isArray(d.events) ? d.events.map(normalizeEventClient).filter(Boolean) : [];
-          state.events = arr;
-          saveEventsLocal();
+          const remote = Array.isArray(d.events) ? d.events.map(normalizeEventClient).filter(Boolean) : [];
+          // 防止服务端空数据覆盖本地：若本地已有事件且服务端为空，则保留本地并回推服务端
+          if (remote.length === 0 && local.length > 0) {
+            state.events = local;
+            try { await saveEventsToProject(); } catch (_) {}
+          } else {
+            state.events = remote;
+            saveEventsLocal();
+          }
           refreshEventList();
           drawMainChart();
           return true;
         } catch (_) {
-          state.events = loadEventsLocal();
+          state.events = local;
           refreshEventList();
           return false;
         }
