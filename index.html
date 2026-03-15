@@ -1265,6 +1265,23 @@
           return true;
         });
       }
+      function nearestTsIndex(tsArr, targetTs) {
+        if (!Array.isArray(tsArr) || !tsArr.length || !targetTs) return -1;
+        const t = new Date(String(targetTs).replace("T", " ")).getTime();
+        if (!Number.isFinite(t)) return -1;
+        let bestI = -1;
+        let bestD = Number.POSITIVE_INFINITY;
+        for (let i = 0; i < tsArr.length; i++) {
+          const cur = new Date(String(tsArr[i]).replace("T", " ")).getTime();
+          if (!Number.isFinite(cur)) continue;
+          const d = Math.abs(cur - t);
+          if (d < bestD) {
+            bestD = d;
+            bestI = i;
+          }
+        }
+        return bestI;
+      }
 
       function drawMainChart() {
         const all = rowsAll();
@@ -1538,15 +1555,17 @@
         const eventPointsR1 = [];
         const eventPointsR2 = [];
         eventsFor(state.product).forEach((e) => {
-          const i = idx.ts.indexOf(e.ts);
+          let i = idx.ts.indexOf(e.ts);
+          if (i < 0) i = nearestTsIndex(idx.ts, e.ts);
           if (i < 0) return;
           const y1 = idx.r1p[i];
           const y2 = idx.r2p[i];
           const pushPoint = (bucket, yv) => {
             if (yv == null) return;
             bucket.push({
-              value: [e.ts, yv],
-              _event: e
+              value: [idx.ts[i], yv],
+              _event: e,
+              _snapTs: idx.ts[i]
             });
           };
           if (e.anchor === "r1") { pushPoint(eventPointsR1, y1); return; }
@@ -1718,7 +1737,13 @@
               }
               const cmpHtml = cmp.length ? `<div style="margin-top:6px;color:#3a4060;">${cmp.join("<br/>")}</div>` : "";
               const qty = `<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(33,37,64,.18);color:#3a4060;">库存: R1 <b>${q1 == null ? "-" : fmtNum(q1, 0)}</b> / R2 <b>${q2 == null ? "-" : fmtNum(q2, 0)}</b></div>`;
-              const evts = eventsFor(state.product).filter(e => e.ts === rawTs);
+              const evts = idxAt >= 0
+                ? eventsFor(state.product).filter((e) => {
+                    const ei = idx.ts.indexOf(e.ts);
+                    if (ei === idxAt) return true;
+                    return nearestTsIndex(idx.ts, e.ts) === idxAt;
+                  })
+                : [];
               const evtHtml = evts.length
                 ? `<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(33,37,64,.18);color:#2f3759;">${
                   evts.map((e) => {
