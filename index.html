@@ -1181,13 +1181,26 @@
         return map[cat] || "•";
       }
       function dynamicCategories(rows) {
-        const groups = [...new Set(rows.map(rowGroup).filter(Boolean))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+        const groups = [...new Set(itemGroupMap(rows).values())].filter(Boolean).sort((a, b) => a.localeCompare(b, "zh-CN"));
         return groups;
       }
+      function itemGroupMap(rows) {
+        const map = new Map();
+        // rowsAll() is time-ascending; later rows overwrite earlier noisy/old grouping.
+        (rows || []).forEach((r) => {
+          const item = String(r && r.item_name || "").trim();
+          if (!item) return;
+          const g = rowGroup(r);
+          if (!g) return;
+          map.set(item, g);
+        });
+        return map;
+      }
       function itemsForCategory(rows, cat) {
-        const items = [...new Set(rows.map(r => r.item_name))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+        const groupByItem = itemGroupMap(rows);
+        const items = [...groupByItem.keys()].sort((a, b) => a.localeCompare(b, "zh-CN"));
         if (!cat) return items;
-        return items.filter(i => rows.some(r => r.item_name === i && rowGroup(r) === cat));
+        return items.filter(i => groupByItem.get(i) === cat);
       }
       function renderCategoryTabs() {
         const categories = dynamicCategories(rowsAll());
