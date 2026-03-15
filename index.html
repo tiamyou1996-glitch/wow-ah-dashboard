@@ -563,6 +563,25 @@
                   <label class="menu-item"><input id="optZone" type="checkbox">高亮区间</label>
                   <label class="menu-item"><input id="optMA" type="checkbox">平均线</label>
                   <label class="menu-item"><input id="optTrend" type="checkbox">趋势线</label>
+                  <label class="menu-item" style="display:block;">
+                    <span style="display:block;margin-bottom:6px;color:#b9c7f2;">事件范围</span>
+                    <select id="eventScopeSel" class="tool-select" style="width:100%;min-width:0;">
+                      <option value="all">全部事件</option>
+                      <option value="product">仅当前商品</option>
+                    </select>
+                  </label>
+                  <label class="menu-item" style="display:block;">
+                    <span style="display:block;margin-bottom:6px;color:#b9c7f2;">事件类型</span>
+                    <select id="eventFilterTypeSel" class="tool-select" style="width:100%;min-width:0;">
+                      <option value="all">全部类型</option>
+                      <option value="observe">观察</option>
+                      <option value="restock">补货</option>
+                      <option value="selloff">抛售</option>
+                      <option value="patch">版本更新</option>
+                      <option value="cd">CD节点</option>
+                      <option value="other">其他</option>
+                    </select>
+                  </label>
                 </div>
               </div>
             </div>
@@ -634,6 +653,17 @@
             <div>
               <div class="meta">事件标题</div>
               <input id="eventTitleInput" type="text" />
+            </div>
+            <div>
+              <div class="meta">事件类型</div>
+              <select id="eventTypeSel">
+                <option value="observe">观察</option>
+                <option value="restock">补货</option>
+                <option value="selloff">抛售</option>
+                <option value="patch">版本更新</option>
+                <option value="cd">CD节点</option>
+                <option value="other">其他</option>
+              </select>
             </div>
             <div>
               <div class="meta">事件备注</div>
@@ -760,6 +790,8 @@
       const optZone = el("optZone");
       const optMA = el("optMA");
       const optTrend = el("optTrend");
+      const eventScopeSel = el("eventScopeSel");
+      const eventFilterTypeSel = el("eventFilterTypeSel");
       const optDateMarksWrap = el("optDateMarksWrap");
       const optWeekBandsWrap = el("optWeekBandsWrap");
       const mainChart = echarts.init(el("mainChart"));
@@ -781,6 +813,7 @@
       const eventItemSel = el("eventItemSel");
       const eventTimeInput = el("eventTimeInput");
       const eventTitleInput = el("eventTitleInput");
+      const eventTypeSel = el("eventTypeSel");
       const eventNoteInput = el("eventNoteInput");
       const eventAddBtn = el("eventAddBtn");
       const eventDeleteBtn = el("eventDeleteBtn");
@@ -809,9 +842,13 @@
         showZone: false,
         showMA: true,
         showTrend: false,
+        eventScope: "all",
+        eventFilterType: "all",
         localRows: [],
         events: [],
-        chartTs: []
+        chartTs: [],
+        pendingEventAnchor: "",
+        pendingEventTs: ""
       };
       let lastChartClickAt = 0;
       const GRID_TUNE = {
@@ -908,14 +945,39 @@
         const title = String(e.title || "").trim();
         if (!ts || !title) return null;
         const anchor = String(e.anchor || "").toLowerCase();
+        const type = String(e.type || "observe").toLowerCase();
+        const typeSafe = ["observe", "restock", "selloff", "patch", "cd", "other"].includes(type) ? type : "observe";
         return {
           id,
           ts,
           item: String(e.item || "*").trim() || "*",
           title,
           note: String(e.note || "").trim(),
-          anchor: (anchor === "r1" || anchor === "r2") ? anchor : ""
+          anchor: (anchor === "r1" || anchor === "r2") ? anchor : "",
+          type: typeSafe
         };
+      }
+      function eventTypeLabel(type) {
+        const m = {
+          observe: "观察",
+          restock: "补货",
+          selloff: "抛售",
+          patch: "版本更新",
+          cd: "CD节点",
+          other: "其他"
+        };
+        return m[type] || "观察";
+      }
+      function eventTypeColor(type) {
+        const m = {
+          observe: "#9ab3ff",
+          restock: "#69d99b",
+          selloff: "#ff8f8f",
+          patch: "#ffd166",
+          cd: "#6fe7ff",
+          other: "#c4b5fd"
+        };
+        return m[type] || "#9ab3ff";
       }
       function loadEventsLocal() {
         try {
@@ -927,7 +989,7 @@
       function saveEventsLocal() { localStorage.setItem(EVENTS_KEY, JSON.stringify(state.events)); }
       async function loadEventsFromProject() {
         const local = loadEventsLocal();
-        const keyOf = (e) => `${e.ts}|${e.item}|${e.title}|${e.note}|${e.anchor || ""}`;
+        const keyOf = (e) => `${e.ts}|${e.item}|${e.title}|${e.note}|${e.anchor || ""}|${e.type || "observe"}`;
         const mergeDedup = (a, b) => {
           const out = [];
           const seen = new Set();
@@ -1196,7 +1258,12 @@
       }
 
       function eventsFor(item) {
-        return state.events.filter(e => e.item === "*" || e.item === item);
+        return state.events.filter((e) => {
+          if (state.eventScope === "product" && e.item !== "*" && e.item !== item) return false;
+          if (state.eventScope === "all" && !(e.item === "*" || e.item === item)) return false;
+          if (state.eventFilterType !== "all" && e.type !== state.eventFilterType) return false;
+          return true;
+        });
       }
 
       function drawMainChart() {
@@ -1501,21 +1568,17 @@
             symbolSize: 12,
             z: 12,
             cursor: "pointer",
-            itemStyle: {
-              color: "#8fbcff",
-              borderColor: "#dbe9ff",
-              borderWidth: 1.2,
-              shadowBlur: 8,
-              shadowColor: "rgba(143,188,255,.45)"
+            itemStyle: (p) => {
+              const e = p && p.data && p.data._event ? p.data._event : null;
+              const c = eventTypeColor(e ? e.type : "observe");
+              return { color: c, borderColor: "#dbe9ff", borderWidth: 1.2, shadowBlur: 8, shadowColor: `${c}88` };
             },
             emphasis: {
               scale: true,
-              itemStyle: {
-                color: "#a9ceff",
-                borderColor: "#ffffff",
-                borderWidth: 1.8,
-                shadowBlur: 18,
-                shadowColor: "rgba(143,188,255,.9)"
+              itemStyle: (p) => {
+                const e = p && p.data && p.data._event ? p.data._event : null;
+                const c = eventTypeColor(e ? e.type : "observe");
+                return { color: c, borderColor: "#ffffff", borderWidth: 1.8, shadowBlur: 18, shadowColor: `${c}dd` };
               }
             },
             tooltip: {
@@ -1524,7 +1587,7 @@
                 if (!e) return "事件";
                 const t = String(e.ts).slice(0, 16);
                 const note = e.note ? `<div style=\"margin-top:4px;color:#3a4060;\">${e.note}</div>` : "";
-                return `<div><b>${e.title}</b><div style=\"margin-top:2px;\">${t} · R1价格</div>${note}</div>`;
+                return `<div><b>${e.title}</b><div style=\"margin-top:2px;\">${t} · R1价格 · ${eventTypeLabel(e.type)}</div>${note}</div>`;
               }
             }
           });
@@ -1541,21 +1604,17 @@
             symbolSize: 12,
             z: 12,
             cursor: "pointer",
-            itemStyle: {
-              color: "#c3a8ff",
-              borderColor: "#efe6ff",
-              borderWidth: 1.2,
-              shadowBlur: 8,
-              shadowColor: "rgba(195,168,255,.45)"
+            itemStyle: (p) => {
+              const e = p && p.data && p.data._event ? p.data._event : null;
+              const c = eventTypeColor(e ? e.type : "observe");
+              return { color: c, borderColor: "#efe6ff", borderWidth: 1.2, shadowBlur: 8, shadowColor: `${c}88` };
             },
             emphasis: {
               scale: true,
-              itemStyle: {
-                color: "#d3bfff",
-                borderColor: "#ffffff",
-                borderWidth: 1.8,
-                shadowBlur: 18,
-                shadowColor: "rgba(195,168,255,.9)"
+              itemStyle: (p) => {
+                const e = p && p.data && p.data._event ? p.data._event : null;
+                const c = eventTypeColor(e ? e.type : "observe");
+                return { color: c, borderColor: "#ffffff", borderWidth: 1.8, shadowBlur: 18, shadowColor: `${c}dd` };
               }
             },
             tooltip: {
@@ -1564,7 +1623,7 @@
                 if (!e) return "事件";
                 const t = String(e.ts).slice(0, 16);
                 const note = e.note ? `<div style=\"margin-top:4px;color:#3a4060;\">${e.note}</div>` : "";
-                return `<div><b>${e.title}</b><div style=\"margin-top:2px;\">${t} · R2价格</div>${note}</div>`;
+                return `<div><b>${e.title}</b><div style=\"margin-top:2px;\">${t} · R2价格 · ${eventTypeLabel(e.type)}</div>${note}</div>`;
               }
             }
           });
@@ -1659,7 +1718,17 @@
               }
               const cmpHtml = cmp.length ? `<div style="margin-top:6px;color:#3a4060;">${cmp.join("<br/>")}</div>` : "";
               const qty = `<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(33,37,64,.18);color:#3a4060;">库存: R1 <b>${q1 == null ? "-" : fmtNum(q1, 0)}</b> / R2 <b>${q2 == null ? "-" : fmtNum(q2, 0)}</b></div>`;
-              return `<div style="min-width:210px;"><div style="font-weight:700;margin-bottom:4px;">${ts}</div>${lines || "<div>-</div>"}${cmpHtml}${qty}</div>`;
+              const evts = eventsFor(state.product).filter(e => e.ts === rawTs);
+              const evtHtml = evts.length
+                ? `<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(33,37,64,.18);color:#2f3759;">${
+                  evts.map((e) => {
+                    const c = eventTypeColor(e.type);
+                    const note = e.note ? `<span style="opacity:.9;"> · ${e.note}</span>` : "";
+                    return `<div style="margin-top:2px;"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${c};margin-right:6px;"></span><b>${eventTypeLabel(e.type)}</b> ${e.title}${note}</div>`;
+                  }).join("")
+                }</div>`
+                : "";
+              return `<div style="min-width:210px;"><div style="font-weight:700;margin-bottom:4px;">${ts}</div>${lines || "<div>-</div>"}${cmpHtml}${qty}${evtHtml}</div>`;
             }
           },
           title: [{
@@ -1805,7 +1874,7 @@
 
       function refreshEventList() {
         const sorted = state.events.slice().sort((a, b) => new Date(a.ts) - new Date(b.ts));
-        eventListSel.innerHTML = sorted.map(e => `<option value="${e.id}">[${e.ts}] ${e.item === "*" ? "全局" : e.item} | ${e.title}</option>`).join("");
+        eventListSel.innerHTML = sorted.map(e => `<option value="${e.id}">[${e.ts}] [${eventTypeLabel(e.type)}] ${e.item === "*" ? "全局" : e.item} | ${e.title}</option>`).join("");
         eventMeta.textContent = `事件数：${state.events.length}`;
       }
 
@@ -1948,6 +2017,8 @@
         optZone.checked = !!state.showZone;
         optMA.checked = !!state.showMA;
         optTrend.checked = !!state.showTrend;
+        eventScopeSel.value = state.eventScope || "all";
+        eventFilterTypeSel.value = state.eventFilterType || "all";
 
         const disableDateWeek = state.rangeMode === "1d";
         optDateMarks.disabled = disableDateWeek;
@@ -2029,6 +2100,16 @@
       optZone.addEventListener("change", () => { state.showZone = !!optZone.checked; syncDisplayMenuControls(); drawMainChart(); });
       optMA.addEventListener("change", () => { state.showMA = !!optMA.checked; syncDisplayMenuControls(); drawMainChart(); });
       optTrend.addEventListener("change", () => { state.showTrend = !!optTrend.checked; syncDisplayMenuControls(); drawMainChart(); });
+      eventScopeSel.addEventListener("change", () => {
+        state.eventScope = eventScopeSel.value || "all";
+        syncDisplayMenuControls();
+        drawMainChart();
+      });
+      eventFilterTypeSel.addEventListener("change", () => {
+        state.eventFilterType = eventFilterTypeSel.value || "all";
+        syncDisplayMenuControls();
+        drawMainChart();
+      });
       syncViewControls();
       syncDisplayMenuControls();
 
@@ -2117,13 +2198,25 @@
         const ts = (eventTimeInput.value || "").replace("T", " ") + ":00";
         const title = (eventTitleInput.value || "").trim();
         if (!eventTimeInput.value || !title) { eventMeta.textContent = "新增失败：时间和标题必填"; return; }
-        state.events.push({ id: `${Date.now()}_${Math.random().toString(16).slice(2, 8)}`, ts, item: eventItemSel.value || "*", title, note: (eventNoteInput.value || "").trim(), anchor: "" });
+        state.events.push({
+          id: `${Date.now()}_${Math.random().toString(16).slice(2, 8)}`,
+          ts,
+          item: eventItemSel.value || "*",
+          title,
+          note: (eventNoteInput.value || "").trim(),
+          anchor: state.pendingEventAnchor || "",
+          type: eventTypeSel.value || "observe"
+        });
         try {
           await saveEventsToProject();
           eventMeta.textContent = "事件已保存到项目文件";
         } catch (e) {
           eventMeta.textContent = `事件仅本地保存：${e.message || "服务不可用"}`;
         }
+        state.pendingEventAnchor = "";
+        state.pendingEventTs = "";
+        eventTitleInput.value = "";
+        eventNoteInput.value = "";
         refreshEventList();
         render();
       });
@@ -2167,27 +2260,54 @@
         }
       });
 
-      async function createEventByTs(rawTs, anchorHint) {
+      function setEventFormByChart(rawTs, anchorHint) {
         if (state.top !== "analysis") return;
         const ts = String(rawTs || "").trim();
         if (!ts || !/\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}/.test(ts)) return;
         const anchor = anchorHint === "r1" || anchorHint === "r2" ? anchorHint : "";
-        const title = prompt(`新增事件\n时间: ${ts}\n物品: ${state.product || "全局"}\n请输入事件标题：`, "");
-        if (!title || !title.trim()) return;
-        const note = prompt("事件备注（可选）：", "") || "";
-        state.events.push({
-          id: `${Date.now()}_${Math.random().toString(16).slice(2, 8)}`,
-          ts,
-          item: state.product || "*",
-          title: title.trim(),
-          note: note.trim(),
-          anchor
-        });
+        state.top = "other";
+        render();
+        const dt = ts.replace(" ", "T").slice(0, 16);
+        if (eventTimeInput) eventTimeInput.value = dt;
+        if (eventItemSel && state.product && [...eventItemSel.options].some(o => o.value === state.product)) {
+          eventItemSel.value = state.product;
+        }
+        state.pendingEventAnchor = anchor;
+        state.pendingEventTs = ts;
+        eventMeta.textContent = `已定位到 ${ts}（${anchor === "r1" ? "R1" : anchor === "r2" ? "R2" : "自动"}），请输入标题后点击“新增事件”`;
+        eventTitleInput.focus();
+      }
+      async function editOrDeleteEventById(eventId) {
+        const idxEv = state.events.findIndex(x => x.id === eventId);
+        if (idxEv < 0) return;
+        const old = state.events[idxEv];
+        const action = prompt(`事件：${old.title}\n输入 e 编辑 / d 删除 / 其他取消`, "e");
+        if (!action) return;
+        const act = action.trim().toLowerCase();
+        if (act === "d") {
+          state.events.splice(idxEv, 1);
+          try {
+            await saveEventsToProject();
+            eventMeta.textContent = "事件已删除";
+          } catch (e) {
+            eventMeta.textContent = `删除后仅本地保存：${e.message || "服务不可用"}`;
+          }
+          refreshEventList();
+          drawMainChart();
+          return;
+        }
+        if (act !== "e") return;
+        const nt = prompt("编辑标题：", old.title);
+        if (!nt || !nt.trim()) return;
+        const nn = prompt("编辑备注（可空）：", old.note || "") || "";
+        const ty = prompt("事件类型（observe/restock/selloff/patch/cd/other）：", old.type || "observe") || (old.type || "observe");
+        const tySafe = ["observe", "restock", "selloff", "patch", "cd", "other"].includes(String(ty).toLowerCase()) ? String(ty).toLowerCase() : "observe";
+        state.events[idxEv] = { ...old, title: nt.trim(), note: nn.trim(), type: tySafe };
         try {
           await saveEventsToProject();
-          eventMeta.textContent = "图上事件已保存到项目文件";
+          eventMeta.textContent = "事件已更新";
         } catch (e) {
-          eventMeta.textContent = `图上事件仅本地保存：${e.message || "服务不可用"}`;
+          eventMeta.textContent = `更新后仅本地保存：${e.message || "服务不可用"}`;
         }
         refreshEventList();
         drawMainChart();
@@ -2198,9 +2318,13 @@
         lastChartClickAt = Date.now();
         const rawTs = String((params && (params.axisValue || params.name)) || "").trim();
         const s = String((params && params.seriesName) || "");
-        if (s === "__events_r1__" || s === "__events_r2__") return;
+        if (s === "__events_r1__" || s === "__events_r2__") {
+          const eventId = params && params.data && params.data._event ? params.data._event.id : "";
+          if (eventId) await editOrDeleteEventById(eventId);
+          return;
+        }
         const anchor = s === "R1价格" ? "r1" : (s === "R2价格" ? "r2" : "");
-        await createEventByTs(rawTs, anchor);
+        setEventFormByChart(rawTs, anchor);
       });
 
       // 兜底：点击图内任意位置取最近时间
@@ -2227,7 +2351,7 @@
             ts = String(state.chartTs[i] || "");
           }
         }
-        await createEventByTs(ts, "");
+        setEventFormByChart(ts, "");
       });
 
       window.addEventListener("resize", () => mainChart.resize());
