@@ -180,6 +180,140 @@
       background: rgba(12, 17, 36, 0.9);
       padding: 8px 14px 10px;
     }
+    .overview-wrap {
+      border-bottom: var(--border-default);
+      background: linear-gradient(180deg, rgba(14, 18, 36, .94), rgba(11, 15, 30, .9));
+      padding: 10px 14px 12px;
+    }
+    .overview-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .overview-head h3 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+      color: #ecf1ff;
+      letter-spacing: .2px;
+    }
+    .overview-meta {
+      color: #9aa5ca;
+      font-size: 12px;
+    }
+    .overview-table {
+      border: 1px solid #2a3154;
+      border-radius: 10px;
+      overflow: hidden;
+      background: rgba(13, 18, 37, .72);
+    }
+    .overview-row {
+      display: grid;
+      grid-template-columns: var(--overview-cols, 1.6fr .8fr 1.1fr 1.1fr 1fr 1fr .7fr);
+      align-items: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 0 10px;
+      border-top: 1px solid rgba(64, 74, 120, .38);
+    }
+    .overview-row:first-child { border-top: 0; }
+    .overview-row.head {
+      background: rgba(24, 31, 59, .7);
+      color: #b8c3ec;
+      font-size: 12px;
+      min-height: 36px;
+      font-weight: 600;
+    }
+    .overview-row.head .sortable {
+      cursor: pointer;
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .overview-row.head .sortable:hover { color: #e3e9ff; }
+    .sort-ind {
+      font-size: 10px;
+      opacity: .72;
+      min-width: 10px;
+      display: inline-block;
+      text-align: center;
+    }
+    .overview-row.data {
+      color: #e8edff;
+      font-size: 13px;
+      transition: background .15s ease;
+    }
+    .overview-row.data:hover { background: rgba(39, 48, 86, .38); }
+    .overview-name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+    .overview-name .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #8fb5ff;
+      box-shadow: 0 0 10px rgba(143, 181, 255, .5);
+      flex: 0 0 auto;
+    }
+    .overview-name .txt {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .overview-rank {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 30px;
+      height: 20px;
+      border-radius: 999px;
+      border: 1px solid #53639f;
+      background: rgba(78, 94, 158, .36);
+      color: #e6edff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 0 7px;
+      flex: 0 0 auto;
+    }
+    .overview-tag {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid #3a426d;
+      border-radius: 999px;
+      min-height: 24px;
+      padding: 0 10px;
+      color: #c8d3fa;
+      background: rgba(40, 49, 88, .5);
+      font-size: 12px;
+      width: fit-content;
+    }
+    .overview-up { color: #7fe0a5; font-weight: 600; }
+    .overview-down { color: #ff9da8; font-weight: 600; }
+    .sparkline {
+      width: 132px;
+      height: 28px;
+      display: block;
+      opacity: .92;
+    }
+    .overview-open {
+      border: 1px solid #425086;
+      border-radius: 8px;
+      background: #1a2345;
+      color: #d9e2ff;
+      font-size: 12px;
+      min-height: 28px;
+      padding: 0 10px;
+      cursor: pointer;
+    }
+    .overview-open:hover {
+      border-color: #5969ab;
+      background: #23305d;
+    }
     .product-strip {
       display: flex;
       gap: 8px;
@@ -586,6 +720,28 @@
         <div class="product-strip-wrap">
           <div id="productStrip" class="product-strip"></div>
         </div>
+        <div class="overview-wrap">
+          <div class="overview-head">
+            <h3>产品总览</h3>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span id="overviewMeta" class="overview-meta">-</span>
+              <div id="overviewCfgWrap" class="display-menu">
+                <button id="overviewCfgBtn" class="tool-toggle menu-trigger" type="button">总览字段 ▾</button>
+                <div id="overviewCfgPanel" class="display-menu-panel hidden">
+                  <label class="menu-item"><input id="ovColGroup" type="checkbox">分组</label>
+                  <label class="menu-item"><input id="ovColPrice" type="checkbox">最新价格</label>
+                  <label class="menu-item"><input id="ovColQty" type="checkbox">最新库存</label>
+                  <label class="menu-item"><input id="ovColPriceTrend" type="checkbox">价格趋势</label>
+                  <label class="menu-item"><input id="ovColQtyTrend" type="checkbox">库存趋势</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-table">
+            <div id="overviewHeader" class="overview-row head"></div>
+            <div id="overviewBody"></div>
+          </div>
+        </div>
 
         <div class="page">
           <div class="toolbar">
@@ -822,6 +978,8 @@
       const EVENTS_KEY = "wow_ah_events_v1";
       const VIEW_TAB_KEY = "wow_ah_top_tab_v1";
       const CAT_KEY = "wow_ah_category_v1";
+      const OVERVIEW_CFG_KEY = "wow_ah_overview_cols_v1";
+      const OVERVIEW_SORT_KEY = "wow_ah_overview_sort_v1";
       const SERVER_BASE = "http://127.0.0.1:8787";
 
       const RECIPE = [
@@ -872,6 +1030,17 @@
       const otherPage = el("otherPage");
       const categoryTabs = el("categoryTabs");
       const productStrip = el("productStrip");
+      const overviewMeta = el("overviewMeta");
+      const overviewHeader = el("overviewHeader");
+      const overviewBody = el("overviewBody");
+      const overviewCfgWrap = el("overviewCfgWrap");
+      const overviewCfgBtn = el("overviewCfgBtn");
+      const overviewCfgPanel = el("overviewCfgPanel");
+      const ovColGroup = el("ovColGroup");
+      const ovColPrice = el("ovColPrice");
+      const ovColQty = el("ovColQty");
+      const ovColPriceTrend = el("ovColPriceTrend");
+      const ovColQtyTrend = el("ovColQtyTrend");
       const viewSel = el("viewSel");
       const compareSel = el("compareSel");
       const rankSel = el("rankSel");
@@ -948,6 +1117,17 @@
         showTrend: false,
         eventScope: "all",
         eventFilterType: "all",
+        overviewCols: {
+          group: true,
+          price: true,
+          qty: true,
+          priceTrend: true,
+          qtyTrend: true
+        },
+        overviewSort: {
+          key: "latestTs",
+          dir: "desc"
+        },
         localRows: [],
         events: [],
         chartTs: [],
@@ -969,6 +1149,46 @@
 
       function fmtNum(v, digits = 4) {
         return Number(v).toLocaleString(undefined, { maximumFractionDigits: digits });
+      }
+      function escHtml(s) {
+        return String(s == null ? "" : s)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+      function loadOverviewCols() {
+        try {
+          const raw = localStorage.getItem(OVERVIEW_CFG_KEY);
+          if (!raw) return null;
+          const v = JSON.parse(raw);
+          if (!v || typeof v !== "object") return null;
+          return {
+            group: !!v.group,
+            price: !!v.price,
+            qty: !!v.qty,
+            priceTrend: !!v.priceTrend,
+            qtyTrend: !!v.qtyTrend
+          };
+        } catch (_) { return null; }
+      }
+      function saveOverviewCols() {
+        localStorage.setItem(OVERVIEW_CFG_KEY, JSON.stringify(state.overviewCols));
+      }
+      function loadOverviewSort() {
+        try {
+          const raw = localStorage.getItem(OVERVIEW_SORT_KEY);
+          if (!raw) return null;
+          const v = JSON.parse(raw);
+          if (!v || typeof v !== "object") return null;
+          const key = String(v.key || "").trim();
+          const dir = v.dir === "asc" ? "asc" : "desc";
+          return key ? { key, dir } : null;
+        } catch (_) { return null; }
+      }
+      function saveOverviewSort() {
+        localStorage.setItem(OVERVIEW_SORT_KEY, JSON.stringify(state.overviewSort));
       }
       function pad2(v) { return String(v).padStart(2, "0"); }
       function dayStart(ts) {
@@ -1161,8 +1381,11 @@
       }
       function rowGroup(row) {
         const direct = canonicalGroupClient(row.group);
+        const fallback = FALLBACK_GROUP_MAP[row.item_name] || "";
+        // 导入里很多商品会被标成“其他”，这里优先用我们维护的业务分组映射纠偏
+        if (direct === "其他" && fallback && fallback !== "其他") return fallback;
         if (direct) return direct;
-        return FALLBACK_GROUP_MAP[row.item_name] || "";
+        return fallback;
       }
       function categoryLabel(cat) {
         return cat || "其他";
@@ -2006,6 +2229,144 @@
           });
         });
       }
+      function sparklineSvg(values, color) {
+        const arr = (values || []).filter(v => Number.isFinite(v));
+        const w = 132, h = 28, pad = 2;
+        if (arr.length < 2) {
+          return `<svg class="sparkline" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"><line x1="0" y1="${h - 8}" x2="${w}" y2="${h - 8}" stroke="rgba(170,180,220,.35)" stroke-width="1"/></svg>`;
+        }
+        const min = Math.min(...arr);
+        const max = Math.max(...arr);
+        const rng = Math.max(max - min, 0.0001);
+        const pts = arr.map((v, i) => {
+          const x = (i / (arr.length - 1)) * (w - pad * 2) + pad;
+          const y = h - pad - ((v - min) / rng) * (h - pad * 2);
+          return `${x.toFixed(2)},${y.toFixed(2)}`;
+        });
+        const stroke = color || "#8fbcff";
+        return `<svg class="sparkline" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"><polyline fill="none" stroke="${stroke}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="${pts.join(" ")}"></polyline></svg>`;
+      }
+      function renderOverview() {
+        const rows = rowsAll();
+        const groupByItem = itemGroupMap(rows);
+        const items = itemsForCategory(rows, state.cat);
+        overviewMeta.textContent = `${state.cat || "全部"} · ${items.length} 个商品`;
+        const cols = state.overviewCols || {};
+        const activeCols = [
+          { key: "name", sortKey: "item", label: "商品/品级", width: "1.5fr" },
+          ...(cols.group ? [{ key: "group", sortKey: "group", label: "分组", width: ".72fr" }] : []),
+          ...(cols.price ? [{ key: "price", sortKey: "latestP", label: "最新价格", width: "1fr" }] : []),
+          ...(cols.qty ? [{ key: "qty", sortKey: "latestQ", label: "最新库存", width: "1fr" }] : []),
+          ...(cols.priceTrend ? [{ key: "pTrend", sortKey: "pPct", label: "价格趋势", width: "1fr" }] : []),
+          ...(cols.qtyTrend ? [{ key: "qTrend", sortKey: "qPct", label: "库存趋势", width: "1fr" }] : []),
+          { key: "act", label: "操作", width: ".66fr" }
+        ];
+        const gridTpl = activeCols.map(c => c.width).join(" ");
+        overviewHeader.style.setProperty("--overview-cols", gridTpl);
+        overviewBody.style.setProperty("--overview-cols", gridTpl);
+        const sortIcon = (sortKey) => {
+          if (!sortKey) return "";
+          if (state.overviewSort.key !== sortKey) return `<span class="sort-ind">↕</span>`;
+          return `<span class="sort-ind">${state.overviewSort.dir === "asc" ? "↑" : "↓"}</span>`;
+        };
+        overviewHeader.innerHTML = activeCols.map(c =>
+          c.sortKey
+            ? `<div><span class="sortable" data-sort="${c.sortKey}">${c.label}${sortIcon(c.sortKey)}</span></div>`
+            : `<div>${c.label}</div>`
+        ).join("");
+        if (!items.length) {
+          overviewBody.innerHTML = `<div class="overview-row data"><div style="grid-column:1 / -1;color:#9aa5ca;">当前分类暂无商品</div></div>`;
+          return;
+        }
+        const pickLast = (arr) => {
+          for (let i = arr.length - 1; i >= 0; i--) if (arr[i] != null) return arr[i];
+          return null;
+        };
+        const asRankRow = (item, group, idx, rank) => {
+          const pArr = rank === 1 ? idx.r1p : idx.r2p;
+          const qArr = rank === 1 ? idx.r1q : idx.r2q;
+          const latestP = pickLast(pArr);
+          const latestQ = pickLast(qArr);
+          if (latestP == null && latestQ == null) return null;
+          const pVals = (pArr || []).filter(v => v != null).slice(-30);
+          const qVals = (qArr || []).filter(v => v != null).slice(-30);
+          const pFirst = pVals.length ? pVals[0] : null;
+          const pLast = pVals.length ? pVals[pVals.length - 1] : null;
+          const pPct = pFirst && pLast != null ? ((pLast - pFirst) / pFirst) * 100 : null;
+          const pColor = pPct == null ? "#8fbcff" : (pPct >= 0 ? "#74dda4" : "#ff9ea8");
+          const qFirst = qVals.length ? qVals[0] : null;
+          const qLast = qVals.length ? qVals[qVals.length - 1] : null;
+          const qPct = qFirst && qLast != null ? ((qLast - qFirst) / qFirst) * 100 : null;
+          const qColor = qPct == null ? "#7ecbff" : (qPct >= 0 ? "#79e1cf" : "#f7a9b2");
+          const latestTs = idx.ts.length ? idx.ts[idx.ts.length - 1] : "";
+          return { item, rank, group, latestP, latestQ, pPct, qPct, pVals, qVals, pColor, qColor, latestTs };
+        };
+        let summaries = items.map((item) => {
+          const idx = toIndexed(rows, item);
+          const g = groupByItem.get(item) || "其他";
+          return [asRankRow(item, g, idx, 1), asRankRow(item, g, idx, 2)].filter(Boolean);
+        }).flat();
+        const sortKey = state.overviewSort.key || "latestTs";
+        const sortDir = state.overviewSort.dir === "asc" ? "asc" : "desc";
+        const valueOf = (s, k) => {
+          if (k === "item") return `${s.item}|${s.rank}`;
+          if (k === "group") return s.group || "";
+          if (k === "latestP") return Number.isFinite(s.latestP) ? s.latestP : null;
+          if (k === "latestQ") return Number.isFinite(s.latestQ) ? s.latestQ : null;
+          if (k === "pPct") return Number.isFinite(s.pPct) ? s.pPct : null;
+          if (k === "qPct") return Number.isFinite(s.qPct) ? s.qPct : null;
+          if (k === "latestTs") return new Date(s.latestTs).getTime() || 0;
+          return null;
+        };
+        summaries = summaries.sort((a, b) => {
+          const va = valueOf(a, sortKey);
+          const vb = valueOf(b, sortKey);
+          if (va == null && vb == null) return 0;
+          if (va == null) return 1;
+          if (vb == null) return -1;
+          let res = 0;
+          if (typeof va === "string" || typeof vb === "string") res = String(va).localeCompare(String(vb), "zh-CN");
+          else res = Number(va) - Number(vb);
+          return sortDir === "asc" ? res : -res;
+        });
+        overviewBody.innerHTML = summaries.map((s) => {
+          const pPctTxt = s.pPct == null ? "—" : `${s.pPct >= 0 ? "+" : ""}${fmtNum(s.pPct, 2)}%`;
+          const pPctCls = s.pPct == null ? "" : (s.pPct >= 0 ? "overview-up" : "overview-down");
+          const qPctTxt = s.qPct == null ? "—" : `${s.qPct >= 0 ? "+" : ""}${fmtNum(s.qPct, 2)}%`;
+          const qPctCls = s.qPct == null ? "" : (s.qPct >= 0 ? "overview-up" : "overview-down");
+          const cells = [];
+          cells.push(`<div class="overview-name"><span class="dot"></span><span class="txt">${escHtml(s.item)}</span><span class="overview-rank">R${s.rank}</span></div>`);
+          if (cols.group) cells.push(`<div><span class="overview-tag">${escHtml(s.group)}</span></div>`);
+          if (cols.price) cells.push(`<div>${s.latestP == null ? "-" : `${fmtNum(s.latestP, 2)}g`}</div>`);
+          if (cols.qty) cells.push(`<div>${s.latestQ == null ? "-" : fmtNum(s.latestQ, 0)}</div>`);
+          if (cols.priceTrend) cells.push(`<div><div class="${pPctCls}">${pPctTxt}</div>${sparklineSvg(s.pVals, s.pColor)}</div>`);
+          if (cols.qtyTrend) cells.push(`<div><div class="${qPctCls}">${qPctTxt}</div>${sparklineSvg(s.qVals, s.qColor)}</div>`);
+          cells.push(`<div><button type="button" class="overview-open" data-item="${escHtml(s.item)}">查看</button></div>`);
+          return `<div class="overview-row data" style="--overview-cols:${gridTpl};">${cells.join("")}</div>`;
+        }).join("");
+        overviewBody.querySelectorAll(".overview-open").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            state.product = btn.getAttribute("data-item") || state.product;
+            render();
+            const box = document.querySelector(".chart-box");
+            if (box) box.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        });
+        overviewHeader.querySelectorAll(".sortable").forEach((elBtn) => {
+          elBtn.addEventListener("click", () => {
+            const k = elBtn.getAttribute("data-sort") || "";
+            if (!k) return;
+            if (state.overviewSort.key === k) {
+              state.overviewSort.dir = state.overviewSort.dir === "asc" ? "desc" : "asc";
+            } else {
+              state.overviewSort.key = k;
+              state.overviewSort.dir = "desc";
+            }
+            saveOverviewSort();
+            renderOverview();
+          });
+        });
+      }
 
       function refreshEventItemOptions() {
         const all = uniqItems();
@@ -2148,6 +2509,7 @@
         renderTabs();
         renderCategoryTabs();
         refreshProductOptions();
+        renderOverview();
         refreshEventItemOptions();
         drawMainChart();
         const allItems = uniqItems();
@@ -2177,6 +2539,13 @@
         const onCount = [state.showDateMarks, state.showWeekBands, state.showZone, state.showMA, state.showTrend].filter(Boolean).length;
         displayMenuBtn.textContent = `显示选项 ${onCount}/5 ▾`;
       }
+      function syncOverviewControls() {
+        ovColGroup.checked = !!state.overviewCols.group;
+        ovColPrice.checked = !!state.overviewCols.price;
+        ovColQty.checked = !!state.overviewCols.qty;
+        ovColPriceTrend.checked = !!state.overviewCols.priceTrend;
+        ovColQtyTrend.checked = !!state.overviewCols.qtyTrend;
+      }
       function syncViewControls() {
         viewSel.value = state.rangeMode === "1d" ? "1d" : "all";
         compareSel.value = state.showPrevDay ? "prev_day" : "off";
@@ -2199,6 +2568,14 @@
       }
 
       state.localRows = loadLocalRows();
+      const savedOverviewCols = loadOverviewCols();
+      if (savedOverviewCols) {
+        state.overviewCols = { ...state.overviewCols, ...savedOverviewCols };
+      }
+      const savedOverviewSort = loadOverviewSort();
+      if (savedOverviewSort) {
+        state.overviewSort = savedOverviewSort;
+      }
       state.events = loadEventsLocal();
       refreshEventList();
       const now = new Date();
@@ -2229,9 +2606,19 @@
       displayMenuBtn.addEventListener("click", (e) => {
         e.stopPropagation();
         displayMenuPanel.classList.toggle("hidden");
+        overviewCfgPanel.classList.add("hidden");
       });
       displayMenuPanel.addEventListener("click", (e) => e.stopPropagation());
-      document.addEventListener("click", () => displayMenuPanel.classList.add("hidden"));
+      overviewCfgBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        overviewCfgPanel.classList.toggle("hidden");
+        displayMenuPanel.classList.add("hidden");
+      });
+      overviewCfgPanel.addEventListener("click", (e) => e.stopPropagation());
+      document.addEventListener("click", () => {
+        displayMenuPanel.classList.add("hidden");
+        overviewCfgPanel.classList.add("hidden");
+      });
 
       optDateMarks.addEventListener("change", () => {
         if (state.rangeMode === "1d") { optDateMarks.checked = state.showDateMarks; return; }
@@ -2258,8 +2645,24 @@
         syncDisplayMenuControls();
         drawMainChart();
       });
+      const onOverviewColChange = () => {
+        state.overviewCols = {
+          group: !!ovColGroup.checked,
+          price: !!ovColPrice.checked,
+          qty: !!ovColQty.checked,
+          priceTrend: !!ovColPriceTrend.checked,
+          qtyTrend: !!ovColQtyTrend.checked
+        };
+        saveOverviewCols();
+        syncOverviewControls();
+        renderOverview();
+      };
+      [ovColGroup, ovColPrice, ovColQty, ovColPriceTrend, ovColQtyTrend].forEach((x) => {
+        x.addEventListener("change", onOverviewColChange);
+      });
       syncViewControls();
       syncDisplayMenuControls();
+      syncOverviewControls();
 
       [calcItemSel, calcInputRank, calcInputQty, calcOutputRank, calcFeePct].forEach(x => {
         x.addEventListener("input", updateCalc);
