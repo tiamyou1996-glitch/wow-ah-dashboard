@@ -401,6 +401,59 @@
     .hover-mini .k { color: #aeb7db; }
     .hover-mini .v { color: #f3f6ff; font-weight: 600; }
     #mainChart { height: 740px; }
+    .inline-event-panel {
+      position: absolute;
+      right: 18px;
+      top: 18px;
+      z-index: 16;
+      width: 320px;
+      border: 1px solid #465081;
+      border-radius: 12px;
+      background: rgba(14, 20, 42, 0.96);
+      box-shadow: 0 14px 36px rgba(4, 7, 20, 0.5);
+      padding: 12px;
+      backdrop-filter: blur(4px);
+    }
+    .inline-event-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-weight: 700;
+      color: #eef3ff;
+    }
+    .inline-event-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .inline-event-grid .meta { margin-bottom: 3px; display: block; }
+    .inline-event-grid input,
+    .inline-event-grid select {
+      width: 100%;
+      border: 1px solid #475183;
+      border-radius: 8px;
+      background: #131a36;
+      color: #edf2ff;
+      min-height: 34px;
+      padding: 0 10px;
+    }
+    .inline-event-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+      justify-content: flex-end;
+    }
+    .btn.btn-danger {
+      border-color: #8a4766;
+      background: #3a1d2a;
+      color: #ffdce8;
+    }
+    .btn.btn-ghost {
+      border-color: #485178;
+      background: #141a33;
+      color: #cad3f1;
+    }
 
     .panel {
       margin-top: 14px;
@@ -588,6 +641,46 @@
           </div>
           <div class="chart-box">
             <div id="mainChart"></div>
+            <div id="inlineEventPanel" class="inline-event-panel hidden">
+              <div class="inline-event-head">
+                <span id="inlineEventTitle">新增事件</span>
+                <button id="inlineEventCloseBtn" class="btn btn-ghost" type="button">关闭</button>
+              </div>
+              <div class="inline-event-grid">
+                <div>
+                  <span class="meta">时间</span>
+                  <input id="inlineEventTime" type="datetime-local" />
+                </div>
+                <div>
+                  <span class="meta">物品</span>
+                  <select id="inlineEventItemSel"></select>
+                </div>
+                <div>
+                  <span class="meta">类型</span>
+                  <select id="inlineEventTypeSel">
+                    <option value="observe">观察</option>
+                    <option value="restock">补货</option>
+                    <option value="selloff">抛售</option>
+                    <option value="patch">版本更新</option>
+                    <option value="cd">CD节点</option>
+                    <option value="other">其他</option>
+                  </select>
+                </div>
+                <div>
+                  <span class="meta">标题</span>
+                  <input id="inlineEventText" type="text" />
+                </div>
+                <div>
+                  <span class="meta">备注</span>
+                  <input id="inlineEventNote" type="text" />
+                </div>
+              </div>
+              <div class="inline-event-actions">
+                <button id="inlineEventDeleteBtn" class="btn btn-danger hidden" type="button">删除</button>
+                <button id="inlineEventCancelBtn" class="btn btn-ghost" type="button">取消</button>
+                <button id="inlineEventSaveBtn" class="btn" type="button">保存</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -795,6 +888,17 @@
       const optDateMarksWrap = el("optDateMarksWrap");
       const optWeekBandsWrap = el("optWeekBandsWrap");
       const mainChart = echarts.init(el("mainChart"));
+      const inlineEventPanel = el("inlineEventPanel");
+      const inlineEventTitle = el("inlineEventTitle");
+      const inlineEventCloseBtn = el("inlineEventCloseBtn");
+      const inlineEventTime = el("inlineEventTime");
+      const inlineEventItemSel = el("inlineEventItemSel");
+      const inlineEventTypeSel = el("inlineEventTypeSel");
+      const inlineEventText = el("inlineEventText");
+      const inlineEventNote = el("inlineEventNote");
+      const inlineEventDeleteBtn = el("inlineEventDeleteBtn");
+      const inlineEventCancelBtn = el("inlineEventCancelBtn");
+      const inlineEventSaveBtn = el("inlineEventSaveBtn");
 
       const calcItemSel = el("calcItemSel");
       const calcInputRank = el("calcInputRank");
@@ -848,7 +952,8 @@
         events: [],
         chartTs: [],
         pendingEventAnchor: "",
-        pendingEventTs: ""
+        pendingEventTs: "",
+        inlineEventId: ""
       };
       let lastChartClickAt = 0;
       const GRID_TUNE = {
@@ -1892,9 +1997,13 @@
       function refreshEventItemOptions() {
         const all = uniqItems();
         const cur = eventItemSel.value;
+        const curInline = inlineEventItemSel.value;
         eventItemSel.innerHTML = ['<option value="*">全局事件（全部物品）</option>']
           .concat(all.map(i => `<option value="${i}">${i}</option>`)).join("");
+        inlineEventItemSel.innerHTML = ['<option value="*">全局事件（全部物品）</option>']
+          .concat(all.map(i => `<option value="${i}">${i}</option>`)).join("");
         if (cur && [...eventItemSel.options].some(o => o.value === cur)) eventItemSel.value = cur;
+        if (curInline && [...inlineEventItemSel.options].some(o => o.value === curInline)) inlineEventItemSel.value = curInline;
       }
 
       function refreshEventList() {
@@ -1910,6 +2019,7 @@
         analysisPage.classList.toggle("hidden", state.top !== "analysis");
         toolkitPage.classList.toggle("hidden", state.top !== "toolkit");
         otherPage.classList.toggle("hidden", state.top !== "other");
+        if (state.top !== "analysis") closeInlineEditor();
         localStorage.setItem(VIEW_TAB_KEY, state.top);
         localStorage.setItem(CAT_KEY, state.cat);
       }
@@ -2284,58 +2394,95 @@
           eventImportFile.value = "";
         }
       });
-
-      function setEventFormByChart(rawTs, anchorHint) {
-        if (state.top !== "analysis") return;
-        const ts = String(rawTs || "").trim();
-        if (!ts || !/\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}/.test(ts)) return;
-        const anchor = anchorHint === "r1" || anchorHint === "r2" ? anchorHint : "";
-        state.top = "other";
-        render();
-        const dt = ts.replace(" ", "T").slice(0, 16);
-        if (eventTimeInput) eventTimeInput.value = dt;
-        if (eventItemSel && state.product && [...eventItemSel.options].some(o => o.value === state.product)) {
-          eventItemSel.value = state.product;
-        }
-        state.pendingEventAnchor = anchor;
-        state.pendingEventTs = ts;
-        eventMeta.textContent = `已定位到 ${ts}（${anchor === "r1" ? "R1" : anchor === "r2" ? "R2" : "自动"}），请输入标题后点击“新增事件”`;
-        eventTitleInput.focus();
-      }
-      async function editOrDeleteEventById(eventId) {
-        const idxEv = state.events.findIndex(x => x.id === eventId);
-        if (idxEv < 0) return;
-        const old = state.events[idxEv];
-        const action = prompt(`事件：${old.title}\n输入 e 编辑 / d 删除 / 其他取消`, "e");
-        if (!action) return;
-        const act = action.trim().toLowerCase();
-        if (act === "d") {
-          state.events.splice(idxEv, 1);
-          try {
-            await saveEventsToProject();
-            eventMeta.textContent = "事件已删除";
-          } catch (e) {
-            eventMeta.textContent = `删除后仅本地保存：${e.message || "服务不可用"}`;
-          }
-          refreshEventList();
-          drawMainChart();
-          return;
-        }
-        if (act !== "e") return;
-        const nt = prompt("编辑标题：", old.title);
-        if (!nt || !nt.trim()) return;
-        const nn = prompt("编辑备注（可空）：", old.note || "") || "";
-        const ty = prompt("事件类型（observe/restock/selloff/patch/cd/other）：", old.type || "observe") || (old.type || "observe");
-        const tySafe = ["observe", "restock", "selloff", "patch", "cd", "other"].includes(String(ty).toLowerCase()) ? String(ty).toLowerCase() : "observe";
-        state.events[idxEv] = { ...old, title: nt.trim(), note: nn.trim(), type: tySafe };
+      inlineEventCloseBtn.addEventListener("click", closeInlineEditor);
+      inlineEventCancelBtn.addEventListener("click", closeInlineEditor);
+      inlineEventDeleteBtn.addEventListener("click", async () => {
+        if (!state.inlineEventId) return;
+        state.events = state.events.filter(e => e.id !== state.inlineEventId);
         try {
           await saveEventsToProject();
-          eventMeta.textContent = "事件已更新";
+          eventMeta.textContent = "事件已删除";
         } catch (e) {
-          eventMeta.textContent = `更新后仅本地保存：${e.message || "服务不可用"}`;
+          eventMeta.textContent = `删除后仅本地保存：${e.message || "服务不可用"}`;
         }
         refreshEventList();
         drawMainChart();
+        closeInlineEditor();
+      });
+      inlineEventSaveBtn.addEventListener("click", async () => {
+        const ts = String(inlineEventTime.value || "").replace("T", " ").trim();
+        const title = String(inlineEventText.value || "").trim();
+        if (!ts || !title) {
+          eventMeta.textContent = "保存失败：时间和标题必填";
+          return;
+        }
+        const row = normalizeEventClient({
+          id: state.inlineEventId || `${Date.now()}_${Math.random().toString(16).slice(2, 8)}`,
+          ts: `${ts}:00`,
+          item: inlineEventItemSel.value || "*",
+          title,
+          note: String(inlineEventNote.value || "").trim(),
+          anchor: state.pendingEventAnchor || "",
+          type: inlineEventTypeSel.value || "observe"
+        });
+        if (!row) {
+          eventMeta.textContent = "保存失败：事件格式不正确";
+          return;
+        }
+        const i = state.events.findIndex(e => e.id === row.id);
+        if (i >= 0) state.events[i] = row;
+        else state.events.push(row);
+        try {
+          await saveEventsToProject();
+          eventMeta.textContent = i >= 0 ? "事件已更新" : "事件已保存到项目文件";
+        } catch (e) {
+          eventMeta.textContent = `${i >= 0 ? "更新" : "保存"}后仅本地保存：${e.message || "服务不可用"}`;
+        }
+        refreshEventList();
+        drawMainChart();
+        closeInlineEditor();
+      });
+
+      function closeInlineEditor() {
+        state.inlineEventId = "";
+        inlineEventPanel.classList.add("hidden");
+      }
+      function openInlineEditorByPayload(payload) {
+        if (state.top !== "analysis") return;
+        const p = payload || {};
+        const ts = String(p.ts || "").trim();
+        if (!ts || !/\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}/.test(ts)) return;
+        state.inlineEventId = String(p.id || "");
+        inlineEventTitle.textContent = state.inlineEventId ? "编辑事件" : "新增事件";
+        inlineEventDeleteBtn.classList.toggle("hidden", !state.inlineEventId);
+        inlineEventTime.value = ts.replace(" ", "T").slice(0, 16);
+        const item = p.item || state.product || "*";
+        if ([...inlineEventItemSel.options].some(o => o.value === item)) inlineEventItemSel.value = item;
+        else inlineEventItemSel.value = "*";
+        inlineEventTypeSel.value = p.type || "observe";
+        inlineEventText.value = p.title || "";
+        inlineEventNote.value = p.note || "";
+        state.pendingEventAnchor = p.anchor || "";
+        state.pendingEventTs = ts;
+        inlineEventPanel.classList.remove("hidden");
+        inlineEventText.focus();
+      }
+      function setEventFormByChart(rawTs, anchorHint) {
+        const ts = String(rawTs || "").trim();
+        const anchor = anchorHint === "r1" || anchorHint === "r2" ? anchorHint : "";
+        openInlineEditorByPayload({
+          ts,
+          item: state.product || "*",
+          type: "observe",
+          title: "",
+          note: "",
+          anchor
+        });
+      }
+      async function editOrDeleteEventById(eventId) {
+        const old = state.events.find(x => x.id === eventId);
+        if (!old) return;
+        openInlineEditorByPayload(old);
       }
 
       // 精准点击线/柱

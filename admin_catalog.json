@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-15 03:30:48",
+  "updated_at": "2026-03-15 12:07:12",
   "groups": [
     {
       "id": "grp-58781c9a",
@@ -71,6 +71,28 @@
   ],
   "products": [
     {
+      "id": "item-262798",
+      "item_id": 262798,
+      "name": "搁浅的闪烁丝线",
+      "group_id": "grp-20526aea",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-15 12:06:52"
+    },
+    {
+      "id": "item-262793",
+      "item_id": 262793,
+      "name": "搁浅的绽华丝线",
+      "group_id": "grp-20526aea",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-15 12:06:50"
+    },
+    {
       "id": "item-237371",
       "item_id": 237371,
       "name": "辉耀磨刀石",
@@ -82,6 +104,28 @@
       "updated_at": "2026-03-14 21:46:59"
     },
     {
+      "id": "item-237369",
+      "item_id": 237369,
+      "name": "辉耀平衡石",
+      "group_id": "grp-20526aea",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-15 12:06:41"
+    },
+    {
+      "id": "item-237372",
+      "item_id": 237372,
+      "name": "辉耀剃刀石",
+      "group_id": "grp-20526aea",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-15 12:06:37"
+    },
+    {
       "id": "itm-1g8dncq",
       "item_id": 0,
       "name": "虚触强化符文",
@@ -91,6 +135,28 @@
       "enabled": true,
       "created_at": "2026-03-10 23:05:50",
       "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "item-244639",
+      "item_id": 244639,
+      "name": "虚触战鼓",
+      "group_id": "grp-20526aea",
+      "wow_class": "消耗品",
+      "wow_sub_class": "其它",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-15 12:05:40"
+    },
+    {
+      "id": "item-269586",
+      "item_id": 269586,
+      "name": "应急灵魂链接",
+      "group_id": "grp-20526aea",
+      "wow_class": "消耗品",
+      "wow_sub_class": "爆炸物与装置",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-15 12:05:22"
     },
     {
       "id": "itm-jzr6ex",
@@ -159,6 +225,17 @@
       "updated_at": "2026-03-14 21:46:39"
     },
     {
+      "id": "item-241323",
+      "item_id": 241323,
+      "name": "魔导师合剂",
+      "group_id": "grp-9c2f2e15",
+      "wow_class": "消耗品",
+      "wow_sub_class": "合剂和瓶剂",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-15 12:06:19"
+    },
+    {
       "id": "item-241327",
       "item_id": 241327,
       "name": "破碎残阳合剂",
@@ -179,6 +256,17 @@
       "enabled": true,
       "created_at": "2026-03-10 23:05:50",
       "updated_at": "2026-03-13 10:38:01"
+    },
+    {
+      "id": "item-241334",
+      "item_id": 241334,
+      "name": "萨拉斯荣誉勇猛合剂",
+      "group_id": "grp-9c2f2e15",
+      "wow_class": "消耗品",
+      "wow_sub_class": "合剂和瓶剂",
+      "enabled": true,
+      "created_at": "2026-03-14 20:33:02",
+      "updated_at": "2026-03-15 12:06:13"
     },
     {
       "id": "item-241325",
@@ -368,6 +456,39 @@
       "updated_at": "2026-03-13 10:38:01"
     },
     {
+      "id": "item-237364",
+      "item_id": 237364,
+      "name": "辉熠银矿石",
+      "group_id": "grp-c487743a",
+      "wow_class": "商业技能",
+      "wow_sub_class": "金属和矿石",
+      "enabled": true,
+      "created_at": "2026-03-15 03:30:48",
+      "updated_at": "2026-03-15 12:06:29"
+    },
+    {
+      "id": "item-237359",
+      "item_id": 237359,
+      "name": "耀辉铜矿石",
+      "group_id": "grp-c487743a",
+      "wow_class": "商业技能",
+      "wow_sub_class": "金属和矿石",
+      "enabled": true,
+      "created_at": "2026-03-15 03:30:48",
+      "updated_at": "2026-03-15 12:05:33"
+    },
+    {
+      "id": "item-237362",
+      "item_id": 237362,
+      "name": "幽影锡矿石",
+      "group_id": "grp-c487743a",
+      "wow_class": "商业技能",
+      "wow_sub_class": "金属和矿石",
+      "enabled": true,
+      "created_at": "2026-03-15 03:30:48",
+      "updated_at": "2026-03-15 12:07:12"
+    },
+    {
       "id": "itm-1ruba3a",
       "item_id": 0,
       "name": "纯净虚空微粒",
@@ -401,61 +522,6 @@
       "updated_at": "2026-03-14 20:33:02"
     },
     {
-      "id": "item-262798",
-      "item_id": 262798,
-      "name": "搁浅的闪烁丝线",
-      "group_id": "grp-dcd4ul",
-      "wow_class": "消耗品",
-      "wow_sub_class": "其它",
-      "enabled": true,
-      "created_at": "2026-03-14 20:33:02",
-      "updated_at": "2026-03-14 20:33:02"
-    },
-    {
-      "id": "item-262793",
-      "item_id": 262793,
-      "name": "搁浅的绽华丝线",
-      "group_id": "grp-dcd4ul",
-      "wow_class": "消耗品",
-      "wow_sub_class": "其它",
-      "enabled": true,
-      "created_at": "2026-03-14 20:33:02",
-      "updated_at": "2026-03-14 20:33:02"
-    },
-    {
-      "id": "item-237369",
-      "item_id": 237369,
-      "name": "辉耀平衡石",
-      "group_id": "grp-dcd4ul",
-      "wow_class": "消耗品",
-      "wow_sub_class": "其它",
-      "enabled": true,
-      "created_at": "2026-03-14 20:33:02",
-      "updated_at": "2026-03-14 20:33:02"
-    },
-    {
-      "id": "item-237372",
-      "item_id": 237372,
-      "name": "辉耀剃刀石",
-      "group_id": "grp-dcd4ul",
-      "wow_class": "消耗品",
-      "wow_sub_class": "其它",
-      "enabled": true,
-      "created_at": "2026-03-14 20:33:02",
-      "updated_at": "2026-03-14 20:33:02"
-    },
-    {
-      "id": "item-237364",
-      "item_id": 237364,
-      "name": "辉熠银矿石",
-      "group_id": "grp-dcd4ul",
-      "wow_class": "商业技能",
-      "wow_sub_class": "金属和矿石",
-      "enabled": true,
-      "created_at": "2026-03-15 03:30:48",
-      "updated_at": "2026-03-15 03:30:48"
-    },
-    {
       "id": "item-242787",
       "item_id": 242787,
       "name": "结晶玻璃",
@@ -484,17 +550,6 @@
       "group_id": "grp-dcd4ul",
       "wow_class": "消耗品",
       "wow_sub_class": "其它",
-      "enabled": true,
-      "created_at": "2026-03-14 20:33:02",
-      "updated_at": "2026-03-14 20:33:02"
-    },
-    {
-      "id": "item-241323",
-      "item_id": 241323,
-      "name": "魔导师合剂",
-      "group_id": "grp-dcd4ul",
-      "wow_class": "消耗品",
-      "wow_sub_class": "合剂和瓶剂",
       "enabled": true,
       "created_at": "2026-03-14 20:33:02",
       "updated_at": "2026-03-14 20:33:02"
@@ -531,17 +586,6 @@
       "enabled": true,
       "created_at": "2026-03-10 23:05:50",
       "updated_at": "2026-03-10 23:05:50"
-    },
-    {
-      "id": "item-241334",
-      "item_id": 241334,
-      "name": "萨拉斯荣誉勇猛合剂",
-      "group_id": "grp-dcd4ul",
-      "wow_class": "消耗品",
-      "wow_sub_class": "合剂和瓶剂",
-      "enabled": true,
-      "created_at": "2026-03-14 20:33:02",
-      "updated_at": "2026-03-14 20:33:02"
     },
     {
       "id": "item-242639",
@@ -621,39 +665,6 @@
       "updated_at": "2026-03-15 03:30:48"
     },
     {
-      "id": "item-244639",
-      "item_id": 244639,
-      "name": "虚触战鼓",
-      "group_id": "grp-dcd4ul",
-      "wow_class": "消耗品",
-      "wow_sub_class": "其它",
-      "enabled": true,
-      "created_at": "2026-03-14 20:33:02",
-      "updated_at": "2026-03-14 20:33:02"
-    },
-    {
-      "id": "item-237359",
-      "item_id": 237359,
-      "name": "耀辉铜矿石",
-      "group_id": "grp-dcd4ul",
-      "wow_class": "商业技能",
-      "wow_sub_class": "金属和矿石",
-      "enabled": true,
-      "created_at": "2026-03-15 03:30:48",
-      "updated_at": "2026-03-15 03:30:48"
-    },
-    {
-      "id": "item-269586",
-      "item_id": 269586,
-      "name": "应急灵魂链接",
-      "group_id": "grp-dcd4ul",
-      "wow_class": "消耗品",
-      "wow_sub_class": "爆炸物与装置",
-      "enabled": true,
-      "created_at": "2026-03-14 20:33:02",
-      "updated_at": "2026-03-14 20:33:02"
-    },
-    {
       "id": "itm-mf5w02",
       "item_id": 0,
       "name": "永歌之尘",
@@ -671,17 +682,6 @@
       "group_id": "grp-dcd4ul",
       "wow_class": "商业技能",
       "wow_sub_class": "珠宝加工",
-      "enabled": true,
-      "created_at": "2026-03-15 03:30:48",
-      "updated_at": "2026-03-15 03:30:48"
-    },
-    {
-      "id": "item-237362",
-      "item_id": 237362,
-      "name": "幽影锡矿石",
-      "group_id": "grp-dcd4ul",
-      "wow_class": "商业技能",
-      "wow_sub_class": "金属和矿石",
       "enabled": true,
       "created_at": "2026-03-15 03:30:48",
       "updated_at": "2026-03-15 03:30:48"
