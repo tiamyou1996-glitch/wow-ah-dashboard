@@ -202,11 +202,136 @@
       color: #9aa5ca;
       font-size: 12px;
     }
+    .market-board-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+      margin: 0 0 16px;
+    }
+    .market-board {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(68, 81, 136, .58);
+      border-radius: 18px;
+      padding: 16px 16px 14px;
+      background:
+        radial-gradient(circle at top right, rgba(145, 118, 255, .12), transparent 34%),
+        linear-gradient(180deg, rgba(20, 26, 52, .96), rgba(11, 16, 33, .94));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.04), 0 18px 50px rgba(0,0,0,.18);
+    }
+    .market-board::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(173, 183, 255, .08) 1px, transparent 1px);
+      background-size: 12px 12px;
+      mask-image: linear-gradient(180deg, rgba(255,255,255,.28), transparent 72%);
+      pointer-events: none;
+    }
+    .market-board-head {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .market-board-head h4 {
+      margin: 0;
+      color: #f3f5ff;
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: .02em;
+    }
+    .market-board-head .meta {
+      margin-top: 6px;
+      color: #97a5d5;
+    }
+    .market-board-canvas {
+      position: relative;
+      z-index: 1;
+      height: 260px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(126, 140, 196, .18);
+      background:
+        linear-gradient(180deg, rgba(253, 250, 255, .98), rgba(244, 248, 255, .96));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.85);
+    }
     .overview-table {
       border: 1px solid #2a3154;
       border-radius: 10px;
       overflow: hidden;
       background: rgba(13, 18, 37, .72);
+    }
+    .marked-overview {
+      margin: 8px 0 12px;
+      border: 1px solid #2a3154;
+      border-radius: 12px;
+      padding: 14px 14px 12px;
+      background: linear-gradient(180deg, rgba(18, 24, 49, .9), rgba(12, 17, 36, .86));
+    }
+    .marked-overview-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .marked-overview-title {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #ecf1ff;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .marked-overview-title .star {
+      color: #ffd166;
+      font-size: 15px;
+    }
+    .marked-overview-meta {
+      color: #9aa5ca;
+      font-size: 12px;
+    }
+    .marked-overview-body {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .marked-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 40px;
+      padding: 0 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(107, 120, 200, .32);
+      background: rgba(20, 26, 52, .96);
+      color: #e8edff;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform .15s ease, border-color .15s ease, background .15s ease;
+    }
+    .marked-chip:hover {
+      transform: translateY(-1px);
+      border-color: rgba(170, 150, 255, .55);
+      background: rgba(31, 38, 74, .98);
+    }
+    .marked-chip .badge {
+      border-radius: 999px;
+      padding: 2px 8px;
+      background: rgba(255, 209, 102, .16);
+      color: #ffd166;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .marked-empty {
+      color: #9aa5ca;
+      font-size: 13px;
+      padding: 4px 0 2px;
     }
     .overview-row {
       display: grid;
@@ -588,6 +713,45 @@
       background: #141a33;
       color: #cad3f1;
     }
+    .detail-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(6, 9, 18, 0.72);
+      backdrop-filter: blur(6px);
+      padding: 18px;
+    }
+    .detail-modal-card {
+      width: min(1320px, calc(100vw - 36px));
+      max-height: calc(100vh - 36px);
+      overflow: auto;
+      border: 1px solid #34406d;
+      border-radius: 16px;
+      background: linear-gradient(180deg, #0f142b, #0a0f20);
+      box-shadow: 0 26px 80px rgba(0, 0, 0, .42);
+    }
+    .detail-modal-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+      border-bottom: 1px solid #29345b;
+      position: sticky;
+      top: 0;
+      background: rgba(15, 20, 43, .94);
+      z-index: 2;
+    }
+    .detail-modal-head h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #eef3ff;
+    }
+    #detailChart {
+      height: 720px;
+    }
 
     .panel {
       margin-top: 14px;
@@ -694,7 +858,8 @@
         </div>
       </div>
       <div class="top-tabs">
-        <button id="tabAnalysis" class="top-tab active" type="button">行情分析</button>
+        <button id="tabOverview" class="top-tab active" type="button">产品总览</button>
+        <button id="tabAnalysis" class="top-tab" type="button">行情分析</button>
         <button id="tabToolkit" class="top-tab" type="button">工具包</button>
         <button id="tabOther" class="top-tab" type="button">其他功能</button>
       </div>
@@ -715,12 +880,8 @@
         </div>
       </div>
 
-      <div id="analysisPage">
-        <div id="categoryTabs" class="sub-tabs"></div>
-        <div class="product-strip-wrap">
-          <div id="productStrip" class="product-strip"></div>
-        </div>
-        <div class="overview-wrap">
+      <div id="overviewPage" class="page">
+        <section class="panel" style="margin-top:0;">
           <div class="overview-head">
             <h3>产品总览</h3>
             <div style="display:flex;align-items:center;gap:10px;">
@@ -737,10 +898,44 @@
               </div>
             </div>
           </div>
+          <div class="market-board-grid">
+            <section class="market-board">
+              <div class="market-board-head">
+                <div>
+                  <h4>价格大盘</h4>
+                  <div id="priceBoardMeta" class="meta">-</div>
+                </div>
+              </div>
+              <div id="priceBoardChart" class="market-board-canvas"></div>
+            </section>
+          </div>
+          <div id="markedOverview" class="marked-overview">
+            <div class="marked-overview-head">
+              <div class="marked-overview-title"><span class="star">★</span><span>已标记产品</span></div>
+              <div id="markedOverviewMeta" class="marked-overview-meta">-</div>
+            </div>
+            <div id="markedOverviewBody" class="marked-overview-body"></div>
+          </div>
+          <div class="row" style="margin-bottom:10px;">
+            <select id="overviewGroupSel" style="max-width:180px;">
+              <option value="">全部分组</option>
+            </select>
+            <input id="overviewKeyword" type="text" placeholder="搜索商品名" style="max-width:220px;" />
+            <label class="meta" style="display:flex;align-items:center;gap:6px;"><input id="overviewMarkedOnly" type="checkbox" style="width:auto;" /> 仅看已标记</label>
+            <button id="overviewApplyBtn" class="btn" type="button">应用筛选</button>
+            <button id="overviewResetBtn" class="btn" type="button">重置</button>
+          </div>
           <div class="overview-table">
             <div id="overviewHeader" class="overview-row head"></div>
             <div id="overviewBody"></div>
           </div>
+        </section>
+      </div>
+
+      <div id="analysisPage" class="hidden">
+        <div id="categoryTabs" class="sub-tabs"></div>
+        <div class="product-strip-wrap">
+          <div id="productStrip" class="product-strip"></div>
         </div>
 
         <div class="page">
@@ -933,6 +1128,19 @@
           </div>
         </section>
       </div>
+
+      <div id="detailModal" class="detail-modal hidden">
+        <div class="detail-modal-card">
+          <div class="detail-modal-head">
+            <div>
+              <h3 id="detailModalTitle">商品详情</h3>
+              <div id="detailModalMeta" class="meta">-</div>
+            </div>
+            <button id="detailModalCloseBtn" class="btn btn-ghost" type="button">关闭</button>
+          </div>
+          <div id="detailChart"></div>
+        </div>
+      </div>
     </main>
   </div>
 
@@ -980,7 +1188,9 @@
       const CAT_KEY = "wow_ah_category_v1";
       const OVERVIEW_CFG_KEY = "wow_ah_overview_cols_v1";
       const OVERVIEW_SORT_KEY = "wow_ah_overview_sort_v1";
-      const SERVER_BASE = "http://127.0.0.1:8787";
+      const API_BASE = (window.location.protocol === "http:" || window.location.protocol === "https:")
+        ? `${window.location.protocol}//${window.location.host}`
+        : "http://127.0.0.1:8787";
 
       const RECIPE = [
         { name: "赭黄墨水（白银叶路线）", output: "赭黄墨水", outMin: 2, mats: [{ item: "粉末颜料", q: 20 }, { item: "白银叶颜料", q: 10 }, { item: "法力百合颜料", q: 5 }] },
@@ -1022,9 +1232,11 @@
       };
 
       const el = (id) => document.getElementById(id);
+      const tabOverview = el("tabOverview");
       const tabAnalysis = el("tabAnalysis");
       const tabToolkit = el("tabToolkit");
       const tabOther = el("tabOther");
+      const overviewPage = el("overviewPage");
       const analysisPage = el("analysisPage");
       const toolkitPage = el("toolkitPage");
       const otherPage = el("otherPage");
@@ -1036,6 +1248,15 @@
       const overviewCfgWrap = el("overviewCfgWrap");
       const overviewCfgBtn = el("overviewCfgBtn");
       const overviewCfgPanel = el("overviewCfgPanel");
+      const priceBoardMeta = el("priceBoardMeta");
+      const priceBoardChart = echarts.init(el("priceBoardChart"));
+      const markedOverviewMeta = el("markedOverviewMeta");
+      const markedOverviewBody = el("markedOverviewBody");
+      const overviewGroupSel = el("overviewGroupSel");
+      const overviewKeyword = el("overviewKeyword");
+      const overviewMarkedOnly = el("overviewMarkedOnly");
+      const overviewApplyBtn = el("overviewApplyBtn");
+      const overviewResetBtn = el("overviewResetBtn");
       const ovColGroup = el("ovColGroup");
       const ovColPrice = el("ovColPrice");
       const ovColQty = el("ovColQty");
@@ -1068,6 +1289,11 @@
       const inlineEventDeleteBtn = el("inlineEventDeleteBtn");
       const inlineEventCancelBtn = el("inlineEventCancelBtn");
       const inlineEventSaveBtn = el("inlineEventSaveBtn");
+      const detailModal = el("detailModal");
+      const detailModalTitle = el("detailModalTitle");
+      const detailModalMeta = el("detailModalMeta");
+      const detailModalCloseBtn = el("detailModalCloseBtn");
+      const detailChart = echarts.init(el("detailChart"));
 
       const calcItemSel = el("calcItemSel");
       const calcInputRank = el("calcInputRank");
@@ -1104,7 +1330,7 @@
       const eventMeta = el("eventMeta");
 
       const state = {
-        top: localStorage.getItem(VIEW_TAB_KEY) || "analysis",
+        top: localStorage.getItem(VIEW_TAB_KEY) || "overview",
         cat: localStorage.getItem(CAT_KEY) || "",
         product: "",
         rangeMode: "all",
@@ -1128,12 +1354,16 @@
           key: "latestTs",
           dir: "desc"
         },
+        overviewGroup: "",
+        overviewKeyword: "",
+        overviewMarkedOnly: false,
         localRows: [],
         events: [],
         chartTs: [],
         pendingEventAnchor: "",
         pendingEventTs: "",
-        inlineEventId: ""
+        inlineEventId: "",
+        detailItem: ""
       };
       let lastChartClickAt = 0;
       const GRID_TUNE = {
@@ -1330,7 +1560,7 @@
           return out;
         };
         try {
-          const r = await fetch(`${SERVER_BASE}/api/events`, { method: "GET" });
+          const r = await fetch(`${API_BASE}/api/events`, { method: "GET" });
           if (!r.ok) throw new Error("server not ready");
           const d = await r.json();
           const remote = Array.isArray(d.events) ? d.events.map(normalizeEventClient).filter(Boolean) : [];
@@ -1365,7 +1595,7 @@
         const normalized = state.events.map(normalizeEventClient).filter(Boolean);
         state.events = normalized;
         saveEventsLocal();
-        const r = await fetch(`${SERVER_BASE}/api/events`, {
+        const r = await fetch(`${API_BASE}/api/events`, {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ events: normalized })
@@ -2215,6 +2445,126 @@
         }, true);
 
       }
+      function closeDetailModal() {
+        state.detailItem = "";
+        detailModal.classList.add("hidden");
+      }
+      function drawDetailChart(item) {
+        const all = rowsAll();
+        if (!item) return;
+        const idx = toIndexed(all, item);
+        const r1ma = ma(idx.r1p, 5), r2ma = ma(idx.r2p, 5);
+        const showR1 = state.rankMode === "all" || state.rankMode === "r1";
+        const showR2 = state.rankMode === "all" || state.rankMode === "r2";
+        const series = [];
+        if (showR1) series.push({
+          name: "R1价格",
+          type: "line",
+          smooth: state.rangeMode !== "1d",
+          step: state.rangeMode === "1d" ? "end" : false,
+          showSymbol: false,
+          data: state.rangeMode === "1d" ? (idx.r1pPlot || idx.r1p) : idx.r1p,
+          xAxisIndex: 0,
+          yAxisIndex: 0,
+          lineStyle: { width: 2.8, color: "#8fbcff", shadowBlur: 10, shadowColor: "rgba(143,188,255,.35)" }
+        });
+        if (showR2) series.push({
+          name: "R2价格",
+          type: "line",
+          smooth: state.rangeMode !== "1d",
+          step: state.rangeMode === "1d" ? "end" : false,
+          showSymbol: false,
+          data: state.rangeMode === "1d" ? (idx.r2pPlot || idx.r2p) : idx.r2p,
+          xAxisIndex: 0,
+          yAxisIndex: 0,
+          lineStyle: { width: 2.8, color: "#c3a8ff", shadowBlur: 10, shadowColor: "rgba(195,168,255,.35)" }
+        });
+        if (state.showMA) {
+          if (showR1) series.push({ name: "R1均线5", type: "line", smooth: true, showSymbol: false, data: r1ma, xAxisIndex: 0, yAxisIndex: 0, lineStyle: { type: "dotted", color: "#b8d5ff", width: 1.3 } });
+          if (showR2) series.push({ name: "R2均线5", type: "line", smooth: true, showSymbol: false, data: r2ma, xAxisIndex: 0, yAxisIndex: 0, lineStyle: { type: "dotted", color: "#d8c7ff", width: 1.3 } });
+        }
+        series.push({
+          name: "R1库存",
+          type: "bar",
+          data: idx.r1q,
+          xAxisIndex: 1,
+          yAxisIndex: 1,
+          barMaxWidth: 10,
+          itemStyle: { opacity: 0.26, color: "#f0d27c" }
+        });
+        series.push({
+          name: "R2库存",
+          type: "bar",
+          data: idx.r2q,
+          xAxisIndex: 1,
+          yAxisIndex: 1,
+          barMaxWidth: 10,
+          itemStyle: { opacity: 0.22, color: "#8f86de" }
+        });
+        detailChart.setOption({
+          backgroundColor: "#0c1123",
+          tooltip: {
+            trigger: "axis",
+            axisPointer: { type: "line", lineStyle: { color: "rgba(226,221,255,.45)", width: 1 } },
+            backgroundColor: "rgba(245,244,255,.96)",
+            borderColor: "#8d85c6",
+            borderWidth: 1,
+            textStyle: { color: "#11162a" }
+          },
+          legend: [{ top: 16, right: 16, textStyle: { color: "#eae7ff" } }],
+          axisPointer: { link: [{ xAxisIndex: [0, 1] }] },
+          grid: [
+            { left: 16, right: 16, top: 56, height: "56%" },
+            { left: 16, right: 16, top: "76%", height: "12%" }
+          ],
+          xAxis: [
+            { type: "category", data: idx.ts, gridIndex: 0, axisLabel: { show: false }, axisLine: { lineStyle: { color: "#3e4668" } }, axisTick: { show: false } },
+            {
+              type: "category",
+              data: idx.ts,
+              gridIndex: 1,
+              axisLabel: {
+                color: "#b9c0dd",
+                hideOverlap: true,
+                interval: state.rangeMode === "1d" ? 17 : "auto",
+                formatter: (v) => state.rangeMode === "1d" ? ((String(v).split(" ")[1] || "").slice(0, 5)) : v
+              },
+              axisLine: { lineStyle: { color: "#3e4668" } }
+            }
+          ],
+          yAxis: [
+            {
+              type: "value",
+              name: "价格变化",
+              nameLocation: "start",
+              nameGap: 10,
+              nameTextStyle: { color: "#9ea9cc" },
+              axisLabel: { color: "#b9c0dd", inside: true, margin: 0, padding: [0, 0, 6, 0] },
+              splitLine: { lineStyle: { color: "rgba(122,132,170,.22)" } }
+            },
+            {
+              type: "value",
+              name: "库存变化",
+              gridIndex: 1,
+              nameLocation: "start",
+              nameGap: 10,
+              nameTextStyle: { color: "#9ea9cc" },
+              axisLabel: { color: "#b9c0dd", inside: true, margin: 0, padding: [0, 0, 6, 0] },
+              splitLine: { lineStyle: { color: "rgba(122,132,170,.16)" } }
+            }
+          ],
+          dataZoom: [{ type: "inside", xAxisIndex: [0, 1] }],
+          series
+        }, true);
+      }
+      function openDetailModal(item) {
+        state.detailItem = item;
+        detailModalTitle.textContent = item;
+        detailModalMeta.textContent = `${state.rangeMode === "1d" ? "1天视图" : "总览视图"} · ${state.rankMode === "all" ? "R1/R2" : state.rankMode.toUpperCase()}`;
+        detailModal.classList.remove("hidden");
+        drawDetailChart(item);
+        setTimeout(() => detailChart.resize(), 0);
+      }
 
       function refreshProductOptions() {
         const all = uniqItems();
@@ -2246,11 +2596,194 @@
         const stroke = color || "#8fbcff";
         return `<svg class="sparkline" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"><polyline fill="none" stroke="${stroke}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="${pts.join(" ")}"></polyline></svg>`;
       }
+      function recentDeltaPct(arr, limit = 16) {
+        const vals = (arr || []).filter(v => Number.isFinite(v));
+        if (vals.length < 2) return null;
+        const slice = vals.slice(-limit);
+        const first = slice[0];
+        const last = slice[slice.length - 1];
+        if (!Number.isFinite(first) || !Number.isFinite(last) || Math.abs(first) < 0.00001) return null;
+        return ((last - first) / first) * 100;
+      }
+      function tileTone(kind, pct) {
+        const safe = Number.isFinite(pct) ? Math.max(-40, Math.min(40, pct)) : 0;
+        const intensity = Math.min(0.38, 0.10 + (Math.abs(safe) / 40) * 0.28);
+        if (kind === "price") {
+          return safe >= 0
+            ? `linear-gradient(180deg, rgba(255,118,118,${intensity}), rgba(22,28,56,.92))`
+            : `linear-gradient(180deg, rgba(92,176,255,${intensity}), rgba(22,28,56,.92))`;
+        }
+        return safe >= 0
+          ? `linear-gradient(180deg, rgba(91,216,193,${intensity}), rgba(22,28,56,.92))`
+          : `linear-gradient(180deg, rgba(255,192,92,${intensity}), rgba(22,28,56,.92))`;
+      }
+      function pctClass(pct) {
+        if (!Number.isFinite(pct)) return "flat";
+        if (pct > 0.15) return "up";
+        if (pct < -0.15) return "down";
+        return "flat";
+      }
+      function fmtPct(pct) {
+        if (!Number.isFinite(pct)) return "—";
+        return `${pct >= 0 ? "+" : ""}${fmtNum(pct, 2)}%`;
+      }
+      function treemapTileColor(kind, pct) {
+        if (!Number.isFinite(pct)) return "#f4f6fb";
+        const safe = Math.max(-35, Math.min(35, pct));
+        const intensity = Math.min(0.88, 0.34 + (Math.abs(safe) / 35) * 0.46);
+        if (kind === "price") {
+          return safe >= 0
+            ? `rgba(255, 217, 227, ${intensity})`
+            : `rgba(213, 248, 220, ${intensity})`;
+        }
+        return safe >= 0
+          ? `rgba(214, 248, 223, ${intensity})`
+          : `rgba(255, 234, 199, ${intensity})`;
+      }
+      function treemapTextColor(kind, pct) {
+        if (!Number.isFinite(pct)) return "#5e6481";
+        if (kind === "price") return pct >= 0 ? "#df5977" : "#34a95f";
+        return pct >= 0 ? "#2ca089" : "#c58a1f";
+      }
+      function buildTreemapNodes(cards, kind) {
+        return cards.map((card) => {
+          const value = Math.max(1, Number(card.size || card.sampleCount || card.itemCount || 1));
+          return {
+            name: card.name,
+            group: card.group,
+            value,
+            pct: card.change,
+            itemCount: card.itemCount,
+            sampleCount: card.sampleCount,
+            totalQty: card.totalQty,
+            labelTextColor: treemapTextColor(kind, card.change),
+            itemStyle: {
+              color: treemapTileColor(kind, card.change),
+              borderColor: "#ffffff",
+              borderWidth: 1,
+              gapWidth: 1
+            },
+            upperLabel: { show: false },
+            emphasis: {
+              itemStyle: {
+                borderColor: "#ffffff",
+                borderWidth: 2,
+                shadowBlur: 12,
+                shadowColor: "rgba(123,133,187,.16)"
+              }
+            }
+          };
+        }).sort((a, b) => Number(b.value) - Number(a.value));
+      }
+      function renderTreemapBoard(chart, cards, kind) {
+        const nodes = buildTreemapNodes(cards, kind);
+        chart.setOption({
+          animation: false,
+          backgroundColor: "transparent",
+          tooltip: {
+            trigger: "item",
+            backgroundColor: "rgba(255,255,255,.98)",
+            borderColor: "rgba(212,218,235,.9)",
+            borderWidth: 1,
+            textStyle: { color: "#30364f" },
+            formatter: (p) => {
+              const d = p.data || {};
+              return `<div style="min-width:150px;">
+                <div style="font-weight:700;margin-bottom:4px;">${d.name || "-"}</div>
+                <div>分组：<b>${d.group || "-"}</b></div>
+                <div>变化：<b style="color:${d.labelTextColor || "#445"};">${fmtPct(d.pct)}</b></div>
+                <div>总库存：<b>${fmtNum(d.totalQty || 0, 0)}</b></div>
+                <div>采样数：<b>${fmtNum(d.sampleCount || 0, 0)}</b></div>
+              </div>`;
+            }
+          },
+          series: [{
+            type: "treemap",
+            roam: false,
+            nodeClick: false,
+            breadcrumb: { show: false },
+            sort: "desc",
+            width: "100%",
+            height: "100%",
+            visibleMin: 1,
+            label: {
+              show: true,
+              formatter: (p) => {
+                const d = p.data || {};
+                const pct = fmtPct(d.pct);
+                const qty = fmtNum(d.totalQty || 0, 0);
+                return `{name|${d.name || "-"}}\n{pct|${pct}}\n{meta|库存 ${qty}}`;
+              },
+              rich: {
+                name: { fontSize: 14, fontWeight: 700, color: "#33394f", lineHeight: 22 },
+                pct: { fontSize: 16, fontWeight: 800, color: "#33394f", lineHeight: 24 },
+                meta: { fontSize: 12, color: "#636b88", lineHeight: 18 }
+              }
+            },
+            levels: [{
+              itemStyle: {
+                borderColor: "#ffffff",
+                borderWidth: 2,
+                gapWidth: 2
+              }
+            }],
+            data: nodes
+          }]
+        }, true);
+      }
+      function buildMarketSnapshot(rows) {
+        const groupByItem = itemGroupMap(rows);
+        const items = uniqItems();
+        const cards = [];
+        items.forEach((item) => {
+          const group = groupByItem.get(item) || "其他";
+          const values = [];
+          let totalQty = 0;
+          const idx = toIndexed(rows, item);
+          const a = recentDeltaPct(idx.r1p);
+          const b = recentDeltaPct(idx.r2p);
+          if (Number.isFinite(a)) values.push(a);
+          if (Number.isFinite(b)) values.push(b);
+          const r1q = (idx.r1q || []).filter((v) => Number.isFinite(v));
+          const r2q = (idx.r2q || []).filter((v) => Number.isFinite(v));
+          const lastR1q = r1q.length ? r1q[r1q.length - 1] : 0;
+          const lastR2q = r2q.length ? r2q[r2q.length - 1] : 0;
+          totalQty += Number(lastR1q || 0) + Number(lastR2q || 0);
+          const change = values.length ? values.reduce((sum, v) => sum + v, 0) / values.length : null;
+          cards.push({
+            name: item,
+            group,
+            change,
+            sampleCount: values.length,
+            itemCount: 1,
+            totalQty,
+            size: totalQty > 0 ? totalQty : 1
+          });
+        });
+        const allValues = cards.map((x) => x.change).filter((v) => Number.isFinite(v));
+        const allSamples = cards.reduce((sum, x) => sum + x.sampleCount, 0);
+        const totalQty = cards.reduce((sum, x) => sum + Number(x.totalQty || 0), 0);
+        return {
+          cards,
+          overall: allValues.length ? allValues.reduce((sum, v) => sum + v, 0) / allValues.length : null,
+          sampleCount: allSamples,
+          totalQty,
+          itemCount: cards.length
+        };
+      }
+      function renderMarketBoards(rows) {
+        const snapshot = buildMarketSnapshot(rows);
+        priceBoardMeta.textContent = `单品视角 · ${snapshot.itemCount} 个商品 · 总库存 ${fmtNum(snapshot.totalQty, 0)} · 均值 ${fmtPct(snapshot.overall)}`;
+        renderTreemapBoard(priceBoardChart, snapshot.cards, "price");
+      }
       function renderOverview() {
         const rows = rowsAll();
         const groupByItem = itemGroupMap(rows);
-        const items = itemsForCategory(rows, state.cat);
-        overviewMeta.textContent = `${state.cat || "全部"} · ${items.length} 个商品`;
+        refreshOverviewFilters();
+        renderMarketBoards(rows);
+        renderMarkedOverview(rows, groupByItem);
+        const items = filteredOverviewItems(rows);
+        overviewMeta.textContent = `${state.overviewGroup || "全部分组"} · ${items.length} 个商品`;
         const cols = state.overviewCols || {};
         const activeCols = [
           { key: "name", sortKey: "item", label: "商品/品级", width: "1.5fr" },
@@ -2346,10 +2879,10 @@
         }).join("");
         overviewBody.querySelectorAll(".overview-open").forEach((btn) => {
           btn.addEventListener("click", () => {
-            state.product = btn.getAttribute("data-item") || state.product;
-            render();
-            const box = document.querySelector(".chart-box");
-            if (box) box.scrollIntoView({ behavior: "smooth", block: "start" });
+            const item = btn.getAttribute("data-item") || "";
+            if (!item) return;
+            state.detailItem = item;
+            openDetailModal(item);
           });
         });
         overviewHeader.querySelectorAll(".sortable").forEach((elBtn) => {
@@ -2385,15 +2918,70 @@
         eventListSel.innerHTML = sorted.map(e => `<option value="${e.id}">[${e.ts}] [${eventTypeLabel(e.type)}] ${e.item === "*" ? "全局" : e.item} | ${e.title}</option>`).join("");
         eventMeta.textContent = `事件数：${state.events.length}`;
       }
+      function markedItemsSet() {
+        return new Set(state.events.map((e) => String(e.item || "").trim()).filter((v) => v && v !== "*"));
+      }
+      function renderMarkedOverview(rows, groupByItem) {
+        const visible = new Set(uniqItems());
+        const items = [...markedItemsSet()]
+          .filter((item) => visible.has(item))
+          .sort((a, b) => {
+            const ga = groupByItem.get(a) || "其他";
+            const gb = groupByItem.get(b) || "其他";
+            return ga === gb ? a.localeCompare(b, "zh-CN") : ga.localeCompare(gb, "zh-CN");
+          });
+        markedOverviewMeta.textContent = items.length ? `共 ${items.length} 个已标记商品` : "暂无标记";
+        if (!items.length) {
+          markedOverviewBody.innerHTML = `<div class="marked-empty">当前还没有已标记产品。先在行情分析图表上打一个事件标记，这里就会自动汇总出来。</div>`;
+          return;
+        }
+        markedOverviewBody.innerHTML = items.map((item) => {
+          const group = groupByItem.get(item) || "其他";
+          return `<button type="button" class="marked-chip" data-item="${escHtml(item)}"><span>${escHtml(item)}</span><span class="badge">${escHtml(group)}</span></button>`;
+        }).join("");
+        markedOverviewBody.querySelectorAll(".marked-chip").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const item = btn.getAttribute("data-item") || "";
+            if (!item) return;
+            openDetailModal(item);
+          });
+        });
+      }
+      function filteredOverviewItems(rows) {
+        const items = itemsForCategory(rows, state.overviewGroup || "");
+        const marked = markedItemsSet();
+        return items.filter((item) => {
+          if (state.overviewMarkedOnly && !marked.has(item)) return false;
+          if (state.overviewKeyword) {
+            const q = state.overviewKeyword.toLowerCase();
+            if (!String(item).toLowerCase().includes(q)) return false;
+          }
+          return true;
+        });
+      }
+      function refreshOverviewFilters() {
+        const categories = dynamicCategories(rowsAll());
+        const current = state.overviewGroup || "";
+        overviewGroupSel.innerHTML = ['<option value="">全部分组</option>']
+          .concat(categories.map((g) => `<option value="${g}">${g}</option>`))
+          .join("");
+        if ([...overviewGroupSel.options].some((o) => o.value === current)) overviewGroupSel.value = current;
+        else overviewGroupSel.value = "";
+        overviewKeyword.value = state.overviewKeyword || "";
+        overviewMarkedOnly.checked = !!state.overviewMarkedOnly;
+      }
 
       function renderTabs() {
+        tabOverview.classList.toggle("active", state.top === "overview");
         tabAnalysis.classList.toggle("active", state.top === "analysis");
         tabToolkit.classList.toggle("active", state.top === "toolkit");
         tabOther.classList.toggle("active", state.top === "other");
+        overviewPage.classList.toggle("hidden", state.top !== "overview");
         analysisPage.classList.toggle("hidden", state.top !== "analysis");
         toolkitPage.classList.toggle("hidden", state.top !== "toolkit");
         otherPage.classList.toggle("hidden", state.top !== "other");
         if (state.top !== "analysis") closeInlineEditor();
+        if (state.top !== "overview") closeDetailModal();
         localStorage.setItem(VIEW_TAB_KEY, state.top);
         localStorage.setItem(CAT_KEY, state.cat);
       }
@@ -2505,13 +3093,34 @@
         calcResult.innerHTML = lines.join("<br/>");
       }
 
+      function scheduleMainChartRender() {
+        requestAnimationFrame(() => {
+          if (state.top !== "analysis" || analysisPage.classList.contains("hidden")) return;
+          try { mainChart.resize(); } catch (_) {}
+          drawMainChart();
+        });
+      }
+      function scheduleOverviewBoardsResize() {
+        requestAnimationFrame(() => {
+          if (state.top !== "overview" || overviewPage.classList.contains("hidden")) return;
+          try { priceBoardChart.resize(); } catch (_) {}
+        });
+      }
+
       function render() {
         renderTabs();
         renderCategoryTabs();
         refreshProductOptions();
         renderOverview();
         refreshEventItemOptions();
-        drawMainChart();
+        if (state.top === "analysis") {
+          scheduleMainChartRender();
+        } else {
+          try { mainChart.clear(); } catch (_) {}
+        }
+        if (state.top === "overview") {
+          scheduleOverviewBoardsResize();
+        }
         const allItems = uniqItems();
         if (!calcItemSel.options.length) {
           calcItemSel.innerHTML = allItems.map(i => `<option value="${i}">${i}</option>`).join("");
@@ -2556,7 +3165,7 @@
 
       async function checkPublishServer() {
         try {
-          const r = await fetch("http://127.0.0.1:8787/api/health", { method: "GET" });
+          const r = await fetch(`${API_BASE}/api/health`, { method: "GET" });
           if (!r.ok) throw new Error("server not ready");
           const d = await r.json();
           serverMeta.textContent = `在线 (${d.ts || "ok"})`;
@@ -2582,9 +3191,43 @@
       const pad = n => String(n).padStart(2, "0");
       eventTimeInput.value = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}T${pad(now.getHours())}:${pad(now.getMinutes())}`;
 
-      tabAnalysis.addEventListener("click", () => { state.top = "analysis"; render(); });
+      tabOverview.addEventListener("click", () => { state.top = "overview"; render(); });
+      tabAnalysis.addEventListener("click", () => {
+        state.top = "analysis";
+        render();
+        scheduleMainChartRender();
+      });
       tabToolkit.addEventListener("click", () => { state.top = "toolkit"; render(); });
       tabOther.addEventListener("click", () => { state.top = "other"; render(); });
+      detailModalCloseBtn.addEventListener("click", closeDetailModal);
+      detailModal.addEventListener("click", (e) => {
+        if (e.target === detailModal) closeDetailModal();
+      });
+      overviewApplyBtn.addEventListener("click", () => {
+        state.overviewGroup = overviewGroupSel.value || "";
+        state.overviewKeyword = String(overviewKeyword.value || "").trim();
+        state.overviewMarkedOnly = !!overviewMarkedOnly.checked;
+        renderOverview();
+      });
+      overviewResetBtn.addEventListener("click", () => {
+        state.overviewGroup = "";
+        state.overviewKeyword = "";
+        state.overviewMarkedOnly = false;
+        renderOverview();
+      });
+      overviewGroupSel.addEventListener("change", () => {
+        state.overviewGroup = overviewGroupSel.value || "";
+        renderOverview();
+      });
+      overviewMarkedOnly.addEventListener("change", () => {
+        state.overviewMarkedOnly = !!overviewMarkedOnly.checked;
+        renderOverview();
+      });
+      overviewKeyword.addEventListener("keydown", (e) => {
+        if (e.key !== "Enter") return;
+        state.overviewKeyword = String(overviewKeyword.value || "").trim();
+        renderOverview();
+      });
 
       viewSel.addEventListener("change", () => {
         state.rangeMode = viewSel.value === "1d" ? "1d" : "all";
@@ -2674,7 +3317,7 @@
         if (!text) { importMeta.textContent = "导入失败：请先粘贴导出文本"; return; }
         importBtn.disabled = true;
         importMeta.textContent = "正在导入到本地文件...";
-        fetch("http://127.0.0.1:8787/api/import-local", {
+        fetch(`${API_BASE}/api/import-local`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ text })
@@ -2708,7 +3351,7 @@
         importPublishBtn.disabled = true;
         importMeta.textContent = "正在导入并发布...";
         try {
-          const r = await fetch("http://127.0.0.1:8787/api/import-and-publish", {
+          const r = await fetch(`${API_BASE}/api/import-and-publish`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ text, autoPush: true })
@@ -2942,7 +3585,15 @@
         setEventFormByChart(ts, "");
       });
 
-      window.addEventListener("resize", () => mainChart.resize());
+      window.addEventListener("resize", () => {
+        if (state.top === "analysis") {
+          try { mainChart.resize(); } catch (_) {}
+        }
+        if (state.top === "overview") {
+          try { priceBoardChart.resize(); } catch (_) {}
+        }
+        try { detailChart.resize(); } catch (_) {}
+      });
       render();
       checkPublishServer().then(loadEventsFromProject);
     })();
