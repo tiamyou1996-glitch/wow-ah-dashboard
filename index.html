@@ -175,10 +175,84 @@
       padding: 12px 14px 14px;
       border-bottom: var(--border-default);
     }
+    .analysis-shell {
+      padding: 18px 16px 16px;
+    }
+    .analysis-hero {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 18px;
+    }
+    .analysis-hero h3 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.1;
+      color: #f4f6ff;
+      letter-spacing: -.02em;
+    }
+    .analysis-hero p {
+      margin: 10px 0 0;
+      color: #9ea9cc;
+      font-size: 16px;
+    }
+    .analysis-live-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 42px;
+      padding: 0 18px;
+      border-radius: 14px;
+      border: 1px solid rgba(103, 117, 178, 0.36);
+      background: rgba(21, 27, 51, 0.78);
+      color: #7dff8a;
+      font-size: 15px;
+      font-weight: 700;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+    }
+    .analysis-live-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #58ff72;
+      box-shadow: 0 0 10px rgba(88, 255, 114, .55);
+    }
+    .analysis-cats {
+      justify-content: flex-start;
+      gap: 14px;
+      padding: 0;
+      margin-bottom: 14px;
+      background: transparent;
+      border-bottom: 0;
+    }
+    .analysis-cats .sub-tab {
+      min-width: 148px;
+      min-height: 58px;
+      justify-content: center;
+      border-radius: 16px;
+      padding: 0 18px;
+      border: 1px solid rgba(69, 79, 121, .4);
+      background: rgba(26, 31, 56, .78);
+      color: #dbdef0;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.03);
+    }
+    .analysis-cats .sub-tab:hover {
+      background: rgba(38, 45, 78, .85);
+      border-color: rgba(124, 135, 192, .5);
+    }
+    .analysis-cats .sub-tab.active {
+      color: #ff64d0;
+      border-color: rgba(221, 102, 210, .6);
+      background: rgba(54, 33, 63, .88);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.05), 0 0 0 1px rgba(255, 100, 208, .08);
+    }
     .product-strip-wrap {
-      border-bottom: var(--border-default);
-      background: rgba(12, 17, 36, 0.9);
-      padding: 8px 14px 10px;
+      border: 1px solid rgba(56, 66, 108, .46);
+      border-radius: 20px;
+      background: rgba(15, 19, 38, .82);
+      padding: 10px 12px;
+      margin-bottom: 18px;
     }
     .overview-wrap {
       border-bottom: var(--border-default);
@@ -442,7 +516,7 @@
     .product-strip {
       display: flex;
       gap: 8px;
-      justify-content: center;
+      justify-content: flex-start;
       flex-wrap: wrap;
       overflow-x: visible;
       overflow-y: visible;
@@ -451,14 +525,14 @@
       padding-bottom: 4px;
     }
     .product-chip {
-      border: 1px solid #232734;
-      border-radius: 16px;
-      background: #151814;
-      color: #f1f3f7;
-      height: 34px;
-      line-height: 32px;
-      padding: 0 14px;
-      font-size: 14px;
+      border: 1px solid rgba(61, 69, 102, .55);
+      border-radius: 12px;
+      background: rgba(28, 31, 44, .94);
+      color: #e8eaf6;
+      height: 38px;
+      line-height: 36px;
+      padding: 0 16px;
+      font-size: 13px;
       font-weight: 600;
       white-space: nowrap;
       cursor: pointer;
@@ -468,15 +542,15 @@
       letter-spacing: .2px;
     }
     .product-chip:hover {
-      border-color: #303646;
+      border-color: rgba(111, 118, 160, .72);
       color: #ffffff;
-      background: #1b1f1a;
+      background: rgba(39, 44, 64, .96);
       box-shadow: none;
     }
     .product-chip.active {
-      border-color: #d5c1f5;
-      color: #1f2430;
-      background: #d8c2f4;
+      border-color: rgba(255, 212, 74, .62);
+      color: #1c1f2a;
+      background: linear-gradient(180deg, #ffe57f, #ffc933);
       box-shadow: none;
     }
     .sub-tab {
@@ -528,12 +602,12 @@
       grid-template-columns: 1fr auto;
       gap: 10px;
       align-items: center;
-      background: linear-gradient(180deg, #171c36, #11152b);
+      background: linear-gradient(180deg, rgba(24, 28, 47, .96), rgba(18, 22, 40, .94));
       color: var(--text);
-      padding: 12px 14px;
-      border: var(--border-strong);
+      padding: 14px 16px;
+      border: 1px solid rgba(63, 73, 115, .45);
       border-bottom: 0;
-      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+      border-radius: 24px 24px 0 0;
     }
     .left-tools { display: flex; gap: 16px; align-items: center; }
     .right-tools { display: flex; justify-content: flex-end; gap: 10px; align-items: center; }
@@ -621,10 +695,10 @@
       background:
         radial-gradient(circle at 82% -38%, rgba(163, 138, 255, 0.2), transparent 55%),
         linear-gradient(180deg, #11162d, var(--chart-bg));
-      border: var(--border-strong);
+      border: 1px solid rgba(63, 73, 115, .45);
       border-top: 0;
       padding: 0;
-      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+      border-radius: 0 0 24px 24px;
       overflow: hidden;
       position: relative;
     }
@@ -660,6 +734,133 @@
     .hover-mini .k { color: #aeb7db; }
     .hover-mini .v { color: #f3f6ff; font-weight: 600; }
     #mainChart { height: 740px; }
+    .analysis-main-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) 300px;
+      gap: 16px;
+      align-items: start;
+    }
+    .analysis-chart-panel {
+      min-width: 0;
+    }
+    .analysis-side {
+      display: grid;
+      gap: 16px;
+    }
+    .analysis-side-card {
+      border: 1px solid rgba(61, 70, 104, .46);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(24, 28, 45, .95), rgba(18, 22, 38, .92));
+      padding: 18px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+    }
+    .analysis-side-card h4 {
+      margin: 0 0 14px;
+      color: #e9edf9;
+      font-size: 13px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .analysis-health-item {
+      margin-bottom: 14px;
+    }
+    .analysis-health-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #ccd5f1;
+    }
+    .analysis-health-row strong {
+      font-weight: 700;
+    }
+    .analysis-health-bar {
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      overflow: hidden;
+    }
+    .analysis-health-bar > span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      width: var(--fill, 40%);
+      background: var(--bar, linear-gradient(90deg, #67ff74, #a8ff8a));
+    }
+    .analysis-side-note {
+      color: #aeb8d8;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .analysis-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(97, 109, 156, .42);
+      background: rgba(255,255,255,.03);
+      color: #eef2ff;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .analysis-pill.good {
+      color: #8cff98;
+      border-color: rgba(102, 255, 134, .28);
+      background: rgba(58, 120, 73, .16);
+    }
+    .analysis-pill.warn {
+      color: #ffd46b;
+      border-color: rgba(255, 212, 107, .28);
+      background: rgba(138, 103, 36, .16);
+    }
+    .analysis-pill.bad {
+      color: #ff9bab;
+      border-color: rgba(255, 155, 171, .28);
+      background: rgba(138, 53, 72, .16);
+    }
+    .analysis-metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .analysis-metric-card {
+      border: 1px solid rgba(61, 70, 104, .46);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(24, 28, 45, .95), rgba(18, 22, 38, .92));
+      padding: 18px;
+      min-height: 132px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+    }
+    .analysis-metric-label {
+      color: #8f99ba;
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .analysis-metric-value {
+      color: #f6f7ff;
+      font-size: 24px;
+      line-height: 1.08;
+      font-weight: 800;
+      letter-spacing: -.02em;
+    }
+    .analysis-metric-value.highlight {
+      color: #ff64d0;
+    }
+    .analysis-metric-value.success {
+      color: #90ff8d;
+    }
+    .analysis-metric-sub {
+      margin-top: 12px;
+      color: #aeb8d8;
+      font-size: 13px;
+      line-height: 1.45;
+    }
     .inline-event-panel {
       position: absolute;
       right: 18px;
@@ -834,6 +1035,10 @@
       #mainChart { height: 460px; }
       .toolbar { grid-template-columns: 1fr; }
       .right-tools { justify-content: flex-start; }
+      .analysis-main-grid { grid-template-columns: 1fr; }
+      .analysis-metrics-grid { grid-template-columns: 1fr 1fr; }
+      .analysis-hero { flex-direction: column; }
+      .analysis-cats .sub-tab { min-width: 132px; }
       .product-strip {
         justify-content: flex-start;
         flex-wrap: nowrap;
@@ -844,6 +1049,9 @@
       .header-bar { padding: 10px 12px; }
       .header-right { gap: 6px; }
       .header-pill { padding: 7px 11px; font-size: 12px; }
+    }
+    @media (max-width: 760px) {
+      .analysis-metrics-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -933,106 +1141,134 @@
       </div>
 
       <div id="analysisPage" class="hidden">
-        <div id="categoryTabs" class="sub-tabs"></div>
-        <div class="product-strip-wrap">
-          <div id="productStrip" class="product-strip"></div>
-        </div>
-
-        <div class="page">
-          <div class="toolbar">
-            <div class="left-tools">
-              <select id="viewSel" class="tool-select">
-                <option value="all">视图：总览</option>
-                <option value="1d">视图：1天</option>
-              </select>
-              <select id="compareSel" class="tool-select">
-                <option value="off">同比：关闭</option>
-                <option value="prev_day">同比：前一天</option>
-              </select>
+        <div class="analysis-shell">
+          <div class="analysis-hero">
+            <div>
+              <h3>拍卖行经营看板</h3>
+              <p id="analysisHeroSub">当前阶段的价格走势、库存密度与盘货建议。</p>
             </div>
-            <div class="right-tools">
-              <div id="displayMenuWrap" class="display-menu">
-                <button id="displayMenuBtn" class="tool-toggle menu-trigger" type="button">显示选项 ▾</button>
-                <div id="displayMenuPanel" class="display-menu-panel hidden">
-                  <label class="menu-item" style="display:block;">
-                    <span style="display:block;margin-bottom:6px;color:#b9c7f2;">星级选择</span>
-                    <select id="rankSel" class="tool-select" style="width:100%;min-width:0;">
-                      <option value="all">全部</option>
-                      <option value="r1">R1</option>
-                      <option value="r2">R2</option>
-                    </select>
-                  </label>
-                  <label id="optDateMarksWrap" class="menu-item"><input id="optDateMarks" type="checkbox">日期标记</label>
-                  <label id="optWeekBandsWrap" class="menu-item"><input id="optWeekBands" type="checkbox">版本周带</label>
-                  <label class="menu-item"><input id="optZone" type="checkbox">高亮区间</label>
-                  <label class="menu-item"><input id="optMA" type="checkbox">平均线</label>
-                  <label class="menu-item"><input id="optTrend" type="checkbox">趋势线</label>
-                  <label class="menu-item" style="display:block;">
-                    <span style="display:block;margin-bottom:6px;color:#b9c7f2;">事件范围</span>
-                    <select id="eventScopeSel" class="tool-select" style="width:100%;min-width:0;">
-                      <option value="all">全部事件</option>
-                      <option value="product">仅当前商品</option>
-                    </select>
-                  </label>
-                  <label class="menu-item" style="display:block;">
-                    <span style="display:block;margin-bottom:6px;color:#b9c7f2;">事件类型</span>
-                    <select id="eventFilterTypeSel" class="tool-select" style="width:100%;min-width:0;">
-                      <option value="all">全部类型</option>
-                      <option value="observe">观察</option>
-                      <option value="restock">补货</option>
-                      <option value="selloff">抛售</option>
-                      <option value="patch">版本更新</option>
-                      <option value="cd">CD节点</option>
-                      <option value="other">其他</option>
-                    </select>
-                  </label>
-                </div>
-              </div>
-            </div>
+            <div class="analysis-live-pill"><span class="analysis-live-dot"></span><span id="analysisLiveText">Live Market Feed</span></div>
           </div>
-          <div class="chart-box">
-            <div id="mainChart"></div>
-            <div id="inlineEventPanel" class="inline-event-panel hidden">
-              <div class="inline-event-head">
-                <span id="inlineEventTitle">新增事件</span>
-                <button id="inlineEventCloseBtn" class="btn btn-ghost" type="button">关闭</button>
-              </div>
-              <div class="inline-event-grid">
-                <div>
-                  <span class="meta">时间</span>
-                  <input id="inlineEventTime" type="datetime-local" />
-                </div>
-                <div>
-                  <span class="meta">物品</span>
-                  <select id="inlineEventItemSel"></select>
-                </div>
-                <div>
-                  <span class="meta">类型</span>
-                  <select id="inlineEventTypeSel">
-                    <option value="observe">观察</option>
-                    <option value="restock">补货</option>
-                    <option value="selloff">抛售</option>
-                    <option value="patch">版本更新</option>
-                    <option value="cd">CD节点</option>
-                    <option value="other">其他</option>
+
+          <div id="categoryTabs" class="sub-tabs analysis-cats"></div>
+          <div class="product-strip-wrap">
+            <div id="productStrip" class="product-strip"></div>
+          </div>
+
+          <div class="analysis-main-grid">
+            <div class="analysis-chart-panel">
+              <div class="toolbar">
+                <div class="left-tools">
+                  <select id="viewSel" class="tool-select">
+                    <option value="all">视图：总览</option>
+                    <option value="1d">视图：1天</option>
+                  </select>
+                  <select id="compareSel" class="tool-select">
+                    <option value="off">同比：关闭</option>
+                    <option value="prev_day">同比：前一天</option>
                   </select>
                 </div>
-                <div>
-                  <span class="meta">标题</span>
-                  <input id="inlineEventText" type="text" />
-                </div>
-                <div>
-                  <span class="meta">备注</span>
-                  <input id="inlineEventNote" type="text" />
+                <div class="right-tools">
+                  <div id="displayMenuWrap" class="display-menu">
+                    <button id="displayMenuBtn" class="tool-toggle menu-trigger" type="button">显示选项 ▾</button>
+                    <div id="displayMenuPanel" class="display-menu-panel hidden">
+                      <label class="menu-item" style="display:block;">
+                        <span style="display:block;margin-bottom:6px;color:#b9c7f2;">星级选择</span>
+                        <select id="rankSel" class="tool-select" style="width:100%;min-width:0;">
+                          <option value="all">全部</option>
+                          <option value="r1">R1</option>
+                          <option value="r2">R2</option>
+                        </select>
+                      </label>
+                      <label id="optDateMarksWrap" class="menu-item"><input id="optDateMarks" type="checkbox">日期标记</label>
+                      <label id="optWeekBandsWrap" class="menu-item"><input id="optWeekBands" type="checkbox">版本周带</label>
+                      <label class="menu-item"><input id="optZone" type="checkbox">高亮区间</label>
+                      <label class="menu-item"><input id="optMA" type="checkbox">平均线</label>
+                      <label class="menu-item"><input id="optTrend" type="checkbox">趋势线</label>
+                      <label class="menu-item" style="display:block;">
+                        <span style="display:block;margin-bottom:6px;color:#b9c7f2;">事件范围</span>
+                        <select id="eventScopeSel" class="tool-select" style="width:100%;min-width:0;">
+                          <option value="all">全部事件</option>
+                          <option value="product">仅当前商品</option>
+                        </select>
+                      </label>
+                      <label class="menu-item" style="display:block;">
+                        <span style="display:block;margin-bottom:6px;color:#b9c7f2;">事件类型</span>
+                        <select id="eventFilterTypeSel" class="tool-select" style="width:100%;min-width:0;">
+                          <option value="all">全部类型</option>
+                          <option value="observe">观察</option>
+                          <option value="restock">补货</option>
+                          <option value="selloff">抛售</option>
+                          <option value="patch">版本更新</option>
+                          <option value="cd">CD节点</option>
+                          <option value="other">其他</option>
+                        </select>
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="inline-event-actions">
-                <button id="inlineEventDeleteBtn" class="btn btn-danger hidden" type="button">删除</button>
-                <button id="inlineEventCancelBtn" class="btn btn-ghost" type="button">取消</button>
-                <button id="inlineEventSaveBtn" class="btn" type="button">保存</button>
+              <div class="chart-box">
+                <div id="mainChart"></div>
+                <div id="inlineEventPanel" class="inline-event-panel hidden">
+                  <div class="inline-event-head">
+                    <span id="inlineEventTitle">新增事件</span>
+                    <button id="inlineEventCloseBtn" class="btn btn-ghost" type="button">关闭</button>
+                  </div>
+                  <div class="inline-event-grid">
+                    <div>
+                      <span class="meta">时间</span>
+                      <input id="inlineEventTime" type="datetime-local" />
+                    </div>
+                    <div>
+                      <span class="meta">物品</span>
+                      <select id="inlineEventItemSel"></select>
+                    </div>
+                    <div>
+                      <span class="meta">类型</span>
+                      <select id="inlineEventTypeSel">
+                        <option value="observe">观察</option>
+                        <option value="restock">补货</option>
+                        <option value="selloff">抛售</option>
+                        <option value="patch">版本更新</option>
+                        <option value="cd">CD节点</option>
+                        <option value="other">其他</option>
+                      </select>
+                    </div>
+                    <div>
+                      <span class="meta">标题</span>
+                      <input id="inlineEventText" type="text" />
+                    </div>
+                    <div>
+                      <span class="meta">备注</span>
+                      <input id="inlineEventNote" type="text" />
+                    </div>
+                  </div>
+                  <div class="inline-event-actions">
+                    <button id="inlineEventDeleteBtn" class="btn btn-danger hidden" type="button">删除</button>
+                    <button id="inlineEventCancelBtn" class="btn btn-ghost" type="button">取消</button>
+                    <button id="inlineEventSaveBtn" class="btn" type="button">保存</button>
+                  </div>
+                </div>
               </div>
             </div>
+            <aside class="analysis-side">
+              <section class="analysis-side-card">
+                <h4>Market Health</h4>
+                <div id="analysisHealth"></div>
+              </section>
+              <section class="analysis-side-card">
+                <h4>Trading Read</h4>
+                <div id="analysisAction" class="analysis-side-note"></div>
+              </section>
+              <section class="analysis-side-card">
+                <h4>Linked Chain</h4>
+                <div id="analysisLinks" class="analysis-side-note"></div>
+              </section>
+            </aside>
           </div>
+
+          <div id="analysisMetrics" class="analysis-metrics-grid"></div>
         </div>
       </div>
 
@@ -1265,6 +1501,12 @@
       const viewSel = el("viewSel");
       const compareSel = el("compareSel");
       const rankSel = el("rankSel");
+      const analysisHeroSub = el("analysisHeroSub");
+      const analysisLiveText = el("analysisLiveText");
+      const analysisHealth = el("analysisHealth");
+      const analysisAction = el("analysisAction");
+      const analysisLinks = el("analysisLinks");
+      const analysisMetrics = el("analysisMetrics");
       const displayMenuWrap = el("displayMenuWrap");
       const displayMenuBtn = el("displayMenuBtn");
       const displayMenuPanel = el("displayMenuPanel");
@@ -3092,6 +3334,184 @@
         });
         calcResult.innerHTML = lines.join("<br/>");
       }
+      function firstFinite(arr) {
+        return (arr || []).find((x) => Number.isFinite(x)) ?? null;
+      }
+      function lastFinite(arr) {
+        const a = arr || [];
+        for (let i = a.length - 1; i >= 0; i--) if (Number.isFinite(a[i])) return a[i];
+        return null;
+      }
+      function avgFinite(arr) {
+        const vals = (arr || []).filter((x) => Number.isFinite(x));
+        if (!vals.length) return null;
+        return vals.reduce((sum, v) => sum + v, 0) / vals.length;
+      }
+      function stddevFinite(arr) {
+        const vals = (arr || []).filter((x) => Number.isFinite(x));
+        if (vals.length < 2) return null;
+        const avg = vals.reduce((sum, v) => sum + v, 0) / vals.length;
+        const variance = vals.reduce((sum, v) => sum + ((v - avg) ** 2), 0) / vals.length;
+        return Math.sqrt(variance);
+      }
+      function pctDelta(arr) {
+        const first = firstFinite(arr);
+        const last = lastFinite(arr);
+        if (!Number.isFinite(first) || !Number.isFinite(last) || Math.abs(first) < 0.00001) return null;
+        return ((last - first) / first) * 100;
+      }
+      function describeLevel(value, thresholds, labels) {
+        if (!Number.isFinite(value)) return labels[0];
+        if (value >= thresholds[1]) return labels[2];
+        if (value >= thresholds[0]) return labels[1];
+        return labels[0];
+      }
+      function pillClass(label) {
+        if (["极高", "偏高", "高", "紧缺", "优先出货", "优先收货", "可做加工"].includes(label)) return "good";
+        if (["中等", "平稳", "观察", "先观望"].includes(label)) return "warn";
+        return "bad";
+      }
+      function chainLinksFor(item) {
+        const upstream = [];
+        const downstream = [];
+        const manualPairs = [
+          ["白银叶", "白银叶颜料"],
+          ["宁心花", "粉末颜料"],
+          ["法力百合", "法力百合颜料"],
+          ["血艳蓟", "血艳蓟颜料"],
+          ["艾泽之根", "编码艾泽之根"],
+          ["光明亚麻布", "光明亚麻布卷"],
+          ["光明亚麻布卷", "注能光明亚麻布卷"],
+          ["奥纹布", "奥纹布卷"]
+        ];
+        manualPairs.forEach(([a, b]) => {
+          if (item === a) downstream.push(b);
+          if (item === b) upstream.push(a);
+        });
+        RECIPE.forEach((r) => {
+          if (r.output === item) upstream.push(...r.mats.map((m) => m.item));
+          if (r.mats.some((m) => m.item === item)) downstream.push(r.output);
+        });
+        return {
+          upstream: [...new Set(upstream)],
+          downstream: [...new Set(downstream)]
+        };
+      }
+      function bestRecipeMargin(item, priceMap) {
+        const recipes = RECIPE.filter((r) => r.mats.some((m) => m.item === item));
+        if (!recipes.length) return null;
+        let best = null;
+        recipes.forEach((r) => {
+          const outputPrice = priceMap.get(`${r.output}|1`);
+          if (!Number.isFinite(outputPrice) || outputPrice <= 0) return;
+          const gross = outputPrice * r.outMin * 0.95;
+          const matsCost = r.mats.reduce((sum, m) => {
+            const p = priceMap.get(`${m.item}|1`);
+            return sum + (Number.isFinite(p) ? p * m.q : 0);
+          }, 0);
+          const margin = gross - matsCost;
+          if (!best || margin > best.margin) best = { recipe: r.name, margin };
+        });
+        return best;
+      }
+      function renderAnalysisPanels() {
+        if (!state.product) return;
+        const rows = rowsAll();
+        const idx = toIndexed(rows, state.product);
+        const priceMap = latestPriceMap();
+        const r1Last = lastFinite(idx.r1p);
+        const r2Last = lastFinite(idx.r2p);
+        const r1Qty = lastFinite(idx.r1q) || 0;
+        const r2Qty = lastFinite(idx.r2q) || 0;
+        const totalQty = r1Qty + r2Qty;
+        const priceMove = avgFinite([pctDelta(idx.r1p), pctDelta(idx.r2p)].filter((v) => Number.isFinite(v)));
+        const qtyMove = pctDelta([...(idx.r1q || []).map((v, i) => Number((v || 0) + (idx.r2q?.[i] || 0)))]); 
+        const priceVol = avgFinite([stddevFinite(idx.r1p), stddevFinite(idx.r2p)].filter((v) => Number.isFinite(v)));
+        const avgQty = avgFinite([...(idx.r1q || []).map((v, i) => Number((v || 0) + (idx.r2q?.[i] || 0)))]) || 0;
+        const densityRatio = avgQty > 0 ? totalQty / avgQty : 1;
+        const eventCount = eventsFor(state.product).length;
+        const links = chainLinksFor(state.product);
+        const margin = bestRecipeMargin(state.product, priceMap);
+
+        analysisHeroSub.textContent = `${state.product} · 当前查看 ${state.rangeMode === "1d" ? "1天节奏" : "总览趋势"}，同步追踪价格、库存与链路机会。`;
+        const lastTs = (idx.ts && idx.ts[idx.ts.length - 1]) ? idx.ts[idx.ts.length - 1] : "";
+        analysisLiveText.textContent = lastTs ? `市场刷新 ${String(lastTs).slice(5, 16)}` : "Live Market Feed";
+
+        const velocityLabel = describeLevel(Math.abs(priceMove || 0), [3, 9], ["平稳", "偏高", "极高"]);
+        const inventoryLabel = densityRatio <= 0.7 ? "紧缺" : densityRatio >= 1.2 ? "偏高" : "中等";
+        const profitLabel = margin && margin.margin > 0 ? "可做加工" : (priceMove != null && priceMove > 6 && densityRatio < 0.9 ? "优先出货" : "观察");
+        const healthItems = [
+          { name: "Price Velocity", value: velocityLabel, fill: `${Math.min(100, Math.abs(priceMove || 0) * 7)}%`, bar: "linear-gradient(90deg,#67ff74,#b9ff7a)" },
+          { name: "Inventory Density", value: inventoryLabel, fill: `${Math.max(14, Math.min(100, densityRatio * 55))}%`, bar: "linear-gradient(90deg,#ff6f92,#ffb577)" },
+          { name: "Profit Potential", value: profitLabel, fill: `${margin ? Math.max(18, Math.min(100, Math.abs(margin.margin) / 10)) : 24}%`, bar: "linear-gradient(90deg,#ffe07e,#ffeeb7)" }
+        ];
+        analysisHealth.innerHTML = healthItems.map((item) => `
+          <div class="analysis-health-item">
+            <div class="analysis-health-row"><span>${item.name}</span><strong>${item.value}</strong></div>
+            <div class="analysis-health-bar" style="--bar:${item.bar};"><span style="--fill:${item.fill};"></span></div>
+          </div>
+        `).join("");
+
+        let actionTitle = "先观望";
+        let actionReason = "价格和库存还没有形成明显的顺风条件，适合继续盯盘。";
+        if (Number.isFinite(priceMove) && priceMove >= 6 && densityRatio <= 0.9) {
+          actionTitle = "优先出货";
+          actionReason = "价格在走强，同时库存密度不高，这种组合更适合挂卖或补货后快速出。";
+        } else if (Number.isFinite(priceMove) && priceMove <= -6 && densityRatio <= 0.85) {
+          actionTitle = "优先收货";
+          actionReason = "价格在回落，但库存没有明显堆高，容易形成低位补货窗口。";
+        } else if (margin && margin.margin > 0) {
+          actionTitle = "可做加工";
+          actionReason = `${margin.recipe} 当前有正向加工空间，适合比一手原料与下游净收益。`;
+        }
+        analysisAction.innerHTML = `
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <span class="analysis-pill ${pillClass(actionTitle)}">${actionTitle}</span>
+            <span class="meta">事件 ${eventCount} 条</span>
+          </div>
+          <div class="analysis-side-note">${actionReason}</div>
+        `;
+
+        analysisLinks.innerHTML = `
+          <div style="margin-bottom:10px;"><span class="meta">上游：</span> ${links.upstream.length ? links.upstream.join(" / ") : "暂无"}</div>
+          <div style="margin-bottom:10px;"><span class="meta">下游：</span> ${links.downstream.length ? links.downstream.join(" / ") : "暂无"}</div>
+          <div><span class="meta">加工观察：</span> ${margin ? `${margin.recipe} 约 ${margin.margin >= 0 ? "+" : ""}${fmtNum(margin.margin, 2)}g` : "当前没有配置可比加工路线"}</div>
+        `;
+
+        const metricCards = [
+          {
+            label: "Current Price",
+            value: r1Last != null ? `${fmtNum(r1Last, 2)}g` : "—",
+            className: "",
+            sub: `R2 ${r2Last != null ? `${fmtNum(r2Last, 2)}g` : "—"}`
+          },
+          {
+            label: "Inventory Stack",
+            value: fmtNum(totalQty, 0),
+            className: "highlight",
+            sub: `R1 ${fmtNum(r1Qty, 0)} / R2 ${fmtNum(r2Qty, 0)}`
+          },
+          {
+            label: "Price Change",
+            value: fmtPct(priceMove),
+            className: priceMove >= 0 ? "success" : "highlight",
+            sub: `波动 ${priceVol != null ? fmtNum(priceVol, 2) : "—"}g`
+          },
+          {
+            label: "Trade Signals",
+            value: `${eventCount} 条`,
+            className: "",
+            sub: margin ? `加工差额 ${margin.margin >= 0 ? "+" : ""}${fmtNum(margin.margin, 2)}g` : "暂无加工差额"
+          }
+        ];
+        analysisMetrics.innerHTML = metricCards.map((m) => `
+          <section class="analysis-metric-card">
+            <div class="analysis-metric-label">${m.label}</div>
+            <div class="analysis-metric-value ${m.className || ""}">${m.value}</div>
+            <div class="analysis-metric-sub">${m.sub}</div>
+          </section>
+        `).join("");
+      }
 
       function scheduleMainChartRender() {
         requestAnimationFrame(() => {
@@ -3113,6 +3533,7 @@
         refreshProductOptions();
         renderOverview();
         refreshEventItemOptions();
+        renderAnalysisPanels();
         if (state.top === "analysis") {
           scheduleMainChartRender();
         } else {
